@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WH3 Diplomacy · Accord rapide</title>
+  <style>
+    :root{color-scheme:dark;--bg:#11100d;--panel:#1d1a15;--border:#3a3226;--gold:#d2a94d;--text:#eee6d6;--muted:#a89d8b;--good:#65b96e;--bad:#d7665d;--mid:#d0a24a}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui}main{max-width:1180px;margin:auto;padding:36px 18px}a{color:var(--gold)}header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:24px}h1,h2{font-family:Georgia;margin:.2em 0}h1{color:var(--gold);font-size:3rem}.muted,.source{color:var(--muted)}.panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:20px;margin:16px 0}.toolbar{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.field{display:grid;gap:6px}.field span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}select,input{width:100%;padding:11px;background:#12100d;color:var(--text);border:1px solid var(--border);border-radius:7px}.summary{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{padding:6px 9px;border:1px solid var(--border);border-radius:999px;font-size:12px}.results{display:grid;gap:8px}.row{display:grid;grid-template-columns:minmax(220px,1.6fr) minmax(130px,.8fr) 120px 150px;gap:12px;align-items:center;padding:12px;border:1px solid var(--border);border-radius:8px;background:#171510}.row strong{display:block}.row small{display:block;color:var(--muted)}.score{font-size:18px;font-weight:800}.good{color:var(--good)}.bad{color:var(--bad)}.mid{color:var(--mid)}.tag{font-size:11px;border:1px solid var(--border);padding:4px 6px;border-radius:5px;display:inline-block}.war{border-color:var(--bad);color:var(--bad)}.empty{padding:20px;color:var(--muted)}@media(max-width:760px){header{display:block}.toolbar{grid-template-columns:1fr}.row{grid-template-columns:1fr 90px}.row .race,.row .status{grid-column:auto}h1{font-size:2.4rem}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div><div class="muted">Immortal Empires · pré-partie</div><h1>Accord rapide</h1><p class="muted">Choisis ton seigneur et vois quels partenaires sont naturellement les plus compatibles avant de lancer la campagne.</p></div>
+    <a href="/wh3-diplomacy/">← Comparateur d'équipe</a>
+  </header>
+  <section class="panel">
+    <div class="toolbar">
+      <label class="field"><span>Je joue</span><select id="player"></select></label>
+      <label class="field"><span>Type d'accord</span><select id="deal"><option>Pacte de non-agression</option><option>Accord commercial</option><option>Accès militaire</option><option>Alliance défensive</option><option>Alliance militaire</option></select></label>
+      <label class="field"><span>Filtrer par race</span><select id="race"><option value="">Toutes les races</option></select></label>
+    </div>
+    <div class="summary" id="summary"></div>
+  </section>
+  <section class="panel">
+    <h2>Partenaires potentiels</h2>
+    <p class="source">Le classement utilise uniquement les composantes déjà vérifiées du tour 1 : base culturelle directionnelle et relations explicites de startpos. Il ne reproduit pas encore le score exact d'acceptation du menu Accord rapide.</p>
+    <div class="results" id="results"><div class="empty">Chargement des données WH3…</div></div>
+  </section>
+</main>
+<script src="quick-deal.js?v=20260902-1"></script>
+</body>
+</html>
