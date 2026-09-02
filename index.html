@@ -25,7 +25,26 @@
   <section class="panel"><h2>Positions de départ</h2><div class="controls"><button id="minus">−</button><button id="reset">Recentrer</button><button id="plus">+</button></div><div class="map-viewport" id="mapViewport"><div class="map" id="map"></div></div><p class="source">Fond : carte Immortal Empires fournie pour le projet. Glisse pour déplacer, utilise +/− pour zoomer. Les marqueurs sont calculés depuis les coordonnées <code>cam_gameplay_start</code> extraites des scripts WH3 ; aucun emplacement manquant n'est inventé.</p><p class="source" id="mapStatus"></p></section>
   <footer>Chargement des données WH3…</footer>
 </main>
-<script src="roster.js?v=20260902-2"></script>
-<script src="cultural-relations.js?v=20260902-2"></script>
+<script>
+(() => {
+  const nativeFetch = window.fetch.bind(window);
+  const base = '/wh3-diplomacy/data/generated/';
+  const known = new Set([
+    'immortal-empires-startpos.json',
+    'frontend-leaders.json',
+    'campaign-start-positions.json',
+    'cultural-relations.json'
+  ]);
+  window.fetch = (input, init) => {
+    if (typeof input === 'string') {
+      const file = input.split('?')[0].split('/').pop();
+      if (known.has(file)) return nativeFetch(base + file, init);
+    }
+    return nativeFetch(input, init);
+  };
+})();
+</script>
+<script src="/wh3-diplomacy/roster.js?v=20260902-3"></script>
+<script src="/wh3-diplomacy/cultural-relations.js?v=20260902-3"></script>
 </body>
 </html>
