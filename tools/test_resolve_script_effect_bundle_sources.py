@@ -39,10 +39,13 @@ cm:apply_effect_bundle("bundle_dynamic_" .. suffix, faction_key, 0)
     assert by_bundle['bundle_literal']['firstTickCallback'] is False
     assert by_bundle['bundle_first_tick']['faction'] == 'wh3_main_ksl_the_ice_court'
     assert by_bundle['bundle_first_tick']['firstTickCallback'] is True
-    assert by_bundle['bundle_first_tick']['executionEvidence'] == 'first-tick-callback'
+    assert by_bundle['bundle_first_tick']['guardFreeFirstTick'] is True
+    assert by_bundle['bundle_first_tick']['executionEvidence'] == 'guard-free-first-tick'
     assert by_bundle['bundle_nested_first_tick']['firstTickCallback'] is True
+    assert by_bundle['bundle_nested_first_tick']['guardFreeFirstTick'] is False
     pairs = {(x['faction'], x['effectBundle']) for x in data['assignments']}
     assert ('wh2_main_hef_eataine', 'bundle_ambiguous') not in pairs
     assert ('wh2_main_hef_avelorn', 'bundle_ambiguous') not in pairs
     assert data['diagnostics']['firstTickAssignments'] == 2
+    assert data['diagnostics']['guardFreeFirstTickAssignments'] == 1
     assert data['diagnostics']['unresolvedCalls'] == 1
