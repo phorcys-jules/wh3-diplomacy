@@ -23,12 +23,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Import WH3 cultural diplomacy baseline
+
+      - name: Import WH3 public datasets
         shell: bash
         run: |
           set -euo pipefail
           WH3_DUMP_REF="61d4e117f669ea93d6da1077d1524c332d5e74c9"
-          mkdir -p .cache/wh3 data/generated
+          GAME_VERSION="WH3 data dump ${WH3_DUMP_REF}"
+          SOURCE_REF="Shazbot/WH3-Dump@${WH3_DUMP_REF}"
+          mkdir -p .cache/wh3/scripts data/generated
+
           curl --fail --location --silent --show-error \
             "https://raw.githubusercontent.com/Shazbot/WH3-Dump/${WH3_DUMP_REF}/db/campaign_cultural_relations_tables/data__.tsv" \
             --output .cache/wh3/campaign_cultural_relations.tsv
@@ -36,8 +40,27 @@ jobs:
             --input .cache/wh3/campaign_cultural_relations.tsv \
             --output data/generated/cultural-relations.json \
             --campaign wh3_main_combi \
-            --game-version "WH3 data dump ${WH3_DUMP_REF}" \
-            --source-ref "Shazbot/WH3-Dump@${WH3_DUMP_REF}"
+            --game-version "${GAME_VERSION}" \
+            --source-ref "${SOURCE_REF}"
+
+          curl --fail --location --silent --show-error \
+            "https://raw.githubusercontent.com/Shazbot/WH3-Dump/${WH3_DUMP_REF}/db/frontend_faction_leaders_tables/data__.tsv" \
+            --output .cache/wh3/frontend_faction_leaders.tsv
+          python tools/import_frontend_leaders.py \
+            --input .cache/wh3/frontend_faction_leaders.tsv \
+            --output data/generated/frontend-leaders.json \
+            --game-version "${GAME_VERSION}" \
+            --source-ref "${SOURCE_REF}"
+
+          curl --fail --location --silent --show-error \
+            "https://raw.githubusercontent.com/Shazbot/WH3-Dump/${WH3_DUMP_REF}/script/campaign/main_warhammer/faction_intro/main_warhammer_faction_intro.lua" \
+            --output .cache/wh3/scripts/main_warhammer_faction_intro.lua
+          python tools/import_campaign_start_positions.py \
+            --scripts-dir .cache/wh3/scripts \
+            --output data/generated/campaign-start-positions.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:

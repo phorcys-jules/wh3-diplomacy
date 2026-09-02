@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Extract verified WH3 cam_gameplay_start coordinates from campaign Lua scripts.
 
-The parser preserves the source file for every coordinate and refuses conflicting
-coordinates for the same faction instead of guessing which one is correct.
+The parser preserves the source file for every coordinate. Conflicting coordinates
+are excluded from the generated positions dataset and reported separately, so the
+site can keep all unambiguous positions without ever guessing an ambiguous one.
 """
 import argparse
 import json
@@ -59,6 +60,8 @@ def main() -> None:
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--game-version', required=True)
     parser.add_argument('--campaign', default='wh3_main_combi')
+    parser.add_argument('--fail-on-conflict', action='store_true',
+                        help='Fail instead of excluding factions that have conflicting coordinates')
     args = parser.parse_args()
 
     root = args.scripts_dir.resolve()
@@ -87,9 +90,9 @@ def main() -> None:
         representative.pop('source')
         positions.append(representative)
 
-    if conflicts:
+    if conflicts and args.fail_on_conflict:
         details = ', '.join(item['factionKey'] for item in conflicts[:10])
-        fail(f'conflicting coordinates for {len(conflicts)} faction(s): {details}; use a campaign-specific script directory')
+        fail(f'conflicting coordinates for {len(conflicts)} faction(s): {details}')
 
     output = {
         'gameVersion': args.game_version,
@@ -99,10 +102,11 @@ def main() -> None:
         'sourceRoot': root.name,
         'scannedLuaFiles': scanned,
         'positions': positions,
+        'conflicts': conflicts,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f"generated {len(positions)} verified start positions from {scanned} Lua files")
+    print(f"generated {len(positions)} verified start positions from {scanned} Lua files; excluded {len(conflicts)} conflicting faction(s)")
 
 
 if __name__ == '__main__':

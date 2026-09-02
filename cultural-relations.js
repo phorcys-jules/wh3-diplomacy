@@ -49,7 +49,7 @@
     const cultural = culturalRelation(from, to);
     const culturalHtml = cultural
       ? `<span class="cultural-score ${scoreClass(cultural.attitudeBase)}" title="Base culturelle WH3 : ${cultural.attitudeBase}; évolution négative ×${cultural.negativeAttitudeMultiplier}; évolution positive ×${cultural.positiveAttitudeMultiplier}">${cultural.attitudeBase > 0 ? '+' : ''}${cultural.attitudeBase}</span><small class="cultural-label">base culturelle</small>`
-      : '<span class="pending">Non extraite</span>';
+      : '<span class="pending">Base culturelle non disponible</span>';
 
     if (!explicit) return culturalHtml;
     if (explicit.atWar) return `<span class="bad">En guerre</span>${cultural ? `<small class="cultural-label">${cultural.attitudeBase > 0 ? '+' : ''}${cultural.attitudeBase} culturel</small>` : ''}`;
@@ -68,7 +68,7 @@
         if (from.id === to.id) return '<td>—</td>';
         return `<td>${culturalCell(from, to)}</td>`;
       }).join('') + '</tr>').join('') + '</table>' +
-      '<p class="source matrix-source">Valeurs numériques : <code>campaign_cultural_relations_tables.attitude_base</code>. Elles représentent la base culturelle directionnelle, avant les effets propres à la faction, les scripts et les événements.</p>';
+      '<p class="source matrix-source">Valeurs numériques : <code>campaign_cultural_relations_tables.attitude_base</code>. Il s’agit de la base culturelle directionnelle du jeu, avant les effets propres à la faction, les scripts et les événements.</p>';
   }
 
   render = function () {
@@ -77,10 +77,10 @@
   };
 
   const style = document.createElement('style');
-  style.textContent = `.cultural-score{display:block;font-weight:800;font-size:16px}.cultural-negative{color:var(--bad)}.cultural-positive{color:var(--good)}.cultural-neutral{color:var(--text)}.cultural-label{display:block;color:var(--muted);font-size:9px;margin-top:3px}.matrix-source{margin:10px 0 0;font-size:11px}`;
+  style.textContent = `.cultural-score{display:block;font-weight:800;font-size:16px}.cultural-negative{color:var(--bad)}.cultural-positive{color:var(--good)}.cultural-neutral{color:var(--text)}.cultural-label{display:block;color:var(--muted);font-size:9px;margin-top:3px}.matrix-source{margin:10px 0 0;font-size:11px}.data-error{color:var(--bad);font-weight:700}`;
   document.head.append(style);
 
-  fetch('./data/generated/cultural-relations.json')
+  fetch('./data/generated/cultural-relations.json', { cache: 'no-store' })
     .then(response => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
@@ -91,8 +91,14 @@
       render();
       const footer = document.querySelector('footer');
       if (footer && culturalMeta) {
-        footer.textContent += ` · ${culturalRelations.length} relations culturelles directionnelles extraites`;
+        footer.textContent += ` · ${culturalRelations.length} bases culturelles directionnelles`;
       }
     })
-    .catch(error => console.error('Impossible de charger la base culturelle WH3', error));
+    .catch(error => {
+      console.error('Impossible de charger la base culturelle WH3', error);
+      const warning = document.createElement('p');
+      warning.className = 'source data-error';
+      warning.textContent = `Erreur de chargement des données diplomatiques (${error.message}).`;
+      matrix.after(warning);
+    });
 })();
