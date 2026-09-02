@@ -1,0 +1,14 @@
+{
+  "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
+  "campaign": "wh3_main_combi",
+  "generatedAt": "2026-09-02T20:12:26.260956+00:00",
+  "status": "verified-subset",
+  "semantics": "conservative subset of first-tick diplomatic modifiers with statically resolved faction and no visible control-flow guard before the bundle call inside its first-tick callback",
+  "modifiers": [],
+  "diagnostics": {
+    "verifiedModifierCount": 0,
+    "verifiedSourceFactionCount": 0,
+    "rejectedCandidateCount": 0,
+    "rejected": []
+  }
+}
