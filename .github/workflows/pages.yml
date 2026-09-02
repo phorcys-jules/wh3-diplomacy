@@ -61,6 +61,20 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+      - name: Verify generated Pages assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in \
+            data/generated/immortal-empires-startpos.json \
+            data/generated/cultural-relations.json \
+            data/generated/frontend-leaders.json \
+            data/generated/campaign-start-positions.json; do
+            test -s "$file" || { echo "Missing generated asset: $file"; exit 1; }
+            python -m json.tool "$file" >/dev/null
+            echo "OK $file"
+          done
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
