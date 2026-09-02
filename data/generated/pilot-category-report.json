@@ -1,0 +1,332 @@
+{
+  "status": "partial",
+  "scope": "direct faction criteria only; culture/subculture and script precedence remain unresolved",
+  "factions": {
+    "wh3_main_nur_poxmakers_of_nurgle": [
+      {
+        "group": "diplomacy_Faction_Kugath_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionCathay_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionCathay_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionCathay_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionCathay_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionChaosDwarfs_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionChaosDwarfs_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionChaosDwarfs_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionChaosDwarfs_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionDaemon_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionDaemon_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionDaemon_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionDaemon_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionKhorne_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionKhorne_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionKhorne_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionKhorne_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionKislev_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionKislev_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionKislev_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionKislev_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionNurgle_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionNurgle_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionNurgle_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionNurgle_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionOgre_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionOgre_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionOgre_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionOgre_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionSlaanesh_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionSlaanesh_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionSlaanesh_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionSlaanesh_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionTzeentch_&_Negative",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionTzeentch_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_OtherFactionTzeentch_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_OtherFactionTzeentch_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_Faction_Kugath_&_Positive",
+        "member": "diplomacy_Faction_Kugath_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      }
+    ],
+    "wh2_dlc15_hef_imrik": [
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionBeastmen_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionBeastmen_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionBeastmen_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionBeastmen_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionBretonnia_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionBretonnia_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionBretonnia_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionBretonnia_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionChaos_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionChaos_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionChaos_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionChaos_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionDarkElves_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionDarkElves_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionDarkElves_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionDarkElves_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionEmpire_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionEmpire_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionEmpire_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionEmpire_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionGreenskin_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionGreenskin_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionGreenskin_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionGreenskin_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionHighElves_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionHighElves_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionHighElves_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionHighElves_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionLizardmen_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionLizardmen_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionLizardmen_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionLizardmen_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionSkaven_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionSkaven_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionSkaven_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionSkaven_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionTombKings_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionTombKings_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionTombKings_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionTombKings_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionVampireCoast_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionVampireCoast_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionVampireCoast_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionVampireCoast_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionWoodElves_&_Negative",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionWoodElves_&_Negative",
+        "context": "ACTOR",
+        "attitude": "hostile",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_OtherFactionWoodElves_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_OtherFactionWoodElves_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      },
+      {
+        "group": "diplomacy_faction_HEF_Imrik_&_Positive",
+        "member": "diplomacy_faction_HEF_Imrik_&_Positive",
+        "context": "ACTOR",
+        "attitude": "friendly",
+        "source": "game-db"
+      }
+    ]
+  }
+}
