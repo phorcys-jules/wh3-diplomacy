@@ -25,11 +25,16 @@ const groups={
   "Démons du Chaos":[["daemon","Prince Démon","Légion du Chaos"]]
 };
 
-const factionKeys={imrik:'wh2_dlc15_hef_imrik',karl:'wh_main_emp_empire',malus:'wh2_main_def_hag_graef',kugath:'wh3_main_nur_poxmakers_of_nurgle'};
-const positions={imrik:[573.586609,330.326599],karl:[355.687042,487.026276],malus:[393.503754,719.28479],kugath:[668.102417,288.452148]};
-const lords=Object.entries(groups).flatMap(([race,a])=>a.map(([id,name,faction])=>({id,name,faction,race,key:factionKeys[id]})));
+const fallbackFactionKeys={imrik:'wh2_dlc15_hef_imrik',karl:'wh_main_emp_empire',malus:'wh2_main_def_hag_graef',kugath:'wh3_main_nur_poxmakers_of_nurgle'};
+const fallbackPositions={imrik:[573.586609,330.326599],karl:[355.687042,487.026276],malus:[393.503754,719.28479],kugath:[668.102417,288.452148]};
+const aliases={
+  karl:['karl','karl_franz'],kroq:['kroq','kroq_gar'],fay:['fay','fay_enchantress'],sisters:['sisters','sisters_of_twilight'],
+  kugath:['kugath','ku_gath'],nkari:['nkari','n_kari'],belakor:['belakor','be_lakor'],daemon:['daemon','daemon_prince']
+};
+const lords=Object.entries(groups).flatMap(([race,a])=>a.map(([id,name,faction])=>({id,name,faction,race,key:fallbackFactionKeys[id]||null})));
+const positions={...fallbackPositions};
 const roster=document.querySelector('#roster'),selected=document.querySelector('#selected'),matrix=document.querySelector('#matrix'),map=document.querySelector('#map'),mapViewport=document.querySelector('#mapViewport'),mapStatus=document.querySelector('#mapStatus'),search=document.querySelector('#search'),raceFilter=document.querySelector('#raceFilter');
-let relations=[],zoom=1,offset={x:0,y:0},drag=null;
+let relations=[],positionRecords=[],positionBounds=null,zoom=1,offset={x:0,y:0},drag=null,metadataLoading=true;
 const selectedIds=new Set(['imrik','karl']);
 const chosen=()=>[...selectedIds];
 
@@ -44,16 +49,29 @@ function renderRoster(){
 }
 function rel(a,b){return relations.find(r=>r.sourceFaction===a&&r.targetFaction===b)}
 function applyMapTransform(){map.style.transform=`translate(${offset.x}px,${offset.y}px) scale(${zoom})`}
+function calculateBounds(records){
+  if(!records.length)return null;
+  const xs=records.map(p=>p.x),ys=records.map(p=>p.y);
+  return {minX:Math.min(...xs),maxX:Math.max(...xs),minY:Math.min(...ys),maxY:Math.max(...ys)};
+}
+function mapPercent(x,y){
+  const b=positionBounds;
+  if(!b||b.maxX===b.minX||b.maxY===b.minY)return [50,50];
+  const pad=2.5;
+  return [pad+(x-b.minX)/(b.maxX-b.minX)*(100-pad*2),pad+(b.maxY-y)/(b.maxY-b.minY)*(100-pad*2)];
+}
 function renderMap(ids){
   map.innerHTML='';let missing=0;
   ids.forEach(id=>{
     if(!positions[id]){missing++;return}
     const l=lords.find(x=>x.id===id),[x,y]=positions[id],m=document.createElement('div');m.className='marker';
-    const left=8+(x-250)/500*84,top=8+(780-y)/580*84;
-    m.style.left=`${Math.max(3,Math.min(97,left))}%`;m.style.top=`${Math.max(3,Math.min(97,top))}%`;
+    const [left,top]=mapPercent(x,y);
+    m.style.left=`${left}%`;m.style.top=`${top}%`;
     m.innerHTML=`<span class="marker-dot"></span><span class="marker-label"><b>${l.name}</b><small>${l.faction}</small></span>`;map.append(m);
   });
-  mapStatus.textContent=missing?`${missing} position(s) sélectionnée(s) restent à extraire. Aucun emplacement approximatif n'est affiché.`:'Toutes les positions sélectionnées sont issues de coordonnées WH3 vérifiées.';
+  if(metadataLoading)mapStatus.textContent='Chargement des positions WH3 vérifiées…';
+  else if(missing)mapStatus.textContent=`${missing} position(s) sélectionnée(s) non résolue(s) dans le dump courant. Aucun emplacement approximatif n'est inventé.`;
+  else mapStatus.textContent='Toutes les positions sélectionnées proviennent de cam_gameplay_start dans les scripts WH3.';
   applyMapTransform();
 }
 function renderSelected(ids){
@@ -64,8 +82,44 @@ function render(){
   const ids=chosen(),a=ids.map(id=>lords.find(l=>l.id===id)).filter(Boolean);
   renderSelected(ids);renderMap(ids);
   if(ids.length<2){matrix.innerHTML='<p class="pending">Sélectionne au moins deux dirigeants.</p>';return}
-  matrix.innerHTML='<table><tr><th>De / vers</th>'+a.map(l=>`<th>${l.name}</th>`).join('')+'</tr>'+a.map(x=>`<tr><th>${x.name}</th>`+a.map(y=>{if(x.id===y.id)return'<td>—</td>';const r=x.key&&y.key?rel(x.key,y.key):null;return r?`<td class="${r.atWar?'bad':''}">${r.atWar?'En guerre':r.treaties.length?'Traité':'Relation explicite'}</td>`:'<td class="pending">Non extraite</td>'}).join('')+'</tr>').join('')+'</table>';
+  matrix.innerHTML='<table><tr><th>De / vers</th>'+a.map(l=>`<th>${l.name}</th>`).join('')+'</tr>'+a.map(x=>`<tr><th>${x.name}</th>`+a.map(y=>{
+    if(x.id===y.id)return'<td>—</td>';
+    const r=x.key&&y.key?rel(x.key,y.key):null;
+    return r?`<td class="${r.atWar?'bad':''}">${r.atWar?'En guerre':r.treaties.length?'Traité':'Relation explicite'}</td>`:'<td class="pending">Pas de relation explicite</td>';
+  }).join('')+'</tr>').join('')+'</table>';
 }
+function words(value){return String(value||'').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean)}
+function scoreLeaderMatch(row,id){
+  const wanted=aliases[id]||[id];
+  const fields=[[row.agentSubtype,30],[row.politicalPartyKey,20],[row.factionKey,10]];
+  let best=0;
+  for(const alias of wanted){
+    const aliasWords=words(alias);
+    for(const [value,weight] of fields){
+      const valueWords=words(value);
+      if(aliasWords.length===1&&valueWords.includes(aliasWords[0]))best=Math.max(best,weight);
+      else if(aliasWords.length>1&&aliasWords.every(word=>valueWords.includes(word)))best=Math.max(best,weight+1);
+    }
+  }
+  return best;
+}
+function applyLeaderMetadata(frontendData,startData){
+  const rows=frontendData?.leaders||[];
+  positionRecords=startData?.positions||[];
+  positionBounds=calculateBounds(positionRecords);
+  const byFaction=new Map(positionRecords.map(p=>[p.factionKey,p]));
+  for(const lord of lords){
+    const ranked=rows.map(row=>({row,score:scoreLeaderMatch(row,lord.id)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);
+    if(ranked.length&&(!ranked[1]||ranked[0].score>ranked[1].score||ranked[0].row.factionKey===ranked[1].row.factionKey))lord.key=ranked[0].row.factionKey;
+    const pos=lord.key?byFaction.get(lord.key):null;
+    if(pos)positions[lord.id]=[pos.x,pos.y];
+  }
+}
+function setFooter(){
+  const keyed=lords.filter(l=>l.key).length,located=lords.filter(l=>positions[l.id]).length;
+  document.querySelector('footer').textContent=`Roster ${lords.length} seigneurs · ${keyed} factions résolues · ${located} positions de départ résolues · ${relations.length} relations explicites`;
+}
+
 roster.addEventListener('change',e=>{if(!e.target.matches('input[type="checkbox"]'))return;e.target.checked?selectedIds.add(e.target.value):selectedIds.delete(e.target.value);render()});
 selected.addEventListener('click',e=>{const button=e.target.closest('[data-remove]');if(!button)return;selectedIds.delete(button.dataset.remove);renderRoster();render()});
 raceFilter.onchange=()=>{search.value='';renderRoster()};
@@ -77,5 +131,15 @@ mapViewport.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,ox:
 mapViewport.addEventListener('pointermove',e=>{if(!drag)return;offset={x:drag.ox+e.clientX-drag.x,y:drag.oy+e.clientY-drag.y};applyMapTransform()});
 mapViewport.addEventListener('pointerup',()=>{drag=null;mapViewport.classList.remove('dragging')});
 mapViewport.addEventListener('pointercancel',()=>{drag=null;mapViewport.classList.remove('dragging')});
-initRaceFilter();renderRoster();
-fetch('./data/generated/immortal-empires-startpos.json').then(r=>r.json()).then(d=>{relations=d.relations;document.querySelector('footer').textContent=`Roster ${lords.length} seigneurs · Dataset ${d.gameVersion} · ${d.relations.length} relations explicites · attitudes en cours de résolution`;render()}).catch(render);render();
+
+initRaceFilter();renderRoster();render();
+Promise.allSettled([
+  fetch('./data/generated/immortal-empires-startpos.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`relations HTTP ${r.status}`);return r.json()}),
+  fetch('./data/generated/frontend-leaders.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`leaders HTTP ${r.status}`);return r.json()}),
+  fetch('./data/generated/campaign-start-positions.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`positions HTTP ${r.status}`);return r.json()})
+]).then(([relationsResult,leadersResult,positionsResult])=>{
+  if(relationsResult.status==='fulfilled')relations=relationsResult.value.relations||[];
+  if(leadersResult.status==='fulfilled'&&positionsResult.status==='fulfilled')applyLeaderMetadata(leadersResult.value,positionsResult.value);
+  else console.error('Métadonnées de factions/positions incomplètes',leadersResult,positionsResult);
+  metadataLoading=false;setFooter();render();
+});
