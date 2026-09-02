@@ -11,7 +11,14 @@ def test_static_script_bundle_sources(tmp_path):
         '''
 local faction_key = "wh3_main_ksl_the_ice_court"
 cm:apply_effect_bundle("bundle_literal", "wh_main_emp_empire", 0)
-cm:apply_effect_bundle("bundle_variable", faction_key, -1)
+cm:add_first_tick_callback_new(
+    function()
+        cm:apply_effect_bundle("bundle_first_tick", faction_key, -1)
+        if true then
+            cm:apply_effect_bundle("bundle_nested_first_tick", "wh2_main_hef_eataine", 0)
+        end
+    end
+)
 local ambiguous = "wh2_main_hef_eataine"
 ambiguous = "wh2_main_hef_avelorn"
 cm:apply_effect_bundle("bundle_ambiguous", ambiguous, 3)
@@ -28,9 +35,14 @@ cm:apply_effect_bundle("bundle_dynamic_" .. suffix, faction_key, 0)
         '--game-version', 'fixture',
     ], check=True)
     data = json.loads(output.read_text(encoding='utf-8'))
+    by_bundle = {x['effectBundle']: x for x in data['assignments']}
+    assert by_bundle['bundle_literal']['firstTickCallback'] is False
+    assert by_bundle['bundle_first_tick']['faction'] == 'wh3_main_ksl_the_ice_court'
+    assert by_bundle['bundle_first_tick']['firstTickCallback'] is True
+    assert by_bundle['bundle_first_tick']['executionEvidence'] == 'first-tick-callback'
+    assert by_bundle['bundle_nested_first_tick']['firstTickCallback'] is True
     pairs = {(x['faction'], x['effectBundle']) for x in data['assignments']}
-    assert ('wh_main_emp_empire', 'bundle_literal') in pairs
-    assert ('wh3_main_ksl_the_ice_court', 'bundle_variable') in pairs
     assert ('wh2_main_hef_eataine', 'bundle_ambiguous') not in pairs
     assert ('wh2_main_hef_avelorn', 'bundle_ambiguous') not in pairs
+    assert data['diagnostics']['firstTickAssignments'] == 2
     assert data['diagnostics']['unresolvedCalls'] == 1
