@@ -31,7 +31,7 @@ jobs:
           WH3_DUMP_REF="61d4e117f669ea93d6da1077d1524c332d5e74c9"
           GAME_VERSION="WH3 data dump ${WH3_DUMP_REF}"
           SOURCE_REF="Shazbot/WH3-Dump@${WH3_DUMP_REF}"
-          mkdir -p .cache/wh3/scripts data/generated data/runtime
+          mkdir -p .cache/wh3/scripts .cache/wh3/db data/generated data/runtime
 
           curl --fail --location --silent --show-error \
             "https://raw.githubusercontent.com/Shazbot/WH3-Dump/${WH3_DUMP_REF}/db/campaign_cultural_relations_tables/data__.tsv" \
@@ -61,10 +61,42 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
-          cp data/generated/immortal-empires-startpos.json data/runtime/immortal-empires-startpos.json
-          cp data/generated/frontend-leaders.json data/runtime/frontend-leaders.json
-          cp data/generated/campaign-start-positions.json data/runtime/campaign-start-positions.json
-          cp data/generated/cultural-relations.json data/runtime/cultural-relations.json
+          for table in \
+            effect_bonus_value_faction_junctions_tables \
+            effect_bonus_value_subculture_junctions_tables \
+            factions_tables; do
+            mkdir -p ".cache/wh3/db/${table}"
+            curl --fail --location --silent --show-error \
+              "https://raw.githubusercontent.com/Shazbot/WH3-Dump/${WH3_DUMP_REF}/db/${table}/data__.tsv" \
+              --output ".cache/wh3/db/${table}/data__.tsv"
+          done
+
+          curl --fail --location --silent --show-error \
+            "https://raw.githubusercontent.com/Shazbot/WH3-Dump/${WH3_DUMP_REF}/db/effect_bundles_to_effects_junctions_tables/data__.tsv" \
+            --output .cache/wh3/effect_bundles_to_effects.tsv
+
+          python tools/resolve_diplomatic_effect_targets.py \
+            --db-dir .cache/wh3/db \
+            --output data/generated/diplomatic-effect-targets.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
+          python tools/resolve_diplomatic_effect_values.py \
+            --bundles .cache/wh3/effect_bundles_to_effects.tsv \
+            --targets data/generated/diplomatic-effect-targets.json \
+            --output data/generated/diplomatic-effect-values.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
+          for file in \
+            immortal-empires-startpos.json \
+            frontend-leaders.json \
+            campaign-start-positions.json \
+            cultural-relations.json \
+            diplomatic-effect-targets.json \
+            diplomatic-effect-values.json; do
+            cp "data/generated/${file}" "data/runtime/${file}"
+          done
 
           python - <<'PY'
           import json
@@ -78,14 +110,19 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          missing=0
-          for file in data/generated/frontend-leaders.json data/generated/campaign-start-positions.json data/generated/cultural-relations.json; do
+          changed=0
+          for file in \
+            data/generated/frontend-leaders.json \
+            data/generated/campaign-start-positions.json \
+            data/generated/cultural-relations.json \
+            data/generated/diplomatic-effect-targets.json \
+            data/generated/diplomatic-effect-values.json; do
             if ! git ls-files --error-unmatch "$file" >/dev/null 2>&1; then
               git add "$file"
-              missing=1
+              changed=1
             fi
           done
-          if [ "$missing" -eq 1 ]; then
+          if [ "$changed" -eq 1 ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -m "chore: persist generated WH3 Pages data"
