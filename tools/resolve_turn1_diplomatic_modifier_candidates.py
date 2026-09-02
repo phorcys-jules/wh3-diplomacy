@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
-"""Join first-tick script bundle applications with diplomatic effect values.
-
-The result is intentionally a *candidate* dataset. A bundle placed inside a
-campaign first-tick callback can still sit behind a condition that is false for
-some campaigns/factions. Therefore this tool never labels the modifier as a
-verified active turn-1 modifier; it only builds the auditable join:
-
-source faction -> first-tick bundle -> diplomatic effect/value -> target(s)
-"""
+"""Join first-tick script bundle applications with diplomatic effect values."""
 import argparse
 import json
 from datetime import datetime, timezone
@@ -31,11 +23,7 @@ def main():
 
     sources = load(args.script_sources, 'script source dataset')
     values = load(args.effect_values, 'effect value dataset')
-
-    effects_by_bundle = {
-        item['effectBundle']: item.get('diplomaticEffects', [])
-        for item in values.get('effectBundles', [])
-    }
+    effects_by_bundle = {item['effectBundle']: item.get('diplomaticEffects', []) for item in values.get('effectBundles', [])}
 
     candidates = []
     skipped_without_diplomatic_effect = 0
@@ -46,6 +34,7 @@ def main():
         if not effects:
             skipped_without_diplomatic_effect += 1
             continue
+        guard_free = bool(assignment.get('guardFreeFirstTick'))
         for effect in effects:
             candidates.append({
                 'sourceFaction': assignment['faction'],
@@ -56,8 +45,9 @@ def main():
                 'advancementStage': effect.get('advancementStage'),
                 'targets': effect.get('targets', []),
                 'evidence': {
-                    'kind': 'first-tick-script-candidate',
-                    'conditional': True,
+                    'kind': 'guard-free-first-tick' if guard_free else 'first-tick-script-candidate',
+                    'conditional': not guard_free,
+                    'guardFreeFirstTick': guard_free,
                     'sourceFile': assignment.get('sourceFile'),
                     'sourceLine': assignment.get('sourceLine'),
                     'factionResolution': assignment.get('resolution'),
@@ -65,19 +55,17 @@ def main():
                 },
             })
 
-    candidates.sort(key=lambda x: (
-        x['sourceFaction'], x['effectBundle'], x['effect'], x['value']
-    ))
-
+    candidates.sort(key=lambda x: (x['sourceFaction'], x['effectBundle'], x['effect'], x['value']))
     output = {
         'gameVersion': args.game_version,
         'campaign': args.campaign,
         'generatedAt': datetime.now(timezone.utc).isoformat(),
         'status': 'candidate',
-        'semantics': 'first-tick script candidates only; conditional execution is not yet proven, so these values must not be added to the final attitude score without verification',
+        'semantics': 'first-tick script candidates; guardFreeFirstTick=true is conservative evidence that no visible control-flow guard precedes the call inside the callback',
         'candidates': candidates,
         'diagnostics': {
             'candidateCount': len(candidates),
+            'guardFreeCandidateCount': sum(1 for item in candidates if item['evidence']['guardFreeFirstTick']),
             'sourceFactionCount': len({item['sourceFaction'] for item in candidates}),
             'skippedFirstTickBundlesWithoutDiplomaticEffect': skipped_without_diplomatic_effect,
         },

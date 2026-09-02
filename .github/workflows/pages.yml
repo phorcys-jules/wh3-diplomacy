@@ -108,6 +108,12 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+          python tools/resolve_verified_turn1_diplomatic_modifiers.py \
+            --candidates data/generated/turn1-diplomatic-modifier-candidates.json \
+            --output data/generated/verified-turn1-diplomatic-modifiers.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
           for file in \
             immortal-empires-startpos.json \
             frontend-leaders.json \
@@ -116,7 +122,8 @@ jobs:
             diplomatic-effect-targets.json \
             diplomatic-effect-values.json \
             script-effect-bundle-sources.json \
-            turn1-diplomatic-modifier-candidates.json; do
+            turn1-diplomatic-modifier-candidates.json \
+            verified-turn1-diplomatic-modifiers.json; do
             cp "data/generated/${file}" "data/runtime/${file}"
           done
 
@@ -140,7 +147,8 @@ jobs:
             data/generated/diplomatic-effect-targets.json \
             data/generated/diplomatic-effect-values.json \
             data/generated/script-effect-bundle-sources.json \
-            data/generated/turn1-diplomatic-modifier-candidates.json; do
+            data/generated/turn1-diplomatic-modifier-candidates.json \
+            data/generated/verified-turn1-diplomatic-modifiers.json; do
             if ! git ls-files --error-unmatch "$file" >/dev/null 2>&1; then
               git add "$file"
               changed=1

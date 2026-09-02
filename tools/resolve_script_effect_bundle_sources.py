@@ -8,13 +8,14 @@ assignment in the same file. Dynamic concatenations and ambiguous variables are
 reported but never guessed.
 
 Calls lexically contained in a `cm:add_first_tick_callback*()` invocation are
-marked as first-tick execution evidence. This is stronger evidence that the call
-can execute at campaign start, but it still does not prove that every condition
-inside the callback is true for a specific faction/campaign.
+marked as first-tick execution evidence. `guardFreeFirstTick=true` is an even
+more conservative signal: no `if`, `for`, `while` or `repeat` token occurs
+between the start of the enclosing callback and the bundle call. This can miss
+valid unconditional calls (false negatives), but it avoids promoting visibly
+guarded calls as verified turn-1 effects.
 
 `--exclude-prefix` can be repeated to exclude campaign-specific script trees
-that are not part of the requested campaign (for example Realms of Chaos and
-the prologue when resolving Immortal Empires).
+that are not part of the requested campaign.
 """
 import argparse
 import json
@@ -29,6 +30,7 @@ CALL_RE = re.compile(
     re.MULTILINE,
 )
 FIRST_TICK_RE = re.compile(r'cm:add_first_tick_callback[A-Za-z0-9_]*\s*\(')
+CONTROL_FLOW_RE = re.compile(r'\b(?:if\b[^\n]*\bthen\b|for\b[^\n]*\bdo\b|while\b[^\n]*\bdo\b|repeat\b)', re.IGNORECASE)
 FACTION_KEY_RE = re.compile(r'^(?:wh|wh2|wh3)_[a-z0-9_]+$')
 
 
@@ -91,8 +93,18 @@ def first_tick_ranges(text):
     return ranges
 
 
-def in_ranges(index, ranges):
-    return any(start <= index < end for start, end in ranges)
+def enclosing_range(index, ranges):
+    matches = [(start, end) for start, end in ranges if start <= index < end]
+    if not matches:
+        return None
+    return max(matches, key=lambda item: item[0])
+
+
+def guard_free_first_tick(text, call_index, tick_range):
+    if not tick_range:
+        return False
+    prefix = text[tick_range[0]:call_index]
+    return CONTROL_FLOW_RE.search(prefix) is None
 
 
 def scan_file(path, root):
@@ -109,31 +121,32 @@ def scan_file(path, root):
         faction_expr = match.group(3).strip()
         turns_expr = match.group(4).strip()
         faction, resolution = resolve_arg(faction_expr, assignments)
-        first_tick = in_ranges(match.start(), tick_ranges)
+        tick_range = enclosing_range(match.start(), tick_ranges)
+        first_tick = tick_range is not None
+        guard_free = guard_free_first_tick(text, match.start(), tick_range)
         line = text.count('\n', 0, match.start()) + 1
         source = str(path.relative_to(root)).replace('\\', '/')
-        execution_evidence = 'first-tick-callback' if first_tick else 'script-call'
+        execution_evidence = 'guard-free-first-tick' if guard_free else ('first-tick-callback' if first_tick else 'script-call')
+        record = {
+            'effectBundle': bundle,
+            'turnsExpression': turns_expr,
+            'executionEvidence': execution_evidence,
+            'firstTickCallback': first_tick,
+            'guardFreeFirstTick': guard_free,
+            'sourceFile': source,
+            'sourceLine': line,
+        }
         if faction and FACTION_KEY_RE.match(faction):
             resolved.append({
                 'faction': faction,
-                'effectBundle': bundle,
-                'turnsExpression': turns_expr,
                 'resolution': resolution,
-                'executionEvidence': execution_evidence,
-                'firstTickCallback': first_tick,
-                'sourceFile': source,
-                'sourceLine': line,
+                **record,
             })
         else:
             unresolved.append({
-                'effectBundle': bundle,
                 'factionExpression': faction_expr,
-                'turnsExpression': turns_expr,
                 'reason': resolution if faction is None else 'resolved-value-is-not-a-faction-key',
-                'executionEvidence': execution_evidence,
-                'firstTickCallback': first_tick,
-                'sourceFile': source,
-                'sourceLine': line,
+                **record,
             })
     return resolved, unresolved
 
@@ -171,13 +184,14 @@ def main():
         dedup[key] = item
     resolved = sorted(dedup.values(), key=lambda x: (x['faction'], x['effectBundle'], x['sourceFile'], x['sourceLine']))
     first_tick_count = sum(1 for item in resolved if item['firstTickCallback'])
+    guard_free_count = sum(1 for item in resolved if item['guardFreeFirstTick'])
 
     output = {
         'gameVersion': args.game_version,
         'campaign': args.campaign,
         'generatedAt': datetime.now(timezone.utc).isoformat(),
         'status': 'partial',
-        'semantics': 'static script assignments scoped to the requested campaign; firstTickCallback=true proves lexical placement in a campaign first-tick callback, but conditional execution still requires separate verification',
+        'semantics': 'static script assignments scoped to the requested campaign; guardFreeFirstTick is conservative evidence of an unguarded first-tick call, not proof that every external prerequisite is satisfied',
         'assignments': resolved,
         'diagnostics': {
             'luaFilesDiscovered': len(all_files),
@@ -186,13 +200,14 @@ def main():
             'excludedPrefixes': args.exclude_prefix,
             'resolvedAssignments': len(resolved),
             'firstTickAssignments': first_tick_count,
+            'guardFreeFirstTickAssignments': guard_free_count,
             'unresolvedCalls': len(unresolved),
             'unresolved': unresolved,
         },
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f"resolved {len(resolved)} static faction/bundle assignments ({first_tick_count} in first-tick callbacks) from {len(files)} scoped Lua files; excluded {len(excluded_files)}")
+    print(f"resolved {len(resolved)} assignments; {first_tick_count} first-tick, {guard_free_count} guard-free first-tick")
 
 
 if __name__ == '__main__':
