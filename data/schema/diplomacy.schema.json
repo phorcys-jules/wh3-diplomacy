@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wh3-diplomacy.local/schema/diplomacy.schema.json",
+  "title": "WH3 Diplomacy Dataset",
+  "type": "object",
+  "required": ["gameVersion", "campaign", "generatedAt", "relations"],
+  "properties": {
+    "gameVersion": { "type": "string", "minLength": 1 },
+    "campaign": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "relations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/relation" }
+    }
+  },
+  "$defs": {
+    "modifier": {
+      "type": "object",
+      "required": ["source", "key", "value"],
+      "properties": {
+        "source": {
+          "type": "string",
+          "enum": ["start-pos", "game-db", "campaign-script", "manual-verification"]
+        },
+        "key": { "type": "string", "minLength": 1 },
+        "value": { "type": "number" },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "relation": {
+      "type": "object",
+      "required": ["sourceFaction", "targetFaction", "modifiers", "treaties", "atWar"],
+      "properties": {
+        "sourceFaction": { "type": "string", "minLength": 1 },
+        "targetFaction": { "type": "string", "minLength": 1 },
+        "baseAttitude": { "type": ["number", "null"] },
+        "modifiers": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/modifier" }
+        },
+        "treaties": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "atWar": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
