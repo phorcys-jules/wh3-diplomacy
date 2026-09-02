@@ -1,9 +1,20 @@
-# Import WH3
+# Outils d'import WH3
 
-Export the normalized diplomacy rows from RPFM as a TSV with `sourceFaction`, `targetFaction`, `modifierKey`, `value`, `source`, and `atWar` columns. Then run:
+Les scripts de ce dossier transforment des exports vanilla de Total War: WARHAMMER III en données traçables consommables par le site.
+
+## Base culturelle diplomatique
+
+`import_cultural_relations.py` importe `campaign_cultural_relations_tables` et produit les valeurs directionnelles `attitude_base` ainsi que les multiplicateurs positif/négatif. Ces valeurs constituent la base culturelle de l'attitude, pas le score diplomatique final.
+
+Exemple :
 
 ```powershell
-python tools/import_wh3.py --input exports/diplomacy.tsv --output data/generated/immortal-empires.json --game-version "WH3 <version>"
+python tools/import_cultural_relations.py `
+  --input data/raw/db/campaign_cultural_relations_tables/data__.tsv `
+  --output data/generated/cultural-relations.json `
+  --campaign wh3_main_combi `
+  --game-version "<version WH3>" `
+  --source-ref "RPFM export local"
 ```
 
-The importer fails when its input is missing, incomplete, or has an unknown provenance. It never substitutes or invents diplomacy values.
+Le déploiement GitHub Pages génère également ce dataset depuis une révision WH3-Dump épinglée afin que la matrice publique dispose de cette composante réelle.
