@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -61,26 +61,36 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
-          # Stable runtime aliases served by Pages. Keeping a separate folder avoids
-          # accidental clashes with source/generated files while preserving JSON URLs.
-          cp data/generated/cultural-relations.json data/runtime/cultural-relations.json
+          cp data/generated/immortal-empires-startpos.json data/runtime/immortal-empires-startpos.json
           cp data/generated/frontend-leaders.json data/runtime/frontend-leaders.json
           cp data/generated/campaign-start-positions.json data/runtime/campaign-start-positions.json
-          cp data/generated/immortal-empires-startpos.json data/runtime/immortal-empires-startpos.json
+          cp data/generated/cultural-relations.json data/runtime/cultural-relations.json
 
-      - name: Verify generated Pages assets
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path('data/runtime').glob('*.json'):
+              json.loads(path.read_text(encoding='utf-8'))
+              print(f'validated {path}')
+          PY
+
+      - name: Persist generated data for branch-based Pages fallback
         shell: bash
         run: |
           set -euo pipefail
-          for file in \
-            data/runtime/immortal-empires-startpos.json \
-            data/runtime/cultural-relations.json \
-            data/runtime/frontend-leaders.json \
-            data/runtime/campaign-start-positions.json; do
-            test -s "$file" || { echo "Missing runtime asset: $file"; exit 1; }
-            python -m json.tool "$file" >/dev/null
-            echo "OK $file"
+          missing=0
+          for file in data/generated/frontend-leaders.json data/generated/campaign-start-positions.json data/generated/cultural-relations.json; do
+            if ! git ls-files --error-unmatch "$file" >/dev/null 2>&1; then
+              git add "$file"
+              missing=1
+            fi
           done
+          if [ "$missing" -eq 1 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore: persist generated WH3 Pages data"
+            git push origin HEAD:main
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
