@@ -97,7 +97,9 @@ jobs:
             --scripts-dir .cache/wh3-dump/script/campaign \
             --output data/generated/script-effect-bundle-sources.json \
             --campaign wh3_main_combi \
-            --game-version "${GAME_VERSION}"
+            --game-version "${GAME_VERSION}" \
+            --exclude-prefix wh3_main_chaos \
+            --exclude-prefix wh3_main_prologue
 
           python tools/resolve_turn1_diplomatic_modifier_candidates.py \
             --script-sources data/generated/script-effect-bundle-sources.json \
