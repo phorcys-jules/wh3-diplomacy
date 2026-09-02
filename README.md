@@ -46,3 +46,5 @@ Le site affiche les relations **au début d'une nouvelle campagne Immortal Empir
 ## Statut
 
 Projet en cours d'initialisation. La première étape technique est d'identifier précisément les tables de données WH3 nécessaires pour reconstruire les relations diplomatiques initiales de façon fiable.
+
+oui
