@@ -6,6 +6,11 @@ resolver accepts a literal bundle key and resolves the faction argument when it
 is either a literal faction key or a variable that has exactly one literal
 assignment in the same file. Dynamic concatenations and ambiguous variables are
 reported but never guessed.
+
+Calls lexically contained in a `cm:add_first_tick_callback*()` invocation are
+marked as first-tick execution evidence. This is stronger evidence that the call
+can execute at campaign start, but it still does not prove that every condition
+inside the callback is true for a specific faction/campaign.
 """
 import argparse
 import json
@@ -14,12 +19,12 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-STRING = r'(["\'])(.*?)\1'
 ASSIGN_RE = re.compile(r'(?m)^\s*(?:local\s+)?([A-Za-z_][A-Za-z0-9_\.]*)\s*=\s*(["\'])([^"\']+)\2\s*;?\s*(?:--.*)?$')
 CALL_RE = re.compile(
     r'cm:apply_effect_bundle\(\s*(["\'])([^"\']+)\1\s*,\s*([^,\)]+)\s*,\s*([^\)]+)\)',
     re.MULTILINE,
 )
+FIRST_TICK_RE = re.compile(r'cm:add_first_tick_callback[A-Za-z0-9_]*\s*\(')
 FACTION_KEY_RE = re.compile(r'^(?:wh|wh2|wh3)_[a-z0-9_]+$')
 
 
@@ -34,11 +39,65 @@ def resolve_arg(expr, assignments):
     return None, 'dynamic-or-ambiguous'
 
 
+def matching_paren(text, open_index):
+    """Return the matching ')' while ignoring strings and line comments."""
+    depth = 0
+    quote = None
+    escaped = False
+    i = open_index
+    while i < len(text):
+        char = text[i]
+        if quote:
+            if escaped:
+                escaped = False
+            elif char == '\\':
+                escaped = True
+            elif char == quote:
+                quote = None
+            i += 1
+            continue
+        if char in ('"', "'"):
+            quote = char
+            i += 1
+            continue
+        if char == '-' and i + 1 < len(text) and text[i + 1] == '-':
+            newline = text.find('\n', i + 2)
+            if newline == -1:
+                return None
+            i = newline + 1
+            continue
+        if char == '(':
+            depth += 1
+        elif char == ')':
+            depth -= 1
+            if depth == 0:
+                return i
+        i += 1
+    return None
+
+
+def first_tick_ranges(text):
+    ranges = []
+    for match in FIRST_TICK_RE.finditer(text):
+        open_index = text.find('(', match.start(), match.end())
+        if open_index == -1:
+            continue
+        close_index = matching_paren(text, open_index)
+        if close_index is not None:
+            ranges.append((match.start(), close_index + 1))
+    return ranges
+
+
+def in_ranges(index, ranges):
+    return any(start <= index < end for start, end in ranges)
+
+
 def scan_file(path, root):
     text = path.read_text(encoding='utf-8', errors='replace')
     assignments = defaultdict(set)
     for match in ASSIGN_RE.finditer(text):
         assignments[match.group(1)].add(match.group(3))
+    tick_ranges = first_tick_ranges(text)
 
     resolved = []
     unresolved = []
@@ -47,14 +106,18 @@ def scan_file(path, root):
         faction_expr = match.group(3).strip()
         turns_expr = match.group(4).strip()
         faction, resolution = resolve_arg(faction_expr, assignments)
+        first_tick = in_ranges(match.start(), tick_ranges)
         line = text.count('\n', 0, match.start()) + 1
         source = str(path.relative_to(root)).replace('\\', '/')
+        execution_evidence = 'first-tick-callback' if first_tick else 'script-call'
         if faction and FACTION_KEY_RE.match(faction):
             resolved.append({
                 'faction': faction,
                 'effectBundle': bundle,
                 'turnsExpression': turns_expr,
                 'resolution': resolution,
+                'executionEvidence': execution_evidence,
+                'firstTickCallback': first_tick,
                 'sourceFile': source,
                 'sourceLine': line,
             })
@@ -64,6 +127,8 @@ def scan_file(path, root):
                 'factionExpression': faction_expr,
                 'turnsExpression': turns_expr,
                 'reason': resolution if faction is None else 'resolved-value-is-not-a-faction-key',
+                'executionEvidence': execution_evidence,
+                'firstTickCallback': first_tick,
                 'sourceFile': source,
                 'sourceLine': line,
             })
@@ -93,24 +158,26 @@ def main():
         key = (item['faction'], item['effectBundle'], item['sourceFile'], item['sourceLine'])
         dedup[key] = item
     resolved = sorted(dedup.values(), key=lambda x: (x['faction'], x['effectBundle'], x['sourceFile'], x['sourceLine']))
+    first_tick_count = sum(1 for item in resolved if item['firstTickCallback'])
 
     output = {
         'gameVersion': args.game_version,
         'campaign': args.campaign,
         'generatedAt': datetime.now(timezone.utc).isoformat(),
         'status': 'partial',
-        'semantics': 'static script assignments only; presence in scripts does not imply the bundle is active on turn 1 unless the call executes during campaign initialisation',
+        'semantics': 'static script assignments; firstTickCallback=true proves lexical placement in a campaign first-tick callback, but conditional execution still requires separate verification',
         'assignments': resolved,
         'diagnostics': {
             'luaFilesScanned': len(files),
             'resolvedAssignments': len(resolved),
+            'firstTickAssignments': first_tick_count,
             'unresolvedCalls': len(unresolved),
             'unresolved': unresolved,
         },
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f"resolved {len(resolved)} static faction/bundle assignments from {len(files)} Lua files")
+    print(f"resolved {len(resolved)} static faction/bundle assignments ({first_tick_count} in first-tick callbacks) from {len(files)} Lua files")
 
 
 if __name__ == '__main__':
