@@ -1,0 +1,3141 @@
+{
+  "gameVersion": "WH3 Steam build 24237342",
+  "campaign": "wh3_main_combi",
+  "generatedAt": "2026-09-02T17:12:35.052631+00:00",
+  "relations": [
+    {
+      "sourceFaction": "wh3_dlc20_chs_festus",
+      "targetFaction": "wh_main_emp_hochland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_skv_clan_gritus",
+      "targetFaction": "wh3_main_ksl_brotherhood_of_the_bear",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_ostland",
+      "targetFaction": "wh_main_emp_nordland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_ostland",
+      "targetFaction": "wh_main_emp_ostermark",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_mors",
+      "targetFaction": "wh_main_grn_red_fangs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_mors",
+      "targetFaction": "wh_main_grn_necksnappers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_mors",
+      "targetFaction": "wh2_main_vmp_the_silver_host",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
+      "targetFaction": "wh2_dlc11_cst_vampire_coast",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
+      "targetFaction": "wh2_main_brt_knights_of_the_flame",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_dae_daemon_prince",
+      "targetFaction": "wh3_main_tze_all_seeing_eye",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_western_provinces",
+      "targetFaction": "wh3_main_cth_dissenter_lords_of_jinshen",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_western_provinces",
+      "targetFaction": "wh2_main_skv_clan_eshin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_teef_snatchaz",
+      "targetFaction": "wh3_main_skv_clan_verms",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc24_tze_the_deceivers",
+      "targetFaction": "wh_dlc03_grn_black_pit",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc24_tze_the_deceivers",
+      "targetFaction": "wh_main_emp_nordland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_red_eye",
+      "targetFaction": "wh_main_dwf_zhufbar",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_red_eye",
+      "targetFaction": "wh_main_dwf_karak_kadrin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_dissenter_lords_of_jinshen",
+      "targetFaction": "wh3_main_cth_rebel_lords_of_nan_yang",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_grn_greenskins",
+      "targetFaction": "wh3_main_grn_dark_land_orcs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_grn_greenskins",
+      "targetFaction": "wh3_main_ogr_fulg",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc08_nor_wintertooth",
+      "targetFaction": "wh3_main_ksl_druzhina_enclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_sla_subtle_torture",
+      "targetFaction": "wh3_main_kho_crimson_skull",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_def_hag_graef",
+      "targetFaction": "wh3_main_tze_broken_wheel",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_vmp_lahmian_sisterhood",
+      "targetFaction": "wh3_main_grn_drippin_fangs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_vmp_lahmian_sisterhood",
+      "targetFaction": "wh2_dlc09_tmb_lybaras",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_valkia",
+      "targetFaction": "wh2_main_def_ghrond",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_great_orthodoxy",
+      "targetFaction": "wh3_main_wef_laurelorn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_great_orthodoxy",
+      "targetFaction": "wh_main_emp_nordland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_great_orthodoxy",
+      "targetFaction": "wh3_main_ksl_ungol_kindred",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc03_grn_black_pit",
+      "targetFaction": "wh_main_emp_middenland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_nordland",
+      "targetFaction": "wh_main_emp_middenland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_lzd_tepoks_spawn",
+      "targetFaction": "wh2_dlc09_skv_clan_rictus",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_teb_tilea",
+      "targetFaction": "wh2_dlc11_cst_pirates_of_sartosa",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_astragoth",
+      "targetFaction": "wh3_main_grn_slaves_of_zharr",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_astragoth",
+      "targetFaction": "wh3_dlc23_chd_conclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_astragoth",
+      "targetFaction": "wh3_dlc23_chd_legion_of_azgorh",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc16_skv_clan_gritus",
+      "targetFaction": "wh2_main_bst_manblight",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_ostland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_middenland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_nordland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_averland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_wissenland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_brt_bretonnia",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_ostermark",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_empire_separatists",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_talabecland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_stirland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_dwf_karak_norn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "trade_agreement"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh3_main_ksl_the_ice_court",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_emp_hochland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh_main_dwf_karak_ziflin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "trade_agreement"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_def_ssildra_tor",
+      "targetFaction": "wh2_main_bst_shadowgor",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_skull-takerz",
+      "targetFaction": "wh3_dlc24_cth_the_celestial_court",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_orcs_of_the_bloody_hand",
+      "targetFaction": "wh2_main_lzd_tlaqua",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_orcs_of_the_bloody_hand",
+      "targetFaction": "wh2_dlc12_grn_leaf_cutterz_tribe",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_brt_lyonesse",
+      "targetFaction": "wh2_main_brt_knights_of_origo",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_brt_lyonesse",
+      "targetFaction": "wh_main_vmp_mousillon",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc05_wef_wood_elves",
+      "targetFaction": "wh_main_brt_parravon",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc05_wef_wood_elves",
+      "targetFaction": "wh_main_brt_carcassonne",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_sigvald",
+      "targetFaction": "wh2_main_nor_aghol",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_sigvald",
+      "targetFaction": "wh2_main_def_deadwood_sentinels",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc24_cth_the_celestial_court",
+      "targetFaction": "wh2_main_grn_blue_vipers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_kho_bloody_sword",
+      "targetFaction": "wh_main_nor_bjornling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_dlc03_grn_black_pit",
+      "targetFaction": "wh_main_emp_nordland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc15_grn_broken_axe",
+      "targetFaction": "wh3_main_brt_aquitaine",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_averland",
+      "targetFaction": "wh_main_dwf_zhufbar",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "trade_agreement"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_averland",
+      "targetFaction": "wh_main_dwf_karak_hirn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "trade_agreement"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_averland",
+      "targetFaction": "wh_main_vmp_schwartzhafen",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_nur_poxmakers_of_nurgle",
+      "targetFaction": "wh3_main_ogr_fleshgreeders",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_nur_poxmakers_of_nurgle",
+      "targetFaction": "wh3_main_nur_maggoth_kin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_eshin",
+      "targetFaction": "wh3_main_skv_clan_krizzor",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_eshin",
+      "targetFaction": "wh3_main_grn_dimned_sun",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_wissenland",
+      "targetFaction": "wh3_dlc25_vmp_the_court_of_night",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_wissenland",
+      "targetFaction": "wh_main_dwf_karak_norn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "trade_agreement"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_dlc03_bst_redhorn",
+      "targetFaction": "wh3_main_cth_dissenter_lords_of_jinshen",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc03_bst_redhorn",
+      "targetFaction": "wh3_main_cth_rebel_lords_of_nan_yang",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_ropsmenn_clan",
+      "targetFaction": "wh_dlc08_nor_goromadny_tribe",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_sla_seducers_of_slaanesh",
+      "targetFaction": "wh2_main_def_scourge_of_khaine",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_sla_seducers_of_slaanesh",
+      "targetFaction": "wh2_main_hef_chrace",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_astragoth",
+      "targetFaction": "wh3_dlc23_chd_conclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_astragoth",
+      "targetFaction": "wh3_dlc23_chd_zhatan",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_astragoth",
+      "targetFaction": "wh3_main_grn_dark_land_orcs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_avelorn",
+      "targetFaction": "wh2_main_def_scourge_of_khaine",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_avelorn",
+      "targetFaction": "wh2_main_hef_ellyrion",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_sla_seducers_of_slaanesh",
+      "targetFaction": "wh3_main_kho_bloody_sword",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_sla_seducers_of_slaanesh",
+      "targetFaction": "wh3_main_chs_kvellig",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_shadowgor",
+      "targetFaction": "wh_main_nor_sarl",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_shadowgor",
+      "targetFaction": "wh3_main_ksl_ungol_kindred",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_minor_faction",
+      "targetFaction": "wh3_dlc23_chd_conclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_chs_shadow_legion",
+      "targetFaction": "wh3_dlc20_tze_the_sightless",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_zhatan",
+      "targetFaction": "wh3_dlc23_chd_conclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_zhatan",
+      "targetFaction": "wh3_dlc23_chd_legion_of_azgorh",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_zhatan",
+      "targetFaction": "wh3_main_grn_drippin_fangs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_moulder",
+      "targetFaction": "wh3_main_ksl_druzhina_enclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc16_wef_drycha",
+      "targetFaction": "wh2_dlc15_skv_clan_kreepus",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc16_wef_drycha",
+      "targetFaction": "wh_main_emp_ostermark",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_nordland",
+      "targetFaction": "wh_main_emp_middenland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_nordland",
+      "targetFaction": "wh_main_nor_graeling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc14_brt_chevaliers_de_lyonesse",
+      "targetFaction": "wh_main_brt_lyonesse",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc14_brt_chevaliers_de_lyonesse",
+      "targetFaction": "wh2_main_vmp_strygos_empire",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_def_ghrond",
+      "targetFaction": "wh3_main_grn_da_cage_breakaz",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_brt_bretonnia",
+      "targetFaction": "wh_main_grn_skullsmasherz",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_brt_bretonnia",
+      "targetFaction": "wh_main_brt_lyonesse",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_brt_bretonnia",
+      "targetFaction": "wh_main_vmp_mousillon",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_kho_karneths_sons",
+      "targetFaction": "wh3_main_ogr_loose_tooth",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc26_kho_skulltaker",
+      "targetFaction": "wh3_dlc20_tze_apostles_of_change",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_grn_dark_land_orcs",
+      "targetFaction": "wh3_main_ogr_thunderguts",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_brotherhood_of_the_bear",
+      "targetFaction": "wh_main_nor_baersonling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_rock_skulls",
+      "targetFaction": "wh2_dlc15_grn_bonerattlaz",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_ostermark",
+      "targetFaction": "wh_main_vmp_rival_sylvanian_vamps",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_disciples_of_the_maw",
+      "targetFaction": "wh_main_teb_border_princes",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_black_venom",
+      "targetFaction": "wh3_dlc25_vmp_the_court_of_night",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc20_nor_yusak",
+      "targetFaction": "wh3_main_cth_imperial_wardens",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc24_ksl_daughters_of_the_forest",
+      "targetFaction": "wh2_main_def_bleak_holds",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc21_vmp_jiangshi_rebels",
+      "targetFaction": "wh3_main_cth_the_jade_custodians",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_chrace",
+      "targetFaction": "wh2_main_def_scourge_of_khaine",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_brt_bastonne",
+      "targetFaction": "wh_main_dwf_karak_ziflin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_goldtooth",
+      "targetFaction": "wh3_main_ogr_crossed_clubs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_goldtooth",
+      "targetFaction": "wh3_main_dwf_karak_azorn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_goldtooth",
+      "targetFaction": "wh3_main_ogr_sons_of_the_mountain",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_citadel_of_dusk",
+      "targetFaction": "wh3_main_kho_brazen_throne",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc15_hef_imrik",
+      "targetFaction": "wh2_dlc15_dwf_clan_helhein",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_disciples_of_the_maw",
+      "targetFaction": "wh_main_dwf_karak_ziflin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_imperial_wardens",
+      "targetFaction": "wh3_main_chs_khazag",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_imperial_wardens",
+      "targetFaction": "wh3_main_chs_dreaded_wo",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc27_nor_sayl",
+      "targetFaction": "wh3_dlc27_nor_avags",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_celestial_loyalists",
+      "targetFaction": "wh_dlc03_bst_jagged_horn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_rogue_kurgan_warband",
+      "targetFaction": "wh3_main_cth_the_western_provinces",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_rogue_kurgan_warband",
+      "targetFaction": "wh3_main_cth_the_northern_provinces",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc17_bst_malagor",
+      "targetFaction": "wh3_main_ie_vmp_sires_of_mourkain",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_cp1_cth_tiger_warriors",
+      "targetFaction": "wh3_main_cth_the_western_provinces",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_cp1_cth_tiger_warriors",
+      "targetFaction": "wh3_main_ogr_blood_guzzlers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_imperial_wardens",
+      "targetFaction": "wh3_main_chs_khazag",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_vmp_caravan_of_blue_roses",
+      "targetFaction": "wh3_main_skv_clan_treecherik",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_sla_subtle_torture",
+      "targetFaction": "wh3_main_tze_broken_wheel",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_chs_chaos",
+      "targetFaction": "wh3_main_sla_exquisite_pain",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_nagarythe",
+      "targetFaction": "wh2_main_def_karond_kar",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_western_provinces",
+      "targetFaction": "wh3_main_cth_the_jade_custodians",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_western_provinces",
+      "targetFaction": "wh3_main_cth_burning_wind_nomads",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_western_provinces",
+      "targetFaction": "wh3_main_cth_dissenter_lords_of_jinshen",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc03_bst_beastmen",
+      "targetFaction": "wh_main_emp_middenland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc03_bst_beastmen",
+      "targetFaction": "wh_main_emp_empire",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc13_lzd_spirits_of_the_jungle",
+      "targetFaction": "wh3_main_lzd_tepoks_spawn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc13_lzd_spirits_of_the_jungle",
+      "targetFaction": "wh3_dlc21_nor_wyrmkins",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc13_lzd_spirits_of_the_jungle",
+      "targetFaction": "wh3_main_cth_eastern_river_lords",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_azazel",
+      "targetFaction": "wh3_main_cth_imperial_wardens",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_azazel",
+      "targetFaction": "wh3_dlc20_nor_kuj",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_emp_marienburg",
+      "targetFaction": "wh_main_emp_middenland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc11_vmp_the_barrow_legion",
+      "targetFaction": "wh_main_brt_artois",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc11_vmp_the_barrow_legion",
+      "targetFaction": "wh_main_vmp_mousillon",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc11_vmp_the_barrow_legion",
+      "targetFaction": "wh_main_vmp_schwartzhafen",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_stirland",
+      "targetFaction": "wh_main_vmp_waldenhof",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_vmp_vampire_counts",
+      "targetFaction": "wh2_dlc09_tmb_dune_kingdoms",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_dwf_karak_izor",
+      "targetFaction": "wh_main_grn_necksnappers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_dwf_karak_izor",
+      "targetFaction": "wh_main_teb_border_princes",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_dwf_karak_izor",
+      "targetFaction": "wh_main_grn_broken_nose",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_dwf_karak_izor",
+      "targetFaction": "wh_main_dwf_karak_hirn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_cth_eastern_river_lords",
+      "targetFaction": "wh3_dlc21_cst_dead_flag_fleet",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_eastern_river_lords",
+      "targetFaction": "wh3_main_cth_burning_wind_nomads",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_dlc08_nor_norsca",
+      "targetFaction": "wh2_main_emp_new_world_colonies",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc03_bst_jagged_horn",
+      "targetFaction": "wh_main_emp_ostermark",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_northern_provinces",
+      "targetFaction": "wh3_main_cth_celestial_loyalists",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_northern_provinces",
+      "targetFaction": "wh3_main_cth_rebel_lords_of_nan_yang",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc17_lzd_oxyotl",
+      "targetFaction": "wh3_main_kho_brazen_throne",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc17_lzd_oxyotl",
+      "targetFaction": "wh2_dlc12_lzd_cult_of_sotek",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_vilitch",
+      "targetFaction": "wh_main_nor_sarl",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_vilitch",
+      "targetFaction": "wh2_dlc12_skv_clan_mange",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_vilitch",
+      "targetFaction": "wh3_main_dae_daemon_prince",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_minor_faction",
+      "targetFaction": "wh3_main_grn_drippin_fangs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc12_skv_clan_mange",
+      "targetFaction": "wh_main_nor_sarl",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc12_skv_clan_mange",
+      "targetFaction": "wh3_main_ksl_ungol_kindred",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc25_dwf_malakai",
+      "targetFaction": "wh3_main_nur_maggoth_kin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc25_dwf_malakai",
+      "targetFaction": "wh3_main_ksl_the_ice_court",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc25_dwf_malakai",
+      "targetFaction": "wh3_main_ksl_ursun_revivalists",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc25_nur_epidemius",
+      "targetFaction": "wh3_main_dae_daemon_prince",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc25_nur_epidemius",
+      "targetFaction": "wh3_main_tze_all_seeing_eye",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_kho_exiles_of_khorne",
+      "targetFaction": "wh_main_grn_top_knotz",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_legion_of_azgorh",
+      "targetFaction": "wh3_main_ogr_eyebiter",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_legion_of_azgorh",
+      "targetFaction": "wh3_dlc23_chd_conclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_legion_of_azgorh",
+      "targetFaction": "wh3_dlc23_chd_astragoth",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_legion_of_azgorh",
+      "targetFaction": "wh3_main_ogr_thunderguts",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_valkia",
+      "targetFaction": "wh_main_nor_baersonling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_valkia",
+      "targetFaction": "wh_dlc08_nor_goromadny_tribe",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_order_of_loremasters",
+      "targetFaction": "wh3_main_tze_sarthoraels_watchers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_order_of_loremasters",
+      "targetFaction": "wh2_main_lzd_last_defenders",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_lzd_itza",
+      "targetFaction": "wh2_main_dwf_spine_of_sotek_dwarfs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_lzd_itza",
+      "targetFaction": "wh3_dlc20_nur_pallid_nurslings",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_kho_exiles_of_khorne",
+      "targetFaction": "wh3_main_sla_seducers_of_slaanesh",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_kho_exiles_of_khorne",
+      "targetFaction": "wh3_main_nur_septic_claw",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_kho_exiles_of_khorne",
+      "targetFaction": "wh2_main_bst_blooded_axe",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_kho_exiles_of_khorne",
+      "targetFaction": "wh3_main_dae_daemon_prince",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_kho_exiles_of_khorne",
+      "targetFaction": "wh3_main_sla_exquisite_pain",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_kho_exiles_of_khorne",
+      "targetFaction": "wh3_main_chs_gharhar",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_twa03_def_rakarth",
+      "targetFaction": "wh2_main_lzd_sentinels_of_xeti",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_twa03_def_rakarth",
+      "targetFaction": "wh2_main_def_blood_hall_coven",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_nor_sarl",
+      "targetFaction": "wh3_main_ksl_brotherhood_of_the_bear",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_blood_guzzlers",
+      "targetFaction": "wh3_main_ogr_mountaineaters",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_azazel",
+      "targetFaction": "wh3_main_ksl_brotherhood_of_the_bear",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_nur_poxmakers_of_nurgle",
+      "targetFaction": "wh3_main_lzd_tepoks_spawn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_def_cult_of_pleasure",
+      "targetFaction": "wh2_main_def_ssildra_tor",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_def_cult_of_pleasure",
+      "targetFaction": "wh3_main_sla_seducers_of_slaanesh",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc16_wef_sisters_of_twilight",
+      "targetFaction": "wh2_main_def_drackla_coven",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc09_tmb_khemri",
+      "targetFaction": "wh2_main_vmp_necrarch_brotherhood",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc09_tmb_khemri",
+      "targetFaction": "wh2_dlc09_tmb_numas",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_grn_blue_vipers",
+      "targetFaction": "wh2_main_def_blood_hall_coven",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_emp_cult_of_sigmar",
+      "targetFaction": "wh2_dlc09_tmb_dune_kingdoms",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_emp_cult_of_sigmar",
+      "targetFaction": "wh2_main_lzd_tlaqua",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_nur_septic_claw",
+      "targetFaction": "wh3_main_sla_subtle_torture",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_moulder",
+      "targetFaction": "wh3_main_ksl_druzhina_enclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_nor_mung",
+      "targetFaction": "wh2_main_def_ghrond",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_vmp_strygos_empire",
+      "targetFaction": "wh2_dlc11_cst_pirates_of_sartosa",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_stirland",
+      "targetFaction": "wh_dlc03_bst_redhorn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_grn_moon_howlerz",
+      "targetFaction": "wh2_dlc09_skv_clan_rictus",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc09_skv_clan_rictus",
+      "targetFaction": "wh3_main_grn_moon_howlerz",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_tiranoc",
+      "targetFaction": "wh2_dlc11_cst_noctilus",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_tiranoc",
+      "targetFaction": "wh2_main_hef_caledor",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_def_naggarond",
+      "targetFaction": "wh2_main_def_hag_graef",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_def_naggarond",
+      "targetFaction": "wh2_main_skv_clan_septik",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_def_naggarond",
+      "targetFaction": "wh2_main_def_har_ganeth",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_grn_red_eye",
+      "targetFaction": "wh_main_dwf_karak_kadrin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_nor_skaeling",
+      "targetFaction": "wh_main_emp_nordland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_nor_skaeling",
+      "targetFaction": "wh_main_nor_graeling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_nor_skaeling",
+      "targetFaction": "wh_main_nor_aesling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_goldtooth",
+      "targetFaction": "wh3_main_ogr_crossed_clubs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_goldtooth",
+      "targetFaction": "wh3_main_dwf_karak_azorn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_hef_cothique",
+      "targetFaction": "wh2_main_hef_chrace",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_bst_blooded_axe",
+      "targetFaction": "wh3_main_kho_bloody_sword",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_blooded_axe",
+      "targetFaction": "wh3_main_nur_maggoth_kin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_dwf_karak_norn",
+      "targetFaction": "wh_dlc05_wef_argwylon",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_festus",
+      "targetFaction": "wh_main_emp_nordland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_festus",
+      "targetFaction": "wh_dlc08_nor_vanaheimlings",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc27_sla_the_tormentors",
+      "targetFaction": "wh3_dlc26_grn_cluster_eye_tribe",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_vmp_the_silver_host",
+      "targetFaction": "wh2_dlc09_tmb_lybaras",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_kholek",
+      "targetFaction": "wh3_main_grn_tusked_sunz",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_kholek",
+      "targetFaction": "wh3_main_ogr_fleshgreeders",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc20_chs_vilitch",
+      "targetFaction": "wh3_main_cth_imperial_wardens",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_grn_da_cage_breakaz",
+      "targetFaction": "wh2_main_def_deadwood_sentinels",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
+      "targetFaction": "wh2_main_skv_clan_septik",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_caledor",
+      "targetFaction": "wh2_dlc11_cst_noctilus",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_caledor",
+      "targetFaction": "wh2_main_hef_tiranoc",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_vmp_mousillon",
+      "targetFaction": "wh_main_vmp_schwartzhafen",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc13_emp_golden_order",
+      "targetFaction": "wh3_main_cth_the_western_provinces",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc13_emp_golden_order",
+      "targetFaction": "wh3_main_cth_burning_wind_nomads",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc09_tmb_dune_kingdoms",
+      "targetFaction": "wh2_main_vmp_necrarch_brotherhood",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc25_nur_tamurkhan",
+      "targetFaction": "wh3_dlc27_the_narj",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc25_nur_tamurkhan",
+      "targetFaction": "wh3_dlc20_chs_kholek",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_kho_crimson_skull",
+      "targetFaction": "wh_main_nor_aesling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_nur_maggoth_kin",
+      "targetFaction": "wh3_main_kho_bloody_sword",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_nur_maggoth_kin",
+      "targetFaction": "wh3_main_nur_septic_claw",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_crooked_moon",
+      "targetFaction": "wh_main_grn_red_eye",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_grn_crooked_moon",
+      "targetFaction": "wh_main_grn_necksnappers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_crooked_moon",
+      "targetFaction": "wh_main_grn_bloody_spearz",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_manblight",
+      "targetFaction": "wh3_main_kho_crimson_skull",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_manblight",
+      "targetFaction": "wh3_main_chs_gharhar",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_yvresse",
+      "targetFaction": "wh2_main_hef_chrace",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_hef_yvresse",
+      "targetFaction": "wh2_dlc15_grn_skull_crag",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_yvresse",
+      "targetFaction": "wh2_main_hef_cothique",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc13_emp_the_huntmarshals_expedition",
+      "targetFaction": "wh2_main_emp_new_world_colonies",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc13_emp_the_huntmarshals_expedition",
+      "targetFaction": "wh2_dlc12_skv_clan_mange",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_dae_daemon_prince",
+      "targetFaction": "wh_main_emp_nordland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_dae_daemon_prince",
+      "targetFaction": "wh_main_nor_skaeling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_dae_daemon_prince",
+      "targetFaction": "wh_main_grn_black_venom",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_brt_carcassonne",
+      "targetFaction": "wh2_dlc14_grn_red_cloud",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_dwf_dwarfs",
+      "targetFaction": "wh_main_emp_empire",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_dwf_dwarfs",
+      "targetFaction": "wh_main_dwf_barak_varr",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_dwf_dwarfs",
+      "targetFaction": "wh_main_grn_bloody_spearz",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_ripper_horn",
+      "targetFaction": "wh3_main_chs_khazag",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_ripper_horn",
+      "targetFaction": "wh3_main_ogr_fleshgreeders",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_zhatan",
+      "targetFaction": "wh3_main_chs_khazag",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_zhatan",
+      "targetFaction": "wh3_dlc20_chs_kholek",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_zhatan",
+      "targetFaction": "wh3_dlc23_chd_conclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc11_cst_the_drowned",
+      "targetFaction": "wh2_main_def_the_forgebound",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc11_def_the_blessed_dread",
+      "targetFaction": "wh3_dlc21_cst_dead_flag_fleet",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_ice_court",
+      "targetFaction": "wh_main_nor_baersonling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_ice_court",
+      "targetFaction": "wh3_main_ksl_the_great_orthodoxy",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_lzd_tlaqua",
+      "targetFaction": "wh2_dlc12_grn_leaf_cutterz_tribe",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc11_cst_vampire_coast_rebels",
+      "targetFaction": "wh2_dlc11_cst_vampire_coast",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_great_orthodoxy",
+      "targetFaction": "wh3_main_ksl_ungol_kindred",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_northern_provinces",
+      "targetFaction": "wh3_main_cth_dissenter_lords_of_jinshen",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_northern_provinces",
+      "targetFaction": "wh3_main_chs_khazag",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_northern_provinces",
+      "targetFaction": "wh3_main_cth_rebel_lords_of_nan_yang",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_cth_the_northern_provinces",
+      "targetFaction": "wh3_main_cth_celestial_loyalists",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc27_hef_aislinn",
+      "targetFaction": "wh2_main_hef_avelorn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc27_hef_aislinn",
+      "targetFaction": "wh2_main_hef_chrace",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc27_hef_aislinn",
+      "targetFaction": "wh3_main_cst_dread_rock_privateers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc27_hef_aislinn",
+      "targetFaction": "wh2_main_hef_cothique",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc27_hef_aislinn",
+      "targetFaction": "wh2_main_hef_yvresse",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc27_hef_aislinn",
+      "targetFaction": "wh2_main_hef_eataine",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_wissenland",
+      "targetFaction": "wh3_main_ogr_feastmaster",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_tze_flaming_scribes",
+      "targetFaction": "wh3_main_ogr_fleshgreeders",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_vmp_lahmian_sisterhood",
+      "targetFaction": "wh3_main_skv_clan_gritus",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_vmp_lahmian_sisterhood",
+      "targetFaction": "wh3_main_grn_drippin_fangs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_skrinderkin",
+      "targetFaction": "wh3_main_cth_celestial_loyalists",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_def_har_ganeth",
+      "targetFaction": "wh3_main_grn_da_cage_breakaz",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc05_bst_morghur_herd",
+      "targetFaction": "wh_main_teb_estalia",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_ungol_kindred",
+      "targetFaction": "wh_main_nor_aesling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_nor_skeggi",
+      "targetFaction": "wh2_main_emp_new_world_colonies",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_nor_skeggi",
+      "targetFaction": "wh2_main_lzd_hexoatl",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_lzd_hexoatl",
+      "targetFaction": "wh2_main_def_cult_of_pleasure",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_lzd_hexoatl",
+      "targetFaction": "wh3_dlc20_sla_keepers_of_bliss",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_brt_knights_of_the_flame",
+      "targetFaction": "wh2_main_brt_knights_of_origo",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_kho_brazen_throne",
+      "targetFaction": "wh2_dlc12_lzd_cult_of_sotek",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc17_bst_taurox",
+      "targetFaction": "wh2_main_def_clar_karond",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_blood_guzzlers",
+      "targetFaction": "wh3_main_cth_dissenter_lords_of_jinshen",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_black_venom",
+      "targetFaction": "wh_main_nor_graeling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_black_venom",
+      "targetFaction": "wh_main_nor_bjornling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_nor_bjornling",
+      "targetFaction": "wh_main_emp_marienburg",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_nor_bjornling",
+      "targetFaction": "wh_main_nor_graeling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_emp_ostermark",
+      "targetFaction": "wh_main_emp_ostland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc24_tze_the_deceivers",
+      "targetFaction": "wh_main_emp_stirland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc12_lzd_cult_of_sotek",
+      "targetFaction": "wh2_main_hef_citadel_of_dusk",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc12_lzd_cult_of_sotek",
+      "targetFaction": "wh3_main_skv_clan_skrat",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_brt_aquitaine",
+      "targetFaction": "wh_main_brt_bordeleaux",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "trade_agreement"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc25_nur_tamurkhan",
+      "targetFaction": "wh3_main_kho_crimson_skull",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc25_nur_tamurkhan",
+      "targetFaction": "wh3_main_nur_maggoth_kin",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_grn_moon_howlerz",
+      "targetFaction": "wh3_main_grn_drippin_fangs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_ursun_revivalists",
+      "targetFaction": "wh3_main_grn_dark_land_orcs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_vmp_schwartzhafen",
+      "targetFaction": "wh_main_vmp_rival_sylvanian_vamps",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc05_wef_torgovann",
+      "targetFaction": "wh_dlc05_wef_wydrioth",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_hef_eataine",
+      "targetFaction": "wh2_main_hef_avelorn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_hef_eataine",
+      "targetFaction": "wh2_main_def_cult_of_excess",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_eataine",
+      "targetFaction": "wh2_main_hef_saphery",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_lazarghs",
+      "targetFaction": "wh3_dlc26_kho_arbaal",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_lazarghs",
+      "targetFaction": "wh3_main_cth_dissenter_lords_of_jinshen",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_skryre",
+      "targetFaction": "wh_main_teb_estalia",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_lazarghs",
+      "targetFaction": "wh3_main_ogr_blood_guzzlers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_ogr_lazarghs",
+      "targetFaction": "wh3_main_cth_burning_wind_nomads",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc26_kho_arbaal",
+      "targetFaction": "wh_main_chs_chaos",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_tze_oracles_of_tzeentch",
+      "targetFaction": "wh3_main_tze_flaming_scribes",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_tze_oracles_of_tzeentch",
+      "targetFaction": "wh3_main_nur_bubonic_swarm",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_vmp_vampire_counts",
+      "targetFaction": "wh_main_emp_ostermark",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_mordkin",
+      "targetFaction": "wh2_main_lzd_last_defenders",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_grn_arachnos",
+      "targetFaction": "wh2_dlc17_dwf_thorek_ironbrow",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_grn_arachnos",
+      "targetFaction": "wh2_main_dwf_karak_zorn",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_grn_tusked_sunz",
+      "targetFaction": "wh3_main_ogr_blood_guzzlers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_dlc09_tmb_exiles_of_nehek",
+      "targetFaction": "wh2_dlc16_grn_naggaroth_orcs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_dlc09_tmb_exiles_of_nehek",
+      "targetFaction": "wh2_main_def_clar_karond",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc24_ksl_daughters_of_the_forest",
+      "targetFaction": "wh2_dlc15_dwf_clan_helhein",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc24_ksl_daughters_of_the_forest",
+      "targetFaction": "wh3_main_kho_karneths_sons",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_ursun_revivalists",
+      "targetFaction": "wh3_main_kho_bloody_sword",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_stone_horn",
+      "targetFaction": "wh_main_emp_empire",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_bst_stone_horn",
+      "targetFaction": "wh_main_emp_hochland",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_legion_of_azgorh",
+      "targetFaction": "wh3_main_grn_dark_land_orcs",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_dlc23_chd_legion_of_azgorh",
+      "targetFaction": "wh3_dlc23_chd_conclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "trade_agreement"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_dlc25_dwf_malakai",
+      "targetFaction": "wh_main_nor_baersonling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_def_blood_hall_coven",
+      "targetFaction": "wh3_dlc27_sla_masque_of_slaanesh",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_skv_clan_pestilens",
+      "targetFaction": "wh2_main_lzd_southern_sentinels",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_tze_oracles_of_tzeentch",
+      "targetFaction": "wh3_main_cth_imperial_wardens",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_tze_oracles_of_tzeentch",
+      "targetFaction": "wh3_main_tze_sarthoraels_watchers",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_hef_ellyrion",
+      "targetFaction": "wh2_main_hef_tiranoc",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh2_main_hef_saphery",
+      "targetFaction": "wh3_main_sla_seducers_of_slaanesh",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_lzd_last_defenders",
+      "targetFaction": "wh2_main_lzd_teotiqua",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "military_access",
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh2_main_def_bleak_holds",
+      "targetFaction": "wh2_main_nor_skeggi",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_brt_bordeleaux",
+      "targetFaction": "wh2_main_lzd_tlaxtlan",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_dlc08_nor_wintertooth",
+      "targetFaction": "wh_main_nor_aesling",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_ice_court",
+      "targetFaction": "wh3_main_ksl_brotherhood_of_the_bear",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_ice_court",
+      "targetFaction": "wh3_main_ksl_ropsmenn_clan",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_ice_court",
+      "targetFaction": "wh_main_emp_ostermark",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_ice_court",
+      "targetFaction": "wh3_dlc20_nor_dolgan",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh3_main_ksl_the_ice_court",
+      "targetFaction": "wh3_main_ksl_druzhina_enclave",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [
+        "non_aggression_pact"
+      ],
+      "atWar": false
+    },
+    {
+      "sourceFaction": "wh_main_nor_aesling",
+      "targetFaction": "wh3_main_ksl_ungol_kindred",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    },
+    {
+      "sourceFaction": "wh_main_grn_scabby_eye",
+      "targetFaction": "wh3_dlc26_grn_gorbad_ironclaw",
+      "baseAttitude": null,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": true
+    }
+  ]
+}

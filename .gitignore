@@ -1,2 +1,6 @@
 __pycache__/
 *.py[cod]
+data/raw/
+data/schema/*.pack
+data/schema/rpfm-*/
+tools/rpfm*/
