@@ -23,6 +23,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Import WH3 cultural diplomacy baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+          WH3_DUMP_REF="61d4e117f669ea93d6da1077d1524c332d5e74c9"
+          mkdir -p .cache/wh3 data/generated
+          curl --fail --location --silent --show-error \
+            "https://raw.githubusercontent.com/Shazbot/WH3-Dump/${WH3_DUMP_REF}/db/campaign_cultural_relations_tables/data__.tsv" \
+            --output .cache/wh3/campaign_cultural_relations.tsv
+          python tools/import_cultural_relations.py \
+            --input .cache/wh3/campaign_cultural_relations.tsv \
+            --output data/generated/cultural-relations.json \
+            --campaign wh3_main_combi \
+            --game-version "WH3 data dump ${WH3_DUMP_REF}" \
+            --source-ref "Shazbot/WH3-Dump@${WH3_DUMP_REF}"
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
