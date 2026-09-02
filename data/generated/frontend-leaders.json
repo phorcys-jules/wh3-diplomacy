@@ -1,0 +1,663 @@
+{
+  "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
+  "generatedAt": "2026-09-02T19:16:13.162936+00:00",
+  "sourceRef": "Shazbot/WH3-Dump@61d4e117f669ea93d6da1077d1524c332d5e74c9",
+  "sourceTable": "frontend_faction_leaders_tables",
+  "leaders": [
+    {
+      "politicalPartyKey": "wh2_dlc09_political_party_skv_tretch_craventail",
+      "agentSubtype": "wh2_dlc09_skv_tretch_craventail",
+      "factionKey": "wh2_dlc09_skv_clan_rictus"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc09_political_party_tmb_arkhan",
+      "agentSubtype": "wh2_dlc09_tmb_arkhan",
+      "factionKey": "wh2_dlc09_tmb_followers_of_nagash"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc09_political_party_tmb_khalida",
+      "agentSubtype": "wh2_dlc09_tmb_khalida",
+      "factionKey": "wh2_dlc09_tmb_lybaras"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc09_political_party_tmb_khatep",
+      "agentSubtype": "wh2_dlc09_tmb_khatep",
+      "factionKey": "wh2_dlc09_tmb_exiles_of_nehek"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc09_political_party_tmb_settra",
+      "agentSubtype": "wh2_dlc09_tmb_settra",
+      "factionKey": "wh2_dlc09_tmb_khemri"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc10_political_party_def_hellebron",
+      "agentSubtype": "wh2_dlc10_def_crone_hellebron",
+      "factionKey": "wh2_main_def_har_ganeth"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc10_political_party_hef_alarielle",
+      "agentSubtype": "wh2_dlc10_hef_alarielle",
+      "factionKey": "wh2_main_hef_avelorn"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc10_political_party_hef_alith_anar",
+      "agentSubtype": "wh2_dlc10_hef_alith_anar",
+      "factionKey": "wh2_main_hef_nagarythe"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc11_political_party_cst_noctilus_ruler",
+      "agentSubtype": "wh2_dlc11_cst_noctilus",
+      "factionKey": "wh2_dlc11_cst_noctilus"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc11_political_party_cst_sartosa_ruler",
+      "agentSubtype": "wh2_dlc11_cst_aranessa",
+      "factionKey": "wh2_dlc11_cst_pirates_of_sartosa"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc11_political_party_cst_the_drowned_ruler",
+      "agentSubtype": "wh2_dlc11_cst_cylostra",
+      "factionKey": "wh2_dlc11_cst_the_drowned"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc11_political_party_def_lokhir_fellheart_ruler",
+      "agentSubtype": "wh2_dlc11_def_lokhir",
+      "factionKey": "wh2_dlc11_def_the_blessed_dread"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc11_political_party_vampire_coast_ruler",
+      "agentSubtype": "wh2_dlc11_cst_harkon",
+      "factionKey": "wh2_dlc11_cst_vampire_coast"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc12_political_party_lzd_tehenhauin",
+      "agentSubtype": "wh2_dlc12_lzd_tehenhauin",
+      "factionKey": "wh2_dlc12_lzd_cult_of_sotek"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc12_political_party_lzd_tiktaqto",
+      "agentSubtype": "wh2_dlc12_lzd_tiktaqto",
+      "factionKey": "wh2_main_lzd_tlaqua"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc12_political_party_skv_ikit_claw",
+      "agentSubtype": "wh2_dlc12_skv_ikit_claw",
+      "factionKey": "wh2_main_skv_clan_skryre"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc13_political_party_lzd_gorrok",
+      "agentSubtype": "wh2_dlc13_lzd_gor_rok",
+      "factionKey": "wh2_main_lzd_itza"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc13_political_party_lzd_nakai",
+      "agentSubtype": "wh2_dlc13_lzd_nakai",
+      "factionKey": "wh2_dlc13_lzd_spirits_of_the_jungle"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc13_political_party_wulfhart_ruler",
+      "agentSubtype": "wh2_dlc13_emp_cha_markus_wulfhart",
+      "factionKey": "wh2_dlc13_emp_the_huntmarshals_expedition"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc14_political_party_bretonnia_repanse",
+      "agentSubtype": "wh2_dlc14_brt_repanse",
+      "factionKey": "wh2_dlc14_brt_chevaliers_de_lyonesse"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc14_political_party_def_malus",
+      "agentSubtype": "wh2_dlc14_def_malus_darkblade",
+      "factionKey": "wh2_main_def_hag_graef"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc14_political_party_skv_snikch",
+      "agentSubtype": "wh2_dlc14_skv_deathmaster_snikch",
+      "factionKey": "wh2_main_skv_clan_eshin"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc15_political_party_grn_grom",
+      "agentSubtype": "wh2_dlc15_grn_grom_the_paunch",
+      "factionKey": "wh2_dlc15_grn_broken_axe"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc15_political_party_hef_eltharion",
+      "agentSubtype": "wh2_dlc15_hef_eltharion",
+      "factionKey": "wh2_main_hef_yvresse"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc15_political_party_hef_imrik",
+      "agentSubtype": "wh2_dlc15_hef_imrik",
+      "factionKey": "wh2_dlc15_hef_imrik"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc16_political_party_skv_throt",
+      "agentSubtype": "wh2_dlc16_skv_throt_the_unclean",
+      "factionKey": "wh2_main_skv_clan_moulder"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc16_political_party_wef_drycha",
+      "agentSubtype": "wh2_dlc16_wef_drycha",
+      "factionKey": "wh2_dlc16_wef_drycha"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc16_political_party_wef_sisters_of_twilight",
+      "agentSubtype": "wh2_dlc16_wef_sisters_of_twilight",
+      "factionKey": "wh2_dlc16_wef_sisters_of_twilight"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc17_political_party_beastmen_taurox",
+      "agentSubtype": "wh2_dlc17_bst_taurox",
+      "factionKey": "wh2_dlc17_bst_taurox"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc17_political_party_dwarf_thorek",
+      "agentSubtype": "wh2_dlc17_dwf_thorek",
+      "factionKey": "wh2_dlc17_dwf_thorek_ironbrow"
+    },
+    {
+      "politicalPartyKey": "wh2_dlc17_political_party_lzd_oxyotl",
+      "agentSubtype": "wh2_dlc17_lzd_oxyotl",
+      "factionKey": "wh2_dlc17_lzd_oxyotl"
+    },
+    {
+      "politicalPartyKey": "wh2_main_political_party_def_malekith",
+      "agentSubtype": "wh2_main_def_malekith",
+      "factionKey": "wh2_main_def_naggarond"
+    },
+    {
+      "politicalPartyKey": "wh2_main_political_party_def_morathi",
+      "agentSubtype": "wh2_main_def_morathi",
+      "factionKey": "wh2_main_def_cult_of_pleasure"
+    },
+    {
+      "politicalPartyKey": "wh2_main_political_party_hef_teclis",
+      "agentSubtype": "wh2_main_hef_teclis",
+      "factionKey": "wh2_main_hef_order_of_loremasters"
+    },
+    {
+      "politicalPartyKey": "wh2_main_political_party_hef_tyrion",
+      "agentSubtype": "wh2_main_hef_tyrion",
+      "factionKey": "wh2_main_hef_eataine"
+    },
+    {
+      "politicalPartyKey": "wh2_main_political_party_lzd_kroq_gar",
+      "agentSubtype": "wh2_main_lzd_kroq_gar",
+      "factionKey": "wh2_main_lzd_last_defenders"
+    },
+    {
+      "politicalPartyKey": "wh2_main_political_party_lzd_lord_mazdamundi",
+      "agentSubtype": "wh2_main_lzd_lord_mazdamundi",
+      "factionKey": "wh2_main_lzd_hexoatl"
+    },
+    {
+      "politicalPartyKey": "wh2_main_political_party_skv_lord_skrolk",
+      "agentSubtype": "wh2_main_skv_lord_skrolk",
+      "factionKey": "wh2_main_skv_clan_pestilens"
+    },
+    {
+      "politicalPartyKey": "wh2_main_political_party_skv_queek_headtaker",
+      "agentSubtype": "wh2_main_skv_queek_headtaker",
+      "factionKey": "wh2_main_skv_clan_mors"
+    },
+    {
+      "politicalPartyKey": "wh2_twa03_political_party_def_rakarth",
+      "agentSubtype": "wh2_twa03_def_rakarth",
+      "factionKey": "wh2_twa03_def_rakarth"
+    },
+    {
+      "politicalPartyKey": "wh3_cp1_political_party_cth_tiger_warriors",
+      "agentSubtype": "wh3_cp1_cth_bhashiva",
+      "factionKey": "wh3_cp1_cth_tiger_warriors"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc20_political_party_chaos_chs_azazel",
+      "agentSubtype": "wh3_dlc20_sla_azazel",
+      "factionKey": "wh3_dlc20_chs_azazel"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc20_political_party_chaos_chs_festus",
+      "agentSubtype": "wh3_dlc20_nur_festus",
+      "factionKey": "wh3_dlc20_chs_festus"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc20_political_party_chaos_chs_valkia",
+      "agentSubtype": "wh3_dlc20_kho_valkia",
+      "factionKey": "wh3_dlc20_chs_valkia"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc20_political_party_chaos_chs_vilitch",
+      "agentSubtype": "wh3_dlc20_tze_vilitch",
+      "factionKey": "wh3_dlc20_chs_vilitch"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc20_political_party_chs_azazel",
+      "agentSubtype": "wh3_dlc20_sla_azazel",
+      "factionKey": "wh3_dlc20_chs_azazel"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc20_political_party_chs_festus",
+      "agentSubtype": "wh3_dlc20_nur_festus",
+      "factionKey": "wh3_dlc20_chs_festus"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc20_political_party_chs_valkia",
+      "agentSubtype": "wh3_dlc20_kho_valkia",
+      "factionKey": "wh3_dlc20_chs_valkia"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc20_political_party_chs_vilitch",
+      "agentSubtype": "wh3_dlc20_tze_vilitch",
+      "factionKey": "wh3_dlc20_chs_vilitch"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc23_political_party_astragoth",
+      "agentSubtype": "wh3_dlc23_chd_astragoth",
+      "factionKey": "wh3_dlc23_chd_astragoth"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc23_political_party_chaos_astragoth",
+      "agentSubtype": "wh3_dlc23_chd_astragoth",
+      "factionKey": "wh3_dlc23_chd_astragoth"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc23_political_party_chaos_drazhoath",
+      "agentSubtype": "wh3_dlc23_chd_drazhoath",
+      "factionKey": "wh3_dlc23_chd_legion_of_azgorh"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc23_political_party_chaos_zhatan",
+      "agentSubtype": "wh3_dlc23_chd_zhatan",
+      "factionKey": "wh3_dlc23_chd_zhatan"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc23_political_party_drazhoath",
+      "agentSubtype": "wh3_dlc23_chd_drazhoath",
+      "factionKey": "wh3_dlc23_chd_legion_of_azgorh"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc23_political_party_zhatan",
+      "agentSubtype": "wh3_dlc23_chd_zhatan",
+      "factionKey": "wh3_dlc23_chd_zhatan"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc24_political_party_chaos_cth_the_celestial_court",
+      "agentSubtype": "wh3_dlc24_cth_yuan_bo",
+      "factionKey": "wh3_dlc24_cth_the_celestial_court"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc24_political_party_chaos_ksl_daughters_of_the_forest",
+      "agentSubtype": "wh3_dlc24_ksl_mother_ostankya",
+      "factionKey": "wh3_dlc24_ksl_daughters_of_the_forest"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc24_political_party_chaos_tze_the_deceivers",
+      "agentSubtype": "wh3_dlc24_tze_the_changeling",
+      "factionKey": "wh3_dlc24_tze_the_deceivers"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc24_political_party_cth_the_celestial_court",
+      "agentSubtype": "wh3_dlc24_cth_yuan_bo",
+      "factionKey": "wh3_dlc24_cth_the_celestial_court"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc24_political_party_ksl_daughters_of_the_forest",
+      "agentSubtype": "wh3_dlc24_ksl_mother_ostankya",
+      "factionKey": "wh3_dlc24_ksl_daughters_of_the_forest"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc24_political_party_tze_the_deceivers",
+      "agentSubtype": "wh3_dlc24_tze_the_changeling",
+      "factionKey": "wh3_dlc24_tze_the_deceivers"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc25_political_party_chaos_dwf_malakai",
+      "agentSubtype": "wh3_dlc25_dwf_malakai_makaisson",
+      "factionKey": "wh3_dlc25_dwf_malakai"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc25_political_party_chaos_emp_elspeth",
+      "agentSubtype": "wh3_dlc25_emp_elspeth_von_draken",
+      "factionKey": "wh_main_emp_wissenland"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc25_political_party_chaos_nur_tamurkhan",
+      "agentSubtype": "wh3_dlc25_nur_tamurkhan",
+      "factionKey": "wh3_dlc25_nur_tamurkhan"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc25_political_party_dwf_malakai",
+      "agentSubtype": "wh3_dlc25_dwf_malakai_makaisson",
+      "factionKey": "wh3_dlc25_dwf_malakai"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc25_political_party_emp_elspeth",
+      "agentSubtype": "wh3_dlc25_emp_elspeth_von_draken",
+      "factionKey": "wh_main_emp_wissenland"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc25_political_party_nur_epidemius",
+      "agentSubtype": "wh3_dlc25_nur_epidemius",
+      "factionKey": "wh3_dlc25_nur_epidemius"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc25_political_party_nur_tamurkhan",
+      "agentSubtype": "wh3_dlc25_nur_tamurkhan",
+      "factionKey": "wh3_dlc25_nur_tamurkhan"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc26_political_party_grn_gorbad_ironclaw",
+      "agentSubtype": "wh3_dlc26_grn_gorbad_ironclaw",
+      "factionKey": "wh3_dlc26_grn_gorbad_ironclaw"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc26_political_party_kho_arbaal",
+      "agentSubtype": "wh3_dlc26_kho_arbaal_the_undefeated",
+      "factionKey": "wh3_dlc26_kho_arbaal"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc26_political_party_kho_skulltaker",
+      "agentSubtype": "wh3_dlc26_kho_skulltaker",
+      "factionKey": "wh3_dlc26_kho_skulltaker"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc26_political_party_ogr_golgfag",
+      "agentSubtype": "wh3_dlc26_ogr_golgfag_maneater",
+      "factionKey": "wh3_dlc26_ogr_golgfag"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc27_political_party_hef_aislinn",
+      "agentSubtype": "wh3_dlc27_hef_aislinn",
+      "factionKey": "wh3_dlc27_hef_aislinn"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc27_political_party_norsca_sayl",
+      "agentSubtype": "wh3_dlc27_nor_sayl_the_faithless",
+      "factionKey": "wh3_dlc27_nor_sayl"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc27_political_party_sla_the_masque_of_slaanesh",
+      "agentSubtype": "wh3_dlc27_sla_masque_of_slaanesh",
+      "factionKey": "wh3_dlc27_sla_masque_of_slaanesh"
+    },
+    {
+      "politicalPartyKey": "wh3_dlc27_political_party_sla_the_tormentors",
+      "agentSubtype": "wh3_dlc27_sla_dechala",
+      "factionKey": "wh3_dlc27_sla_the_tormentors"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_cth_the_northern_provinces",
+      "agentSubtype": "wh3_main_cth_miao_ying",
+      "factionKey": "wh3_main_cth_the_northern_provinces"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_cth_the_western_provinces",
+      "agentSubtype": "wh3_main_cth_zhao_ming",
+      "factionKey": "wh3_main_cth_the_western_provinces"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_dae_daemon_prince",
+      "agentSubtype": "wh3_main_dae_daemon_prince",
+      "factionKey": "wh3_main_dae_daemon_prince"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_kho_exiles_of_khorne",
+      "agentSubtype": "wh3_main_kho_skarbrand",
+      "factionKey": "wh3_main_kho_exiles_of_khorne"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_ksl_the_great_orthodoxy",
+      "agentSubtype": "wh3_main_ksl_kostaltyn",
+      "factionKey": "wh3_main_ksl_the_great_orthodoxy"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_ksl_the_ice_court",
+      "agentSubtype": "wh3_main_ksl_katarin",
+      "factionKey": "wh3_main_ksl_the_ice_court"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_ksl_ursun_revivalists",
+      "agentSubtype": "wh3_main_ksl_boris",
+      "factionKey": "wh3_main_ksl_ursun_revivalists"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_nur_poxmakers_of_nurgle",
+      "agentSubtype": "wh3_main_nur_kugath",
+      "factionKey": "wh3_main_nur_poxmakers_of_nurgle"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_ogr_disciples_of_the_maw",
+      "agentSubtype": "wh3_main_ogr_skrag_the_slaughterer",
+      "factionKey": "wh3_main_ogr_goldtooth"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_ogr_goldtooth",
+      "agentSubtype": "wh3_main_ogr_greasus_goldtooth",
+      "factionKey": "wh3_main_ogr_disciples_of_the_maw"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_sla_seducers_of_slaanesh",
+      "agentSubtype": "wh3_main_sla_nkari",
+      "factionKey": "wh3_main_sla_seducers_of_slaanesh"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chaos_tze_oracles_of_tzeentch",
+      "agentSubtype": "wh3_main_tze_kairos",
+      "factionKey": "wh3_main_tze_oracles_of_tzeentch"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_chs_shadow_legion",
+      "agentSubtype": "wh3_main_dae_belakor",
+      "factionKey": "wh3_main_chs_shadow_legion"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_cth_the_northern_provinces",
+      "agentSubtype": "wh3_main_cth_miao_ying",
+      "factionKey": "wh3_main_cth_the_northern_provinces"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_cth_the_western_provinces",
+      "agentSubtype": "wh3_main_cth_zhao_ming",
+      "factionKey": "wh3_main_cth_the_western_provinces"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_dae_daemon_prince",
+      "agentSubtype": "wh3_main_dae_daemon_prince",
+      "factionKey": "wh3_main_dae_daemon_prince"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_kho_exiles_of_khorne",
+      "agentSubtype": "wh3_main_kho_skarbrand",
+      "factionKey": "wh3_main_kho_exiles_of_khorne"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_ksl_the_great_orthodoxy",
+      "agentSubtype": "wh3_main_ksl_kostaltyn",
+      "factionKey": "wh3_main_ksl_the_great_orthodoxy"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_ksl_the_ice_court",
+      "agentSubtype": "wh3_main_ksl_katarin",
+      "factionKey": "wh3_main_ksl_the_ice_court"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_ksl_ursun_revivalists",
+      "agentSubtype": "wh3_main_ksl_boris",
+      "factionKey": "wh3_main_ksl_ursun_revivalists"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_nur_poxmakers_of_nurgle",
+      "agentSubtype": "wh3_main_nur_kugath",
+      "factionKey": "wh3_main_nur_poxmakers_of_nurgle"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_ogr_disciples_of_the_maw",
+      "agentSubtype": "wh3_main_ogr_skrag_the_slaughterer",
+      "factionKey": "wh3_main_ogr_disciples_of_the_maw"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_ogr_goldtooth",
+      "agentSubtype": "wh3_main_ogr_greasus_goldtooth",
+      "factionKey": "wh3_main_ogr_goldtooth"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_sla_seducers_of_slaanesh",
+      "agentSubtype": "wh3_main_sla_nkari",
+      "factionKey": "wh3_main_sla_seducers_of_slaanesh"
+    },
+    {
+      "politicalPartyKey": "wh3_main_political_party_tze_oracles_of_tzeentch",
+      "agentSubtype": "wh3_main_tze_kairos",
+      "factionKey": "wh3_main_tze_oracles_of_tzeentch"
+    },
+    {
+      "politicalPartyKey": "wh3_prologue_political_party_kislev_expedition",
+      "agentSubtype": "wh3_prologue_general_test",
+      "factionKey": "wh3_prologue_kislev_expedition"
+    },
+    {
+      "politicalPartyKey": "wh_dlc03_political_party_beastmen_malagor",
+      "agentSubtype": "wh_dlc03_bst_malagor",
+      "factionKey": "wh2_dlc17_bst_malagor"
+    },
+    {
+      "politicalPartyKey": "wh_dlc03_political_party_beastmen_morghur",
+      "agentSubtype": "wh_dlc05_bst_morghur",
+      "factionKey": "wh_dlc05_bst_morghur_herd"
+    },
+    {
+      "politicalPartyKey": "wh_dlc03_political_party_beastmen_ruler",
+      "agentSubtype": "wh_dlc03_bst_khazrak",
+      "factionKey": "wh_dlc03_bst_beastmen"
+    },
+    {
+      "politicalPartyKey": "wh_dlc04_political_party_empire_volkmar",
+      "agentSubtype": "wh_dlc04_emp_volkmar",
+      "factionKey": "wh3_main_emp_cult_of_sigmar"
+    },
+    {
+      "politicalPartyKey": "wh_dlc04_political_party_vampire_helman",
+      "agentSubtype": "wh_dlc04_vmp_helman_ghorst",
+      "factionKey": "wh3_main_vmp_caravan_of_blue_roses"
+    },
+    {
+      "politicalPartyKey": "wh_dlc05_political_party_wood_elves_durthu",
+      "agentSubtype": "wh_dlc05_wef_durthu",
+      "factionKey": "wh_dlc05_wef_argwylon"
+    },
+    {
+      "politicalPartyKey": "wh_dlc05_political_party_wood_elves_ruler",
+      "agentSubtype": "wh_dlc05_wef_orion",
+      "factionKey": "wh_dlc05_wef_wood_elves"
+    },
+    {
+      "politicalPartyKey": "wh_dlc06_political_party_belegar_ruler",
+      "agentSubtype": "wh_dlc06_dwf_belegar",
+      "factionKey": "wh_main_dwf_karak_izor"
+    },
+    {
+      "politicalPartyKey": "wh_dlc06_political_party_skarsnik_ruler",
+      "agentSubtype": "wh_dlc06_grn_skarsnik",
+      "factionKey": "wh_main_grn_crooked_moon"
+    },
+    {
+      "politicalPartyKey": "wh_dlc06_political_party_wurrzag_ruler",
+      "agentSubtype": "wh_dlc06_grn_wurrzag_da_great_prophet",
+      "factionKey": "wh_main_grn_orcs_of_the_bloody_hand"
+    },
+    {
+      "politicalPartyKey": "wh_dlc07_political_party_bretonnia_alberic",
+      "agentSubtype": "wh_dlc07_brt_alberic",
+      "factionKey": "wh_main_brt_bordeleaux"
+    },
+    {
+      "politicalPartyKey": "wh_dlc07_political_party_bretonnia_fay",
+      "agentSubtype": "wh_dlc07_brt_fay_enchantress",
+      "factionKey": "wh_main_brt_carcassonne"
+    },
+    {
+      "politicalPartyKey": "wh_dlc07_political_party_bretonnia_ruler",
+      "agentSubtype": "wh_main_brt_louen_leoncouer",
+      "factionKey": "wh_main_brt_bretonnia"
+    },
+    {
+      "politicalPartyKey": "wh_dlc08_political_party_norsca_ruler",
+      "agentSubtype": "wh_dlc08_nor_wulfrik",
+      "factionKey": "wh_dlc08_nor_norsca"
+    },
+    {
+      "politicalPartyKey": "wh_dlc08_political_party_norsca_throgg",
+      "agentSubtype": "wh_dlc08_nor_throgg",
+      "factionKey": "wh_dlc08_nor_wintertooth"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_chaos_kholek",
+      "agentSubtype": "wh_dlc01_chs_kholek_suneater",
+      "factionKey": "wh3_dlc20_chs_kholek"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_chaos_ruler",
+      "agentSubtype": "wh_main_chs_archaon",
+      "factionKey": "wh_main_chs_chaos"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_chaos_sigvald",
+      "agentSubtype": "wh_dlc01_chs_prince_sigvald",
+      "factionKey": "wh3_dlc20_chs_sigvald"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_dwarf_grombrindal",
+      "agentSubtype": "wh_pro01_dwf_grombrindal",
+      "factionKey": "wh3_main_dwf_the_ancestral_throng"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_dwarf_ruler",
+      "agentSubtype": "wh_main_dwf_thorgrim_grudgebearer",
+      "factionKey": "wh_main_dwf_dwarfs"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_dwarf_ungrim",
+      "agentSubtype": "wh_main_dwf_ungrim_ironfist",
+      "factionKey": "wh_main_dwf_karak_kadrin"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_empire_balthasar",
+      "agentSubtype": "wh_main_emp_balthasar_gelt",
+      "factionKey": "wh2_dlc13_emp_golden_order"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_empire_ruler",
+      "agentSubtype": "wh_main_emp_karl_franz",
+      "factionKey": "wh_main_emp_empire"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_greenskins_azhag",
+      "agentSubtype": "wh_main_grn_azhag_the_slaughterer",
+      "factionKey": "wh2_dlc15_grn_bonerattlaz"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_greenskins_ruler",
+      "agentSubtype": "wh_main_grn_grimgor_ironhide",
+      "factionKey": "wh_main_grn_greenskins"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_vampire_heinrich",
+      "agentSubtype": "wh_main_vmp_heinrich_kemmler",
+      "factionKey": "wh2_dlc11_vmp_the_barrow_legion"
+    },
+    {
+      "politicalPartyKey": "wh_main_political_party_vampire_ruler",
+      "agentSubtype": "wh_main_vmp_mannfred_von_carstein",
+      "factionKey": "wh_main_vmp_vampire_counts"
+    },
+    {
+      "politicalPartyKey": "wh_pro02_political_party_vampire_isabella",
+      "agentSubtype": "wh_pro02_vmp_isabella_von_carstein",
+      "factionKey": "wh_main_vmp_schwartzhafen"
+    },
+    {
+      "politicalPartyKey": "wh_pro02_political_party_vlad_ruler",
+      "agentSubtype": "wh_dlc04_vmp_vlad_con_carstein",
+      "factionKey": "wh_main_vmp_schwartzhafen"
+    }
+  ]
+}

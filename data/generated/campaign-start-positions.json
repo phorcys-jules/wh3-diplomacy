@@ -1,0 +1,956 @@
+{
+  "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
+  "campaign": "wh3_main_combi",
+  "generatedAt": "2026-09-02T19:16:13.337872+00:00",
+  "coordinateType": "cam_gameplay_start",
+  "sourceRoot": "scripts",
+  "scannedLuaFiles": 1,
+  "positions": [
+    {
+      "factionKey": "wh2_dlc09_skv_clan_rictus",
+      "x": 556.286682,
+      "y": 408.42395,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_exiles_of_nehek",
+      "x": 17.0,
+      "y": 508.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_followers_of_nagash",
+      "x": 301.315826,
+      "y": 232.769196,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_khemri",
+      "x": 419.862549,
+      "y": 226.254272,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_lybaras",
+      "x": 537.702332,
+      "y": 234.181244,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_noctilus",
+      "x": 127.05687,
+      "y": 396.63858,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_pirates_of_sartosa",
+      "x": 339.60791,
+      "y": 305.003143,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_the_drowned",
+      "x": 129.988617,
+      "y": 549.122742,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_vampire_coast",
+      "x": 190.975647,
+      "y": 208.980286,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc11_def_the_blessed_dread",
+      "x": 896.872742,
+      "y": 458.441681,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc11_vmp_the_barrow_legion",
+      "x": 302.568115,
+      "y": 475.910431,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc12_lzd_cult_of_sotek",
+      "x": 142.075485,
+      "y": 88.355629,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc13_emp_golden_order",
+      "x": 761.077393,
+      "y": 338.143005,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc13_emp_the_huntmarshals_expedition",
+      "x": 85.913696,
+      "y": 278.533844,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc13_lzd_spirits_of_the_jungle",
+      "x": 886.934021,
+      "y": 282.235626,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc14_brt_chevaliers_de_lyonesse",
+      "x": 326.47171,
+      "y": 259.662262,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc15_grn_bonerattlaz",
+      "x": 528.952576,
+      "y": 532.794678,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc15_grn_broken_axe",
+      "x": 292.215088,
+      "y": 426.483307,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc15_hef_imrik",
+      "x": 573.586609,
+      "y": 330.326599,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc16_wef_drycha",
+      "x": 448.789307,
+      "y": 517.902344,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc16_wef_sisters_of_twilight",
+      "x": 57.0,
+      "y": 521.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc17_bst_malagor",
+      "x": 438.66684,
+      "y": 278.236084,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc17_bst_taurox",
+      "x": 71.71244,
+      "y": 560.182983,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc17_dwf_thorek_ironbrow",
+      "x": 461.663818,
+      "y": 173.86554,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_dlc17_lzd_oxyotl",
+      "x": 176.263412,
+      "y": 21.594929,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_def_cult_of_pleasure",
+      "x": 52.0,
+      "y": 441.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_def_hag_graef",
+      "x": 393.503754,
+      "y": 719.28479,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_def_har_ganeth",
+      "x": 134.0,
+      "y": 641.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_def_naggarond",
+      "x": 66.0,
+      "y": 645.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_hef_avelorn",
+      "x": 178.266434,
+      "y": 449.685333,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_hef_eataine",
+      "x": 166.0,
+      "y": 395.970886,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_hef_nagarythe",
+      "x": 145.563339,
+      "y": 588.410889,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_hef_order_of_loremasters",
+      "x": 393.39859,
+      "y": 55.529987,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_hef_yvresse",
+      "x": 388.415863,
+      "y": 313.213654,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_lzd_hexoatl",
+      "x": 36.596851,
+      "y": 381.037628,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_lzd_itza",
+      "x": 102.607315,
+      "y": 187.388443,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_lzd_last_defenders",
+      "x": 484.256195,
+      "y": 145.180817,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_lzd_tlaqua",
+      "x": 345.023987,
+      "y": 162.555237,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_eshin",
+      "x": 826.896118,
+      "y": 423.044128,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_mors",
+      "x": 507.283722,
+      "y": 294.667297,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_moulder",
+      "x": 458.319489,
+      "y": 620.507507,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_pestilens",
+      "x": 125.670151,
+      "y": 130.636841,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_skryre",
+      "x": 313.059265,
+      "y": 341.50766,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh2_twa03_def_rakarth",
+      "x": 24.763008,
+      "y": 206.435257,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_cp1_cth_tiger_warriors",
+      "x": 712.404297,
+      "y": 433.444977,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_azazel",
+      "x": 415.0,
+      "y": 637.852112,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_festus",
+      "x": 392.915039,
+      "y": 554.021301,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_kholek",
+      "x": 687.0,
+      "y": 570.425964,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_sigvald",
+      "x": 248.0,
+      "y": 680.564331,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_valkia",
+      "x": 79.222656,
+      "y": 696.11615,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_vilitch",
+      "x": 891.811401,
+      "y": 514.125793,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_astragoth",
+      "x": 570.808533,
+      "y": 544.421692,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_legion_of_azgorh",
+      "x": 631.343689,
+      "y": 378.437561,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_zhatan",
+      "x": 767.19342,
+      "y": 540.643677,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc24_cth_the_celestial_court",
+      "x": 46.9,
+      "y": 305.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc24_ksl_daughters_of_the_forest",
+      "x": 64.5,
+      "y": 472.8,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc24_tze_the_deceivers",
+      "x": 424.9,
+      "y": 489.8,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc25_dwf_malakai",
+      "x": 486.036652,
+      "y": 648.737,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc25_nur_epidemius",
+      "x": 420.046387,
+      "y": 713.983948,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc25_nur_tamurkhan",
+      "x": 657.133911,
+      "y": 639.021545,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc26_grn_gorbad_ironclaw",
+      "x": 486.923309,
+      "y": 367.893555,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc26_kho_arbaal",
+      "x": 570.9,
+      "y": 622.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc26_kho_skulltaker",
+      "x": 71.48,
+      "y": 235.65,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc26_ogr_golgfag",
+      "x": 411.467224,
+      "y": 586.985535,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc27_hef_aislinn",
+      "x": 605.24176,
+      "y": 65.059349,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc27_nor_sayl",
+      "x": 840.790283,
+      "y": 567.603516,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc27_sla_masque_of_slaanesh",
+      "x": 45.290344,
+      "y": 245.298386,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_dlc27_sla_the_tormentors",
+      "x": 899.0,
+      "y": 253.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_chs_shadow_legion",
+      "x": 236.674316,
+      "y": 565.571716,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_cth_the_northern_provinces",
+      "x": 761.141541,
+      "y": 493.68573,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_cth_the_western_provinces",
+      "x": 738.351685,
+      "y": 379.588745,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_dae_daemon_prince",
+      "x": 461.978302,
+      "y": 723.853149,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_dwf_the_ancestral_throng",
+      "x": 11.0,
+      "y": 612.481201,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_emp_cult_of_sigmar",
+      "x": 376.260376,
+      "y": 186.33992,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_kho_exiles_of_khorne",
+      "x": 448.722534,
+      "y": 250.346802,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_ksl_the_great_orthodoxy",
+      "x": 422.0,
+      "y": 605.674072,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_ksl_the_ice_court",
+      "x": 467.0,
+      "y": 564.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_ksl_ursun_revivalists",
+      "x": 515.24,
+      "y": 666.03,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_nur_poxmakers_of_nurgle",
+      "x": 668.102417,
+      "y": 288.452148,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_ogr_disciples_of_the_maw",
+      "x": 427.641541,
+      "y": 403.10611,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_ogr_goldtooth",
+      "x": 691.5,
+      "y": 387.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_sla_seducers_of_slaanesh",
+      "x": 189.327164,
+      "y": 482.086884,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_tze_oracles_of_tzeentch",
+      "x": 378.39859,
+      "y": 20.529987,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh3_main_vmp_caravan_of_blue_roses",
+      "x": 704.543762,
+      "y": 342.065613,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_dlc03_bst_beastmen",
+      "x": 351.415283,
+      "y": 557.318481,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_dlc04_vmp_vlad_con_carstein",
+      "x": 479.425568,
+      "y": 477.427551,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_dlc05_bst_morghur_herd",
+      "x": 274.81366,
+      "y": 348.80722,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_dlc05_wef_argwylon",
+      "x": 354.861176,
+      "y": 447.953522,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_dlc05_wef_wood_elves",
+      "x": 318.634247,
+      "y": 398.895996,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_dlc08_nor_norsca",
+      "x": 102.0,
+      "y": 362.770111,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_dlc08_nor_wintertooth",
+      "x": 426.0,
+      "y": 677.0,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_brt_bordeleaux",
+      "x": 141.985397,
+      "y": 250.289948,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_brt_bretonnia",
+      "x": 270.186188,
+      "y": 512.725403,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_brt_carcassonne",
+      "x": 304.47345,
+      "y": 393.478943,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_chs_chaos",
+      "x": 604.369141,
+      "y": 674.792053,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_dwf_dwarfs",
+      "x": 506.858673,
+      "y": 417.999573,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_dwf_karak_izor",
+      "x": 349.528625,
+      "y": 368.810059,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_dwf_karak_kadrin",
+      "x": 520.123108,
+      "y": 488.549469,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_emp_empire",
+      "x": 355.687042,
+      "y": 487.026276,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_emp_wissenland",
+      "x": 368.053864,
+      "y": 457.214966,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_grn_crooked_moon",
+      "x": 536.3703,
+      "y": 431.673462,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_grn_greenskins",
+      "x": 650.005737,
+      "y": 519.96936,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_grn_orcs_of_the_bloody_hand",
+      "x": 419.209076,
+      "y": 143.268433,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_main_vmp_vampire_counts",
+      "x": 415.192017,
+      "y": 190.223404,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    },
+    {
+      "factionKey": "wh_pro02_vmp_isabella_von_carstein",
+      "x": 479.425568,
+      "y": 477.427551,
+      "coordinateType": "cam_gameplay_start",
+      "sources": [
+        "main_warhammer_faction_intro.lua"
+      ]
+    }
+  ],
+  "conflicts": []
+}
