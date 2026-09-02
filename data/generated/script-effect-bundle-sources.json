@@ -1,0 +1,392 @@
+{
+  "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
+  "campaign": "wh3_main_combi",
+  "generatedAt": "2026-09-02T19:39:19.413116+00:00",
+  "status": "partial",
+  "semantics": "static script assignments only; presence in scripts does not imply the bundle is active on turn 1 unless the call executes during campaign initialisation",
+  "assignments": [
+    {
+      "faction": "wh2_dlc09_skv_clan_rictus",
+      "effectBundle": "wh2_dlc09_bundle_tretch_treaty_broken",
+      "turnsExpression": "3",
+      "resolution": "single-file-constant",
+      "sourceFile": "wh2_dlc09_tretch_craventail.lua",
+      "sourceLine": 56
+    },
+    {
+      "faction": "wh2_main_hef_yvresse",
+      "effectBundle": "wh2_dlc15_bundle_executed_prisoner_influence",
+      "turnsExpression": "0",
+      "resolution": "single-file-constant",
+      "sourceFile": "wh2_dlc15_eltharion_lair.lua",
+      "sourceLine": 236
+    },
+    {
+      "faction": "wh2_main_hef_yvresse",
+      "effectBundle": "wh2_dlc15_bundle_indoctrinated_prisoner_influence",
+      "turnsExpression": "0",
+      "resolution": "single-file-constant",
+      "sourceFile": "wh2_dlc15_eltharion_lair.lua",
+      "sourceLine": 221
+    },
+    {
+      "faction": "wh2_main_hef_yvresse",
+      "effectBundle": "wh2_dlc15_bundle_wardens_cage",
+      "turnsExpression": "0",
+      "resolution": "single-file-constant",
+      "sourceFile": "wh2_dlc15_eltharion_lair.lua",
+      "sourceLine": 467
+    },
+    {
+      "faction": "wh2_main_hef_yvresse",
+      "effectBundle": "wh2_dlc15_hef_dungeon_mistwalker_upgrade_greenskins_grom",
+      "turnsExpression": "0",
+      "resolution": "single-file-constant",
+      "sourceFile": "wh2_dlc15_eltharion_lair.lua",
+      "sourceLine": 501
+    },
+    {
+      "faction": "wh2_main_skv_clan_eshin",
+      "effectBundle": "wh2_dlc14_payload_eshin_actions_steal_technology",
+      "turnsExpression": "5",
+      "resolution": "single-file-constant",
+      "sourceFile": "wh2_dlc14_snikch_shadowy_dealings.lua",
+      "sourceLine": 517
+    },
+    {
+      "faction": "wh2_main_skv_clan_mors",
+      "effectBundle": "wh2_main_queek_karak_owned_false",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "main_warhammer/wh_dlc06_karak_eight_peaks.lua",
+      "sourceLine": 223
+    },
+    {
+      "faction": "wh3_main_dwf_the_ancestral_throng",
+      "effectBundle": "wh_pro01_bundle_god_choice_none",
+      "turnsExpression": "god_choice_first_event",
+      "resolution": "single-file-constant",
+      "sourceFile": "main_warhammer/wh_pro01_grombrindal.lua",
+      "sourceLine": 81
+    },
+    {
+      "faction": "wh3_main_dwf_the_ancestral_throng",
+      "effectBundle": "wh_pro01_bundle_god_choice_none",
+      "turnsExpression": "0",
+      "resolution": "single-file-constant",
+      "sourceFile": "main_warhammer/wh_pro01_grombrindal.lua",
+      "sourceLine": 102
+    },
+    {
+      "faction": "wh3_main_kho_crimson_skull",
+      "effectBundle": "wh3_main_background_income_mod_1000",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "wh3_main_chaos/wh3_tol_something_rotten_in_kislev.lua",
+      "sourceLine": 125
+    },
+    {
+      "faction": "wh3_main_ksl_the_great_orthodoxy",
+      "effectBundle": "wh3_main_background_income_mod_50",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "wh3_main_chaos/wh3_tol_something_rotten_in_kislev.lua",
+      "sourceLine": 42
+    },
+    {
+      "faction": "wh3_main_nur_septic_claw",
+      "effectBundle": "wh3_main_background_income_mod_1000",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "wh3_main_chaos/wh3_tol_something_rotten_in_kislev.lua",
+      "sourceLine": 266
+    },
+    {
+      "faction": "wh3_main_ogr_goldtooth",
+      "effectBundle": "wh3_dlc26_bundle_tol_disable_tyrants_demands",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "wh3_main_chaos/wh3_tol_darkness_and_disharmony.lua",
+      "sourceLine": 630
+    },
+    {
+      "faction": "wh3_main_sla_exquisite_pain",
+      "effectBundle": "wh3_main_background_income_mod_1000",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "wh3_main_chaos/wh3_tol_something_rotten_in_kislev.lua",
+      "sourceLine": 379
+    },
+    {
+      "faction": "wh3_main_tze_flaming_scribes",
+      "effectBundle": "wh3_main_background_income_mod_1000",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "wh3_main_chaos/wh3_tol_something_rotten_in_kislev.lua",
+      "sourceLine": 509
+    },
+    {
+      "faction": "wh_main_dwf_karak_izor",
+      "effectBundle": "wh_dlc06_belegar_karak_owned_false_first",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "main_warhammer/wh_dlc06_karak_eight_peaks.lua",
+      "sourceLine": 213
+    },
+    {
+      "faction": "wh_main_dwf_karak_izor",
+      "effectBundle": "wh_dlc06_rival_hidden_boost",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "main_warhammer/wh_dlc06_karak_eight_peaks.lua",
+      "sourceLine": 204
+    },
+    {
+      "faction": "wh_main_grn_crooked_moon",
+      "effectBundle": "wh_dlc06_rival_hidden_boost",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "main_warhammer/wh_dlc06_karak_eight_peaks.lua",
+      "sourceLine": 216
+    },
+    {
+      "faction": "wh_main_grn_crooked_moon",
+      "effectBundle": "wh_dlc06_skarsnik_anti_trait",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "main_warhammer/wh_dlc06_karak_eight_peaks.lua",
+      "sourceLine": 207
+    },
+    {
+      "faction": "wh_main_grn_crooked_moon",
+      "effectBundle": "wh_dlc06_skarsnik_karak_owned_false",
+      "turnsExpression": "0",
+      "resolution": "literal",
+      "sourceFile": "main_warhammer/wh_dlc06_karak_eight_peaks.lua",
+      "sourceLine": 201
+    }
+  ],
+  "diagnostics": {
+    "luaFilesScanned": 373,
+    "resolvedAssignments": 20,
+    "unresolvedCalls": 27,
+    "unresolved": [
+      {
+        "effectBundle": "wh3_main_ie_scripted_endgame_grudge_too_far",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "main_warhammer/endgame/endgame_grudge_too_far.lua",
+        "sourceLine": 88
+      },
+      {
+        "effectBundle": "wh3_main_ie_scripted_endgame_vampires_rise",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "main_warhammer/endgame/endgame_vampires_rise.lua",
+        "sourceLine": 51
+      },
+      {
+        "effectBundle": "wh3_main_ie_scripted_endgame_vermintide",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "main_warhammer/endgame/endgame_vermintide.lua",
+        "sourceLine": 121
+      },
+      {
+        "effectBundle": "wh3_main_ie_scripted_endgame_vermintide",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "main_warhammer/endgame/endgame_vermintide.lua",
+        "sourceLine": 176
+      },
+      {
+        "effectBundle": "wh3_main_ie_scripted_endgame_waaagh",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "main_warhammer/endgame/endgame_waaagh.lua",
+        "sourceLine": 71
+      },
+      {
+        "effectBundle": "wh3_main_ie_scripted_endgame_waaagh",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "main_warhammer/endgame/endgame_waaagh.lua",
+        "sourceLine": 97
+      },
+      {
+        "effectBundle": "wh3_main_ie_scripted_endgame_wild_hunt",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "main_warhammer/endgame/endgame_wild_hunt.lua",
+        "sourceLine": 73
+      },
+      {
+        "effectBundle": "wh3_main_minor_cult_purple_hand_success",
+        "factionExpression": "tze_key",
+        "turnsExpression": "100",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "main_warhammer/minor_cults/mc_purple_hand.lua",
+        "sourceLine": 207
+      },
+      {
+        "effectBundle": "wh2_dlc10_bundle_blood_voyage_active",
+        "factionExpression": "self.ulthuan_defender_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh2_dlc10_hellebron.lua",
+        "sourceLine": 273
+      },
+      {
+        "effectBundle": "wh2_dlc10_death_night_effect_4",
+        "factionExpression": "self.blood_voyage.faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh2_dlc10_hellebron.lua",
+        "sourceLine": 660
+      },
+      {
+        "effectBundle": "wh2_dlc12_prophecy_of_sotek_stage_1",
+        "factionExpression": "self.faction_key",
+        "turnsExpression": "-1",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh2_dlc12_tehenhauin.lua",
+        "sourceLine": 106
+      },
+      {
+        "effectBundle": "wh2_dlc12_prophecy_of_sotek_stage_2",
+        "factionExpression": "self.faction_key",
+        "turnsExpression": "-1",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh2_dlc12_tehenhauin.lua",
+        "sourceLine": 133
+      },
+      {
+        "effectBundle": "wh2_dlc12_prophecy_of_sotek_stage_2",
+        "factionExpression": "lizardmen_faction_list[i]",
+        "turnsExpression": "-1",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh2_dlc12_tehenhauin.lua",
+        "sourceLine": 154
+      },
+      {
+        "effectBundle": "wh2_dlc12_prophecy_of_sotek_stage_3",
+        "factionExpression": "self.faction_key",
+        "turnsExpression": "-1",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh2_dlc12_tehenhauin.lua",
+        "sourceLine": 180
+      },
+      {
+        "effectBundle": "wh2_dlc12_bundle_underempire_cooldown",
+        "factionExpression": "faction_key",
+        "turnsExpression": "skaven_under_empire_cooldown + cm:get_factions_bonus_value(faction, \"under_empire_cooldown\"",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh2_dlc12_under_empire.lua",
+        "sourceLine": 52
+      },
+      {
+        "effectBundle": "wh2_dlc13_bundle_lzd_defender_attrition",
+        "factionExpression": "self.vassal_key",
+        "turnsExpression": "5",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh2_dlc13_nakai_temples.lua",
+        "sourceLine": 185
+      },
+      {
+        "effectBundle": "wh2_dlc12_nuke_ability_enable",
+        "factionExpression": "self.faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh3_dlc24_the_changeling.lua",
+        "sourceLine": 2598
+      },
+      {
+        "effectBundle": "wh3_dlc27_victory_aislinn",
+        "factionExpression": "self.faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh3_dlc27_aislinn.lua",
+        "sourceLine": 88
+      },
+      {
+        "effectBundle": "wh3_main_bundle_rift_factions",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh3_main_chaos/realms/wh3_realm_common.lua",
+        "sourceLine": 1592
+      },
+      {
+        "effectBundle": "wh3_main_bundle_rift_factions",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh3_main_chaos/realms/wh3_realm_common.lua",
+        "sourceLine": 1619
+      },
+      {
+        "effectBundle": "wh3_main_time_of_legends_capital_buffs",
+        "factionExpression": "faction_key",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh3_main_chaos/wh3_tol_darkness_and_disharmony.lua",
+        "sourceLine": 370
+      },
+      {
+        "effectBundle": "wh3_main_time_of_legends_kislev_buffs",
+        "factionExpression": "human_factions[i]",
+        "turnsExpression": "0",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh3_main_chaos/wh3_tol_something_rotten_in_kislev.lua",
+        "sourceLine": 739
+      },
+      {
+        "effectBundle": "wh3_main_prologue_lord_trait_yuri_2",
+        "factionExpression": "prologue_player_faction",
+        "turnsExpression": "-1",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_stage_4.lua",
+        "sourceLine": 138
+      },
+      {
+        "effectBundle": "wh3_prologue_diplomatic_bonus_tribes",
+        "factionExpression": "prologue_player_faction",
+        "turnsExpression": "10",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_story_panels.lua",
+        "sourceLine": 583
+      },
+      {
+        "effectBundle": "wh_dlc03_bundle_beastmen_alliance_made",
+        "factionExpression": "faction_name",
+        "turnsExpression": "5",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh_campaign_setup.lua",
+        "sourceLine": 2632
+      },
+      {
+        "effectBundle": "wh_dlc03_bundle_beastmen_peace_made",
+        "factionExpression": "faction_name",
+        "turnsExpression": "5",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh_campaign_setup.lua",
+        "sourceLine": 2634
+      },
+      {
+        "effectBundle": "wh_dlc03_bundle_beastmen_non_aggression_made",
+        "factionExpression": "faction_name",
+        "turnsExpression": "5",
+        "reason": "dynamic-or-ambiguous",
+        "sourceFile": "wh_campaign_setup.lua",
+        "sourceLine": 2636
+      }
+    ]
+  }
+}
