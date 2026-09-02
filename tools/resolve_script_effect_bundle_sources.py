@@ -11,6 +11,10 @@ Calls lexically contained in a `cm:add_first_tick_callback*()` invocation are
 marked as first-tick execution evidence. This is stronger evidence that the call
 can execute at campaign start, but it still does not prove that every condition
 inside the callback is true for a specific faction/campaign.
+
+`--exclude-prefix` can be repeated to exclude campaign-specific script trees
+that are not part of the requested campaign (for example Realms of Chaos and
+the prologue when resolving Immortal Empires).
 """
 import argparse
 import json
@@ -40,7 +44,6 @@ def resolve_arg(expr, assignments):
 
 
 def matching_paren(text, open_index):
-    """Return the matching ')' while ignoring strings and line comments."""
     depth = 0
     quote = None
     escaped = False
@@ -135,19 +138,28 @@ def scan_file(path, root):
     return resolved, unresolved
 
 
+def is_excluded(path, root, prefixes):
+    rel = str(path.relative_to(root)).replace('\\', '/')
+    return any(rel == prefix or rel.startswith(prefix.rstrip('/') + '/') for prefix in prefixes)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--scripts-dir', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--game-version', required=True)
     parser.add_argument('--campaign', default='wh3_main_combi')
+    parser.add_argument('--exclude-prefix', action='append', default=[])
     args = parser.parse_args()
 
     if not args.scripts_dir.is_dir():
         raise SystemExit(f'script source resolver failed: missing scripts dir {args.scripts_dir}')
 
+    all_files = sorted(args.scripts_dir.rglob('*.lua'))
+    excluded_files = [p for p in all_files if is_excluded(p, args.scripts_dir, args.exclude_prefix)]
+    files = [p for p in all_files if p not in excluded_files]
+
     resolved, unresolved = [], []
-    files = sorted(args.scripts_dir.rglob('*.lua'))
     for path in files:
         r, u = scan_file(path, args.scripts_dir)
         resolved.extend(r)
@@ -165,10 +177,13 @@ def main():
         'campaign': args.campaign,
         'generatedAt': datetime.now(timezone.utc).isoformat(),
         'status': 'partial',
-        'semantics': 'static script assignments; firstTickCallback=true proves lexical placement in a campaign first-tick callback, but conditional execution still requires separate verification',
+        'semantics': 'static script assignments scoped to the requested campaign; firstTickCallback=true proves lexical placement in a campaign first-tick callback, but conditional execution still requires separate verification',
         'assignments': resolved,
         'diagnostics': {
+            'luaFilesDiscovered': len(all_files),
             'luaFilesScanned': len(files),
+            'excludedLuaFiles': len(excluded_files),
+            'excludedPrefixes': args.exclude_prefix,
             'resolvedAssignments': len(resolved),
             'firstTickAssignments': first_tick_count,
             'unresolvedCalls': len(unresolved),
@@ -177,7 +192,7 @@ def main():
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f"resolved {len(resolved)} static faction/bundle assignments ({first_tick_count} in first-tick callbacks) from {len(files)} Lua files")
+    print(f"resolved {len(resolved)} static faction/bundle assignments ({first_tick_count} in first-tick callbacks) from {len(files)} scoped Lua files; excluded {len(excluded_files)}")
 
 
 if __name__ == '__main__':
