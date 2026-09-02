@@ -1,0 +1,13 @@
+{
+  "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
+  "campaign": "wh3_main_combi",
+  "generatedAt": "2026-09-02T19:48:57.174626+00:00",
+  "status": "candidate",
+  "semantics": "first-tick script candidates only; conditional execution is not yet proven, so these values must not be added to the final attitude score without verification",
+  "candidates": [],
+  "diagnostics": {
+    "candidateCount": 0,
+    "sourceFactionCount": 0,
+    "skippedFirstTickBundlesWithoutDiplomaticEffect": 5
+  }
+}
