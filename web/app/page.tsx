@@ -1,12 +1,13 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import { dataset } from '../data/prototype';
 
 type Lord = { id: string; name: string; faction: string; race: string; crest: string };
 type Modifier = { label: string; value: number };
 type Relation = { from: string; to: string; modifiers: Modifier[]; status: 'Favorable' | 'Neutre' | 'Hostile' };
 
-const dataset = {
+const legacyDataset = {
   gameVersion: 'Immortal Empires · fixture prototype', verification: 'unverified' as const,
   lords: [
     { id: 'imrik', name: 'Imrik', faction: 'Knights of Caledor', race: 'Haut Elfe', crest: '✦' }, { id: 'karl', name: 'Karl Franz', faction: 'Reikland', race: 'Empire', crest: '♜' }, { id: 'malus', name: 'Malus Darkblade', faction: 'Hag Graef', race: 'Elfe Noir', crest: '☾' }, { id: 'kugath', name: "Ku'gath Plaguefather", faction: 'Poxmakers of Nurgle', race: 'Nurgle', crest: '☣' }, { id: 'tyrion', name: 'Tyrion', faction: 'Eataine', race: 'Haut Elfe', crest: '☀' }, { id: 'thorgrim', name: 'Thorgrim Grudgebearer', faction: 'Dwarfs', race: 'Nain', crest: '⛰' },
