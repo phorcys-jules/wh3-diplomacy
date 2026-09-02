@@ -88,13 +88,25 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+          git clone --filter=blob:none --no-checkout --quiet \
+            https://github.com/Shazbot/WH3-Dump.git .cache/wh3-dump
+          git -C .cache/wh3-dump sparse-checkout init --cone
+          git -C .cache/wh3-dump sparse-checkout set script/campaign
+          git -C .cache/wh3-dump checkout --quiet "${WH3_DUMP_REF}"
+          python tools/resolve_script_effect_bundle_sources.py \
+            --scripts-dir .cache/wh3-dump/script/campaign \
+            --output data/generated/script-effect-bundle-sources.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
           for file in \
             immortal-empires-startpos.json \
             frontend-leaders.json \
             campaign-start-positions.json \
             cultural-relations.json \
             diplomatic-effect-targets.json \
-            diplomatic-effect-values.json; do
+            diplomatic-effect-values.json \
+            script-effect-bundle-sources.json; do
             cp "data/generated/${file}" "data/runtime/${file}"
           done
 
@@ -116,7 +128,8 @@ jobs:
             data/generated/campaign-start-positions.json \
             data/generated/cultural-relations.json \
             data/generated/diplomatic-effect-targets.json \
-            data/generated/diplomatic-effect-values.json; do
+            data/generated/diplomatic-effect-values.json \
+            data/generated/script-effect-bundle-sources.json; do
             if ! git ls-files --error-unmatch "$file" >/dev/null 2>&1; then
               git add "$file"
               changed=1
