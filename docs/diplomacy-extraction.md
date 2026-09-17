@@ -70,6 +70,19 @@ python tools/resolve_diplomatic_effect_targets.py `
 
 Le resolver collecte les bonus `diplomatic_mod*` visant une faction ou une sous-culture. Une cible de sous-culture est développée en factions via `factions_tables`. La sortie ne contient pas de valeur : celle-ci devra être jointe ensuite avec la source qui applique l'effet.
 
+## Base culturelle par faction
+
+La jointure suivante transforme la base culturelle directionnelle en relations `faction -> faction` pour les factions jouables. Chaque ligne conserve les deux sous-cultures et la table source ; elle reste une composante partielle, distincte des guerres, traités et scripts :
+
+```powershell
+python tools/resolve_initial_cultural_relations.py `
+  --factions data/raw/db/factions_tables/data__.tsv `
+  --leaders data/generated/frontend-leaders.json `
+  --cultural-relations data/generated/cultural-relations.json `
+  --output data/generated/initial-cultural-relations.json `
+  --game-version "<version WH3>"
+```
+
 C'est notamment la couche nécessaire pour expliquer des effets de faction du type « relations diplomatiques +X avec une faction donnée » ou « -X avec une sous-culture donnée » sans encoder ces valeurs à la main.
 
 ## Étapes de reconstruction du tour 1

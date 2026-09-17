@@ -97,6 +97,14 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+          python tools/resolve_initial_cultural_relations.py \
+            --factions .cache/wh3/db/factions_tables/data__.tsv \
+            --leaders data/generated/frontend-leaders.json \
+            --cultural-relations data/generated/cultural-relations.json \
+            --output data/generated/initial-cultural-relations.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
           git clone --filter=blob:none --no-checkout --quiet \
             https://github.com/Shazbot/WH3-Dump.git .cache/wh3-dump
           git -C .cache/wh3-dump sparse-checkout init --cone
@@ -130,6 +138,7 @@ jobs:
             cultural-relations.json \
             diplomatic-effect-targets.json \
             diplomatic-effect-values.json \
+            initial-cultural-relations.json \
             script-effect-bundle-sources.json \
             turn1-diplomatic-modifier-candidates.json \
             verified-turn1-diplomatic-modifiers.json; do
@@ -155,6 +164,7 @@ jobs:
             data/generated/cultural-relations.json \
             data/generated/diplomatic-effect-targets.json \
             data/generated/diplomatic-effect-values.json \
+            data/generated/initial-cultural-relations.json \
             data/generated/script-effect-bundle-sources.json \
             data/generated/turn1-diplomatic-modifier-candidates.json \
             data/generated/verified-turn1-diplomatic-modifiers.json; do
