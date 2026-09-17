@@ -71,6 +71,11 @@ jobs:
             --map web/public/maps/immortal-empires.jpg
 
           for table in \
+            campaign_group_members_tables \
+            campaign_group_member_criteria_diplomatic_attitudes_tables \
+            campaign_group_member_criteria_factions_tables \
+            campaign_group_member_criteria_cultures_tables \
+            cultures_subcultures_tables \
             effect_bonus_value_faction_junctions_tables \
             effect_bonus_value_subculture_junctions_tables \
             factions_tables; do
@@ -94,6 +99,12 @@ jobs:
             --bundles .cache/wh3/effect_bundles_to_effects.tsv \
             --targets data/generated/diplomatic-effect-targets.json \
             --output data/generated/diplomatic-effect-values.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
+          python tools/resolve_diplomatic_members.py \
+            --db-dir .cache/wh3/db \
+            --output data/generated/diplomatic-members.json \
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
@@ -149,6 +160,7 @@ jobs:
             diplomatic-effect-values.json \
             initial-cultural-relations.json \
             initial-diplomacy.json \
+            diplomatic-members.json \
             script-effect-bundle-sources.json \
             turn1-diplomatic-modifier-candidates.json \
             verified-turn1-diplomatic-modifiers.json; do
@@ -176,6 +188,7 @@ jobs:
             data/generated/diplomatic-effect-values.json \
             data/generated/initial-cultural-relations.json \
             data/generated/initial-diplomacy.json \
+            data/generated/diplomatic-members.json \
             data/generated/script-effect-bundle-sources.json \
             data/generated/turn1-diplomatic-modifier-candidates.json \
             data/generated/verified-turn1-diplomatic-modifiers.json; do
