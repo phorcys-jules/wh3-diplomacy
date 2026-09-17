@@ -17,4 +17,8 @@ Les quatre points de contrôle sont Imrik `(573.586609, 330.326599)`, Karl Franz
 
 ## Fond de carte
 
-Le fichier servi est `web/public/maps/immortal-empires.jpg`, ajouté au dépôt par son mainteneur dans le commit `f5ce4b5`. Sa provenance est donc traçable dans l'historique du projet. Une confirmation de licence de redistribution reste nécessaire avant de déclarer le ticket carte entièrement terminé.
+Le fichier servi est `web/public/maps/immortal-empires.jpg`, ajouté au dépôt par son mainteneur dans le commit `f5ce4b5`. Sa provenance est donc traçable dans l'historique du projet.
+
+Il est distribué comme un asset du projet WH3 Diplomacy, pour son affichage dans ce dépôt et sur son site GitHub Pages. Tous droits réservés hors de cet usage : il ne doit pas être réutilisé ou redistribué séparément sans l'accord du mainteneur.
+
+Son empreinte SHA-256 est `9ac893954e947faa86981764b8f406def60e98e4615d7ef86e660829fa893d7f`. `tools/validate_map_projection.py` contrôle l'empreinte et les bornes de la projection à chaque déploiement. Tout remplacement impose donc une revue explicite de la licence et de la calibration.
