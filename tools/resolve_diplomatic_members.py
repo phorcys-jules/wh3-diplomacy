@@ -18,6 +18,7 @@ TABLES = {
     'attitudes': 'campaign_group_member_criteria_diplomatic_attitudes_tables',
     'factions': 'campaign_group_member_criteria_factions_tables',
     'cultures': 'campaign_group_member_criteria_cultures_tables',
+    'subcultures': 'campaign_group_member_criteria_subcultures_tables',
     'faction_metadata': 'factions_tables',
     'subculture_metadata': 'cultures_subcultures_tables',
 }
@@ -60,6 +61,7 @@ def main():
     require(rows['attitudes'], {'member', 'attitude'}, TABLES['attitudes'])
     require(rows['factions'], {'member', 'context', 'faction'}, TABLES['factions'])
     require(rows['cultures'], {'member', 'context', 'culture'}, TABLES['cultures'])
+    require(rows['subcultures'], {'member', 'context', 'subculture'}, TABLES['subcultures'])
     require(rows['faction_metadata'], {'key', 'subculture'}, TABLES['faction_metadata'])
     require(rows['subculture_metadata'], {'subculture', 'culture'}, TABLES['subculture_metadata'])
 
@@ -67,8 +69,10 @@ def main():
     faction_subculture = {row['key']: row['subculture'] for row in rows['faction_metadata'] if row['key']}
     subculture_culture = {row['subculture']: row['culture'] for row in rows['subculture_metadata'] if row['subculture']}
     factions_by_culture = defaultdict(list)
+    factions_by_subculture = defaultdict(list)
     unresolved_subcultures = set()
     for faction, subculture in faction_subculture.items():
+        factions_by_subculture[subculture].append(faction)
         culture = subculture_culture.get(subculture)
         if culture:
             factions_by_culture[culture].append(faction)
@@ -82,7 +86,7 @@ def main():
             'member': member,
             'group': group_for_member.get(member),
             'attitudes': [],
-            'criteria': {'factions': [], 'cultures': []},
+            'criteria': {'factions': [], 'cultures': [], 'subcultures': []},
         })
         if row['attitude'] not in item['attitudes']:
             item['attitudes'].append(row['attitude'])
@@ -113,6 +117,22 @@ def main():
             'sourceTable': TABLES['cultures'],
         })
 
+    unknown_criterion_subcultures = set()
+    for row in rows['subcultures']:
+        item = members.get(row['member'])
+        if not item:
+            continue
+        subculture = row['subculture']
+        matches = sorted(factions_by_subculture.get(subculture, []))
+        if not matches:
+            unknown_criterion_subcultures.add(subculture)
+        item['criteria']['subcultures'].append({
+            'context': row['context'],
+            'subculture': subculture,
+            'matchingFactions': matches,
+            'sourceTable': TABLES['subcultures'],
+        })
+
     unresolved_groups = sorted(member for member, item in members.items() if not item['group'])
     resolved = sorted(members.values(), key=lambda item: item['member'])
     output = {
@@ -127,9 +147,11 @@ def main():
             'attitudeMemberCount': len(resolved),
             'membersWithFactionCriteria': sum(bool(item['criteria']['factions']) for item in resolved),
             'membersWithCultureCriteria': sum(bool(item['criteria']['cultures']) for item in resolved),
+            'membersWithSubcultureCriteria': sum(bool(item['criteria']['subcultures']) for item in resolved),
             'unresolvedMemberGroups': unresolved_groups,
             'unknownCultures': sorted(unknown_cultures),
             'unresolvedSubcultures': sorted(unresolved_subcultures),
+            'unknownCriterionSubcultures': sorted(unknown_criterion_subcultures),
         },
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
