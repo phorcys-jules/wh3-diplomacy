@@ -125,6 +125,7 @@ jobs:
             --game-version "${GAME_VERSION}"
 
           python tools/validate_initial_diplomacy.py data/generated/initial-diplomacy.json
+          python tools/validate_dataset.py data/generated/initial-diplomacy.json
 
           git clone --filter=blob:none --no-checkout --quiet \
             https://github.com/Shazbot/WH3-Dump.git .cache/wh3-dump
