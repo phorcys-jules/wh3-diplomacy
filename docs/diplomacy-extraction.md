@@ -96,6 +96,10 @@ C'est notamment la couche nécessaire pour expliquer des effets de faction du ty
 7. Inspecter les scripts de campagne pour les changements/forçages de diplomatie.
 8. Produire une relation `sourceFaction -> targetFaction` uniquement lorsque toutes ses composantes sont démontrées.
 
+Le dataset final actuellement publié est `initial-diplomacy.json`. Il assemble la base culturelle directionnelle, les guerres et les traités de départ, chacun avec sa provenance. Les modificateurs non démontrés restent absents plutôt que d'être devinés.
+
 ## Validation
 
 Les premières validations en jeu restent Imrik, Karl Franz, Malus Darkblade et Ku'gath. Les clés doivent provenir des données WH3 actuelles, pas d'une ancienne fixture du prototype.
+
+La CI contrôle les 12 directions de cette matrice pilote : chaque relation possède une base culturelle et sa provenance `campaign_cultural_relations_tables`.
