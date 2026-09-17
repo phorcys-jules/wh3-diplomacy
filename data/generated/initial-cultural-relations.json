@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-17T20:37:13.993617+00:00",
+  "generatedAt": "2026-09-17T21:05:20.680316+00:00",
   "status": "partial",
   "semantics": "directional cultural baseline resolved to playable factions; explicit treaties, wars and unproven script modifiers are separate components",
   "relations": [
