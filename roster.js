@@ -77,11 +77,16 @@ function renderCandidateComparison(ids){
   try{
     compared=window.WH3TeamAnalysis.compareCandidates(analysisInput(keys),[...candidateByFaction.keys()]).slice(0,12)
   }catch(error){candidateComparison.innerHTML=`<p class="pending">${error.message}</p>`;return}
-  candidateComparison.innerHTML=`<p class="source">Classement déterministe sur les facteurs connus : guerres initiales → restrictions → hostilité envers plusieurs membres → hostilité directe → tensions transitives → exposition transitive négative. Aucun pourcentage de guerre.</p>
+  const incremental=compared[0]?.comparisonMode==='incremental';
+  const delta=value=>Number.isFinite(Number(value))?`${Number(value)>0?'+':''}${Number(value).toFixed(Number.isInteger(Number(value))?0:1)}`:'—';
+  const intro=incremental
+    ? 'Impact ajouté par rapport à l’équipe actuelle. Tri : Δ guerres → Δ restrictions → Δ hostilité multiple → Δ hostilité directe → Δ tensions transitives → Δ exposition négative, puis totaux pour départager.'
+    : 'Avec un seul joueur, comparaison des totaux connus. Tri : guerres initiales → restrictions → hostilité multiple → hostilité directe → tensions transitives → exposition négative.';
+  candidateComparison.innerHTML=`<p class="source">${intro} Aucun pourcentage de guerre.</p>
     <div class="candidate-list">${compared.map((row,index)=>{
-      const lord=candidateByFaction.get(row.candidateFaction),m=row.metrics;
+      const lord=candidateByFaction.get(row.candidateFaction),m=row.deltaMetrics||row.metrics,prefix=row.deltaMetrics?'Δ ':'';
       if(!lord)return'';
-      return `<div class="candidate-row"><div><strong>${index+1}. ${lord.name}</strong><small>${lord.race} · ${lord.faction}</small><div class="analysis-meta"><span>guerres ${m.startingWars}</span><span>restrictions ${m.restrictedNpcs}</span><span>PNJ hostiles ${m.hostileNpcs}</span><span>multi-hostiles ${m.multiHostileNpcs}</span><span>tensions transitives ${m.transitiveTensions}</span><span>exposition négative ${fmt(m.negativeTransitiveExposure,1)}</span></div></div><button type="button" data-add-candidate="${lord.id}">Ajouter</button></div>`
+      return `<div class="candidate-row"><div><strong>${index+1}. ${lord.name}</strong><small>${lord.race} · ${lord.faction}</small><div class="analysis-meta"><span title="total ${row.metrics.startingWars}">${prefix}guerres ${row.deltaMetrics?delta(m.startingWars):m.startingWars}</span><span title="total ${row.metrics.restrictedNpcs}">${prefix}restrictions ${row.deltaMetrics?delta(m.restrictedNpcs):m.restrictedNpcs}</span><span title="total ${row.metrics.hostileNpcs}">${prefix}PNJ hostiles ${row.deltaMetrics?delta(m.hostileNpcs):m.hostileNpcs}</span><span title="total ${row.metrics.multiHostileNpcs}">${prefix}multi-hostiles ${row.deltaMetrics?delta(m.multiHostileNpcs):m.multiHostileNpcs}</span><span title="total ${row.metrics.transitiveTensions}">${prefix}tensions transitives ${row.deltaMetrics?delta(m.transitiveTensions):m.transitiveTensions}</span><span title="total ${fmt(row.metrics.negativeTransitiveExposure,1)}">${prefix}exposition négative ${row.deltaMetrics?delta(m.negativeTransitiveExposure):fmt(m.negativeTransitiveExposure,1)}</span></div></div><button type="button" data-add-candidate="${lord.id}">Ajouter</button></div>`
     }).join('')||'<p class="pending">Aucun autre seigneur résolu à comparer.</p>'}</div>`;
 }
 function renderTeamAnalysis(ids){

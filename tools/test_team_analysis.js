@@ -136,5 +136,41 @@ assert.equal(compared[0].candidateFaction, 'b');
 assert.equal(compared[0].metrics.startingWars, 0);
 assert.equal(compared.find(row => row.candidateFaction === 'c').metrics.startingWars, 1);
 assert(!('warProbability' in compared[0].metrics));
+assert.equal(compared[0].comparisonMode, 'total');
+assert.equal(compared[0].deltaMetrics, null);
+
+const incremental = compareCandidates({
+  team: ['a', 'b'],
+  mode: 'ffa',
+  teamTreaty: 'military_alliance',
+  difficulty: 'normal',
+  factions: candidateFactions,
+  culture: candidateCulture,
+  relations: { relations: [] },
+  startpos: { relations: [{ sourceFaction: 'p', targetFaction: 'c', treaties: [], atWar: true }] },
+  cai: {},
+  strategic: { factionProfiles: [], strategicStanceWeights: {} },
+  teamRules: {},
+  restrictions: { restrictions: [] },
+}, ['c']);
+assert.equal(incremental[0].comparisonMode, 'incremental');
+assert.equal(incremental[0].deltaMetrics.startingWars, 1);
+
+const removesHostileNpc = compareCandidates({
+  team: ['a', 'b'],
+  mode: 'ffa',
+  teamTreaty: 'military_alliance',
+  difficulty: 'normal',
+  factions: candidateFactions,
+  culture,
+  relations: { relations: [] },
+  startpos: { relations: [] },
+  cai: {},
+  strategic: { factionProfiles: [], strategicStanceWeights: {} },
+  teamRules: {},
+  restrictions: { restrictions: [] },
+}, ['p']);
+assert(removesHostileNpc[0].deltaMetrics.hostileNpcs < 0);
+
 
 console.log('team analysis fixtures passed');

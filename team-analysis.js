@@ -385,6 +385,11 @@
     return 0;
   }
 
+  function subtractMetrics(metrics, baseline) {
+    if (!baseline) return null;
+    return Object.fromEntries(Object.keys(metrics).map(key => [key, metrics[key] - baseline[key]]));
+  }
+
   function compareCandidates(input, candidateFactionKeys) {
     const team = input.team || [];
     if (team.length < 1 || team.length >= 4) {
@@ -393,25 +398,39 @@
     const available = new Set((input.factions?.factions || []).map(faction => faction.factionKey));
     const candidates = [...new Set(candidateFactionKeys || [])]
       .filter(key => key && !team.includes(key) && available.has(key));
+    const baselineReport = team.length >= 2 ? analyze(input) : null;
+    const baselineMetrics = baselineReport ? candidateMetrics(baselineReport) : null;
+    const comparisonMode = baselineMetrics ? 'incremental' : 'total';
 
     return candidates.map(candidateFaction => {
       const report = analyze({ ...input, team: [...team, candidateFaction] });
+      const metrics = candidateMetrics(report);
       return {
         candidateFaction,
-        metrics: candidateMetrics(report),
+        metrics,
+        deltaMetrics: subtractMetrics(metrics, baselineMetrics),
+        baselineMetrics,
+        comparisonMode,
         report,
-        semantics: 'Classement lexicographique sur des signaux explicites. Ce résultat ne représente ni une probabilité de guerre ni le score natif final de WH3.',
+        semantics: baselineMetrics
+          ? 'Classement lexicographique sur l’impact ajouté au groupe actuel, puis sur les totaux. Ce résultat ne représente ni une probabilité de guerre ni le score natif final de WH3.'
+          : 'Avec un seul joueur sélectionné, classement lexicographique sur les totaux connus. Ce résultat ne représente ni une probabilité de guerre ni le score natif final de WH3.',
       };
-    }).sort((a, b) =>
-      compareCandidateMetrics(a.metrics, b.metrics) ||
-      a.candidateFaction.localeCompare(b.candidateFaction)
-    );
+    }).sort((a, b) => {
+      if (comparisonMode === 'incremental') {
+        const deltaOrder = compareCandidateMetrics(a.deltaMetrics, b.deltaMetrics);
+        if (deltaOrder) return deltaOrder;
+      }
+      return compareCandidateMetrics(a.metrics, b.metrics) ||
+        a.candidateFaction.localeCompare(b.candidateFaction);
+    });
   }
 
   return {
     analyze,
     compareCandidates,
     candidateMetrics,
+    subtractMetrics,
     calculateRelation,
     attitudeMultiplier,
     buildThreatEnvelope,
