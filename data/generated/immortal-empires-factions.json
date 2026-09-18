@@ -1,9 +1,9 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T12:20:16.670699+00:00",
+  "generatedAt": "2026-09-18T12:42:04.182982+00:00",
   "status": "partial",
-  "semantics": "Every entry is explicitly active in the Immortal Empires start-position table. Missing name, leader or position values remain null rather than inferred.",
+  "semantics": "Every entry is explicitly active in the Immortal Empires start-position table. A start region is retained when a camera coordinate is unavailable; missing values remain null rather than inferred.",
   "factions": [
     {
       "factionKey": "wh2_dlc09_rogue_black_creek_raiders",
@@ -13,6 +13,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -32,6 +33,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -51,6 +53,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -70,6 +73,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -90,6 +94,9 @@
       "factionPotential": "combi_skaven_tretch",
       "startingLeaders": [
         "wh2_dlc09_skv_tretch_craventail"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_crookback_mountain"
       ],
       "position": {
         "x": 556.286682,
@@ -114,6 +121,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -133,6 +141,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_antoch",
+        "wh3_main_combi_region_bhagar",
+        "wh3_main_combi_region_plain_of_tuskers"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tombking_minor",
@@ -153,6 +166,9 @@
       "factionPotential": "combi_tombking_khatep",
       "startingLeaders": [
         "wh2_dlc09_tmb_khatep"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_clarak_spire"
       ],
       "position": {
         "x": 17.0,
@@ -179,6 +195,10 @@
       "startingLeaders": [
         "wh2_dlc09_tmb_arkhan"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_sorcerers_islands",
+        "wh3_main_combi_region_wizard_caliphs_palace"
+      ],
       "position": {
         "x": 301.315826,
         "y": 232.769196,
@@ -203,6 +223,9 @@
       "factionPotential": "combi_tombking_settra",
       "startingLeaders": [
         "wh2_dlc09_tmb_settra"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_khemri"
       ],
       "position": {
         "x": 419.862549,
@@ -229,6 +252,9 @@
       "startingLeaders": [
         "wh2_dlc09_tmb_khalida"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_lybaras"
+      ],
       "position": {
         "x": 537.702332,
         "y": 234.181244,
@@ -252,6 +278,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_numas",
+        "wh3_main_combi_region_quatar"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tombking_minor",
@@ -271,6 +301,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_black_tower_of_arkhan",
+        "wh3_main_combi_region_el_kalabad",
+        "wh3_main_combi_region_pools_of_despair"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tombking_minor",
@@ -290,6 +325,9 @@
       "major": false,
       "factionPotential": "combi_sentinels",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_black_pyramid_of_nagash"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_sentinels",
@@ -309,6 +347,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -328,6 +367,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -347,6 +387,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -366,6 +407,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -385,6 +427,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -404,6 +447,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -423,6 +467,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -442,6 +487,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_blood_voyage",
@@ -461,6 +507,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -480,6 +527,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -500,6 +548,9 @@
       "factionPotential": "combi_vampirecoast_noctilus",
       "startingLeaders": [
         "wh2_dlc11_cst_noctilus"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_galleons_graveyard"
       ],
       "position": {
         "x": 127.05687,
@@ -524,6 +575,7 @@
       "major": true,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampirecoast_minor",
@@ -544,6 +596,9 @@
       "factionPotential": "combi_vampirecoast_aranessa",
       "startingLeaders": [
         "wh2_dlc11_cst_aranessa"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_sartosa"
       ],
       "position": {
         "x": 339.60791,
@@ -568,6 +623,7 @@
       "major": true,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampirecoast_minor",
@@ -587,6 +643,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -606,6 +663,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -625,6 +683,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -644,6 +703,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -663,6 +723,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -682,6 +743,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -701,6 +763,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -720,6 +783,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -739,6 +803,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -758,6 +823,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -778,6 +844,9 @@
       "factionPotential": "combi_vampirecoast_cylostra",
       "startingLeaders": [
         "wh2_dlc11_cst_cylostra"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_twisted_glade"
       ],
       "position": {
         "x": 129.988617,
@@ -802,6 +871,7 @@
       "major": true,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampirecoast_minor",
@@ -822,6 +892,9 @@
       "factionPotential": "combi_vampirecoast_harkon",
       "startingLeaders": [
         "wh2_dlc11_cst_harkon"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_awakening"
       ],
       "position": {
         "x": 190.975647,
@@ -846,6 +919,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -865,6 +939,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -884,6 +959,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -903,6 +979,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -922,6 +999,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -941,6 +1019,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_pox_marsh",
+        "wh3_main_combi_region_tlax"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampirecoast_minor",
@@ -960,6 +1042,7 @@
       "major": true,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampirecoast_minor",
@@ -979,6 +1062,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -999,6 +1083,9 @@
       "factionPotential": "combi_darkelf_lokhir",
       "startingLeaders": [
         "wh2_dlc11_def_lokhir"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_haichai"
       ],
       "position": {
         "x": 896.872742,
@@ -1023,6 +1110,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -1042,6 +1130,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1061,6 +1150,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1080,6 +1170,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1099,6 +1190,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1119,6 +1211,9 @@
       "factionPotential": "combi_vampire_kemmler",
       "startingLeaders": [
         "wh_main_vmp_heinrich_kemmler"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_blackstone_post"
       ],
       "position": {
         "x": 302.568115,
@@ -1143,6 +1238,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_deaths_head_monoliths",
+        "wh3_main_combi_region_nahuontl",
+        "wh3_main_combi_region_statues_of_the_gods",
+        "wh3_main_combi_region_sun_tree_glades"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -1163,6 +1264,9 @@
       "factionPotential": "combi_lizardmen_tehenhauin",
       "startingLeaders": [
         "wh2_dlc12_lzd_tehenhauin"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_xlanzec"
       ],
       "position": {
         "x": 142.075485,
@@ -1187,6 +1291,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -1206,6 +1311,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_monument_of_izzatal",
+        "wh3_main_combi_region_spektazuma"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -1225,6 +1334,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1246,6 +1356,7 @@
       "startingLeaders": [
         "wh_main_emp_balthasar_gelt"
       ],
+      "startingRegions": [],
       "position": {
         "x": 761.077393,
         "y": 338.143005,
@@ -1271,6 +1382,9 @@
       "startingLeaders": [
         "wh2_dlc13_emp_cha_markus_wulfhart"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_temple_of_kara"
+      ],
       "position": {
         "x": 85.913696,
         "y": 278.533844,
@@ -1294,6 +1408,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1313,6 +1428,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_lizardmen_minor",
@@ -1332,6 +1448,7 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_lizardmen_vassal",
@@ -1353,6 +1470,7 @@
       "startingLeaders": [
         "wh2_dlc13_lzd_nakai"
       ],
+      "startingRegions": [],
       "position": {
         "x": 886.934021,
         "y": 282.235626,
@@ -1376,6 +1494,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1395,6 +1514,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1415,6 +1535,9 @@
       "factionPotential": "combi_bretonnia_repanse",
       "startingLeaders": [
         "wh2_dlc14_brt_repanse"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_copher"
       ],
       "position": {
         "x": 326.47171,
@@ -1439,6 +1562,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_brionne"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -1458,6 +1584,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_ash_ridge_mountains",
+        "wh3_main_combi_region_the_bone_gulch"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -1478,6 +1608,9 @@
       "factionPotential": "combi_greenskin_azhag",
       "startingLeaders": [
         "wh_main_grn_azhag_the_slaughterer"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_khazid_irkulaz"
       ],
       "position": {
         "x": 528.952576,
@@ -1504,6 +1637,9 @@
       "startingLeaders": [
         "wh2_dlc15_grn_grom_the_paunch"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_massif_orcal"
+      ],
       "position": {
         "x": 292.215088,
         "y": 426.483307,
@@ -1527,6 +1663,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_cairn_thel",
+        "wh3_main_combi_region_elessaeli",
+        "wh3_main_combi_region_shrine_of_loec",
+        "wh3_main_combi_region_tralinia"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -1546,6 +1688,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -1566,6 +1709,9 @@
       "factionPotential": "combi_highelf_imrik",
       "startingLeaders": [
         "wh2_dlc15_hef_imrik"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_fortress_of_vorag"
       ],
       "position": {
         "x": 573.586609,
@@ -1590,6 +1736,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -1609,6 +1756,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_mordheim"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -1628,6 +1778,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -1647,6 +1798,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1666,6 +1818,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1685,6 +1838,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1704,6 +1858,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_forest_of_gloom"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_forest_dweller",
@@ -1723,6 +1880,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_khymerica_spire",
+        "wh3_main_combi_region_plain_of_spiders",
+        "wh3_main_combi_region_rothkar_spire"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -1742,6 +1904,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1761,6 +1924,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_the_sacred_pools"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_forest_dweller",
@@ -1780,6 +1946,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_plain_of_dogs",
+        "wh3_main_combi_region_scarpels_lair",
+        "wh3_main_combi_region_sulpharets",
+        "wh3_main_combi_region_tyrant_peak"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -1800,6 +1972,9 @@
       "factionPotential": "combi_woodelf_drycha",
       "startingLeaders": [
         "wh2_dlc16_wef_drycha"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_gryphon_wood"
       ],
       "position": {
         "x": 448.789307,
@@ -1826,6 +2001,9 @@
       "startingLeaders": [
         "wh2_dlc16_wef_sisters_of_twilight"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_witchwood"
+      ],
       "position": {
         "x": 57.0,
         "y": 521.0,
@@ -1849,6 +2027,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1868,6 +2047,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1887,6 +2067,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1906,6 +2087,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1925,6 +2107,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1944,6 +2127,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1963,6 +2147,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -1984,6 +2169,7 @@
       "startingLeaders": [
         "wh_dlc03_bst_malagor"
       ],
+      "startingRegions": [],
       "position": {
         "x": 438.66684,
         "y": 278.236084,
@@ -2009,6 +2195,7 @@
       "startingLeaders": [
         "wh2_dlc17_bst_taurox"
       ],
+      "startingRegions": [],
       "position": {
         "x": 71.71244,
         "y": 560.182983,
@@ -2033,6 +2220,9 @@
       "factionPotential": "combi_dwarf_thorek",
       "startingLeaders": [
         "wh2_dlc17_dwf_thorek"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_zorn"
       ],
       "position": {
         "x": 461.663818,
@@ -2059,6 +2249,9 @@
       "startingLeaders": [
         "wh2_dlc17_lzd_oxyotl"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_godless_crater"
+      ],
       "position": {
         "x": 176.263412,
         "y": 21.594929,
@@ -2082,6 +2275,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -2101,6 +2295,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_zandri"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_bretonnia_minor",
@@ -2120,6 +2317,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_lashiek"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_bretonnia_minor",
@@ -2139,6 +2339,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_martek"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_bretonnia_minor",
@@ -2158,6 +2361,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_beastmen_minor",
@@ -2177,6 +2381,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_beastmen_minor",
@@ -2196,6 +2401,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_beastmen_minor",
@@ -2215,6 +2421,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_beastmen_minor",
@@ -2234,6 +2441,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -2253,6 +2461,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -2272,6 +2481,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -2291,6 +2501,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_arnheim",
+        "wh3_main_combi_region_forest_of_arnheim",
+        "wh3_main_combi_region_the_moon_shard"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2310,6 +2525,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_pillars_of_unseen_constellations",
+        "wh3_main_combi_region_wellsprings_of_eternity"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2329,6 +2548,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_circle_of_destruction",
+        "wh3_main_combi_region_clar_karond",
+        "wh3_main_combi_region_venom_glade"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2348,6 +2572,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_angerrial",
+        "wh3_main_combi_region_shrine_of_asuryan",
+        "wh3_main_combi_region_tower_of_lysean"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2368,6 +2597,9 @@
       "factionPotential": "combi_darkelf_morathi",
       "startingLeaders": [
         "wh2_main_def_morathi"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_ancient_city_of_quintex"
       ],
       "position": {
         "x": 52.0,
@@ -2392,6 +2624,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2411,6 +2644,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -2430,6 +2664,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -2449,6 +2684,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -2468,6 +2704,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -2487,6 +2724,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_fortress_of_the_damned",
+        "wh3_main_combi_region_shagrath",
+        "wh3_main_combi_region_the_frozen_city"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2506,6 +2748,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_hag_hall",
+        "wh3_main_combi_region_temple_of_addaioth",
+        "wh3_main_combi_region_vauls_anvil_naggaroth"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2525,6 +2772,13 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_ashrak",
+        "wh3_main_combi_region_chill_road",
+        "wh3_main_combi_region_dagraks_end",
+        "wh3_main_combi_region_ghrond",
+        "wh3_main_combi_region_the_great_arena"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2545,6 +2799,9 @@
       "factionPotential": "combi_darkelf_malus",
       "startingLeaders": [
         "wh2_dlc14_def_malus_darkblade"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_hag_graef"
       ],
       "position": {
         "x": 393.503754,
@@ -2569,6 +2826,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2589,6 +2847,9 @@
       "factionPotential": "combi_darkelf_hellebron",
       "startingLeaders": [
         "wh2_dlc10_def_crone_hellebron"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_har_ganeth"
       ],
       "position": {
         "x": 134.0,
@@ -2613,6 +2874,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2632,6 +2894,13 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_black_creek_spire",
+        "wh3_main_combi_region_blacklight_tower",
+        "wh3_main_combi_region_karond_kar",
+        "wh3_main_combi_region_shrine_of_ladrielle",
+        "wh3_main_combi_region_slavers_point"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2652,6 +2921,9 @@
       "factionPotential": "combi_darkelf_malekith",
       "startingLeaders": [
         "wh2_main_def_malekith"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_naggarond"
       ],
       "position": {
         "x": 66.0,
@@ -2676,6 +2948,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2695,6 +2968,14 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_evershale",
+        "wh3_main_combi_region_phoenix_gate",
+        "wh3_main_combi_region_shrine_of_khaine",
+        "wh3_main_combi_region_tor_anlec",
+        "wh3_main_combi_region_tor_dranil",
+        "wh3_main_combi_region_tor_saroir"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2714,6 +2995,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_grey_rock_point",
+        "wh3_main_combi_region_ironspike",
+        "wh3_main_combi_region_petrified_forest",
+        "wh3_main_combi_region_ssildra_tor"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2733,6 +3020,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_hoteks_column",
+        "wh3_main_combi_region_the_black_forests"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -2752,6 +3043,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_eye_of_the_panther",
+        "wh3_main_combi_region_vulture_mountain"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -2771,6 +3066,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -2790,6 +3086,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_mine_of_the_bearded_skulls",
+        "wh3_main_combi_region_thrice_cursed_peak"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -2809,6 +3109,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_monument_of_the_moon",
+        "wh3_main_combi_region_port_reaver",
+        "wh3_main_combi_region_swamp_town"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -2828,6 +3133,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -2847,6 +3153,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_karag_orrud",
+        "wh3_main_combi_region_lost_plateau",
+        "wh3_main_combi_region_mount_arachnos"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -2866,6 +3177,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_pahuax",
+        "wh3_main_combi_region_shrine_of_sotek",
+        "wh3_main_combi_region_the_high_sentinel"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -2886,6 +3202,9 @@
       "factionPotential": "combi_highelf_alarielle",
       "startingLeaders": [
         "wh2_dlc10_hef_alarielle"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_gaean_vale"
       ],
       "position": {
         "x": 178.266434,
@@ -2910,6 +3229,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_tor_sethai",
+        "wh3_main_combi_region_vauls_anvil_ulthuan"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -2929,6 +3252,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_elisia",
+        "wh3_main_combi_region_tor_achare"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -2948,6 +3275,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_citadel_of_dusk",
+        "wh3_main_combi_region_dusk_peaks"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -2967,6 +3298,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_mistnar",
+        "wh3_main_combi_region_tor_koruali"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -2987,6 +3322,9 @@
       "factionPotential": "combi_highelf_tyrion",
       "startingLeaders": [
         "wh2_main_hef_tyrion"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_lothern"
       ],
       "position": {
         "x": 166.0,
@@ -3011,6 +3349,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_eagle_gate",
+        "wh3_main_combi_region_tor_elyr",
+        "wh3_main_combi_region_unicorn_gate",
+        "wh3_main_combi_region_whitefire_tor"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -3030,6 +3374,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -3049,6 +3394,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3068,6 +3414,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3087,6 +3434,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3106,6 +3454,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3125,6 +3474,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3144,6 +3494,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3163,6 +3514,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3182,6 +3534,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3202,6 +3555,9 @@
       "factionPotential": "combi_highelf_alithanar",
       "startingLeaders": [
         "wh2_dlc10_hef_alith_anar"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_monoliths"
       ],
       "position": {
         "x": 145.563339,
@@ -3228,6 +3584,9 @@
       "startingLeaders": [
         "wh2_main_hef_teclis"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_fortress_of_dawn"
+      ],
       "position": {
         "x": 393.39859,
         "y": 55.529987,
@@ -3251,6 +3610,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_port_elistor",
+        "wh3_main_combi_region_tor_finu",
+        "wh3_main_combi_region_white_tower_of_hoeth"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -3270,6 +3634,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_avethir",
+        "wh3_main_combi_region_griffon_gate",
+        "wh3_main_combi_region_tor_anroc",
+        "wh3_main_combi_region_whitepeak"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -3289,6 +3659,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_minor",
@@ -3309,6 +3680,9 @@
       "factionPotential": "combi_highelf_eltharion",
       "startingLeaders": [
         "wh2_dlc15_hef_eltharion"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_tor_yvresse"
       ],
       "position": {
         "x": 388.415863,
@@ -3335,6 +3709,9 @@
       "startingLeaders": [
         "wh2_main_lzd_lord_mazdamundi"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_hexoatl"
+      ],
       "position": {
         "x": 36.596851,
         "y": 381.037628,
@@ -3359,6 +3736,9 @@
       "factionPotential": "combi_lizardmen_gorrok",
       "startingLeaders": [
         "wh2_dlc13_lzd_gor_rok"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_itza"
       ],
       "position": {
         "x": 102.607315,
@@ -3385,6 +3765,9 @@
       "startingLeaders": [
         "wh2_main_lzd_kroq_gar"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_golden_tower"
+      ],
       "position": {
         "x": 484.256195,
         "y": 145.180817,
@@ -3408,6 +3791,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3427,6 +3811,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3446,6 +3831,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3465,6 +3851,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_chamber_of_visions",
+        "wh3_main_combi_region_golden_ziggurat",
+        "wh3_main_combi_region_sentinels_of_xeti"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_lizardmen_minor",
@@ -3484,6 +3875,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_chupayotl",
+        "wh3_main_combi_region_mangrove_coast",
+        "wh3_main_combi_region_the_sentinel_of_time",
+        "wh3_main_combi_region_the_southern_sentinels"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_lizardmen_minor",
@@ -3503,6 +3900,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_lizardmen_minor",
@@ -3523,6 +3921,9 @@
       "factionPotential": "combi_lizardmen_tiktaqto",
       "startingLeaders": [
         "wh2_dlc12_lzd_tiktaqto"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_tlaqua"
       ],
       "position": {
         "x": 345.023987,
@@ -3547,6 +3948,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_tlanxla",
+        "wh3_main_combi_region_tlaxtlan",
+        "wh3_main_combi_region_xahutec"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_lizardmen_minor",
@@ -3566,6 +3972,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_axlotl",
+        "wh3_main_combi_region_xlanhuapec"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_lizardmen_minor",
@@ -3585,6 +3995,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_yuatek",
+        "wh3_main_combi_region_zlatlan"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_lizardmen_minor",
@@ -3604,6 +4018,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_shard_bastion"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -3623,6 +4040,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_dlc20_combi_region_glacier_encampment",
+        "wh3_main_combi_region_ironfrost"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -3642,6 +4063,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_skeggi",
+        "wh3_main_combi_region_ziggurat_of_dawn"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -3661,6 +4086,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3680,6 +4106,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3699,6 +4126,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3718,6 +4146,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3737,6 +4166,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3756,6 +4186,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3775,6 +4206,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3794,6 +4226,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3813,6 +4246,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3832,6 +4266,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3851,6 +4286,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3870,6 +4306,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3889,6 +4326,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -3908,6 +4346,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3927,6 +4366,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3946,6 +4386,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3965,6 +4406,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -3984,6 +4426,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -4003,6 +4446,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -4022,6 +4466,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -4041,6 +4486,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -4060,6 +4506,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -4079,6 +4526,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -4098,6 +4546,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -4118,6 +4567,9 @@
       "factionPotential": "combi_skaven_snikch",
       "startingLeaders": [
         "wh2_dlc14_skv_deathmaster_snikch"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_xing_po"
       ],
       "position": {
         "x": 826.896118,
@@ -4142,6 +4594,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -4161,6 +4614,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -4180,6 +4634,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_serpent_coast",
+        "wh3_main_combi_region_temple_of_skulls",
+        "wh3_main_combi_region_teotiqua",
+        "wh3_main_combi_region_the_cursed_jungle"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -4200,6 +4660,9 @@
       "factionPotential": "combi_skaven_queek",
       "startingLeaders": [
         "wh2_main_skv_queek_headtaker"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_misty_mountain"
       ],
       "position": {
         "x": 507.283722,
@@ -4224,6 +4687,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -4244,6 +4708,9 @@
       "factionPotential": "combi_skaven_throt",
       "startingLeaders": [
         "wh2_dlc16_skv_throt_the_unclean"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_hell_pit"
       ],
       "position": {
         "x": 458.319489,
@@ -4268,6 +4735,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -4288,6 +4756,10 @@
       "factionPotential": "combi_skaven_skrolk",
       "startingLeaders": [
         "wh2_main_skv_lord_skrolk"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_oyxl",
+        "wh3_main_combi_region_subatuun"
       ],
       "position": {
         "x": 125.670151,
@@ -4312,6 +4784,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -4331,6 +4804,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_altar_of_ultimate_darkness",
+        "wh3_main_combi_region_eldar_spire",
+        "wh3_main_combi_region_har_kaldra",
+        "wh3_main_combi_region_rackdo_gorge"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -4351,6 +4830,9 @@
       "factionPotential": "combi_skaven_ikit",
       "startingLeaders": [
         "wh2_dlc12_skv_ikit_claw"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_skavenblight"
       ],
       "position": {
         "x": 313.059265,
@@ -4375,6 +4857,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -4394,6 +4877,11 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_altar_of_the_horned_rat",
+        "wh3_main_combi_region_marks_of_the_old_ones",
+        "wh3_main_combi_region_the_star_tower"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -4413,6 +4901,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -4432,6 +4921,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -4451,6 +4941,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -4470,6 +4961,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -4489,6 +4981,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_springs_of_eternal_life"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -4508,6 +5003,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_al_haikk",
+        "wh3_main_combi_region_fyrus"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -4527,6 +5026,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_doom_glade",
+        "wh3_main_combi_region_lahmia",
+        "wh3_main_combi_region_mahrak",
+        "wh3_main_combi_region_rasetra"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -4546,6 +5051,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_oreons_camp"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_woodelf_minor",
@@ -4566,6 +5074,9 @@
       "factionPotential": "combi_darkelf_rakarth",
       "startingLeaders": [
         "wh2_twa03_def_rakarth"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_great_turtle_isle"
       ],
       "position": {
         "x": 24.763008,
@@ -4590,6 +5101,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_minor",
@@ -4610,6 +5122,9 @@
       "factionPotential": "combi_cathay_bhashiva",
       "startingLeaders": [
         "wh3_cp1_cth_bhashiva"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_vale_of_titans"
       ],
       "position": {
         "x": 712.404297,
@@ -4637,6 +5152,7 @@
         "wh3_dlc20_sla_azazel",
         "wh3_dlc20_sla_azazel"
       ],
+      "startingRegions": [],
       "position": {
         "x": 415.0,
         "y": 637.852112,
@@ -4663,6 +5179,9 @@
         "wh3_dlc20_nur_festus",
         "wh3_dlc20_nur_festus"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_brass_keep"
+      ],
       "position": {
         "x": 392.915039,
         "y": 554.021301,
@@ -4688,6 +5207,7 @@
       "startingLeaders": [
         "wh_dlc01_chs_kholek_suneater"
       ],
+      "startingRegions": [],
       "position": {
         "x": 687.0,
         "y": 570.425964,
@@ -4713,6 +5233,7 @@
       "startingLeaders": [
         "wh_dlc01_chs_prince_sigvald"
       ],
+      "startingRegions": [],
       "position": {
         "x": 248.0,
         "y": 680.564331,
@@ -4739,6 +5260,7 @@
         "wh3_dlc20_kho_valkia",
         "wh3_dlc20_kho_valkia"
       ],
+      "startingRegions": [],
       "position": {
         "x": 79.222656,
         "y": 696.11615,
@@ -4765,6 +5287,7 @@
         "wh3_dlc20_tze_vilitch",
         "wh3_dlc20_tze_vilitch"
       ],
+      "startingRegions": [],
       "position": {
         "x": 891.811401,
         "y": 514.125793,
@@ -4788,6 +5311,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_khorne_minor",
@@ -4807,6 +5331,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -4826,6 +5351,9 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_the_bleeding_spire"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -4845,6 +5373,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -4864,6 +5393,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_foundry_of_bones"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -4883,6 +5415,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_quetza",
+        "wh3_main_combi_region_xhotl"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_nurgle_minor",
@@ -4902,6 +5438,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_fallen_gates",
+        "wh3_main_combi_region_macu_peaks"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_slaanesh_minor",
@@ -4921,6 +5461,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_chaqua",
+        "wh3_main_combi_region_quittax"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tzeentch_minor",
@@ -4940,6 +5484,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_citadel_of_lead",
+        "wh3_main_combi_region_konquata"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tzeentch_minor",
@@ -4959,6 +5507,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_beichai",
+        "wh3_main_combi_region_chimai",
+        "wh3_main_combi_region_fu_chow",
+        "wh3_main_combi_region_zhizhu"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampirecoast_minor",
@@ -4978,6 +5532,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_dai_cheng",
+        "wh3_main_combi_region_tower_of_ashung"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -4997,6 +5555,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_baleful_hills",
+        "wh3_main_combi_region_bridge_of_heaven",
+        "wh3_main_combi_region_shi_long"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -5016,6 +5579,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_jungles_of_chian"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_woodelf_minor",
@@ -5037,6 +5603,9 @@
       "startingLeaders": [
         "wh3_dlc23_chd_astragoth",
         "wh3_dlc23_chd_astragoth"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_uzkulak"
       ],
       "position": {
         "x": 570.808533,
@@ -5061,6 +5630,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5080,6 +5650,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5099,6 +5670,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5118,6 +5690,11 @@
       "major": false,
       "factionPotential": "combi_chaosdwarfs_conclave_of_sorcerers",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_dlc23_combi_region_gash_kadrak",
+        "wh3_main_combi_region_the_falls_of_doom",
+        "wh3_main_combi_region_zharr_naggrund"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_conclave_of_sorcerers",
@@ -5139,6 +5716,9 @@
       "startingLeaders": [
         "wh3_dlc23_chd_drazhoath",
         "wh3_dlc23_chd_drazhoath"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_black_fortress"
       ],
       "position": {
         "x": 631.343689,
@@ -5163,6 +5743,11 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_the_daemons_stump",
+        "wh3_main_combi_region_the_gates_of_zharr",
+        "wh3_main_combi_region_tower_of_gorgoth"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_dwarf_minor",
@@ -5184,6 +5769,10 @@
       "startingLeaders": [
         "wh3_dlc23_chd_zhatan",
         "wh3_dlc23_chd_zhatan"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_granite_spikes",
+        "wh3_main_combi_region_the_volary"
       ],
       "position": {
         "x": 767.19342,
@@ -5211,6 +5800,11 @@
         "wh3_dlc24_cth_yuan_bo",
         "wh3_dlc24_cth_yuan_bo"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_floating_pyramid",
+        "wh3_main_combi_region_isle_of_the_crimson_skull",
+        "wh3_main_combi_region_shang_wu"
+      ],
       "position": {
         "x": 46.9,
         "y": 305.0,
@@ -5237,6 +5831,9 @@
         "wh3_dlc24_ksl_mother_ostankya",
         "wh3_dlc24_ksl_mother_ostankya"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_bleak_hold_fortress"
+      ],
       "position": {
         "x": 64.5,
         "y": 472.8,
@@ -5260,6 +5857,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5282,6 +5880,7 @@
         "wh3_dlc24_tze_the_changeling",
         "wh3_dlc24_tze_the_changeling"
       ],
+      "startingRegions": [],
       "position": {
         "x": 424.9,
         "y": 489.8,
@@ -5305,6 +5904,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5326,6 +5926,9 @@
       "startingLeaders": [
         "wh3_dlc25_dwf_malakai_makaisson",
         "wh3_dlc25_dwf_malakai_makaisson"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_kraka_drak"
       ],
       "position": {
         "x": 486.036652,
@@ -5350,6 +5953,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_khorne_minor",
@@ -5370,6 +5974,10 @@
       "factionPotential": "combi_nurgle_epidemius",
       "startingLeaders": [
         "wh3_dlc25_nur_epidemius"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_bilious_cliffs",
+        "wh3_main_combi_region_the_forest_of_decay"
       ],
       "position": {
         "x": 420.046387,
@@ -5394,6 +6002,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_nurgle_minor",
@@ -5415,6 +6024,9 @@
       "startingLeaders": [
         "wh3_dlc25_nur_tamurkhan",
         "wh3_dlc25_nur_tamurkhan"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_zanbaijin"
       ],
       "position": {
         "x": 657.133911,
@@ -5439,6 +6051,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -5458,6 +6071,7 @@
       "major": false,
       "factionPotential": "combi_minor_strong",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_slaanesh_minor",
@@ -5477,6 +6091,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_dotternbach",
+        "wh3_main_combi_region_pfeildorf",
+        "wh3_main_combi_region_wissenburg"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -5496,6 +6115,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5515,6 +6135,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5534,6 +6155,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5553,6 +6175,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5572,6 +6195,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_darkelf_malekith",
@@ -5591,6 +6215,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_thorgrim",
@@ -5610,6 +6235,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_gateway_to_khuresh",
+        "wh3_main_combi_region_mountain_pass",
+        "wh3_main_combi_region_southern_outpost"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -5630,6 +6260,10 @@
       "factionPotential": "combi_greenskin_gorbad",
       "startingLeaders": [
         "wh3_dlc26_grn_gorbad_ironclaw"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_black_crag",
+        "wh3_main_combi_region_karag_dron"
       ],
       "position": {
         "x": 486.923309,
@@ -5654,6 +6288,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5674,6 +6309,9 @@
       "factionPotential": "combi_khorne_arbaal",
       "startingLeaders": [
         "wh3_dlc26_kho_arbaal_the_undefeated"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_stormvrack_mount"
       ],
       "position": {
         "x": 570.9,
@@ -5700,6 +6338,9 @@
       "startingLeaders": [
         "wh3_dlc26_kho_skulltaker"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_hualotal"
+      ],
       "position": {
         "x": 71.48,
         "y": 235.65,
@@ -5725,6 +6366,7 @@
       "startingLeaders": [
         "wh3_dlc26_ogr_golgfag_maneater"
       ],
+      "startingRegions": [],
       "position": {
         "x": 411.467224,
         "y": 586.985535,
@@ -5748,6 +6390,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5767,6 +6410,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5786,6 +6430,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5805,6 +6450,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5824,6 +6470,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5843,6 +6490,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5862,6 +6510,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5883,6 +6532,7 @@
       "startingLeaders": [
         "wh3_dlc27_hef_aislinn"
       ],
+      "startingRegions": [],
       "position": {
         "x": 605.24176,
         "y": 65.059349,
@@ -5906,6 +6556,7 @@
       "major": false,
       "factionPotential": "combi_highelf_tyrion",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_highelf_aislinn_confederation_owner",
@@ -5925,6 +6576,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5944,6 +6596,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -5963,6 +6616,11 @@
       "major": false,
       "factionPotential": "minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_broken_mount",
+        "wh3_main_combi_region_desolation_ridge",
+        "wh3_main_combi_region_rotten_stone"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_norsca_minor",
@@ -5982,6 +6640,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6001,6 +6660,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6020,6 +6680,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6039,6 +6700,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6059,6 +6721,9 @@
       "factionPotential": "combi_norsca_dolgan",
       "startingLeaders": [
         "wh3_dlc27_nor_sayl_the_faithless"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_dark_tower"
       ],
       "position": {
         "x": 840.790283,
@@ -6083,6 +6748,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -6103,6 +6769,9 @@
       "factionPotential": "combi_slaanesh_masque",
       "startingLeaders": [
         "wh3_dlc27_sla_masque_of_slaanesh"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_blood_hall"
       ],
       "position": {
         "x": 45.290344,
@@ -6129,6 +6798,9 @@
       "startingLeaders": [
         "wh3_dlc27_sla_dechala"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_hidden_landing"
+      ],
       "position": {
         "x": 899.0,
         "y": 253.0,
@@ -6152,6 +6824,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_teb_minor",
@@ -6171,6 +6844,11 @@
       "major": false,
       "factionPotential": "minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_dlc20_combi_region_dragons_death",
+        "wh3_main_combi_region_floating_mountain",
+        "wh3_main_combi_region_the_gallows_tree"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_norsca_minor",
@@ -6190,6 +6868,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6209,6 +6888,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_aquitaine",
+        "wh3_main_combi_region_bordeleaux"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_bretonnia_minor",
@@ -6228,6 +6911,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -6247,6 +6931,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -6266,6 +6951,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_bloodwind_keep",
+        "wh3_main_combi_region_fortress_of_eyes",
+        "wh3_main_combi_region_iron_storm"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -6285,6 +6975,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -6306,6 +6997,7 @@
       "startingLeaders": [
         "wh3_main_dae_belakor"
       ],
+      "startingRegions": [],
       "position": {
         "x": 236.674316,
         "y": 565.571716,
@@ -6329,6 +7021,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -6348,6 +7041,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_tor_elasor",
+        "wh3_main_combi_region_tower_of_the_stars",
+        "wh3_main_combi_region_tower_of_the_sun"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampirecoast_minor",
@@ -6367,6 +7065,13 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_bamboo_crossing",
+        "wh3_main_combi_region_fu_hung",
+        "wh3_main_combi_region_temple_of_elemental_winds",
+        "wh3_main_combi_region_village_of_the_tigermen",
+        "wh3_main_combi_region_waili_village"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_cathay_minor_unfriendly",
@@ -6386,6 +7091,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6405,6 +7111,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6424,6 +7131,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6443,6 +7151,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_city_of_the_shugengan",
+        "wh3_main_combi_region_ming_zhu",
+        "wh3_main_combi_region_wei_jin"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_cathay_minor",
@@ -6462,6 +7175,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_hanyu_port",
+        "wh3_main_combi_region_shang_yang",
+        "wh3_main_combi_region_shrine_of_the_alchemist",
+        "wh3_main_combi_region_tai_tzu"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_cathay_minor_unfriendly",
@@ -6481,6 +7200,11 @@
       "major": false,
       "factionPotential": "combi_minor_strong",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_li_temple",
+        "wh3_main_combi_region_li_zhu",
+        "wh3_main_combi_region_shi_wu"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_cathay_minor",
@@ -6500,6 +7224,13 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_dragon_gate",
+        "wh3_main_combi_region_dragons_crossroad",
+        "wh3_main_combi_region_red_fortress",
+        "wh3_main_combi_region_snake_gate",
+        "wh3_main_combi_region_turtle_gate"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_cathay_minor",
@@ -6519,6 +7250,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_nan_li",
+        "wh3_main_combi_region_po_mei",
+        "wh3_main_combi_region_terracotta_graveyard",
+        "wh3_main_combi_region_weng_chang"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_cathay_minor_unfriendly",
@@ -6538,6 +7275,12 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_celestial_monastery",
+        "wh3_main_combi_region_nonchang",
+        "wh3_main_combi_region_shiyamas_rest",
+        "wh3_main_combi_region_zhanshi"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_cathay_minor",
@@ -6559,6 +7302,9 @@
       "startingLeaders": [
         "wh3_main_cth_miao_ying",
         "wh3_main_cth_miao_ying"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_nan_gau"
       ],
       "position": {
         "x": 761.141541,
@@ -6586,6 +7332,9 @@
         "wh3_main_cth_zhao_ming",
         "wh3_main_cth_zhao_ming"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_qiang"
+      ],
       "position": {
         "x": 738.351685,
         "y": 379.588745,
@@ -6612,6 +7361,7 @@
         "wh3_main_dae_daemon_prince",
         "wh3_main_dae_daemon_prince"
       ],
+      "startingRegions": [],
       "position": {
         "x": 461.978302,
         "y": 723.853149,
@@ -6636,6 +7386,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6655,6 +7406,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_azorn"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -6675,6 +7429,9 @@
       "factionPotential": "combi_dwarf_grombrindal",
       "startingLeaders": [
         "wh_pro01_dwf_grombrindal"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_drackla_spire"
       ],
       "position": {
         "x": 11.0,
@@ -6701,6 +7458,9 @@
       "startingLeaders": [
         "wh_dlc04_emp_volkmar"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_sudenburg"
+      ],
       "position": {
         "x": 376.260376,
         "y": 186.33992,
@@ -6724,6 +7484,13 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_dargoth",
+        "wh3_main_combi_region_kauark",
+        "wh3_main_combi_region_nagrar",
+        "wh3_main_combi_region_spite_reach",
+        "wh3_main_combi_region_the_black_pillar"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -6743,6 +7510,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_darkhold",
+        "wh3_main_combi_region_the_sentinels"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -6762,6 +7533,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_jade_wind_mountain",
+        "wh3_main_combi_region_kunlan",
+        "wh3_main_combi_region_village_of_the_moon"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -6781,6 +7557,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_dlc23_combi_region_blasted_expanse",
+        "wh3_main_combi_region_desolation_of_drakenmoor",
+        "wh3_main_combi_region_howling_rock"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -6800,6 +7581,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_mount_grey_hag",
+        "wh3_main_combi_region_mount_silverspear"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -6819,6 +7604,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_dlc23_combi_region_fort_dorznye_vort",
+        "wh3_main_combi_region_great_skull_lakes"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -6838,6 +7627,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_blizzardpeak",
+        "wh3_main_combi_region_icespewer"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -6857,6 +7650,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_floating_village",
+        "wh3_main_combi_region_morgheim",
+        "wh3_main_combi_region_sunken_khernarch"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -6876,6 +7674,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_monolith_of_festerlung",
+        "wh3_main_combi_region_the_burning_monolith",
+        "wh3_main_combi_region_the_howling_citadel",
+        "wh3_main_combi_region_the_tower_of_torment"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_khorne_minor",
@@ -6895,6 +7699,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_mount_athull",
+        "wh3_main_combi_region_the_never_ending_chasm"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_khorne_minor",
@@ -6914,6 +7722,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_blood_mountain",
+        "wh3_main_combi_region_infernius",
+        "wh3_main_combi_region_the_silvered_tower_of_sorcerers"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_khorne_minor",
@@ -6935,6 +7748,9 @@
       "startingLeaders": [
         "wh3_main_kho_skarbrand",
         "wh3_main_kho_skarbrand"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_deff_gorge"
       ],
       "position": {
         "x": 448.722534,
@@ -6959,6 +7775,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6978,6 +7795,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -6997,6 +7815,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_bay_of_blades",
+        "wh3_main_combi_region_the_tower_of_khrakk"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_kislev_minor",
@@ -7016,6 +7838,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_fort_ostrosk",
+        "wh3_main_combi_region_fort_straghov"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_kislev_minor",
@@ -7035,6 +7861,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -7054,6 +7881,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -7073,6 +7901,12 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_novchozy",
+        "wh3_main_combi_region_plesk",
+        "wh3_main_combi_region_praag",
+        "wh3_main_combi_region_volksgrad"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_kislev_minor",
@@ -7094,6 +7928,10 @@
       "startingLeaders": [
         "wh3_main_ksl_kostaltyn",
         "wh3_main_ksl_kostaltyn"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_castle_alexandronov",
+        "wh3_main_combi_region_erengrad"
       ],
       "position": {
         "x": 422.0,
@@ -7121,6 +7959,10 @@
         "wh3_main_ksl_katarin",
         "wh3_main_ksl_katarin"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_kislev",
+        "wh3_main_combi_region_zavastra"
+      ],
       "position": {
         "x": 467.0,
         "y": 564.0,
@@ -7144,6 +7986,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_zoishenk"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_kislev_minor",
@@ -7166,6 +8011,7 @@
         "wh3_main_ksl_boris",
         "wh3_main_ksl_boris"
       ],
+      "startingRegions": [],
       "position": {
         "x": 515.24,
         "y": 666.03,
@@ -7189,6 +8035,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_dread_rock",
+        "wh3_main_combi_region_shattered_cove",
+        "wh3_main_combi_region_shattered_stone_isle"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_lizardmen_minor",
@@ -7208,6 +8059,11 @@
       "major": false,
       "factionPotential": "combi_minor_strong",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_the_lost_palace",
+        "wh3_main_combi_region_the_skull_carvers_abode",
+        "wh3_main_combi_region_volulltrax"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_nurgle_minor",
@@ -7227,6 +8083,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_khazid_bordkarag",
+        "wh3_main_combi_region_sjoktraken"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_nurgle_minor",
@@ -7246,6 +8106,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -7265,6 +8126,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -7286,6 +8148,9 @@
       "startingLeaders": [
         "wh3_main_nur_kugath",
         "wh3_main_nur_kugath"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_dragon_fang_mount"
       ],
       "position": {
         "x": 668.102417,
@@ -7310,6 +8175,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_nurgle_minor",
@@ -7329,6 +8195,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_bloodpeak",
+        "wh3_main_combi_region_fire_mouth"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7348,6 +8218,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7367,6 +8238,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_grimtop",
+        "wh3_main_combi_region_the_maw_gate"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7388,6 +8263,9 @@
       "startingLeaders": [
         "wh3_main_ogr_greasus_goldtooth",
         "wh3_main_ogr_skrag_the_slaughterer"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_angazhar"
       ],
       "position": {
         "x": 427.641541,
@@ -7412,6 +8290,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7431,6 +8310,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7450,6 +8330,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_the_challenge_stone"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7469,6 +8352,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_black_fang",
+        "wh3_main_combi_region_gorger_rock",
+        "wh3_main_combi_region_karak_vrag"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7490,6 +8378,10 @@
       "startingLeaders": [
         "wh3_main_ogr_greasus_goldtooth",
         "wh3_main_ogr_skrag_the_slaughterer"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_great_hall_of_greasus",
+        "wh3_main_combi_region_karak_krakaten"
       ],
       "position": {
         "x": 691.5,
@@ -7514,6 +8406,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_dum",
+        "wh3_main_combi_region_pillar_of_skulls",
+        "wh3_main_combi_region_tribeslaughter"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7533,6 +8430,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7552,6 +8450,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_titans_notch",
+        "wh3_main_combi_region_yhetee_peak"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7571,6 +8473,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -7590,6 +8493,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -7609,6 +8513,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -7628,6 +8533,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -7647,6 +8553,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_raziak",
+        "wh3_main_combi_region_karak_ungor"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7666,6 +8576,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_sabre_mountain"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7685,6 +8598,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_amblepeak",
+        "wh3_main_combi_region_valley_of_horns"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7704,6 +8621,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_pigbarter",
+        "wh3_main_combi_region_ruins_end"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7723,6 +8644,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7742,6 +8664,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7761,6 +8684,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7780,6 +8704,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7799,6 +8724,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_great_desert_of_araby"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_ogre_minor",
@@ -7818,6 +8746,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_chaos_gatedestroyer",
@@ -7837,6 +8766,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -7856,6 +8786,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_rogue",
@@ -7875,6 +8806,9 @@
       "major": false,
       "factionPotential": "combi_sentinels",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_nagashizzar"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_sentinels",
@@ -7894,6 +8828,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_xen_wu"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -7913,6 +8850,11 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_caverns_of_sotek",
+        "wh3_main_combi_region_soteks_trail",
+        "wh3_main_combi_region_temple_avenue_of_gold"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -7932,6 +8874,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_kaiax"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -7951,6 +8896,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_flayed_rock",
+        "wh3_main_combi_region_gnobbly_gorge",
+        "wh3_main_combi_region_mount_thug",
+        "wh3_main_combi_region_skrap_towers"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -7970,6 +8921,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_dragonhorn_mines",
+        "wh3_main_combi_region_stonemine_tower"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_skaven_minor",
@@ -7989,6 +8944,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_monolith_of_bubonicus",
+        "wh3_main_combi_region_the_writhing_fortress"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_slaanesh_minor",
@@ -8008,6 +8967,12 @@
       "major": false,
       "factionPotential": "combi_minor_strong",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_altar_of_facades",
+        "wh3_main_combi_region_castle_of_splendour",
+        "wh3_main_combi_region_crucible_of_delights",
+        "wh3_main_combi_region_okkams_forever_maze"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_slaanesh_minor",
@@ -8029,6 +8994,9 @@
       "startingLeaders": [
         "wh3_main_sla_nkari",
         "wh3_main_sla_nkari"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_shrine_of_kurnous"
       ],
       "position": {
         "x": 189.327164,
@@ -8053,6 +9021,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8072,6 +9041,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8091,6 +9061,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8110,6 +9081,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8129,6 +9101,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8148,6 +9121,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_palace_of_princes",
+        "wh3_main_combi_region_the_fetid_catacombs",
+        "wh3_main_combi_region_the_folly_of_malofex",
+        "wh3_main_combi_region_the_twisted_towers"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_slaanesh_minor",
@@ -8167,6 +9146,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_the_copper_landing",
+        "wh3_main_combi_region_the_dust_gate",
+        "wh3_main_combi_region_the_golden_colossus"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tombking_minor",
@@ -8186,6 +9170,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_port_of_secrets",
+        "wh3_main_combi_region_the_crystal_spires",
+        "wh3_main_combi_region_the_tower_of_flies",
+        "wh3_main_combi_region_volcanos_heart"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tzeentch_minor",
@@ -8205,6 +9195,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_black_rock",
+        "wh3_main_combi_region_cliff_of_beasts",
+        "wh3_main_combi_region_the_blighted_grove"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tzeentch_minor",
@@ -8224,6 +9219,11 @@
       "major": false,
       "factionPotential": "combi_minor_strong",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_daemons_gate",
+        "wh3_main_combi_region_grotrilexs_glare_lighthouse",
+        "wh3_main_combi_region_the_sinhall_monolith"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tzeentch_minor",
@@ -8245,6 +9245,9 @@
       "startingLeaders": [
         "wh3_main_tze_kairos",
         "wh3_main_tze_kairos"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_fateweavers_crevasse"
       ],
       "position": {
         "x": 378.39859,
@@ -8269,6 +9272,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_dawns_light",
+        "wh3_main_combi_region_tor_surpindar"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_tzeentch_minor",
@@ -8288,6 +9295,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8307,6 +9315,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8326,6 +9335,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8346,6 +9356,9 @@
       "factionPotential": "combi_vampire_ghorst",
       "startingLeaders": [
         "wh_dlc04_vmp_helman_ghorst"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_the_haunted_forest"
       ],
       "position": {
         "x": 704.543762,
@@ -8370,6 +9383,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_silver_pinnacle"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -8389,6 +9405,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_laurelorn_forest"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_woodelf_minor",
@@ -8410,6 +9429,7 @@
       "startingLeaders": [
         "wh_dlc03_bst_khazrak"
       ],
+      "startingRegions": [],
       "position": {
         "x": 351.415283,
         "y": 557.318481,
@@ -8433,6 +9453,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8452,6 +9473,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_beastmen_minor",
@@ -8471,6 +9493,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8490,6 +9513,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8509,6 +9533,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8528,6 +9553,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_beastmen_minor",
@@ -8547,6 +9573,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_beastmen_minor",
@@ -8566,6 +9593,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_the_black_pit",
+        "wh3_main_combi_region_wreckers_point"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -8587,6 +9618,7 @@
       "startingLeaders": [
         "wh_dlc05_bst_morghur"
       ],
+      "startingRegions": [],
       "position": {
         "x": 274.81366,
         "y": 348.80722,
@@ -8612,6 +9644,9 @@
       "startingLeaders": [
         "wh_dlc05_wef_durthu"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_waterfall_palace"
+      ],
       "position": {
         "x": 354.861176,
         "y": 447.953522,
@@ -8635,6 +9670,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_vauls_anvil_loren"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_woodelf_minor",
@@ -8655,6 +9693,10 @@
       "factionPotential": "combi_woodelf_orion",
       "startingLeaders": [
         "wh_dlc05_wef_orion"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_kings_glade",
+        "wh3_main_combi_region_the_oak_of_ages"
       ],
       "position": {
         "x": 318.634247,
@@ -8680,6 +9722,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8699,6 +9742,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8718,6 +9762,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8737,6 +9782,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_crag_halls_of_findol"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_woodelf_minor",
@@ -8756,6 +9804,7 @@
       "major": true,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -8775,6 +9824,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8794,6 +9844,7 @@
       "major": true,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -8813,6 +9864,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8832,6 +9884,7 @@
       "major": true,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -8851,6 +9904,7 @@
       "major": false,
       "factionPotential": "combi_minor_strong",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8870,6 +9924,7 @@
       "major": true,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -8889,6 +9944,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -8908,6 +9964,11 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_dlc23_combi_region_uzkulak_port",
+        "wh3_main_combi_region_karak_vlag",
+        "wh3_main_combi_region_temple_of_heimkel"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -8927,6 +9988,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -8946,6 +10008,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_doomkeep",
+        "wh3_main_combi_region_graeling_moot",
+        "wh3_main_combi_region_naglfari_plain"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -8966,6 +10033,9 @@
       "factionPotential": "combi_norsca_wulfrik",
       "startingLeaders": [
         "wh_dlc08_nor_wulfrik"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_troll_fjord"
       ],
       "position": {
         "x": 102.0,
@@ -8990,6 +10060,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_isle_of_wights"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -9010,6 +10083,9 @@
       "factionPotential": "combi_norsca_throgg",
       "startingLeaders": [
         "wh_dlc08_nor_throgg"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_monolith_of_flesh"
       ],
       "position": {
         "x": 426.0,
@@ -9034,6 +10110,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_castle_artois",
+        "wh3_main_combi_region_gisoreux"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_bretonnia_minor",
@@ -9053,6 +10133,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_castle_bastonne",
+        "wh3_main_combi_region_montfort"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_bretonnia_minor",
@@ -9073,6 +10157,9 @@
       "factionPotential": "combi_bretonnia_alberic",
       "startingLeaders": [
         "wh_dlc07_brt_alberic"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_temple_of_tlencan"
       ],
       "position": {
         "x": 141.985397,
@@ -9099,6 +10186,9 @@
       "startingLeaders": [
         "wh_main_brt_louen_leoncouer"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_couronne"
+      ],
       "position": {
         "x": 270.186188,
         "y": 512.725403,
@@ -9122,6 +10212,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9141,6 +10232,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_bretonnia_minor",
@@ -9160,6 +10252,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9179,6 +10272,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9199,6 +10293,9 @@
       "factionPotential": "combi_bretonnia_fayenchantress",
       "startingLeaders": [
         "wh_dlc07_brt_fay_enchantress"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_castle_carcassonne"
       ],
       "position": {
         "x": 304.47345,
@@ -9223,6 +10320,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_lyonesse"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_bretonnia_minor",
@@ -9242,6 +10342,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_parravon",
+        "wh3_main_combi_region_quenelles"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_bretonnia_minor",
@@ -9263,6 +10367,7 @@
       "startingLeaders": [
         "wh_main_chs_archaon"
       ],
+      "startingRegions": [],
       "position": {
         "x": 604.369141,
         "y": 674.792053,
@@ -9286,6 +10391,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9305,6 +10411,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9324,6 +10431,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9343,6 +10451,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_chaos_settled_minor",
@@ -9362,6 +10471,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_barak_varr",
+        "wh3_main_combi_region_varenka_hills"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -9382,6 +10495,9 @@
       "factionPotential": "combi_dwarf_throgrim",
       "startingLeaders": [
         "wh_main_dwf_thorgrim_grudgebearer"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_karaz_a_karak"
       ],
       "position": {
         "x": 506.858673,
@@ -9406,6 +10522,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9425,6 +10542,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9444,6 +10562,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9463,6 +10582,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9482,6 +10602,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9501,6 +10622,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9520,6 +10642,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9539,6 +10662,13 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_black_iron_mine",
+        "wh3_main_combi_region_dringorackaz",
+        "wh3_main_combi_region_karak_azul",
+        "wh3_main_combi_region_spitepeak",
+        "wh3_main_combi_region_sump_pit"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -9558,6 +10688,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_hirn",
+        "wh3_main_combi_region_mighdal_vongalbarak"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -9578,6 +10712,9 @@
       "factionPotential": "combi_dwarf_belegar",
       "startingLeaders": [
         "wh_dlc06_dwf_belegar"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_zarakzil"
       ],
       "position": {
         "x": 349.528625,
@@ -9604,6 +10741,9 @@
       "startingLeaders": [
         "wh_main_dwf_ungrim_ironfist"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_kadrin"
+      ],
       "position": {
         "x": 520.123108,
         "y": 488.549469,
@@ -9627,6 +10767,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_grimhold",
+        "wh3_main_combi_region_karak_norn"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -9646,6 +10790,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_ziflin"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -9665,6 +10812,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -9684,6 +10832,11 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_karag_dromar",
+        "wh3_main_combi_region_oakenhammer",
+        "wh3_main_combi_region_zhufbar"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_dwarf_minor",
@@ -9703,6 +10856,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_averheim",
+        "wh3_main_combi_region_grenzstadt"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -9723,6 +10880,10 @@
       "factionPotential": "combi_empire_franz",
       "startingLeaders": [
         "wh_main_emp_karl_franz"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_altdorf",
+        "wh3_main_combi_region_helmgart"
       ],
       "position": {
         "x": 355.687042,
@@ -9747,6 +10908,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9766,6 +10928,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9785,6 +10948,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9804,6 +10968,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9823,6 +10988,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -9842,6 +11008,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_eilhart",
+        "wh3_main_combi_region_grunburg",
+        "wh3_main_combi_region_ubersreik"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -9861,6 +11032,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_dlc20_combi_region_krudenwald",
+        "wh3_main_combi_region_hergig"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -9880,6 +11055,12 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_aarnau",
+        "wh3_main_combi_region_fort_bergbres",
+        "wh3_main_combi_region_gorssel",
+        "wh3_main_combi_region_marienburg"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -9899,6 +11080,12 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_carroburg",
+        "wh3_main_combi_region_middenheim",
+        "wh3_main_combi_region_middenstag",
+        "wh3_main_combi_region_weismund"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -9918,6 +11105,11 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_dietershafen",
+        "wh3_main_combi_region_norden",
+        "wh3_main_combi_region_salzenmund"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -9937,6 +11129,11 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_bechafen",
+        "wh3_main_combi_region_essen",
+        "wh3_main_combi_region_nagenhof"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -9956,6 +11153,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_castle_von_rauken",
+        "wh3_main_combi_region_wolfenburg"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -9975,6 +11176,12 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_flensburg",
+        "wh3_main_combi_region_niedling",
+        "wh3_main_combi_region_the_moot",
+        "wh3_main_combi_region_wurtbad"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -9994,6 +11201,12 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_kappelburg",
+        "wh3_main_combi_region_kemperbad",
+        "wh3_main_combi_region_krugenheim",
+        "wh3_main_combi_region_talabheim"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_empire_minor",
@@ -10015,6 +11228,9 @@
       "startingLeaders": [
         "wh3_dlc25_emp_elspeth_von_draken",
         "wh3_dlc25_emp_elspeth_von_draken"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_nuln"
       ],
       "position": {
         "x": 368.053864,
@@ -10039,6 +11255,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_fort_soll",
+        "wh3_main_combi_region_steingart"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10058,6 +11278,12 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_mount_squighorn",
+        "wh3_main_combi_region_the_high_place",
+        "wh3_main_combi_region_the_pillars_of_grungni",
+        "wh3_main_combi_region_worlds_edge_archway"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10077,6 +11303,10 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_bhufdar",
+        "wh3_main_combi_region_karak_izor"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10097,6 +11327,9 @@
       "factionPotential": "combi_greenskin_skarsnik",
       "startingLeaders": [
         "wh_dlc06_grn_skarsnik"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_mount_gunbad"
       ],
       "position": {
         "x": 536.3703,
@@ -10123,6 +11356,9 @@
       "startingLeaders": [
         "wh_main_grn_grimgor_ironhide"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_eagle_eyries"
+      ],
       "position": {
         "x": 650.005737,
         "y": 519.96936,
@@ -10146,6 +11382,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10165,6 +11402,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10184,6 +11422,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10203,6 +11442,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10222,6 +11462,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_karak_eight_peaks",
+        "wh3_main_combi_region_valayas_sorrow"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10242,6 +11486,9 @@
       "factionPotential": "combi_greenskin_wurrzag",
       "startingLeaders": [
         "wh_dlc06_grn_wurrzag_da_great_prophet"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_cuexotl"
       ],
       "position": {
         "x": 419.209076,
@@ -10266,6 +11513,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_fallen_king_mountain",
+        "wh3_main_combi_region_gnashraks_lair",
+        "wh3_main_combi_region_grom_peak"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10285,6 +11537,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_crooked_fang_fort",
+        "wh3_main_combi_region_karak_azgal",
+        "wh3_main_combi_region_kradtommen"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10304,6 +11561,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_barag_dawazbag",
+        "wh3_main_combi_region_dok_karaz",
+        "wh3_main_combi_region_iron_rock"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10323,6 +11585,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10342,6 +11605,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_grung_zint"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10361,6 +11627,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_bitterstone_mine",
+        "wh3_main_combi_region_ekrund"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10380,6 +11650,13 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_agrul_migdhal",
+        "wh3_main_combi_region_galbaraz",
+        "wh3_main_combi_region_gor_gazan",
+        "wh3_main_combi_region_gronti_mingol",
+        "wh3_main_combi_region_stormhenge"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_greenskin_minor",
@@ -10399,6 +11676,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_altar_of_spawns",
+        "wh3_main_combi_region_the_forbidden_citadel",
+        "wh3_main_combi_region_winter_pyre"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -10418,6 +11700,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_fort_jakova",
+        "wh3_main_combi_region_igerov",
+        "wh3_main_combi_region_vitevo"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -10437,6 +11724,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_monolith_of_borkill_the_bloody_handed"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -10456,6 +11746,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -10475,6 +11766,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10494,6 +11786,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10513,6 +11806,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10532,6 +11826,9 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_sarl_encampment"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -10551,6 +11848,11 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_altar_of_the_crimson_harvest",
+        "wh3_main_combi_region_longship_graveyard",
+        "wh3_main_combi_region_pack_ice_bay"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -10570,6 +11872,11 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_serpent_jetty",
+        "wh3_main_combi_region_the_monolith_of_katam",
+        "wh3_main_combi_region_varg_camp"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_norsca_minor",
@@ -10589,6 +11896,14 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_akendorf",
+        "wh3_main_combi_region_argalis",
+        "wh3_main_combi_region_matorca",
+        "wh3_main_combi_region_myrmidens",
+        "wh3_main_combi_region_verdanos",
+        "wh3_main_combi_region_zvorak"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_teb_minor",
@@ -10608,6 +11923,13 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_bilbali",
+        "wh3_main_combi_region_magritta",
+        "wh3_main_combi_region_montenas",
+        "wh3_main_combi_region_nuja",
+        "wh3_main_combi_region_tobaro"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_teb_minor",
@@ -10627,6 +11949,11 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_luccini",
+        "wh3_main_combi_region_miragliano",
+        "wh3_main_combi_region_riffraffa"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_teb_minor",
@@ -10646,6 +11973,10 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_languille",
+        "wh3_main_combi_region_mousillon"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -10665,6 +11996,12 @@
       "major": false,
       "factionPotential": "combi_minor_survivor",
       "startingLeaders": [],
+      "startingRegions": [
+        "wh3_main_combi_region_castle_templehof",
+        "wh3_main_combi_region_eschen",
+        "wh3_main_combi_region_fort_oberstyre",
+        "wh3_main_combi_region_waldenhof"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -10687,6 +12024,10 @@
         "wh_dlc04_vmp_vlad_con_carstein",
         "wh_pro02_vmp_isabella_von_carstein"
       ],
+      "startingRegions": [
+        "wh3_main_combi_region_castle_drakenhof",
+        "wh3_main_combi_region_swartzhafen"
+      ],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_vlad",
@@ -10707,6 +12048,9 @@
       "factionPotential": "combi_vampire_mannfred",
       "startingLeaders": [
         "wh_main_vmp_mannfred_von_carstein"
+      ],
+      "startingRegions": [
+        "wh3_main_combi_region_ka_sabar"
       ],
       "position": {
         "x": 415.192017,
@@ -10731,6 +12075,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10750,6 +12095,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10769,6 +12115,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_default",
@@ -10788,6 +12135,7 @@
       "major": false,
       "factionPotential": "combi_minor",
       "startingLeaders": [],
+      "startingRegions": [],
       "position": null,
       "personality": {
         "key": "wh3_combi_vampire_minor",
@@ -10804,6 +12152,7 @@
     "activeFactionCount": 534,
     "playableFactionCount": 104,
     "positionedFactionCount": 103,
+    "regionedFactionCount": 261,
     "unresolvedSubcultureCount": 0
   }
 }
