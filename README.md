@@ -27,7 +27,7 @@ Chaque donnée utilisée par le simulateur est classée :
 - **simulable-pre-game** : formule/terme CAI reconstructible avant de lancer la campagne ;
 - **runtime-unknown** : état ou agrégation finale du moteur natif qui n'est pas exposé par les packs.
 
-Le modèle de menace documenté dans les données WH3 est conservé avec ses limites : le jeu expose les multiplicateurs attitude/actions/proximité/personnalité, mais pas encore la dérivation native complète de `base_score` ni le choix final de déclaration de guerre.
+Le modèle de menace documenté dans les données WH3 est conservé avec ses limites : le jeu expose les multiplicateurs attitude/actions/proximité/personnalité, mais pas encore la dérivation native complète de `base_score` ni le choix final de déclaration de guerre. Le détail PNJ affiche désormais aussi les paramètres exacts du profil CAI `WAR` (valeurs selon la stance, équilibre de guerre, menace principale/commune, longue distance), ainsi que le seuil de menace et les paramètres stratégiques disponibles.
 
 Pour les alliances entre joueurs, le simulateur expose aussi un **signal transitif comparatif** dérivé uniquement de paramètres vanilla connus : `initial_value du traité × poids transitive × coefficient réseau ami/ennemi`. Ce signal sert à comparer des compositions d'équipe ; il n'est jamais présenté comme l'attitude finale du jeu ni comme une probabilité de guerre.
 
