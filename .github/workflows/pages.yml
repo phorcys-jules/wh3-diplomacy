@@ -145,11 +145,16 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+          curl --fail --location --silent --show-error \
+            "https://raw.githubusercontent.com/Shazbot/WH3-Dump/${WH3_DUMP_REF}/text/db/factions__.loc.tsv" \
+            --output .cache/wh3/factions.loc.tsv
+
           python tools/import_immortal_empires_factions.py \
             --db-dir .cache/wh3/db \
             --cai-factors data/generated/cai-diplomacy-factors.json \
             --leaders data/generated/frontend-leaders.json \
             --positions data/generated/campaign-start-positions.json \
+            --localization .cache/wh3/factions.loc.tsv \
             --output data/generated/immortal-empires-factions.json \
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
