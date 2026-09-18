@@ -216,27 +216,39 @@
     return { id: 'neutral', label: 'Relations neutres ou mixtes', severity: 5 };
   }
 
-  function analyze(input) {
+  function prepareAnalysis(input) {
+    const factions = input.factions?.factions || [];
+    return {
+      factions,
+      factionIndex: indexBy(factions, faction => faction.factionKey),
+      data: {
+        relationIndex: indexBy(input.relations?.relations, row => `${row.sourceFaction}|${row.targetFaction}`),
+        cultureIndex: indexBy(input.culture?.relations, row => `${row.sourceSubculture}|${row.targetSubculture}`),
+        startIndex: indexBy(input.startpos?.relations, row => `${row.sourceFaction}|${row.targetFaction}`),
+        profileIndex: indexBy(input.cai?.factionProfiles, row => row.factionKey),
+        overrideIndex: indexBy(input.cai?.culturalOverrides, row => `${row.componentId}|${row.sourceSubculture}|${row.targetSubculture}`),
+        treatyValueIndex: indexBy(input.cai?.treatyValues, row => `${row.componentId}|${row.treaty}`),
+        strategic: input.strategic || {},
+      },
+      allRestrictions: input.restrictions?.restrictions || [],
+      teamRules: input.teamRules || {},
+    };
+  }
+
+  function analyze(input, prepared = null) {
     const team = input.team || [];
     if (team.length < 2 || team.length > 4) throw new Error('Une équipe doit contenir entre 2 et 4 factions.');
-    const factions = input.factions?.factions || [];
-    const factionIndex = indexBy(factions, faction => faction.factionKey);
+    const shared = prepared || prepareAnalysis(input);
+    const factions = shared.factions;
+    const factionIndex = shared.factionIndex;
+    const data = shared.data;
     const players = team.map(key => factionIndex.get(key)).filter(Boolean);
     if (players.length !== team.length) throw new Error('Faction joueur absente du roster actif.');
 
-    const data = {
-      relationIndex: indexBy(input.relations?.relations, row => `${row.sourceFaction}|${row.targetFaction}`),
-      cultureIndex: indexBy(input.culture?.relations, row => `${row.sourceSubculture}|${row.targetSubculture}`),
-      startIndex: indexBy(input.startpos?.relations, row => `${row.sourceFaction}|${row.targetFaction}`),
-      profileIndex: indexBy(input.cai?.factionProfiles, row => row.factionKey),
-      overrideIndex: indexBy(input.cai?.culturalOverrides, row => `${row.componentId}|${row.sourceSubculture}|${row.targetSubculture}`),
-      treatyValueIndex: indexBy(input.cai?.treatyValues, row => `${row.componentId}|${row.treaty}`),
-      strategic: input.strategic || {},
-    };
     const mode = input.mode === 'same-team' ? 'same-team' : 'ffa';
     const difficulty = input.difficulty || 'normal';
-    const allRestrictions = input.restrictions?.restrictions || [];
-    const teamRules = input.teamRules || {};
+    const allRestrictions = shared.allRestrictions;
+    const teamRules = shared.teamRules;
 
     const results = factions.filter(npc => !team.includes(npc.factionKey)).map(npc => {
       const strategicProfile = strategicProfileFor(npc.factionKey, input.strategic, difficulty);
@@ -398,12 +410,13 @@
     const available = new Set((input.factions?.factions || []).map(faction => faction.factionKey));
     const candidates = [...new Set(candidateFactionKeys || [])]
       .filter(key => key && !team.includes(key) && available.has(key));
-    const baselineReport = team.length >= 2 ? analyze(input) : null;
+    const prepared = prepareAnalysis(input);
+    const baselineReport = team.length >= 2 ? analyze(input, prepared) : null;
     const baselineMetrics = baselineReport ? candidateMetrics(baselineReport) : null;
     const comparisonMode = baselineMetrics ? 'incremental' : 'total';
 
     return candidates.map(candidateFaction => {
-      const report = analyze({ ...input, team: [...team, candidateFaction] });
+      const report = analyze({ ...input, team: [...team, candidateFaction] }, prepared);
       const metrics = candidateMetrics(report);
       return {
         candidateFaction,
@@ -428,6 +441,7 @@
 
   return {
     analyze,
+    prepareAnalysis,
     compareCandidates,
     candidateMetrics,
     subtractMetrics,
