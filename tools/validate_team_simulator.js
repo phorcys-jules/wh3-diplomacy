@@ -2,6 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const analysis = require('../team-analysis.js');
 
+const indexHtml = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8');
+const rosterJs = fs.readFileSync(path.resolve(__dirname, '..', 'roster.js'), 'utf8');
+
 const root = path.resolve(__dirname, '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'data/generated', name), 'utf8'));
 
@@ -17,6 +20,10 @@ const teamRules = read('multiplayer-team-rules.json');
 function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
+
+assert(!indexHtml.includes('cultural-relations.js'), 'legacy cultural matrix override must not be loaded');
+assert(rosterJs.includes('turnOneRel('), 'compatibility matrix must use turn-one faction relations');
+assert(rosterJs.includes('pairExternalMetrics('), 'compatibility matrix must expose external NPC impact');
 
 const knownKeys = new Set(factions.factions.map(row => row.factionKey));
 for (const key of ['wh2_dlc15_hef_imrik', 'wh_main_emp_empire', 'wh2_main_def_hag_graef', 'wh3_main_nur_poxmakers_of_nurgle']) {

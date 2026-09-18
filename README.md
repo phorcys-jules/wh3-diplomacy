@@ -71,3 +71,8 @@ Le comparateur indique maintenant les PNJ précis dont la situation se dégrade 
 ### Proposition d'équipe complète
 
 À partir de 1 à 3 joueurs, la page d'accueil peut proposer les ajouts successifs jusqu'à 4 joueurs. Après chaque ajout, le comparateur est recalculé et le candidat classé en tête est retenu. Cette proposition est volontairement gloutonne et explicable : elle ne prétend pas explorer exhaustivement toutes les combinaisons possibles ni prédire une probabilité de guerre.
+
+
+### Matrice de compatibilité T1
+
+La matrice de la page d'accueil n'est plus rendue par l'ancien script `cultural-relations.js`. Elle utilise désormais `turn1-faction-relations.json` et distingue le **socle T1 connu/simulable** de l'attitude native finale encore partiellement runtime. Pour chaque paire de joueurs, elle affiche aussi l'impact extérieur connu sur les PNJ (guerres initiales, PNJ hostiles et tensions transitives). Ainsi, deux factions de la même sous-culture peuvent conserver un socle culturel à 0 sans que ce 0 soit présenté comme leur compatibilité complète.
