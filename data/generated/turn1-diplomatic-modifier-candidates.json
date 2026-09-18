@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T12:13:42.637323+00:00",
+  "generatedAt": "2026-09-18T12:15:38.132836+00:00",
   "status": "candidate",
   "semantics": "first-tick script candidates; guardFreeFirstTick=true is conservative evidence that no visible control-flow guard precedes the call inside the callback",
   "candidates": [],
