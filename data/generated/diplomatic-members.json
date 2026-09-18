@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T11:41:14.763149+00:00",
+  "generatedAt": "2026-09-18T12:11:57.478659+00:00",
   "status": "partial",
   "semantics": "criteria are grouped by campaign group member; contexts are preserved and are not treated as independent attitude modifiers",
   "sourceTables": [
