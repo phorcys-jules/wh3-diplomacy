@@ -2,6 +2,7 @@ const assert = require('assert');
 const {
   analyze,
   compareCandidates,
+  prepareAnalysis,
   attitudeMultiplier,
   buildThreatEnvelope,
 } = require('../team-analysis.js');
@@ -82,6 +83,34 @@ assert.equal(result.results[0].transitive[0].exposureSignal, -8);
 assert.equal(result.results[0].transitiveExposure, -16);
 assert(result.results[0].exactSignals.some(row => row.type === 'multiplayer-team-rule'));
 assert(result.results[0].runtimeUnknown.includes('native final war declaration choice'));
+const prepared = prepareAnalysis({
+  team: ['a', 'b'],
+  mode: 'same-team',
+  difficulty: 'normal',
+  factions,
+  culture,
+  relations: { relations: [] },
+  startpos: { relations: [] },
+  cai: { factionProfiles: [{ factionKey: 'p', diplomaticComponent: 'dip' }], treatyValues: [{ componentId: 'dip', treaty: 'TRADE_AGREEMENT', initialValue: 20, sourceTable: 'treaties' }] },
+  strategic,
+  teamRules,
+  restrictions: { restrictions: [] },
+});
+const preparedResult = analyze({
+  team: ['a', 'b'],
+  mode: 'same-team',
+  difficulty: 'normal',
+  factions,
+  culture,
+  relations: { relations: [] },
+  startpos: { relations: [] },
+  cai: { factionProfiles: [{ factionKey: 'p', diplomaticComponent: 'dip' }], treatyValues: [{ componentId: 'dip', treaty: 'TRADE_AGREEMENT', initialValue: 20, sourceTable: 'treaties' }] },
+  strategic,
+  teamRules,
+  restrictions: { restrictions: [] },
+}, prepared);
+assert.deepStrictEqual(preparedResult, result);
+
 
 const restricted = analyze({
   team: ['a', 'b'],
