@@ -66,3 +66,8 @@ La page d'accueil compare automatiquement les Seigneurs légendaires encore disp
 ### PNJ impactés par un candidat
 
 Le comparateur indique maintenant les PNJ précis dont la situation se dégrade ou s'améliore lorsqu'un Seigneur est ajouté. Les variations sont calculées à partir des mêmes signaux explicites que le reste du simulateur (guerre initiale, restriction, hostilité directe/multiple et tension transitive) et ne sont pas converties en probabilité de guerre.
+
+
+### Proposition d'équipe complète
+
+À partir de 1 à 3 joueurs, la page d'accueil peut proposer les ajouts successifs jusqu'à 4 joueurs. Après chaque ajout, le comparateur est recalculé et le candidat classé en tête est retenu. Cette proposition est volontairement gloutonne et explicable : elle ne prétend pas explorer exhaustivement toutes les combinaisons possibles ni prédire une probabilité de guerre.
