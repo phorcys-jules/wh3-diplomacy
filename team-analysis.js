@@ -151,12 +151,17 @@
     };
   }
 
-  function transitiveInputs(npc, player, players, data, mode, teamTreaty, teamRules) {
+  function transitiveInputs(npc, player, players, data, mode, teamTreaty, teamRules, difficulty) {
     const weightRecord = data.strategic?.strategicStanceWeights?.CAI_VARIABLE_STRATEGIC_STANCE_CONTROL_WEIGHT_FOR_DIPLOMATIC_TREATIES_TRANSITIVE;
     const weight = Number(weightRecord?.value);
     const scenario = teamTreatyScenario(mode, teamTreaty, teamRules);
-    const strategicProfile = strategicProfileFor(npc.factionKey, data.strategic, 'normal');
+    const strategicProfile = strategicProfileFor(npc.factionKey, data.strategic, difficulty);
     const strategicValues = strategicProfile?.strategicComponentValues || {};
+    const diplomaticComponent = data.profileIndex.get(npc.factionKey)?.diplomaticComponent || null;
+    const treatyValue = scenario.treaty && diplomaticComponent
+      ? data.treatyValueIndex.get(`${diplomaticComponent}|${scenario.treaty}`)
+      : null;
+    const treatyInitialValue = Number(treatyValue?.initialValue);
     return players.filter(ally => ally.factionKey !== player.factionKey).map(ally => {
       const allyRelation = calculateRelation(npc, ally, data);
       const allyAttitude = allyRelation?.attitudeForSimulation ?? null;
@@ -164,6 +169,9 @@
       const coefficientKey = category === 'hostile' ? 'friendly_towards_enemy_multiplier' : category === 'friendly' ? 'friendly_towards_friend_multiplier' : null;
       const networkCoefficient = coefficientKey ? Number(strategicValues[coefficientKey]) : null;
       const weightedNetworkCoefficient = Number.isFinite(weight) && Number.isFinite(networkCoefficient) ? weight * networkCoefficient : null;
+      const exposureSignal = Number.isFinite(treatyInitialValue) && Number.isFinite(weightedNetworkCoefficient)
+        ? treatyInitialValue * weightedNetworkCoefficient
+        : null;
       return {
         allyFaction: ally.factionKey,
         observerAttitudeToAlly: allyAttitude,
@@ -173,13 +181,17 @@
         networkCoefficientKey: coefficientKey,
         networkCoefficient: Number.isFinite(networkCoefficient) ? networkCoefficient : null,
         weightedNetworkCoefficient,
+        treatyInitialValue: Number.isFinite(treatyInitialValue) ? treatyInitialValue : null,
+        treatyValueSource: treatyValue?.sourceTable || null,
+        exposureSignal,
+        exposureSignalSemantics: exposureSignal === null ? null : 'Derived diagnostic = CAI treaty initial_value × transitive stance weight × strategic friend/enemy network coefficient. It is not the native displayed attitude nor a war probability.',
         direction: category === 'hostile' ? 'tension-with-ally' : category === 'friendly' ? 'friendly-with-ally' : category === 'neutral' ? 'neutral-with-ally' : 'unknown',
         numericContribution: null,
-        reproducibility: scenario.reproducibility === 'runtime-unknown' || !Number.isFinite(weight)
+        reproducibility: scenario.reproducibility === 'runtime-unknown' || !Number.isFinite(weight) || !Number.isFinite(networkCoefficient)
           ? 'runtime-unknown'
           : 'simulable-pre-game',
         note: scenario.note,
-        runtimeUnknown: 'WH3 exposes the transitive weight but not the complete native transform from third-party attitude/treaty to strategic-stance contribution.',
+        runtimeUnknown: 'The derived exposure signal is comparable across team choices, but WH3 does not expose the final native transform from this network input to strategic stance/war declaration.',
       };
     });
   }
@@ -218,6 +230,7 @@
       startIndex: indexBy(input.startpos?.relations, row => `${row.sourceFaction}|${row.targetFaction}`),
       profileIndex: indexBy(input.cai?.factionProfiles, row => row.factionKey),
       overrideIndex: indexBy(input.cai?.culturalOverrides, row => `${row.componentId}|${row.sourceSubculture}|${row.targetSubculture}`),
+      treatyValueIndex: indexBy(input.cai?.treatyValues, row => `${row.componentId}|${row.treaty}`),
       strategic: input.strategic || {},
     };
     const mode = input.mode === 'same-team' ? 'same-team' : 'ffa';
@@ -250,11 +263,12 @@
       });
 
       const transitive = players.flatMap(player =>
-        transitiveInputs(npc, player, players, data, mode, input.teamTreaty, teamRules)
+        transitiveInputs(npc, player, players, data, mode, input.teamTreaty, teamRules, difficulty)
           .map(item => ({ playerFaction: player.factionKey, ...item }))
       );
       const pairRestrictions = members.flatMap(member => member.restrictions);
       const category = classify(members, pairRestrictions, transitive);
+      const transitiveExposure = transitive.reduce((sum, item) => sum + (Number.isFinite(item.exposureSignal) ? item.exposureSignal : 0), 0);
       const exactSignals = [];
       const simulableSignals = [];
       const runtimeUnknown = new Set();
@@ -307,6 +321,7 @@
         category,
         members,
         transitive,
+        transitiveExposure: transitive.some(item => Number.isFinite(item.exposureSignal)) ? transitiveExposure : null,
         strategicProfile,
         exactSignals,
         simulableSignals,
@@ -330,6 +345,7 @@
     calculateRelation,
     attitudeMultiplier,
     buildThreatEnvelope,
+    teamTreatyScenario,
     attitudeCategory,
     relationValue,
   };
