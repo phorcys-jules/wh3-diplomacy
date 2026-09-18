@@ -3,6 +3,7 @@ const {
   analyze,
   compareCandidates,
   prepareAnalysis,
+  candidateNpcImpacts,
   attitudeMultiplier,
   buildThreatEnvelope,
 } = require('../team-analysis.js');
@@ -184,6 +185,10 @@ const incremental = compareCandidates({
 }, ['c']);
 assert.equal(incremental[0].comparisonMode, 'incremental');
 assert.equal(incremental[0].deltaMetrics.startingWars, 1);
+assert.equal(incremental[0].npcImpacts.mode, 'incremental');
+assert.equal(incremental[0].npcImpacts.worsened[0].npcFaction, 'p');
+assert.equal(incremental[0].npcImpacts.worsened[0].delta.startingWar, 1);
+
 
 const removesHostileNpc = compareCandidates({
   team: ['a', 'b'],
@@ -200,6 +205,28 @@ const removesHostileNpc = compareCandidates({
   restrictions: { restrictions: [] },
 }, ['p']);
 assert(removesHostileNpc[0].deltaMetrics.hostileNpcs < 0);
+
+const syntheticImpacts = candidateNpcImpacts({
+  results: [{
+    npcFaction: 'q',
+    members: [{ relation: { attitudeForSimulation: 0, atWar: false }, restrictions: [] }],
+    transitive: [],
+    transitiveExposure: null,
+  }],
+}, {
+  results: [{
+    npcFaction: 'q',
+    members: [
+      { relation: { attitudeForSimulation: -20, atWar: false }, restrictions: [] },
+      { relation: { attitudeForSimulation: -20, atWar: false }, restrictions: [] },
+    ],
+    transitive: [],
+    transitiveExposure: null,
+  }],
+}, null);
+assert.equal(syntheticImpacts.improved[0].npcFaction, 'q');
+assert.equal(syntheticImpacts.improved[0].delta.hostileMembers, -2);
+
 
 
 console.log('team analysis fixtures passed');
