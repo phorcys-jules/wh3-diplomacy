@@ -162,6 +162,7 @@ jobs:
 
           python tools/build_turn1_war_decision_factors.py \
             --cai data/generated/cai-diplomacy-factors.json \
+            --strategic data/generated/turn1-cai-strategic-model.json \
             --startpos data/generated/immortal-empires-startpos.json \
             --output data/generated/turn1-war-decision-factors.json
 
@@ -183,6 +184,7 @@ jobs:
 
           python tools/validate_initial_diplomacy.py data/generated/initial-diplomacy.json
           python tools/validate_dataset.py data/generated/initial-diplomacy.json
+          python -m compileall -q tools
           node tools/test_team_analysis.js
           python tools/build_turn1_validation_matrix.py \
             --input data/generated/initial-diplomacy.json \
