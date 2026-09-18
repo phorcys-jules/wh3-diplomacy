@@ -22,8 +22,8 @@
 
   function relationValue(relation) {
     if (!relation) return null;
-    if (Number.isFinite(Number(relation.knownAttitudeComponentsTotal))) return Number(relation.knownAttitudeComponentsTotal);
-    if (Number.isFinite(Number(relation.baseAttitude))) return Number(relation.baseAttitude);
+    if (relation.knownAttitudeComponentsTotal !== null && relation.knownAttitudeComponentsTotal !== undefined && Number.isFinite(Number(relation.knownAttitudeComponentsTotal))) return Number(relation.knownAttitudeComponentsTotal);
+    if (relation.baseAttitude !== null && relation.baseAttitude !== undefined && Number.isFinite(Number(relation.baseAttitude))) return Number(relation.baseAttitude);
     return null;
   }
 
