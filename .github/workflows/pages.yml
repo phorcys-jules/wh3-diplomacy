@@ -78,6 +78,7 @@ jobs:
             campaign_group_member_criteria_subcultures_tables \
             cultures_subcultures_tables \
             start_pos_factions_tables \
+            start_pos_regions_tables \
             cai_personalities_tables \
             cai_personality_group_junctions_tables \
             cai_personality_cultural_relations_overrides_tables \
