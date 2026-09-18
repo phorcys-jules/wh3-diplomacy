@@ -1,0 +1,4831 @@
+{
+  "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
+  "campaign": "wh3_main_combi",
+  "generatedAt": "2026-09-18T11:20:17.479094+00:00",
+  "status": "partial",
+  "semantics": "CAI profiles influence AI evaluation. Cultural overrides are explicit starting-faction inputs; treaty, event, strategic and reliability values are retained as factors but are not added to attitude without a demonstrated turn-one trigger.",
+  "factionProfiles": [
+    {
+      "factionKey": "wh2_dlc09_rogue_black_creek_raiders",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_rogue_dwellers_of_zardok",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_rogue_eyes_of_the_jungle",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_rogue_pilgrims_of_myrmidia",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_skv_clan_rictus",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_skv_clan_rictus_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_dune_kingdoms",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_exiles_of_nehek",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_followers_of_nagash",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_khemri",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_lybaras",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_numas",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_rakaph_dynasty",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_the_sentinels",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_tombking_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_tombking_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_tombking_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_tombking_qb_exiles_of_nehek",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_tombking_qb_followers_of_nagash",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_tombking_qb_khemri",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc09_tmb_tombking_qb_lybaras",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc10_def_blood_voyage",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_brt_bretonnia_dil",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_harpoon_the_sunken_land_corsairs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_noctilus",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_noctilus_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_pirates_of_sartosa",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_pirates_of_sartosa_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_rogue_bleak_coast_buccaneers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_rogue_boyz_of_the_forbidden_coast",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_rogue_freebooters_of_port_royale",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_rogue_grey_point_scuttlers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_rogue_terrors_of_the_dark_straights",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_rogue_the_churning_gulf_raiders",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_rogue_tyrants_of_the_black_ocean",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_shanty_dragon_spine_privateers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_shanty_middle_sea_brigands",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_shanty_shark_straight_seadogs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_the_drowned",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_the_drowned_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_vampire_coast",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_vampire_coast_encounters",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_vampire_coast_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_vampire_coast_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_vampire_coast_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_vampire_coast_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_vampire_coast_rebels",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_cst_vampire_coast_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_def_dark_elves_dil",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_def_the_blessed_dread",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_def_the_blessed_dread_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_emp_empire_dil",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_emp_empire_qb5",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_nor_norsca_dil",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_nor_norsca_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc11_vmp_the_barrow_legion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc12_grn_leaf_cutterz_tribe",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc12_lzd_cult_of_sotek",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc12_skv_clan_fester",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc12_skv_clan_mange",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc13_bst_beastmen_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc13_emp_golden_order",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc13_emp_the_huntmarshals_expedition",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc13_grn_greenskins_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc13_lzd_avengers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc13_lzd_defenders_of_the_great_plan",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc13_lzd_spirits_of_the_jungle",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc13_nor_norsca_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc13_skv_skaven_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc14_brt_chevaliers_de_lyonesse",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc14_grn_red_cloud",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc15_dwf_clan_helhein",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc15_grn_bonerattlaz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc15_grn_broken_axe",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc15_grn_skull_crag",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc15_hef_dragon_encounters",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc15_hef_imrik",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc15_skv_clan_ferrik",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc15_skv_clan_kreepus",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc15_skv_clan_volkn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_chs_acolytes_of_the_keeper",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_emp_colonist_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_emp_empire_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_grn_creeping_death",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_grn_naggaroth_orcs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_grn_savage_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_lzd_wardens_of_the_living_pools",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_skv_clan_gritus",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_wef_drycha",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_wef_sisters_of_twilight",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_wef_wood_elves_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_wef_wood_elves_qb5",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_wef_wood_elves_qb6",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc16_wef_wood_elves_qb7",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc17_bst_beastmen_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc17_bst_beastmen_qb5",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc17_bst_beastmen_qb6",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc17_bst_malagor",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc17_bst_taurox",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc17_dwf_thorek_ironbrow",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc17_lzd_oxyotl",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_dlc17_nor_deadwood_ravagers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_brt_knights_of_origo",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_brt_knights_of_the_flame",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_brt_thegans_crusaders",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_bst_blooded_axe",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_bst_manblight",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_bst_ripper_horn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_bst_shadowgor",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_chs_chaos_incursion_def",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_chs_chaos_incursion_hef",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_chs_chaos_incursion_lzd",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_bleak_holds",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_blood_hall_coven",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_clar_karond",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_cult_of_excess",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_cult_of_pleasure",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_cult_of_pleasure_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_dark_elves_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_dark_elves_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_dark_elves_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_dark_elves_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_deadwood_sentinels",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_drackla_coven",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_ghrond",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_hag_graef",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_hag_graef_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_har_ganeth",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_har_ganeth_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_karond_kar",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_naggarond",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_naggarond_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_scourge_of_khaine",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_ssildra_tor",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_def_the_forgebound",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_dwf_greybeards_prospectors",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_dwf_karak_zorn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_dwf_spine_of_sotek_dwarfs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_emp_new_world_colonies",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_emp_sudenburg",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_grn_arachnos",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_grn_blue_vipers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_avelorn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_caledor",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_chrace",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_citadel_of_dusk",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_cothique",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_eataine",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_ellyrion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_fortress_of_dawn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_high_elves_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_high_elves_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_high_elves_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_high_elves_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_high_elves_qb5",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_high_elves_qb6",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_high_elves_qb7",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_high_elves_qb8",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_nagarythe",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_order_of_loremasters",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_saphery",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_tiranoc",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_tor_elasor",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_hef_yvresse",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_hexoatl",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_itza",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_last_defenders",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_lizardmen_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_lizardmen_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_lizardmen_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_sentinels_of_xeti",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_southern_sentinels",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_teotiqua",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_tlaqua",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_tlaxtlan",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_xlanhuapec",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_lzd_zlatan",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_nor_aghol",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_nor_mung",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_nor_skeggi",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_abominations",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_beastcatchas",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_bernhoffs_brigands",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_black_spider_tribe",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_boneclubbers_tribe",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_celestial_storm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_college_of_pyrotechnics",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_def_chs_vashnaar",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_def_mengils_manflayers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_doomseekers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_doomseekers_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_gerhardts_mercenaries",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_gerhardts_mercenaries_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_hef_tor_elithis",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_hung_warband",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_jerrods_errantry",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_morrsliebs_howlers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_pirates_of_trantio",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_scourge_of_aquitaine",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_stuff_snatchers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_troll_skullz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_vmp_heirs_of_mourkain",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_wef_hunters_of_kurnous",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_rogue_wrath_of_nature",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_eshin",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_eshin_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_gnaw",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_mordkin",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_mors",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_mors_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_moulder",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_moulder_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_pestilens",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_pestilens_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_septik",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_skryre",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_skryre_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_clan_spittel",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_skaven_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_skaven_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_skaven_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_skv_skaven_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_vmp_necrarch_brotherhood",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_vmp_strygos_empire",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_vmp_the_silver_host",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_main_wef_bowmen_of_oreon",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_twa03_def_rakarth",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh2_twa03_def_rakarth_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_cp1_cth_tiger_warriors",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_azazel",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_festus",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_kholek",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_sigvald",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_valkia",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_chs_vilitch",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_kho_blood_keepers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_nor_kuj",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_nor_kul",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_nor_tong",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_nor_yusak",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_nur_pallid_nurslings",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_sla_keepers_of_bliss",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_tze_apostles_of_change",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc20_tze_the_sightless",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc21_cst_dead_flag_fleet",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc21_nor_wyrmkins",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc21_vmp_jiangshi_rebels",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc21_wef_spirits_of_shanlin",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_astragoth",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_chaos_dwarfs_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_chaos_dwarfs_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_chaos_dwarfs_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_conclave",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_legion_of_azgorh",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_minor_faction",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc23_chd_zhatan",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc24_cth_the_celestial_court",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc24_ksl_daughters_of_the_forest",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc24_lzd_lizardmen_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc24_tze_the_deceivers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_chd_chaos_dwarfs_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_dwf_malakai",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_kho_khorne_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_nur_epidemius",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_nur_nurgle_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_nur_tamurkhan",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_rogue_da_mad_howlerz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_sla_slaanesh_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_vmp_the_court_of_night",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_vmp_vampire_counts_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc25_wef_wood_elves_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_cst_vampire_coast_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_cst_vampire_coast_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_def_dark_elves_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_dwf_dwarfs_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_grn_cluster_eye_tribe",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_grn_gorbad_ironclaw",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_hef_high_elves_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_kho_arbaal",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_kho_skulltaker",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_ogr_golgfag",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc26_vmp_templehof_qb",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_brt_bretonnia_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_bst_beastmen_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_chs_chaos_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_cth_cathay_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_def_dark_elves_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_emp_empire_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_hef_aislinn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_hef_aislinn_confederation_owner",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_hef_high_elves_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_ksl_kislev_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_nor_avags",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_nor_monstrous_arcanum_sayl",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_nor_monstrous_arcanum_throgg",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_nor_monstrous_arcanum_wulfrik",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_nor_norsca_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_nor_sayl",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_rogue_unholy_pageant",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_sla_masque_of_slaanesh",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_sla_the_tormentors",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_teb_tilea_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_the_narj",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_dlc27_wef_wood_elves_dm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_brt_aquitaine",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_chs_dreaded_wo",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_chs_gharhar",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_chs_khazag",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_chs_kvellig",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_chs_shadow_legion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_chs_tong",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cst_dread_rock_privateers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_burning_wind_nomads",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_cathay_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_cathay_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_cathay_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_celestial_loyalists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_dissenter_lords_of_jinshen",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_eastern_river_lords",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_imperial_wardens",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_rebel_lords_of_nan_yang",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_the_jade_custodians",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_the_northern_provinces",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_cth_the_western_provinces",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_dae_daemon_prince",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_dae_daemons_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_dwf_karak_azorn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_dwf_the_ancestral_throng",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_emp_cult_of_sigmar",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_grn_da_cage_breakaz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_grn_dark_land_orcs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_grn_dimned_sun",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_grn_drippin_fangs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_grn_moon_howlerz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_grn_slaves_of_zharr",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_grn_tusked_sunz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ie_vmp_sires_of_mourkain",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_kho_bloody_sword",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_kho_brazen_throne",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_kho_crimson_skull",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_kho_exiles_of_khorne",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_kho_khorne_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_kho_khorne_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ksl_brotherhood_of_the_bear",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ksl_druzhina_enclave",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ksl_kislev_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ksl_kislev_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ksl_ropsmenn_clan",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ksl_the_great_orthodoxy",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ksl_the_ice_court",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ksl_ungol_kindred",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ksl_ursun_revivalists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_lzd_tepoks_spawn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_nur_bubonic_swarm",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_nur_maggoth_kin",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_nur_nurgle_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_nur_nurgle_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_nur_poxmakers_of_nurgle",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_nur_septic_claw",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_blood_guzzlers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_bloodmaw",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_crossed_clubs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_disciples_of_the_maw",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_eyebiter",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_feastmaster",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_fleshgreeders",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_fulg",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_goldtooth",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_lazarghs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_loose_tooth",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_mountaineaters",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_ogre_kingdoms_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_ogre_kingdoms_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_ogre_kingdoms_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_ogre_kingdoms_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_rock_skulls",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_sabreskin",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_sons_of_the_mountain",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_thunderguts",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogr_treehammers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogre_flamegullets",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogre_sharktooth",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogre_stoneshatter",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_ogre_the_famished",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_rogue_kurgan_warband",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_rogue_minor_cults",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_rogue_shrouded_wanderers_of_undead",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_skv_clan_carrion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_skv_clan_krizzor",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_skv_clan_morbidus",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_skv_clan_skrat",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_skv_clan_treecherik",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_skv_clan_verms",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_sla_exquisite_pain",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_sla_rapturous_excess",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_sla_seducers_of_slaanesh",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_sla_slaanesh_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_sla_slaanesh_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_sla_slaanesh_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_sla_slaanesh_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_sla_slaanesh_qb5",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_sla_subtle_torture",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_tmb_deserters_of_khatep",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_tze_all_seeing_eye",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_tze_broken_wheel",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_tze_flaming_scribes",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_tze_oracles_of_tzeentch",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_tze_sarthoraels_watchers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_tze_tzeentch_invasion",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_tze_tzeentch_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_tze_tzeentch_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_vmp_caravan_of_blue_roses",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_vmp_lahmian_sisterhood",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh3_main_wef_laurelorn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc03_bst_beastmen",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc03_bst_beastmen_ally",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc03_bst_beastmen_chaos",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc03_bst_beastmen_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc03_bst_beastmen_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc03_bst_beastmen_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc03_bst_jagged_horn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc03_bst_redhorn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc03_grn_black_pit",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc05_bst_morghur_herd",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc05_wef_argwylon",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc05_wef_torgovann",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc05_wef_wood_elves",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc05_wef_wood_elves_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc05_wef_wood_elves_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc05_wef_wood_elves_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc05_wef_wydrioth",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_chs_chaos_challenger_khorne",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_chs_chaos_challenger_khorne_qb",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_chs_chaos_challenger_nurgle",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_chs_chaos_challenger_nurgle_qb",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_chs_chaos_challenger_slaanesh",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_chs_chaos_challenger_slaanesh_qb",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_chs_chaos_challenger_tzeentch",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_chs_chaos_challenger_tzeentch_qb",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_nor_goromadny_tribe",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_nor_helspire_tribe",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_nor_naglfarlings",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_nor_norsca",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_nor_vanaheimlings",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_dlc08_nor_wintertooth",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_artois",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_bastonne",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_bordeleaux",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_bretonnia",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_bretonnia_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_bretonnia_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_bretonnia_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_bretonnia_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_carcassonne",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_lyonesse",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_brt_parravon",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_chs_chaos",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_chs_chaos_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_chs_chaos_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_chs_chaos_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_chs_chaos_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_barak_varr",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_dwarfs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_dwarfs_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_dwarfs_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_dwarfs_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_dwarfs_seperatists_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_dwarfs_seperatists_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_dwarfs_seperatists_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_dwarfs_seperatists_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_karak_azul",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_karak_hirn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_karak_izor",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_karak_kadrin",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_karak_norn",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_karak_ziflin",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_kraka_drak",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_dwf_zhufbar",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_averland",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_empire",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_empire_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_empire_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_empire_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_empire_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_empire_qb5",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_empire_separatists",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_hochland",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_marienburg",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_middenland",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_nordland",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_ostermark",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_ostland",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_stirland",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_talabecland",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_emp_wissenland",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_black_venom",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_bloody_spearz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_broken_nose",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_crooked_moon",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_greenskins",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_greenskins_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_greenskins_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_greenskins_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_greenskins_qb4",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_necksnappers",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_orcs_of_the_bloody_hand",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_red_eye",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_red_fangs",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_scabby_eye",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_skull-takerz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_skullsmasherz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_teef_snatchaz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_grn_top_knotz",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_aesling",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_baersonling",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_bjornling",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_graeling",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_norsca_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_norsca_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_norsca_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_sarl",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_skaeling",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_nor_varg",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_teb_border_princes",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_teb_estalia",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_teb_tilea",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_vmp_mousillon",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_vmp_rival_sylvanian_vamps",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_vmp_schwartzhafen",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_vmp_vampire_counts",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_vmp_vampire_counts_qb1",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_vmp_vampire_counts_qb2",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_vmp_vampire_counts_qb3",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    },
+    {
+      "factionKey": "wh_main_vmp_waldenhof",
+      "personalityKey": null,
+      "culturalComponent": null,
+      "diplomaticComponent": null,
+      "strategicComponent": null,
+      "reliabilityPolicy": null,
+      "personalityResolved": false
+    }
+  ],
+  "culturalOverrides": [],
+  "treatyValues": [],
+  "eventValues": [],
+  "reliabilityPolicies": [],
+  "diagnostics": {
+    "startingFactionCount": 534,
+    "unresolvedPersonalityCount": 534
+  },
+  "sourceTables": [
+    "start_pos_factions_tables",
+    "cai_personalities_tables",
+    "cai_personality_cultural_relations_overrides_tables",
+    "cai_personality_diplomatic_treaty_values_tables",
+    "cai_personality_diplomatic_event_values_tables",
+    "cai_personalities_reliability_policies_tables"
+  ]
+}

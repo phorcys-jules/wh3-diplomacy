@@ -1,0 +1,231 @@
+{
+  "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
+  "campaign": "wh3_main_combi",
+  "generatedAt": "2026-09-18T11:20:17.962029+00:00",
+  "status": "awaiting-in-game-observation",
+  "pilots": {
+    "Imrik": "wh2_dlc15_hef_imrik",
+    "Karl Franz": "wh_main_emp_empire",
+    "Malus Darkblade": "wh2_main_def_hag_graef",
+    "Ku'gath": "wh3_main_nur_poxmakers_of_nurgle"
+  },
+  "relations": [
+    {
+      "sourceFaction": "wh2_dlc15_hef_imrik",
+      "targetFaction": "wh2_main_def_hag_graef",
+      "baseAttitude": -100.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 1.5,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh2_main_sc_hef_high_elves",
+          "targetSubculture": "wh2_main_sc_def_dark_elves"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh2_dlc15_hef_imrik",
+      "targetFaction": "wh3_main_nur_poxmakers_of_nurgle",
+      "baseAttitude": -100.0,
+      "positiveAttitudeMultiplier": 0.1,
+      "negativeAttitudeMultiplier": 2.0,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh2_main_sc_hef_high_elves",
+          "targetSubculture": "wh3_main_sc_nur_nurgle"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh2_dlc15_hef_imrik",
+      "targetFaction": "wh_main_emp_empire",
+      "baseAttitude": 0.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh2_main_sc_hef_high_elves",
+          "targetSubculture": "wh_main_sc_emp_empire"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh2_main_def_hag_graef",
+      "targetFaction": "wh2_dlc15_hef_imrik",
+      "baseAttitude": -100.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 1.5,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh2_main_sc_def_dark_elves",
+          "targetSubculture": "wh2_main_sc_hef_high_elves"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh2_main_def_hag_graef",
+      "targetFaction": "wh3_main_nur_poxmakers_of_nurgle",
+      "baseAttitude": -10.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh2_main_sc_def_dark_elves",
+          "targetSubculture": "wh3_main_sc_nur_nurgle"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh2_main_def_hag_graef",
+      "targetFaction": "wh_main_emp_empire",
+      "baseAttitude": -40.0,
+      "positiveAttitudeMultiplier": 0.75,
+      "negativeAttitudeMultiplier": 1.25,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh2_main_sc_def_dark_elves",
+          "targetSubculture": "wh_main_sc_emp_empire"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh3_main_nur_poxmakers_of_nurgle",
+      "targetFaction": "wh2_dlc15_hef_imrik",
+      "baseAttitude": -100.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 1.5,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh3_main_sc_nur_nurgle",
+          "targetSubculture": "wh2_main_sc_hef_high_elves"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh3_main_nur_poxmakers_of_nurgle",
+      "targetFaction": "wh2_main_def_hag_graef",
+      "baseAttitude": -10.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh3_main_sc_nur_nurgle",
+          "targetSubculture": "wh2_main_sc_def_dark_elves"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh3_main_nur_poxmakers_of_nurgle",
+      "targetFaction": "wh_main_emp_empire",
+      "baseAttitude": -100.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 1.5,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh3_main_sc_nur_nurgle",
+          "targetSubculture": "wh_main_sc_emp_empire"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh2_dlc15_hef_imrik",
+      "baseAttitude": 0.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh_main_sc_emp_empire",
+          "targetSubculture": "wh2_main_sc_hef_high_elves"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh2_main_def_hag_graef",
+      "baseAttitude": -40.0,
+      "positiveAttitudeMultiplier": 0.75,
+      "negativeAttitudeMultiplier": 1.25,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh_main_sc_emp_empire",
+          "targetSubculture": "wh2_main_sc_def_dark_elves"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh_main_emp_empire",
+      "targetFaction": "wh3_main_nur_poxmakers_of_nurgle",
+      "baseAttitude": -100.0,
+      "positiveAttitudeMultiplier": 0.1,
+      "negativeAttitudeMultiplier": 2.0,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cultural-baseline",
+          "sourceTable": "campaign_cultural_relations_tables",
+          "sourceSubculture": "wh_main_sc_emp_empire",
+          "targetSubculture": "wh3_main_sc_nur_nurgle"
+        }
+      ]
+    }
+  ],
+  "observationProtocol": "Start a fresh vanilla Immortal Empires campaign on turn 1, open diplomacy, record the visible attitude breakdown for each encountered pair, and attach a screenshot plus the observed value before marking this matrix verified."
+}

@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-17T21:08:30.209439+00:00",
+  "generatedAt": "2026-09-18T11:20:21.537657+00:00",
   "status": "partial",
   "semantics": "static script assignments scoped to the requested campaign; guardFreeFirstTick is conservative evidence of an unguarded first-tick call, not proof that every external prerequisite is satisfied",
   "assignments": [
