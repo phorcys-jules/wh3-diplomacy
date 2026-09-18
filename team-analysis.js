@@ -155,16 +155,24 @@
     const weightRecord = data.strategic?.strategicStanceWeights?.CAI_VARIABLE_STRATEGIC_STANCE_CONTROL_WEIGHT_FOR_DIPLOMATIC_TREATIES_TRANSITIVE;
     const weight = Number(weightRecord?.value);
     const scenario = teamTreatyScenario(mode, teamTreaty, teamRules);
+    const strategicProfile = strategicProfileFor(npc.factionKey, data.strategic, 'normal');
+    const strategicValues = strategicProfile?.strategicComponentValues || {};
     return players.filter(ally => ally.factionKey !== player.factionKey).map(ally => {
       const allyRelation = calculateRelation(npc, ally, data);
       const allyAttitude = allyRelation?.attitudeForSimulation ?? null;
       const category = attitudeCategory(allyAttitude);
+      const coefficientKey = category === 'hostile' ? 'friendly_towards_enemy_multiplier' : category === 'friendly' ? 'friendly_towards_friend_multiplier' : null;
+      const networkCoefficient = coefficientKey ? Number(strategicValues[coefficientKey]) : null;
+      const weightedNetworkCoefficient = Number.isFinite(weight) && Number.isFinite(networkCoefficient) ? weight * networkCoefficient : null;
       return {
         allyFaction: ally.factionKey,
         observerAttitudeToAlly: allyAttitude,
         observerAttitudeCategory: category,
         treaty: scenario.treaty,
         transitiveWeight: Number.isFinite(weight) ? weight : null,
+        networkCoefficientKey: coefficientKey,
+        networkCoefficient: Number.isFinite(networkCoefficient) ? networkCoefficient : null,
+        weightedNetworkCoefficient,
         direction: category === 'hostile' ? 'tension-with-ally' : category === 'friendly' ? 'friendly-with-ally' : category === 'neutral' ? 'neutral-with-ally' : 'unknown',
         numericContribution: null,
         reproducibility: scenario.reproducibility === 'runtime-unknown' || !Number.isFinite(weight)
