@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T11:22:25.854055+00:00",
+  "generatedAt": "2026-09-18T11:38:56.828941+00:00",
   "status": "partial",
   "semantics": "CAI profiles influence AI evaluation. Cultural overrides are explicit starting-faction inputs; treaty, event, strategic and reliability values are retained as factors but are not added to attitude without a demonstrated turn-one trigger.",
   "factionProfiles": [
