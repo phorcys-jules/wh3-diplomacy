@@ -47,7 +47,11 @@
       overrideIndex: indexBy(input.cai?.culturalOverrides, row => `${row.componentId}|${row.sourceSubculture}|${row.targetSubculture}`),
     };
     const results = factions.filter(npc => !team.includes(npc.factionKey)).map(npc => {
-      const members = players.map(player => ({ playerFaction: player.factionKey, relation: calculateRelation(npc, player, data) }));
+      const members = players.map(player => {
+        const sharedRegions = (npc.startingRegions || []).filter(region => (player.startingRegions || []).includes(region));
+        const distance = npc.position && player.position ? Math.hypot(npc.position.x - player.position.x, npc.position.y - player.position.y) : null;
+        return { playerFaction: player.factionKey, relation: calculateRelation(npc, player, data), proximity: { sharedRegions, cameraDistance: distance } };
+      });
       const category = classify(members);
       return { npcFaction: npc.factionKey, category, members, teamMode: input.mode === 'same-team' ? 'same-team-unverified-effects-excluded' : 'ffa-no-team-effects', missing: members.filter(member => !member.relation).map(member => member.playerFaction) };
     }).sort((a, b) => a.category.id.localeCompare(b.category.id) || a.npcFaction.localeCompare(b.npcFaction));
