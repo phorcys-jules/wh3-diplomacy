@@ -76,6 +76,7 @@ jobs:
             campaign_group_member_criteria_factions_tables \
             campaign_group_member_criteria_cultures_tables \
             campaign_group_member_criteria_subcultures_tables \
+            campaign_group_member_criteria_campaigns_tables \
             cultures_subcultures_tables \
             start_pos_factions_tables \
             start_pos_regions_tables \
@@ -86,6 +87,16 @@ jobs:
             cai_personality_diplomatic_event_values_tables \
             cai_personalities_reliability_policies_tables \
             cai_personality_strategic_desired_attitudes_tables \
+            cai_variables_tables \
+            cai_personality_variables_tables \
+            cai_personality_variable_set_junctions_tables \
+            cai_personalities_personality_variable_profiles_tables \
+            cai_personalities_personality_variable_profile_context_overrides_tables \
+            cai_personalities_personality_variable_profile_context_overrides_junctions_tables \
+            cai_personality_strategic_components_tables \
+            cai_personality_deal_evaluation_profiles_tables \
+            cai_personality_deal_evaluation_deal_component_values_tables \
+            diplomacy_negotiation_attitudes_tables \
             diplomacy_disabled_between_factions_tables \
             faction_set_items_tables \
             effect_bonus_value_faction_junctions_tables \
@@ -126,6 +137,14 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+
+          python tools/import_cai_strategic_model.py \
+            --db-dir .cache/wh3/db \
+            --cai-factors data/generated/cai-diplomacy-factors.json \
+            --output data/generated/turn1-cai-strategic-model.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
           python tools/import_immortal_empires_factions.py \
             --db-dir .cache/wh3/db \
             --cai-factors data/generated/cai-diplomacy-factors.json \
@@ -140,13 +159,6 @@ jobs:
             --output data/generated/diplomatic-restrictions.json \
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
-
-          python tools/build_turn1_faction_relations.py \
-            --factions data/generated/immortal-empires-factions.json \
-            --culture data/generated/cultural-relations.json \
-            --cai data/generated/cai-diplomacy-factors.json \
-            --startpos data/generated/immortal-empires-startpos.json \
-            --output data/generated/turn1-faction-relations.json
 
           python tools/build_turn1_war_decision_factors.py \
             --cai data/generated/cai-diplomacy-factors.json \
@@ -202,6 +214,21 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+
+          python tools/build_turn1_faction_relations.py \
+            --factions data/generated/immortal-empires-factions.json \
+            --culture data/generated/cultural-relations.json \
+            --cai data/generated/cai-diplomacy-factors.json \
+            --startpos data/generated/immortal-empires-startpos.json \
+            --verified-modifiers data/generated/verified-turn1-diplomatic-modifiers.json \
+            --output data/generated/turn1-faction-relations.json
+
+          python tools/extract_multiplayer_team_rules.py \
+            --script .cache/wh3-dump/script/campaign/wh_campaign_setup.lua \
+            --output data/generated/multiplayer-team-rules.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
           for file in \
             immortal-empires-startpos.json \
             frontend-leaders.json \
@@ -218,6 +245,8 @@ jobs:
             diplomatic-restrictions.json \
             turn1-faction-relations.json \
             turn1-war-decision-factors.json \
+            turn1-cai-strategic-model.json \
+            multiplayer-team-rules.json \
             script-effect-bundle-sources.json \
             turn1-diplomatic-modifier-candidates.json \
             verified-turn1-diplomatic-modifiers.json; do
@@ -251,6 +280,8 @@ jobs:
             data/generated/diplomatic-restrictions.json \
             data/generated/turn1-faction-relations.json \
             data/generated/turn1-war-decision-factors.json \
+            data/generated/turn1-cai-strategic-model.json \
+            data/generated/multiplayer-team-rules.json \
             data/generated/script-effect-bundle-sources.json \
             data/generated/turn1-diplomatic-modifier-candidates.json \
             data/generated/verified-turn1-diplomatic-modifiers.json; do
