@@ -140,6 +140,13 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+          python tools/build_turn1_faction_relations.py \
+            --factions data/generated/immortal-empires-factions.json \
+            --culture data/generated/cultural-relations.json \
+            --cai data/generated/cai-diplomacy-factors.json \
+            --startpos data/generated/immortal-empires-startpos.json \
+            --output data/generated/turn1-faction-relations.json
+
           python tools/build_turn1_war_decision_factors.py \
             --cai data/generated/cai-diplomacy-factors.json \
             --startpos data/generated/immortal-empires-startpos.json \
@@ -208,6 +215,7 @@ jobs:
             cai-diplomacy-factors.json \
             immortal-empires-factions.json \
             diplomatic-restrictions.json \
+            turn1-faction-relations.json \
             turn1-war-decision-factors.json \
             script-effect-bundle-sources.json \
             turn1-diplomatic-modifier-candidates.json \
@@ -240,6 +248,7 @@ jobs:
             data/generated/cai-diplomacy-factors.json \
             data/generated/immortal-empires-factions.json \
             data/generated/diplomatic-restrictions.json \
+            data/generated/turn1-faction-relations.json \
             data/generated/turn1-war-decision-factors.json \
             data/generated/script-effect-bundle-sources.json \
             data/generated/turn1-diplomatic-modifier-candidates.json \
