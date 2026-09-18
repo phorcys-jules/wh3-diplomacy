@@ -62,6 +62,23 @@ const candidates = analysis.compareCandidates({
 assert(candidates.length === 3, 'candidate teammate comparison incomplete');
 assert(candidates.every(row => Number.isFinite(row.metrics.startingWars)), 'candidate metrics missing');
 assert(candidates.every(row => !Object.prototype.hasOwnProperty.call(row.metrics, 'warProbability')), 'candidate ranking must not fabricate war probability');
+const incrementalCandidates = analysis.compareCandidates({
+  team: ['wh2_dlc15_hef_imrik', 'wh_main_emp_empire'],
+  mode: 'ffa',
+  teamTreaty: 'military_alliance',
+  difficulty: 'normal',
+  factions,
+  culture,
+  cai,
+  strategic,
+  relations,
+  startpos,
+  restrictions,
+  teamRules,
+}, ['wh2_main_def_hag_graef']);
+assert(incrementalCandidates[0].comparisonMode === 'incremental', 'candidate comparison should switch to incremental mode for existing teams');
+assert(incrementalCandidates[0].deltaMetrics, 'incremental candidate deltas missing');
+
 
 const sameTeam = analysis.analyze({
   team: ['wh2_dlc15_hef_imrik', 'wh_main_emp_empire'],
