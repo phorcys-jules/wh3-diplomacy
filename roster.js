@@ -34,7 +34,7 @@ const positions={...fallbackPositions};
 // camera-start extent from the WH3 dump. Keep this stable when new leaders
 // are added: deriving bounds from the current roster would move every marker.
 const mapCalibration={minX:11,maxX:899,minY:20.529987,maxY:723.853149};
-const roster=document.querySelector('#roster'),selected=document.querySelector('#selected'),matrix=document.querySelector('#matrix'),map=document.querySelector('#map'),mapViewport=document.querySelector('#mapViewport'),mapStatus=document.querySelector('#mapStatus'),search=document.querySelector('#search'),raceFilter=document.querySelector('#raceFilter'),teamMode=document.querySelector('#teamMode'),difficulty=document.querySelector('#difficulty'),teamTreaty=document.querySelector('#teamTreaty'),teamTreatyField=document.querySelector('#teamTreatyField'),teamAnalysis=document.querySelector('#teamAnalysis');
+const roster=document.querySelector('#roster'),selected=document.querySelector('#selected'),matrix=document.querySelector('#matrix'),map=document.querySelector('#map'),mapViewport=document.querySelector('#mapViewport'),mapStatus=document.querySelector('#mapStatus'),search=document.querySelector('#search'),raceFilter=document.querySelector('#raceFilter'),teamMode=document.querySelector('#teamMode'),difficulty=document.querySelector('#difficulty'),teamTreaty=document.querySelector('#teamTreaty'),teamTreatyField=document.querySelector('#teamTreatyField'),teamAnalysis=document.querySelector('#teamAnalysis'),candidateComparison=document.querySelector('#candidateComparison');
 let relations=[],turnOneRelations=[],activeFactions=null,culturalData=null,caiData=null,restrictionData=null,strategicData=null,teamRulesData=null,positionRecords=[],positionBounds=mapCalibration,zoom=1,offset={x:0,y:0},drag=null,metadataLoading=true;
 const selectedIds=new Set(['imrik','karl']);
 const chosen=()=>[...selectedIds];
@@ -48,6 +48,42 @@ function renderSelected(ids){const items=ids.map(id=>lords.find(l=>l.id===id)).f
 function displayFactionName(key){const lord=lords.find(item=>item.key===key);if(lord)return lord.faction;const faction=activeFactions?.factions?.find(item=>item.factionKey===key);return faction?.displayName||faction?.name||key}
 function reproBadge(level){if(level==='exact-pre-game')return'<span class="repro exact">exact</span>';if(level==='simulable-pre-game')return'<span class="repro sim">simulable</span>';return'<span class="repro unknown">runtime inconnu</span>'}
 function fmt(value,digits=1){return Number.isFinite(Number(value))?Number(value).toFixed(digits):'—'}
+function analysisInput(keys){return{
+  team:keys,
+  mode:teamMode.value,
+  teamTreaty:teamTreaty.value,
+  difficulty:difficulty.value,
+  factions:activeFactions,
+  culture:culturalData,
+  cai:caiData,
+  strategic:strategicData,
+  teamRules:teamRulesData,
+  relations:{relations:turnOneRelations},
+  startpos:{relations},
+  restrictions:restrictionData
+}}
+function renderCandidateComparison(ids){
+  if(!candidateComparison)return;
+  if(ids.length===0){candidateComparison.innerHTML='<p class="pending">Sélectionne un premier dirigeant pour comparer les coéquipiers possibles.</p>';return}
+  if(ids.length>=4){candidateComparison.innerHTML='<p class="source">Équipe complète : 4 dirigeants sélectionnés.</p>';return}
+  if(!activeFactions||!culturalData||!caiData||!strategicData||!teamRulesData||!window.WH3TeamAnalysis){
+    candidateComparison.innerHTML='<p class="pending">Chargement des données nécessaires au comparateur…</p>';return
+  }
+  const keys=ids.map(id=>lords.find(l=>l.id===id)?.key).filter(Boolean);
+  if(keys.length!==ids.length){candidateComparison.innerHTML='<p class="pending">Certaines factions sélectionnées ne sont pas encore résolues.</p>';return}
+  const candidateLords=lords.filter(lord=>lord.key&&!ids.includes(lord.id)&&!keys.includes(lord.key));
+  const candidateByFaction=new Map(candidateLords.map(lord=>[lord.key,lord]));
+  let compared;
+  try{
+    compared=window.WH3TeamAnalysis.compareCandidates(analysisInput(keys),[...candidateByFaction.keys()]).slice(0,12)
+  }catch(error){candidateComparison.innerHTML=`<p class="pending">${error.message}</p>`;return}
+  candidateComparison.innerHTML=`<p class="source">Classement déterministe sur les facteurs connus : guerres initiales → restrictions → hostilité envers plusieurs membres → hostilité directe → tensions transitives → exposition transitive négative. Aucun pourcentage de guerre.</p>
+    <div class="candidate-list">${compared.map((row,index)=>{
+      const lord=candidateByFaction.get(row.candidateFaction),m=row.metrics;
+      if(!lord)return'';
+      return `<div class="candidate-row"><div><strong>${index+1}. ${lord.name}</strong><small>${lord.race} · ${lord.faction}</small><div class="analysis-meta"><span>guerres ${m.startingWars}</span><span>restrictions ${m.restrictedNpcs}</span><span>PNJ hostiles ${m.hostileNpcs}</span><span>multi-hostiles ${m.multiHostileNpcs}</span><span>tensions transitives ${m.transitiveTensions}</span><span>exposition négative ${fmt(m.negativeTransitiveExposure,1)}</span></div></div><button type="button" data-add-candidate="${lord.id}">Ajouter</button></div>`
+    }).join('')||'<p class="pending">Aucun autre seigneur résolu à comparer.</p>'}</div>`;
+}
 function renderTeamAnalysis(ids){
   if(!teamAnalysis)return;
   teamTreatyField.hidden=teamMode.value!=='ffa';
@@ -60,20 +96,7 @@ function renderTeamAnalysis(ids){
   if(keys.length!==ids.length){teamAnalysis.innerHTML='<p class="pending">Certaines factions sélectionnées ne sont pas encore résolues.</p>';return}
   let report;
   try{
-    report=window.WH3TeamAnalysis.analyze({
-      team:keys,
-      mode:teamMode.value,
-      teamTreaty:teamTreaty.value,
-      difficulty:difficulty.value,
-      factions:activeFactions,
-      culture:culturalData,
-      cai:caiData,
-      strategic:strategicData,
-      teamRules:teamRulesData,
-      relations:{relations:turnOneRelations},
-      startpos:{relations},
-      restrictions:restrictionData
-    })
+    report=window.WH3TeamAnalysis.analyze(analysisInput(keys))
   }catch(error){teamAnalysis.innerHTML=`<p class="pending">${error.message}</p>`;return}
   const notable=report.results.filter(row=>row.category.id!=='favorable').slice(0,35);
   const treatyText=report.mode==='same-team'
@@ -112,12 +135,12 @@ function renderTeamAnalysis(ids){
       <h4>Runtime non reproductible exactement ${reproBadge('runtime-unknown')}</h4><ul>${row.runtimeUnknown.map(x=>`<li>${x}</li>`).join('')}</ul>`
   })
 }
-function render(){const ids=chosen(),a=ids.map(id=>lords.find(l=>l.id===id)).filter(Boolean);renderSelected(ids);renderMap(ids);renderTeamAnalysis(ids);if(ids.length<2){matrix.innerHTML='<p class="pending">Sélectionne au moins deux dirigeants.</p>';return}matrix.innerHTML='<table><tr><th>De / vers</th>'+a.map(l=>`<th>${l.name}</th>`).join('')+'</tr>'+a.map(x=>`<tr><th>${x.name}</th>`+a.map(y=>{if(x.id===y.id)return'<td>—</td>';const r=x.key&&y.key?rel(x.key,y.key):null;return r?`<td class="${r.atWar?'bad':''}">${r.atWar?'En guerre':r.treaties.length?'Traité':'Relation explicite'}</td>`:'<td class="pending">Pas de relation explicite</td>'}).join('')+'</tr>').join('')+'</table>'}
+function render(){const ids=chosen(),a=ids.map(id=>lords.find(l=>l.id===id)).filter(Boolean);renderSelected(ids);renderMap(ids);renderCandidateComparison(ids);renderTeamAnalysis(ids);if(ids.length<2){matrix.innerHTML='<p class="pending">Sélectionne au moins deux dirigeants.</p>';return}matrix.innerHTML='<table><tr><th>De / vers</th>'+a.map(l=>`<th>${l.name}</th>`).join('')+'</tr>'+a.map(x=>`<tr><th>${x.name}</th>`+a.map(y=>{if(x.id===y.id)return'<td>—</td>';const r=x.key&&y.key?rel(x.key,y.key):null;return r?`<td class="${r.atWar?'bad':''}">${r.atWar?'En guerre':r.treaties.length?'Traité':'Relation explicite'}</td>`:'<td class="pending">Pas de relation explicite</td>'}).join('')+'</tr>').join('')+'</table>'}
 function words(value){return String(value||'').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean)}
 function scoreLeaderMatch(row,id){const wanted=aliases[id]||[id];const fields=[[row.agentSubtype,30],[row.politicalPartyKey,20],[row.factionKey,10]];let best=0;for(const alias of wanted){const aliasWords=words(alias);for(const[value,weight]of fields){const valueWords=words(value);if(aliasWords.length===1&&valueWords.includes(aliasWords[0]))best=Math.max(best,weight);else if(aliasWords.every(w=>valueWords.includes(w)))best=Math.max(best,weight+aliasWords.length)}}return best}
 function applyLeaderMetadata(leadersData,positionsData){const rows=leadersData.leaders||[];positionRecords=positionsData.positions||[];for(const lord of lords){const scored=rows.map(row=>({row,score:scoreLeaderMatch(row,lord.id)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);if(scored.length&&(!scored[1]||scored[0].score>scored[1].score))lord.key=scored[0].row.factionKey;if(lord.key){const pos=positionRecords.find(p=>p.factionKey===lord.key);if(pos)positions[lord.id]=[pos.x,pos.y]}}}
 function setFooter(){const keyed=lords.filter(l=>l.key).length,located=lords.filter(l=>positions[l.id]).length;document.querySelector('footer').textContent=`Roster ${lords.length} seigneurs · ${keyed} factions résolues · ${located} positions de départ résolues · ${relations.length} relations explicites`}
-roster.addEventListener('change',e=>{if(!e.target.matches('input[type="checkbox"]'))return;if(e.target.checked&&selectedIds.size>=4){e.target.checked=false;return}e.target.checked?selectedIds.add(e.target.value):selectedIds.delete(e.target.value);render()});selected.addEventListener('click',e=>{const button=e.target.closest('[data-remove]');if(!button)return;selectedIds.delete(button.dataset.remove);renderRoster();render()});raceFilter.onchange=()=>{search.value='';renderRoster()};search.oninput=renderRoster;plus.onclick=()=>{zoom=Math.min(3,zoom+.25);applyMapTransform()};minus.onclick=()=>{zoom=Math.max(1,zoom-.25);if(zoom===1)offset={x:0,y:0};applyMapTransform()};reset.onclick=()=>{zoom=1;offset={x:0,y:0};applyMapTransform()};mapViewport.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,ox:offset.x,oy:offset.y};mapViewport.classList.add('dragging');mapViewport.setPointerCapture(e.pointerId)});mapViewport.addEventListener('pointermove',e=>{if(!drag)return;offset={x:drag.ox+e.clientX-drag.x,y:drag.oy+e.clientY-drag.y};applyMapTransform()});mapViewport.addEventListener('pointerup',()=>{drag=null;mapViewport.classList.remove('dragging')});mapViewport.addEventListener('pointercancel',()=>{drag=null;mapViewport.classList.remove('dragging')});
+roster.addEventListener('change',e=>{if(!e.target.matches('input[type="checkbox"]'))return;if(e.target.checked&&selectedIds.size>=4){e.target.checked=false;return}e.target.checked?selectedIds.add(e.target.value):selectedIds.delete(e.target.value);render()});selected.addEventListener('click',e=>{const button=e.target.closest('[data-remove]');if(!button)return;selectedIds.delete(button.dataset.remove);renderRoster();render()});candidateComparison?.addEventListener('click',e=>{const button=e.target.closest('[data-add-candidate]');if(!button||selectedIds.size>=4)return;selectedIds.add(button.dataset.addCandidate);renderRoster();render()});raceFilter.onchange=()=>{search.value='';renderRoster()};search.oninput=renderRoster;plus.onclick=()=>{zoom=Math.min(3,zoom+.25);applyMapTransform()};minus.onclick=()=>{zoom=Math.max(1,zoom-.25);if(zoom===1)offset={x:0,y:0};applyMapTransform()};reset.onclick=()=>{zoom=1;offset={x:0,y:0};applyMapTransform()};mapViewport.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,ox:offset.x,oy:offset.y};mapViewport.classList.add('dragging');mapViewport.setPointerCapture(e.pointerId)});mapViewport.addEventListener('pointermove',e=>{if(!drag)return;offset={x:drag.ox+e.clientX-drag.x,y:drag.oy+e.clientY-drag.y};applyMapTransform()});mapViewport.addEventListener('pointerup',()=>{drag=null;mapViewport.classList.remove('dragging')});mapViewport.addEventListener('pointercancel',()=>{drag=null;mapViewport.classList.remove('dragging')});
 initRaceFilter();renderRoster();render();teamMode.onchange=render;difficulty.onchange=render;teamTreaty.onchange=render;
 const dataBase='./data/runtime/';
 const loadJson=name=>fetch(`${dataBase}${name}?v=20260902-3`,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`${name} HTTP ${r.status}`);return r.json()});
