@@ -1,24 +1,51 @@
 # WH3 Diplomacy
 
-Outil communautaire pour préparer des campagnes multijoueur de Total War: Warhammer III — Immortal Empires.
+Outil communautaire pour préparer une campagne multijoueur Total War: WARHAMMER III — Immortal Empires avant de lancer la partie.
 
-## Interface actuelle
+## Page d'accueil : composeur d'équipe
 
-La page principale conserve les fonctionnalités existantes : sélection de plusieurs seigneurs, matrice diplomatique et carte des positions de départ.
+La page principale est le cœur du produit. Elle permet de sélectionner **2 à 4 Seigneurs légendaires**, puis affiche :
 
-## Vue « Accord rapide »
+- leur compatibilité diplomatique ;
+- les factions PNJ actives susceptibles de poser problème ;
+- les guerres et traités de départ ;
+- les restrictions mécaniques de diplomatie ;
+- les positions de départ ;
+- les personnalités et facteurs CAI connus ;
+- les effets transitifs pertinents lorsqu'un PNJ déteste un allié de l'équipe ;
+- une enveloppe des multiplicateurs de menace quand le moteur expose les bornes mais pas la valeur runtime exacte.
 
-La future vue inspirée de Diplomatie > Accord rapide sera développée comme une page séparée afin de ne pas remplacer ni supprimer l'interface actuelle. Elle permettra de choisir un seigneur puis de classer les partenaires jouables par type d'accord, compatibilité diplomatique et distance de départ.
+Deux scénarios sont distingués : **même équipe dans le lobby** et **FFA + traité choisi entre joueurs**.
 
-## Données
+La page ne produit pas de fausse probabilité de guerre.
 
-Le projet privilégie les données extraites et traçables depuis WH3. Les valeurs inconnues restent explicitement non résolues au lieu d'être inventées.
+## Trois niveaux de reproductibilité
 
-Les datasets utilisés par GitHub Pages sont générés lors du déploiement et publiés sous `data/runtime/` :
+Chaque donnée utilisée par le simulateur est classée :
 
-- `immortal-empires-startpos.json`
-- `cultural-relations.json`
-- `frontend-leaders.json`
-- `campaign-start-positions.json`
+- **exact-pre-game** : déterministe depuis les DB, startpos ou scripts vanilla ;
+- **simulable-pre-game** : formule/terme CAI reconstructible avant de lancer la campagne ;
+- **runtime-unknown** : état ou agrégation finale du moteur natif qui n'est pas exposé par les packs.
 
-Voir `docs/data-sources.md` et `docs/diplomacy-extraction.md` pour le détail des sources et limites.
+Le modèle de menace documenté dans les données WH3 est conservé avec ses limites : le jeu expose les multiplicateurs attitude/actions/proximité/personnalité, mais pas encore la dérivation native complète de `base_score` ni le choix final de déclaration de guerre.
+
+## Accord rapide
+
+`quick-deal.html` reste une vue secondaire pour examiner un Seigneur légendaire et ses partenaires possibles. Elle ne remplace pas le composeur d'équipe de l'accueil.
+
+## Données générées
+
+Le workflow GitHub Pages reconstruit les datasets depuis un commit épinglé de `Shazbot/WH3-Dump`. Parmi les sorties principales :
+
+- `immortal-empires-factions.json` — toutes les factions actives au startpos IE ;
+- `turn1-faction-relations.json` — composantes diplomatiques T1 connues ;
+- `cai-diplomacy-factors.json` — profils et facteurs CAI ;
+- `turn1-cai-strategic-model.json` — variables de strategic stance, menace et évaluation de guerre ;
+- `multiplayer-team-rules.json` — règles de coéquipiers prouvées dans `wh_campaign_setup.lua` ;
+- `diplomatic-restrictions.json` — restrictions mécaniques avec source/cible résolues quand possible ;
+- `campaign-start-positions.json` — positions de départ ;
+- `verified-turn1-diplomatic-modifiers.json` — sous-ensemble conservateur de modificateurs scriptés vérifiés.
+
+Les valeurs manquantes restent explicites au lieu d'être remplacées par des estimations silencieuses.
+
+Voir `docs/data-sources.md` et `docs/diplomacy-extraction.md` pour les sources et limites.
