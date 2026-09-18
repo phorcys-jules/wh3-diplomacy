@@ -42,6 +42,8 @@ def main():
     starts = table(args.db_dir / 'start_pos_factions_tables' / 'data__.tsv', {'ID', 'faction', 'campaign', 'playable', 'is_major', 'faction_potential'})
     regions = table(args.db_dir / 'start_pos_regions_tables' / 'data__.tsv', {'region', 'campaign', 'owning_faction'})
     factions = table(args.db_dir / 'factions_tables' / 'data__.tsv', {'key', 'subculture', 'name_group'})
+    subcultures = table(args.db_dir / 'cultures_subcultures_tables' / 'data__.tsv', {'subculture', 'culture'})
+    culture_by_subculture = {row['subculture']: row['culture'] for row in subcultures if row.get('subculture') and row.get('culture')}
     localization = {}
     if args.localization:
         for loc in table(args.localization, {'key', 'text'}):
@@ -72,6 +74,7 @@ def main():
         items.append({
             'factionKey': key, 'displayName': localization.get(key), 'nameGroup': meta.get('name_group') or None,
             'subculture': meta.get('subculture') or None,
+            'culture': culture_by_subculture.get(meta.get('subculture')),
             'playable': row.get('playable') == 'true', 'major': row.get('is_major') == 'true',
             'factionPotential': row.get('faction_potential') or None,
             'startingLeaders': sorted(filter(None, leaders.get(key, []))),
@@ -82,7 +85,7 @@ def main():
         })
     if not items:
         fail('no wh3_main_combi factions found')
-    output = {'gameVersion': args.game_version, 'campaign': args.campaign, 'generatedAt': datetime.now(timezone.utc).isoformat(), 'status': 'partial', 'semantics': 'Every entry is explicitly active in the Immortal Empires start-position table. A start region is retained when a camera coordinate is unavailable; missing values remain null rather than inferred.', 'factions': sorted(items, key=lambda item: item['factionKey']), 'diagnostics': {'activeFactionCount': len(items), 'playableFactionCount': sum(item['playable'] for item in items), 'positionedFactionCount': sum(item['position'] is not None for item in items), 'regionedFactionCount': sum(bool(item['startingRegions']) for item in items), 'unresolvedSubcultureCount': sum(item['subculture'] is None for item in items), 'localizedFactionCount': sum(bool(item.get('displayName')) for item in items)}}
+    output = {'gameVersion': args.game_version, 'campaign': args.campaign, 'generatedAt': datetime.now(timezone.utc).isoformat(), 'status': 'partial', 'semantics': 'Every entry is explicitly active in the Immortal Empires start-position table. A start region is retained when a camera coordinate is unavailable; missing values remain null rather than inferred.', 'factions': sorted(items, key=lambda item: item['factionKey']), 'diagnostics': {'activeFactionCount': len(items), 'playableFactionCount': sum(item['playable'] for item in items), 'positionedFactionCount': sum(item['position'] is not None for item in items), 'regionedFactionCount': sum(bool(item['startingRegions']) for item in items), 'unresolvedSubcultureCount': sum(item['subculture'] is None for item in items), 'unresolvedCultureCount': sum(item['culture'] is None for item in items), 'localizedFactionCount': sum(bool(item.get('displayName')) for item in items)}}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f"imported {len(items)} active Immortal Empires factions")
