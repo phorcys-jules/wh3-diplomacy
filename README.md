@@ -61,3 +61,8 @@ La page d'accueil compare automatiquement les Seigneurs légendaires encore disp
 ### Impact incrémental des coéquipiers
 
 À partir de 2 joueurs déjà sélectionnés, le comparateur classe les candidats selon ce qu'ils **ajoutent ou retirent** à la situation actuelle (Δ guerres initiales, restrictions, PNJ hostiles, hostilités multiples, tensions et exposition transitive). Les totaux ne servent qu'à départager. Avec un seul joueur, il utilise les totaux faute de baseline d'équipe valide.
+
+
+### PNJ impactés par un candidat
+
+Le comparateur indique maintenant les PNJ précis dont la situation se dégrade ou s'améliore lorsqu'un Seigneur est ajouté. Les variations sont calculées à partir des mêmes signaux explicites que le reste du simulateur (guerre initiale, restriction, hostilité directe/multiple et tension transitive) et ne sont pas converties en probabilité de guerre.
