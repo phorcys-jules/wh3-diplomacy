@@ -41,6 +41,57 @@ const chosen=()=>[...selectedIds];
 function initRaceFilter(){raceFilter.innerHTML=Object.keys(groups).map(r=>`<option value="${r}">${r}</option>`).join('');raceFilter.value=Object.keys(groups)[0]}
 function renderRoster(){const q=search.value.trim().toLowerCase(),race=raceFilter.value,all=groups[race]||[];const list=all.filter(x=>(race+' '+x[1]+' '+x[2]).toLowerCase().includes(q));roster.innerHTML=`<section class="race"><h3>${race} <small>(${list.length}/${all.length})</small></h3><div class="lords">${list.map(([id,n,f])=>`<label class="lord"><input type="checkbox" value="${id}" ${selectedIds.has(id)?'checked':''}><span><strong>${n}</strong><small>${f}</small></span></label>`).join('')}</div>${list.length?'':'<p class="pending">Aucun seigneur ne correspond à la recherche.</p>'}</section>`}
 function rel(a,b){return relations.find(r=>r.sourceFaction===a&&r.targetFaction===b)}
+function turnOneRel(a,b){return turnOneRelations.find(r=>r.sourceFaction===a&&r.targetFaction===b)}
+function knownRelationValue(row){
+  if(!row)return null;
+  const value=row.knownAttitudeComponentsTotal??row.baseAttitude;
+  return Number.isFinite(Number(value))?Number(value):null
+}
+function relationStatus(value){
+  if(!Number.isFinite(value))return{label:'Données incomplètes',cls:'pending'};
+  const id=window.WH3TeamAnalysis?.attitudeCategory?.(value);
+  if(id==='hostile')return{label:'Hostile',cls:'bad'};
+  if(id==='friendly')return{label:'Favorable',cls:'good'};
+  return{label:'Neutre',cls:'neutral'}
+}
+function knownComponentsLabel(row){
+  const components=row?.components||[];
+  if(!components.length)return'aucune composante résolue';
+  return components.map(component=>{
+    const value=Number(component.value);
+    const signed=Number.isFinite(value)?`${value>0?'+':''}${fmt(value,0)}`:'—';
+    if(component.type==='cultural-baseline')return`culture ${signed}`;
+    if(component.type==='cai-personality-cultural-override')return`personnalité/culture ${signed}`;
+    if(component.type==='cai-treaty-initial-value')return`${component.treaty||'traité'} ${signed}`;
+    if(component.type==='verified-first-tick-diplomatic-modifier')return`effet T1 ${signed}`;
+    return`${component.type||'composante'} ${signed}`
+  }).join(' · ')
+}
+function pairExternalMetrics(from,to){
+  if(!from?.key||!to?.key||!activeFactions||!culturalData||!caiData||!strategicData||!teamRulesData||!window.WH3TeamAnalysis?.compareCandidates)return null;
+  try{
+    return window.WH3TeamAnalysis.compareCandidates(analysisInput([from.key]),[to.key])[0]?.metrics||null
+  }catch(error){
+    console.warn('Comparaison externe indisponible',from.key,to.key,error);
+    return null
+  }
+}
+function pairCompatibilityCell(from,to){
+  const row=from.key&&to.key?turnOneRel(from.key,to.key):null;
+  const value=knownRelationValue(row);
+  const status=relationStatus(value);
+  const explicit=from.key&&to.key?rel(from.key,to.key):null;
+  const metrics=pairExternalMetrics(from,to);
+  const headline=row?.atWar||explicit?.atWar?'En guerre':status.label;
+  const cls=row?.atWar||explicit?.atWar?'bad':status.cls;
+  const valueText=Number.isFinite(value)?`${value>0?'+':''}${fmt(value,0)} connu`:'socle inconnu';
+  const treaties=row?.treaties?.length?row.treaties.join(', '):explicit?.treaties?.length?explicit.treaties.join(', '):'';
+  const external=metrics
+    ? `<small class="pair-external">${metrics.startingWars} guerre(s) PNJ · ${metrics.hostileNpcs} PNJ hostiles · ${metrics.transitiveTensions} tension(s) transitives</small>`
+    : '<small class="pair-external pending">impact PNJ en chargement</small>';
+  const details=row?knownComponentsLabel(row):'profil T1 non résolu';
+  return `<div class="pair-cell"><strong class="${cls}" title="${details}">${headline}</strong><small>${valueText}${treaties?' · '+treaties:''}</small>${external}</div>`
+}
 function applyMapTransform(){map.style.transform=`translate(${offset.x}px,${offset.y}px) scale(${zoom})`}
 function mapPercent(x,y){const b=positionBounds;if(!b||b.maxX===b.minX||b.maxY===b.minY)return[50,50];const pad=2.5;return[pad+(x-b.minX)/(b.maxX-b.minX)*(100-pad*2),pad+(b.maxY-y)/(b.maxY-b.minY)*(100-pad*2)]}
 function renderMap(ids){map.innerHTML='';let missing=0;ids.forEach(id=>{if(!positions[id]){missing++;return}const l=lords.find(x=>x.id===id),[x,y]=positions[id],m=document.createElement('div');m.className='marker';const[left,top]=mapPercent(x,y);m.style.left=`${left}%`;m.style.top=`${top}%`;m.innerHTML=`<span class="marker-dot"></span><span class="marker-label"><b>${l.name}</b><small>${l.faction}</small></span>`;map.append(m)});if(metadataLoading)mapStatus.textContent='Chargement des positions WH3 vérifiées…';else if(missing)mapStatus.textContent=`${missing} position(s) sélectionnée(s) non résolue(s) dans le dump courant. Aucun emplacement approximatif n'est inventé.`;else mapStatus.textContent='Toutes les positions sélectionnées proviennent de cam_gameplay_start dans les scripts WH3.';applyMapTransform()}
@@ -149,7 +200,7 @@ function renderTeamAnalysis(ids){
       <h4>Runtime non reproductible exactement ${reproBadge('runtime-unknown')}</h4><ul>${row.runtimeUnknown.map(x=>`<li>${x}</li>`).join('')}</ul>`
   })
 }
-function render(){const ids=chosen(),a=ids.map(id=>lords.find(l=>l.id===id)).filter(Boolean);renderSelected(ids);renderMap(ids);renderCandidateComparison(ids);renderTeamAnalysis(ids);if(ids.length<2){matrix.innerHTML='<p class="pending">Sélectionne au moins deux dirigeants.</p>';return}matrix.innerHTML='<table><tr><th>De / vers</th>'+a.map(l=>`<th>${l.name}</th>`).join('')+'</tr>'+a.map(x=>`<tr><th>${x.name}</th>`+a.map(y=>{if(x.id===y.id)return'<td>—</td>';const r=x.key&&y.key?rel(x.key,y.key):null;return r?`<td class="${r.atWar?'bad':''}">${r.atWar?'En guerre':r.treaties.length?'Traité':'Relation explicite'}</td>`:'<td class="pending">Pas de relation explicite</td>'}).join('')+'</tr>').join('')+'</table>'}
+function render(){const ids=chosen(),a=ids.map(id=>lords.find(l=>l.id===id)).filter(Boolean);renderSelected(ids);renderMap(ids);renderCandidateComparison(ids);renderTeamAnalysis(ids);if(ids.length<2){matrix.innerHTML='<p class="pending">Sélectionne au moins deux dirigeants.</p>';return}matrix.innerHTML='<table><tr><th>De / vers</th>'+a.map(l=>`<th>${l.name}</th>`).join('')+'</tr>'+a.map(x=>`<tr><th>${x.name}</th>`+a.map(y=>x.id===y.id?'<td>—</td>':`<td>${pairCompatibilityCell(x,y)}</td>`).join('')+'</tr>').join('')+'</table><p class="source matrix-source">La ligne principale utilise le socle diplomatique T1 connu/simulable (culture, personnalité culturelle, traités de départ et effets first-tick vérifiés). Le nombre « connu » n’est pas présenté comme l’attitude native finale. La troisième ligne résume l’impact extérieur de cette paire sur les PNJ.</p>'}
 function words(value){return String(value||'').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean)}
 function scoreLeaderMatch(row,id){const wanted=aliases[id]||[id];const fields=[[row.agentSubtype,30],[row.politicalPartyKey,20],[row.factionKey,10]];let best=0;for(const alias of wanted){const aliasWords=words(alias);for(const[value,weight]of fields){const valueWords=words(value);if(aliasWords.length===1&&valueWords.includes(aliasWords[0]))best=Math.max(best,weight);else if(aliasWords.every(w=>valueWords.includes(w)))best=Math.max(best,weight+aliasWords.length)}}return best}
 function applyLeaderMetadata(leadersData,positionsData){const rows=leadersData.leaders||[];positionRecords=positionsData.positions||[];for(const lord of lords){const scored=rows.map(row=>({row,score:scoreLeaderMatch(row,lord.id)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);if(scored.length&&(!scored[1]||scored[0].score>scored[1].score))lord.key=scored[0].row.factionKey;if(lord.key){const pos=positionRecords.find(p=>p.factionKey===lord.key);if(pos)positions[lord.id]=[pos.x,pos.y]}}}
