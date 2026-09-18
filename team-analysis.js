@@ -507,10 +507,48 @@
     });
   }
 
+
+  function suggestTeam(input, candidateFactionKeys, targetSize = 4) {
+    const startingTeam = [...(input.team || [])];
+    if (startingTeam.length < 1 || startingTeam.length > 4) {
+      throw new Error('La suggestion d’équipe nécessite entre 1 et 4 factions déjà sélectionnées.');
+    }
+    const size = Math.max(startingTeam.length, Math.min(4, Number(targetSize) || 4));
+    const remaining = new Set((candidateFactionKeys || []).filter(key => key && !startingTeam.includes(key)));
+    const team = [...startingTeam];
+    const steps = [];
+
+    while (team.length < size && remaining.size) {
+      const ranked = compareCandidates({ ...input, team }, [...remaining]);
+      if (!ranked.length) break;
+      const selected = ranked[0];
+      steps.push({
+        position: team.length + 1,
+        candidateFaction: selected.candidateFaction,
+        comparisonMode: selected.comparisonMode,
+        metrics: selected.metrics,
+        deltaMetrics: selected.deltaMetrics,
+        npcImpacts: selected.npcImpacts,
+      });
+      team.push(selected.candidateFaction);
+      remaining.delete(selected.candidateFaction);
+    }
+
+    return {
+      startingTeam,
+      suggestedTeam: team,
+      targetSize: size,
+      complete: team.length === size,
+      steps,
+      semantics: 'Suggestion gloutonne : à chaque étape, l’outil ajoute le candidat classé premier par le comparateur explicable. Ce n’est ni une recherche exhaustive de toutes les combinaisons ni une probabilité de guerre.',
+    };
+  }
+
   return {
     analyze,
     prepareAnalysis,
     compareCandidates,
+    suggestTeam,
     candidateMetrics,
     subtractMetrics,
     candidateNpcImpacts,
