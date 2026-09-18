@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T18:46:22.746207+00:00",
+  "generatedAt": "2026-09-18T18:48:55.349832+00:00",
   "sourceRef": "Shazbot/WH3-Dump@61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "sourceTable": "campaign_cultural_relations_tables",
   "semantics": "directional cultural baseline only; not the complete turn-1 diplomatic score",
