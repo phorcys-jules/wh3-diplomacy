@@ -402,6 +402,73 @@
     return Object.fromEntries(Object.keys(metrics).map(key => [key, metrics[key] - baseline[key]]));
   }
 
+
+  function npcImpactState(row) {
+    if (!row) {
+      return {
+        startingWar: 0,
+        restricted: 0,
+        hostileMembers: 0,
+        transitiveTensions: 0,
+        negativeExposure: 0,
+      };
+    }
+    const hostileMembers = row.members.filter(member =>
+      attitudeCategory(member.relation?.attitudeForSimulation ?? null) === 'hostile'
+    ).length;
+    return {
+      startingWar: row.members.some(member => member.relation?.atWar) ? 1 : 0,
+      restricted: row.members.some(member => (member.restrictions || []).length) ? 1 : 0,
+      hostileMembers,
+      transitiveTensions: row.transitive.filter(item => item.direction === 'tension-with-ally').length,
+      negativeExposure: Number.isFinite(row.transitiveExposure) && row.transitiveExposure < 0
+        ? Math.abs(row.transitiveExposure)
+        : 0,
+    };
+  }
+
+  function compareImpactDelta(left, right) {
+    const keys = ['startingWar', 'restricted', 'hostileMembers', 'transitiveTensions', 'negativeExposure'];
+    for (const key of keys) {
+      const delta = left[key] - right[key];
+      if (Math.abs(delta) > 1e-9) return delta;
+    }
+    return 0;
+  }
+
+  function candidateNpcImpacts(report, baselineReport = null, candidateFaction = null) {
+    const current = new Map(report.results.map(row => [row.npcFaction, row]));
+    const baseline = new Map((baselineReport?.results || []).map(row => [row.npcFaction, row]));
+    const keys = new Set([...current.keys(), ...baseline.keys()]);
+    const worsened = [];
+    const improved = [];
+
+    for (const npcFaction of keys) {
+      if (npcFaction === candidateFaction) continue;
+      const totals = npcImpactState(current.get(npcFaction));
+      const before = baselineReport ? npcImpactState(baseline.get(npcFaction)) : null;
+      const delta = before
+        ? Object.fromEntries(Object.keys(totals).map(key => [key, totals[key] - before[key]]))
+        : totals;
+      const zero = npcImpactState(null);
+      const direction = compareImpactDelta(delta, zero);
+      if (direction > 0) worsened.push({ npcFaction, delta, totals });
+      else if (baselineReport && direction < 0) improved.push({ npcFaction, delta, totals });
+    }
+
+    worsened.sort((a, b) =>
+      compareImpactDelta(b.delta, a.delta) || a.npcFaction.localeCompare(b.npcFaction)
+    );
+    improved.sort((a, b) =>
+      compareImpactDelta(a.delta, b.delta) || a.npcFaction.localeCompare(b.npcFaction)
+    );
+    return {
+      mode: baselineReport ? 'incremental' : 'total',
+      worsened,
+      improved,
+    };
+  }
+
   function compareCandidates(input, candidateFactionKeys) {
     const team = input.team || [];
     if (team.length < 1 || team.length >= 4) {
@@ -424,6 +491,7 @@
         deltaMetrics: subtractMetrics(metrics, baselineMetrics),
         baselineMetrics,
         comparisonMode,
+        npcImpacts: candidateNpcImpacts(report, baselineReport, candidateFaction),
         report,
         semantics: baselineMetrics
           ? 'Classement lexicographique sur l’impact ajouté au groupe actuel, puis sur les totaux. Ce résultat ne représente ni une probabilité de guerre ni le score natif final de WH3.'
@@ -445,6 +513,8 @@
     compareCandidates,
     candidateMetrics,
     subtractMetrics,
+    candidateNpcImpacts,
+    npcImpactState,
     calculateRelation,
     attitudeMultiplier,
     buildThreatEnvelope,
