@@ -22,7 +22,7 @@ const strategic = {
     factionKey: 'p',
     personalityKey: 'aggressive',
     strategicComponent: 'strategic_aggressive',
-    strategicComponentValues: { strategic_balance_opportunism_factor: 0.9 },
+    strategicComponentValues: { strategic_balance_opportunism_factor: 0.9, friendly_towards_enemy_multiplier: -0.8, friendly_towards_friend_multiplier: 0.3 },
     difficultyVariables: {
       normal: { values: {
         ai_threat_score_attitude_threshold_min: -150,
@@ -65,7 +65,7 @@ const result = analyze({
   culture,
   relations: { relations: [] },
   startpos: { relations: [] },
-  cai: {},
+  cai: { factionProfiles: [{ factionKey: 'p', diplomaticComponent: 'dip' }], treatyValues: [{ componentId: 'dip', treaty: 'TRADE_AGREEMENT', initialValue: 20, sourceTable: 'treaties' }] },
   strategic,
   teamRules,
   restrictions: { restrictions: [] },
@@ -75,6 +75,10 @@ assert.equal(result.results[0].members.length, 2);
 assert.equal(result.results[0].members[0].proximity.cameraDistance, 5);
 assert.equal(result.results[0].members[0].threatEnvelope.finalThreat, null);
 assert(result.results[0].simulableSignals.some(row => row.type === 'transitive-treaty-input'));
+assert.equal(result.results[0].transitive[0].treatyInitialValue, 20);
+assert.equal(result.results[0].transitive[0].weightedNetworkCoefficient, -0.4);
+assert.equal(result.results[0].transitive[0].exposureSignal, -8);
+assert.equal(result.results[0].transitiveExposure, -16);
 assert(result.results[0].exactSignals.some(row => row.type === 'multiplayer-team-rule'));
 assert(result.results[0].runtimeUnknown.includes('native final war declaration choice'));
 
