@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T11:20:17.665690+00:00",
+  "generatedAt": "2026-09-18T11:22:26.135925+00:00",
   "status": "partial",
   "semantics": "demonstrated directional cultural baseline plus explicit startpos wars/treaties; unproven script and other modifiers are deliberately excluded",
   "relations": [
@@ -3810,43 +3810,64 @@
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh2_dlc09_tmb_exiles_of_nehek",
-      "baseAttitude": 0.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -50.0,
+      "positiveAttitudeMultiplier": 0.75,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings"
+          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         }
       ]
     },
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh2_dlc09_tmb_khemri",
-      "baseAttitude": 0.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -50.0,
+      "positiveAttitudeMultiplier": 0.75,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings"
+          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         }
       ]
     },
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh2_dlc09_tmb_lybaras",
-      "baseAttitude": 0.0,
+      "baseAttitude": -50.0,
+      "positiveAttitudeMultiplier": 0.75,
+      "negativeAttitudeMultiplier": 1.5,
+      "modifiers": [],
+      "treaties": [],
+      "atWar": false,
+      "components": [
+        {
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
+          "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
+          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
+        }
+      ]
+    },
+    {
+      "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
+      "targetFaction": "wh2_dlc11_cst_noctilus",
+      "baseAttitude": 20.0,
       "positiveAttitudeMultiplier": 1.0,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
@@ -3854,73 +3875,58 @@
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings"
-        }
-      ]
-    },
-    {
-      "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
-      "targetFaction": "wh2_dlc11_cst_noctilus",
-      "baseAttitude": -40.0,
-      "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
-      "modifiers": [],
-      "treaties": [],
-      "atWar": false,
-      "components": [
-        {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
-          "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast"
+          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         }
       ]
     },
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh2_dlc11_cst_pirates_of_sartosa",
-      "baseAttitude": -40.0,
-      "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "baseAttitude": 20.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast"
+          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         }
       ]
     },
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh2_dlc11_cst_the_drowned",
-      "baseAttitude": -40.0,
-      "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "baseAttitude": 20.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast"
+          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         }
       ]
     },
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh2_dlc11_cst_vampire_coast",
-      "baseAttitude": -40.0,
-      "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "baseAttitude": 20.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [
         "non_aggression_pact"
@@ -3928,10 +3934,11 @@
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast"
+          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         },
         {
           "type": "startpos-relation",
@@ -3964,18 +3971,19 @@
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh2_dlc11_vmp_the_barrow_legion",
-      "baseAttitude": -40.0,
-      "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "baseAttitude": 20.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh_main_sc_vmp_vampire_counts"
+          "targetSubculture": "wh_main_sc_vmp_vampire_counts",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         }
       ]
     },
@@ -5296,18 +5304,19 @@
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh3_main_vmp_caravan_of_blue_roses",
-      "baseAttitude": -40.0,
-      "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "baseAttitude": 20.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh_main_sc_vmp_vampire_counts"
+          "targetSubculture": "wh_main_sc_vmp_vampire_counts",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         }
       ]
     },
@@ -5638,36 +5647,38 @@
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh_main_vmp_schwartzhafen",
-      "baseAttitude": -40.0,
-      "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "baseAttitude": 20.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh_main_sc_vmp_vampire_counts"
+          "targetSubculture": "wh_main_sc_vmp_vampire_counts",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         }
       ]
     },
     {
       "sourceFaction": "wh2_dlc09_tmb_followers_of_nagash",
       "targetFaction": "wh_main_vmp_vampire_counts",
-      "baseAttitude": -40.0,
-      "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "baseAttitude": 20.0,
+      "positiveAttitudeMultiplier": 1.0,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
-          "targetSubculture": "wh_main_sc_vmp_vampire_counts"
+          "targetSubculture": "wh_main_sc_vmp_vampire_counts",
+          "personalityComponent": "arkhan_likes_vampires_dislikes_tombkings"
         }
       ]
     },
@@ -108550,18 +108561,19 @@
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_dlc11_def_the_blessed_dread",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -108712,54 +108724,57 @@
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_dlc15_hef_imrik",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_dlc16_wef_drycha",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh_dlc05_sc_wef_wood_elves"
+          "targetSubculture": "wh_dlc05_sc_wef_wood_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_dlc16_wef_sisters_of_twilight",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh_dlc05_sc_wef_wood_elves"
+          "targetSubculture": "wh_dlc05_sc_wef_wood_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -108838,162 +108853,171 @@
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_main_def_cult_of_pleasure",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_main_def_hag_graef",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_main_def_har_ganeth",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_main_def_naggarond",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_main_hef_avelorn",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_main_hef_eataine",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_main_hef_nagarythe",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_main_hef_order_of_loremasters",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_main_hef_yvresse",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -109162,18 +109186,19 @@
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh2_twa03_def_rakarth",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -109522,18 +109547,19 @@
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh3_dlc27_hef_aislinn",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -109956,36 +109982,38 @@
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh_dlc05_wef_argwylon",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh_dlc05_sc_wef_wood_elves"
+          "targetSubculture": "wh_dlc05_sc_wef_wood_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_dlc25_dwf_malakai",
       "targetFaction": "wh_dlc05_wef_wood_elves",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh_dlc05_sc_wef_wood_elves"
+          "targetSubculture": "wh_dlc05_sc_wef_wood_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -129894,108 +129922,114 @@
     {
       "sourceFaction": "wh3_main_chs_shadow_legion",
       "targetFaction": "wh3_dlc20_chs_azazel",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -20.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 2.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_chs_chaos",
-          "targetSubculture": "wh_main_sc_chs_chaos"
+          "targetSubculture": "wh_main_sc_chs_chaos",
+          "personalityComponent": "woc_dislike_chaos"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_chs_shadow_legion",
       "targetFaction": "wh3_dlc20_chs_festus",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -20.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 2.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_chs_chaos",
-          "targetSubculture": "wh_main_sc_chs_chaos"
+          "targetSubculture": "wh_main_sc_chs_chaos",
+          "personalityComponent": "woc_dislike_chaos"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_chs_shadow_legion",
       "targetFaction": "wh3_dlc20_chs_kholek",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -20.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 2.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_chs_chaos",
-          "targetSubculture": "wh_main_sc_chs_chaos"
+          "targetSubculture": "wh_main_sc_chs_chaos",
+          "personalityComponent": "woc_dislike_chaos"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_chs_shadow_legion",
       "targetFaction": "wh3_dlc20_chs_sigvald",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -20.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 2.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_chs_chaos",
-          "targetSubculture": "wh_main_sc_chs_chaos"
+          "targetSubculture": "wh_main_sc_chs_chaos",
+          "personalityComponent": "woc_dislike_chaos"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_chs_shadow_legion",
       "targetFaction": "wh3_dlc20_chs_valkia",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -20.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 2.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_chs_chaos",
-          "targetSubculture": "wh_main_sc_chs_chaos"
+          "targetSubculture": "wh_main_sc_chs_chaos",
+          "personalityComponent": "woc_dislike_chaos"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_chs_shadow_legion",
       "targetFaction": "wh3_dlc20_chs_vilitch",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -20.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 2.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_chs_chaos",
-          "targetSubculture": "wh_main_sc_chs_chaos"
+          "targetSubculture": "wh_main_sc_chs_chaos",
+          "personalityComponent": "woc_dislike_chaos"
         }
       ]
     },
@@ -130758,18 +130792,19 @@
     {
       "sourceFaction": "wh3_main_chs_shadow_legion",
       "targetFaction": "wh_main_chs_chaos",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -20.0,
+      "positiveAttitudeMultiplier": 0.5,
+      "negativeAttitudeMultiplier": 2.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_chs_chaos",
-          "targetSubculture": "wh_main_sc_chs_chaos"
+          "targetSubculture": "wh_main_sc_chs_chaos",
+          "personalityComponent": "woc_dislike_chaos"
         }
       ]
     },
@@ -137006,18 +137041,19 @@
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_dlc11_def_the_blessed_dread",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -137168,54 +137204,57 @@
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_dlc15_hef_imrik",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_dlc16_wef_drycha",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh_dlc05_sc_wef_wood_elves"
+          "targetSubculture": "wh_dlc05_sc_wef_wood_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_dlc16_wef_sisters_of_twilight",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh_dlc05_sc_wef_wood_elves"
+          "targetSubculture": "wh_dlc05_sc_wef_wood_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -137294,162 +137333,171 @@
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_main_def_cult_of_pleasure",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_main_def_hag_graef",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_main_def_har_ganeth",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_main_def_naggarond",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_main_hef_avelorn",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_main_hef_eataine",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_main_hef_nagarythe",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_main_hef_order_of_loremasters",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_main_hef_yvresse",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -137636,18 +137684,19 @@
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh2_twa03_def_rakarth",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_def_dark_elves"
+          "targetSubculture": "wh2_main_sc_def_dark_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -138014,18 +138063,19 @@
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh3_dlc27_hef_aislinn",
-      "baseAttitude": -10.0,
-      "positiveAttitudeMultiplier": 1.0,
+      "baseAttitude": -60.0,
+      "positiveAttitudeMultiplier": 0.75,
       "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh2_main_sc_hef_high_elves"
+          "targetSubculture": "wh2_main_sc_hef_high_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -138392,36 +138442,38 @@
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh_dlc05_wef_argwylon",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh_dlc05_sc_wef_wood_elves"
+          "targetSubculture": "wh_dlc05_sc_wef_wood_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_dwf_the_ancestral_throng",
       "targetFaction": "wh_dlc05_wef_wood_elves",
-      "baseAttitude": -40.0,
+      "baseAttitude": -60.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.0,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_dwf_dwarfs",
-          "targetSubculture": "wh_dlc05_sc_wef_wood_elves"
+          "targetSubculture": "wh_dlc05_sc_wef_wood_elves",
+          "personalityComponent": "dislikes_elves"
         }
       ]
     },
@@ -138752,144 +138804,152 @@
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh2_dlc09_tmb_exiles_of_nehek",
-      "baseAttitude": -20.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -50.0,
+      "positiveAttitudeMultiplier": 0.75,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings"
+          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh2_dlc09_tmb_followers_of_nagash",
-      "baseAttitude": -20.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -50.0,
+      "positiveAttitudeMultiplier": 0.75,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings"
+          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh2_dlc09_tmb_khemri",
-      "baseAttitude": -20.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -50.0,
+      "positiveAttitudeMultiplier": 0.75,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings"
+          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh2_dlc09_tmb_lybaras",
-      "baseAttitude": -20.0,
-      "positiveAttitudeMultiplier": 1.0,
-      "negativeAttitudeMultiplier": 1.0,
+      "baseAttitude": -50.0,
+      "positiveAttitudeMultiplier": 0.75,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings"
+          "targetSubculture": "wh2_dlc09_sc_tmb_tomb_kings",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh2_dlc11_cst_noctilus",
-      "baseAttitude": -40.0,
+      "baseAttitude": -50.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast"
+          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh2_dlc11_cst_pirates_of_sartosa",
-      "baseAttitude": -40.0,
+      "baseAttitude": -50.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast"
+          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh2_dlc11_cst_the_drowned",
-      "baseAttitude": -40.0,
+      "baseAttitude": -50.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast"
+          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh2_dlc11_cst_vampire_coast",
-      "baseAttitude": -40.0,
+      "baseAttitude": -50.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast"
+          "targetSubculture": "wh2_dlc11_sc_cst_vampire_coast",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
@@ -138914,18 +138974,19 @@
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh2_dlc11_vmp_the_barrow_legion",
-      "baseAttitude": -40.0,
+      "baseAttitude": -50.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh_main_sc_vmp_vampire_counts"
+          "targetSubculture": "wh_main_sc_vmp_vampire_counts",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
@@ -140220,18 +140281,19 @@
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh3_main_vmp_caravan_of_blue_roses",
-      "baseAttitude": -40.0,
+      "baseAttitude": -50.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh_main_sc_vmp_vampire_counts"
+          "targetSubculture": "wh_main_sc_vmp_vampire_counts",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
@@ -140562,36 +140624,38 @@
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh_main_vmp_schwartzhafen",
-      "baseAttitude": -40.0,
+      "baseAttitude": -50.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh_main_sc_vmp_vampire_counts"
+          "targetSubculture": "wh_main_sc_vmp_vampire_counts",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
     {
       "sourceFaction": "wh3_main_emp_cult_of_sigmar",
       "targetFaction": "wh_main_vmp_vampire_counts",
-      "baseAttitude": -40.0,
+      "baseAttitude": -50.0,
       "positiveAttitudeMultiplier": 0.75,
-      "negativeAttitudeMultiplier": 1.25,
+      "negativeAttitudeMultiplier": 1.5,
       "modifiers": [],
       "treaties": [],
       "atWar": false,
       "components": [
         {
-          "type": "cultural-baseline",
-          "sourceTable": "campaign_cultural_relations_tables",
+          "type": "cai-personality-cultural-override",
+          "sourceTable": "cai_personality_cultural_relations_overrides_tables",
           "sourceSubculture": "wh_main_sc_emp_empire",
-          "targetSubculture": "wh_main_sc_vmp_vampire_counts"
+          "targetSubculture": "wh_main_sc_vmp_vampire_counts",
+          "personalityComponent": "empire_dislikes_undead"
         }
       ]
     },
