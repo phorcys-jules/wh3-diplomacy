@@ -45,6 +45,24 @@ assert(ffa.results.some(row => row.members.some(member => member.threatEnvelope)
 assert(strategic.factionProfiles.some(profile => profile.warDealEvaluation?.WAR && profile.strategicComponentValues?.ai_threat_score_threat_treshold !== null && profile.strategicComponentValues?.ai_threat_score_threat_treshold !== undefined), 'no exact CAI WAR evaluation profile/threshold available');
 assert(ffa.results.every(row => !Object.prototype.hasOwnProperty.call(row, 'warProbability')), 'war probability must never be fabricated');
 
+const candidates = analysis.compareCandidates({
+  team: ['wh2_dlc15_hef_imrik'],
+  mode: 'ffa',
+  teamTreaty: 'military_alliance',
+  difficulty: 'normal',
+  factions,
+  culture,
+  cai,
+  strategic,
+  relations,
+  startpos,
+  restrictions,
+  teamRules,
+}, ['wh_main_emp_empire', 'wh2_main_def_hag_graef', 'wh3_main_nur_poxmakers_of_nurgle']);
+assert(candidates.length === 3, 'candidate teammate comparison incomplete');
+assert(candidates.every(row => Number.isFinite(row.metrics.startingWars)), 'candidate metrics missing');
+assert(candidates.every(row => !Object.prototype.hasOwnProperty.call(row.metrics, 'warProbability')), 'candidate ranking must not fabricate war probability');
+
 const sameTeam = analysis.analyze({
   team: ['wh2_dlc15_hef_imrik', 'wh_main_emp_empire'],
   mode: 'same-team',
