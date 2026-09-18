@@ -79,6 +79,7 @@ jobs:
             cultures_subcultures_tables \
             start_pos_factions_tables \
             cai_personalities_tables \
+            cai_personality_group_junctions_tables \
             cai_personality_cultural_relations_overrides_tables \
             cai_personality_diplomatic_treaty_values_tables \
             cai_personality_diplomatic_event_values_tables \
