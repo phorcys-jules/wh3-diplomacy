@@ -4,6 +4,7 @@ const {
   compareCandidates,
   prepareAnalysis,
   candidateNpcImpacts,
+  suggestTeam,
   attitudeMultiplier,
   buildThreatEnvelope,
 } = require('../team-analysis.js');
@@ -168,6 +169,26 @@ assert.equal(compared.find(row => row.candidateFaction === 'c').metrics.starting
 assert(!('warProbability' in compared[0].metrics));
 assert.equal(compared[0].comparisonMode, 'total');
 assert.equal(compared[0].deltaMetrics, null);
+
+const suggested = suggestTeam({
+  team: ['a'],
+  mode: 'ffa',
+  teamTreaty: 'military_alliance',
+  difficulty: 'normal',
+  factions: candidateFactions,
+  culture: candidateCulture,
+  relations: { relations: [] },
+  startpos: { relations: [{ sourceFaction: 'p', targetFaction: 'c', treaties: [], atWar: true }] },
+  cai: {},
+  strategic: { factionProfiles: [], strategicStanceWeights: {} },
+  teamRules: {},
+  restrictions: { restrictions: [] },
+}, ['c', 'b'], 3);
+assert.equal(suggested.suggestedTeam.length, 3);
+assert.equal(suggested.steps[0].candidateFaction, 'b');
+assert.equal(suggested.steps.length, 2);
+assert(!('warProbability' in suggested.steps[0].metrics));
+
 
 const incremental = compareCandidates({
   team: ['a', 'b'],
