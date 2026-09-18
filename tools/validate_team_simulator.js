@@ -1,0 +1,66 @@
+const fs = require('fs');
+const path = require('path');
+const analysis = require('../team-analysis.js');
+
+const root = path.resolve(__dirname, '..');
+const read = name => JSON.parse(fs.readFileSync(path.join(root, 'data/generated', name), 'utf8'));
+
+const factions = read('immortal-empires-factions.json');
+const culture = read('cultural-relations.json');
+const cai = read('cai-diplomacy-factors.json');
+const strategic = read('turn1-cai-strategic-model.json');
+const relations = read('turn1-faction-relations.json');
+const startpos = read('immortal-empires-startpos.json');
+const restrictions = read('diplomatic-restrictions.json');
+const teamRules = read('multiplayer-team-rules.json');
+
+function assert(condition, message) {
+  if (!condition) throw new Error(message);
+}
+
+const knownKeys = new Set(factions.factions.map(row => row.factionKey));
+for (const key of ['wh2_dlc15_hef_imrik', 'wh_main_emp_empire', 'wh2_main_def_hag_graef', 'wh3_main_nur_poxmakers_of_nurgle']) {
+  assert(knownKeys.has(key), `missing pilot faction ${key}`);
+}
+
+const ffa = analysis.analyze({
+  team: ['wh2_dlc15_hef_imrik', 'wh2_main_def_hag_graef'],
+  mode: 'ffa',
+  teamTreaty: 'military_alliance',
+  difficulty: 'normal',
+  factions,
+  culture,
+  cai,
+  strategic,
+  relations,
+  startpos,
+  restrictions,
+  teamRules,
+});
+
+assert(ffa.results.length > 400, 'expected active IE NPC coverage');
+assert(ffa.results.some(row => row.members.some(member => member.relation)), 'no resolved relations');
+assert(ffa.results.some(row => row.transitive.some(item => item.direction === 'tension-with-ally')), 'no transitive hostility detected');
+assert(ffa.results.some(row => row.members.some(member => member.threatEnvelope)), 'no CAI threat envelope generated');
+assert(ffa.results.every(row => !Object.prototype.hasOwnProperty.call(row, 'warProbability')), 'war probability must never be fabricated');
+
+const sameTeam = analysis.analyze({
+  team: ['wh2_dlc15_hef_imrik', 'wh_main_emp_empire'],
+  mode: 'same-team',
+  difficulty: 'normal',
+  factions,
+  culture,
+  cai,
+  strategic,
+  relations,
+  startpos,
+  restrictions,
+  teamRules,
+});
+assert(sameTeam.teamTreaty.treaty === 'TRADE_AGREEMENT', 'same-team verified trade rule missing');
+assert(sameTeam.results.some(row => row.exactSignals.some(signal => signal.type === 'multiplayer-team-rule')), 'same-team script rule not surfaced');
+
+const resolvedRestrictions = (restrictions.restrictions || []).filter(row => row.scopeResolved);
+assert(resolvedRestrictions.length > 0, 'expected at least one resolved diplomacy restriction scope');
+
+console.log(`validated team simulator: ${ffa.results.length} NPCs, ${resolvedRestrictions.length} restriction scope(s)`);
