@@ -1,14 +1,64 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T13:25:56.707773+00:00",
+  "generatedAt": "2026-09-18T13:27:36.032454+00:00",
   "status": "resolved-subset",
   "semantics": "diplomacy_disabled_between_factions_tables disables diplomacy between a campaign-group originator and a faction-set target. Source membership is conservatively expanded from ORIGINATOR/ACTOR criteria; unresolved scopes remain explicit.",
   "restrictions": [
     {
       "campaignGroup": "wh3_main_diplomacy_disabled_between_factions",
       "targetFactionSet": "disabled_diplomacy_with_daemons_of_chaos",
-      "sourceFactions": [],
+      "sourceFactions": [
+        "wh3_dlc20_kho_blood_keepers",
+        "wh3_dlc20_nur_pallid_nurslings",
+        "wh3_dlc20_tze_apostles_of_change",
+        "wh3_dlc20_tze_the_sightless",
+        "wh3_dlc24_tze_the_deceivers",
+        "wh3_dlc25_kho_khorne_invasion",
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_nurgle_invasion",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_dlc26_kho_arbaal",
+        "wh3_dlc26_kho_skulltaker",
+        "wh3_main_dae_daemon_prince",
+        "wh3_main_dae_daemons_qb1",
+        "wh3_main_kho_bloody_sword",
+        "wh3_main_kho_brazen_throne",
+        "wh3_main_kho_crimson_skull",
+        "wh3_main_kho_exiles_of_khorne",
+        "wh3_main_kho_karneths_sons",
+        "wh3_main_kho_khorne",
+        "wh3_main_kho_khorne_qb1",
+        "wh3_main_kho_khorne_qb2",
+        "wh3_main_kho_khorne_rebels",
+        "wh3_main_nur_bubonic_swarm",
+        "wh3_main_nur_maggoth_kin",
+        "wh3_main_nur_nurgle",
+        "wh3_main_nur_nurgle_qb1",
+        "wh3_main_nur_nurgle_qb2",
+        "wh3_main_nur_nurgle_rebels",
+        "wh3_main_nur_poxmakers_of_nurgle",
+        "wh3_main_nur_septic_claw",
+        "wh3_main_tze_all_seeing_eye",
+        "wh3_main_tze_broken_wheel",
+        "wh3_main_tze_flaming_scribes",
+        "wh3_main_tze_oracles_of_tzeentch",
+        "wh3_main_tze_sarthoraels_watchers",
+        "wh3_main_tze_tzeentch",
+        "wh3_main_tze_tzeentch_invasion",
+        "wh3_main_tze_tzeentch_qb1",
+        "wh3_main_tze_tzeentch_qb2",
+        "wh3_main_tze_tzeentch_rebels",
+        "wh3_prologue_apostles_of_change",
+        "wh3_prologue_blood_keepers",
+        "wh3_prologue_blood_sayters",
+        "wh3_prologue_karneths_sons",
+        "wh3_prologue_oath_keepers",
+        "wh3_prologue_sarthoraels_watchers",
+        "wh3_prologue_the_nestlings",
+        "wh3_prologue_the_sightless",
+        "wh3_prologue_tribe_of_the_hound"
+      ],
       "targetFactions": [
         "wh3_prologue_kislev_expedition"
       ],
@@ -58,28 +108,28 @@
           "context": "ORIGINATOR",
           "type": "culture",
           "value": "wh3_main_dae_daemons",
-          "expandedFactionCount": 0
+          "expandedFactionCount": 2
         },
         {
           "member": "wh3_main_diplomacy_disabled_between_factions_wh3_main_kho_khorne",
           "context": "ORIGINATOR",
           "type": "culture",
           "value": "wh3_main_kho_khorne",
-          "expandedFactionCount": 0
+          "expandedFactionCount": 17
         },
         {
           "member": "wh3_main_diplomacy_disabled_between_factions_wh3_main_nur_nurgle",
           "context": "ORIGINATOR",
           "type": "culture",
           "value": "wh3_main_nur_nurgle",
-          "expandedFactionCount": 0
+          "expandedFactionCount": 12
         },
         {
           "member": "wh3_main_diplomacy_disabled_between_factions_wh3_main_tze_tzeentch",
           "context": "ORIGINATOR",
           "type": "culture",
           "value": "wh3_main_tze_tzeentch",
-          "expandedFactionCount": 0
+          "expandedFactionCount": 18
         }
       ],
       "directionality": "between-factions",
@@ -87,8 +137,8 @@
         "all-diplomacy"
       ],
       "effect": "disabled",
-      "scopeResolved": false,
-      "reproducibility": "runtime-unknown",
+      "scopeResolved": true,
+      "reproducibility": "exact-pre-game",
       "sourceTable": "diplomacy_disabled_between_factions_tables"
     },
     {
@@ -141,13 +191,14 @@
   ],
   "diagnostics": {
     "restrictionCount": 3,
-    "resolvedScopeCount": 0,
-    "unresolvedScopeCount": 3
+    "resolvedScopeCount": 1,
+    "unresolvedScopeCount": 2
   },
   "sourceTables": [
     "diplomacy_disabled_between_factions_tables",
     "faction_set_items_tables",
     "factions_tables",
+    "cultures_subcultures_tables",
     "campaign_group_member_criteria_factions_tables",
     "campaign_group_member_criteria_cultures_tables",
     "campaign_group_member_criteria_subcultures_tables",
