@@ -15,6 +15,7 @@ TABLES = {
     "disabled": "diplomacy_disabled_between_factions_tables",
     "sets": "faction_set_items_tables",
     "factions": "factions_tables",
+    "subculture_map": "cultures_subcultures_tables",
     "criteria_factions": "campaign_group_member_criteria_factions_tables",
     "criteria_cultures": "campaign_group_member_criteria_cultures_tables",
     "criteria_subcultures": "campaign_group_member_criteria_subcultures_tables",
@@ -48,7 +49,7 @@ def main():
     args = parser.parse_args()
 
     rows = {
-        key: read(args.db_dir / table / "data__.tsv", required=key in {"disabled", "sets", "factions"})
+        key: read(args.db_dir / table / "data__.tsv", required=key in {"disabled", "sets", "factions", "subculture_map"})
         for key, table in TABLES.items()
     }
     if not rows["disabled"] or not {"campaign_group", "faction_set"} <= set(rows["disabled"][0]):
@@ -58,13 +59,20 @@ def main():
 
     faction_rows = [row for row in rows["factions"] if row.get("key")]
     faction_keys = {row["key"] for row in faction_rows}
+    culture_by_subculture = {
+        row.get("subculture"): row.get("culture")
+        for row in rows["subculture_map"]
+        if row.get("subculture") and row.get("culture")
+    }
     by_culture = defaultdict(set)
     by_subculture = defaultdict(set)
     for row in faction_rows:
-        if row.get("culture"):
-            by_culture[row["culture"]].add(row["key"])
-        if row.get("subculture"):
-            by_subculture[row["subculture"]].add(row["key"])
+        subculture = row.get("subculture")
+        culture = culture_by_subculture.get(subculture)
+        if culture:
+            by_culture[culture].add(row["key"])
+        if subculture:
+            by_subculture[subculture].add(row["key"])
 
     # Faction-set membership is ordered data: a later remove=true entry subtracts
     # the faction/culture/subculture expansion instead of naming a faction to remove.
