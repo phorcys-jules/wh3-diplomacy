@@ -236,6 +236,8 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+          node tools/validate_team_simulator.js
+
           for file in \
             immortal-empires-startpos.json \
             frontend-leaders.json \
