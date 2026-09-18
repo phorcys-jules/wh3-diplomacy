@@ -78,6 +78,10 @@ const incrementalCandidates = analysis.compareCandidates({
 }, ['wh2_main_def_hag_graef']);
 assert(incrementalCandidates[0].comparisonMode === 'incremental', 'candidate comparison should switch to incremental mode for existing teams');
 assert(incrementalCandidates[0].deltaMetrics, 'incremental candidate deltas missing');
+assert(incrementalCandidates[0].npcImpacts?.mode === 'incremental', 'incremental NPC impact analysis missing');
+assert(Array.isArray(incrementalCandidates[0].npcImpacts.worsened), 'candidate worsened NPC list missing');
+assert(Array.isArray(incrementalCandidates[0].npcImpacts.improved), 'candidate improved NPC list missing');
+
 
 
 const sameTeam = analysis.analyze({
