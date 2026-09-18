@@ -51,3 +51,8 @@ Le workflow GitHub Pages reconstruit les datasets depuis un commit épinglé de 
 Les valeurs manquantes restent explicites au lieu d'être remplacées par des estimations silencieuses.
 
 Voir `docs/data-sources.md` et `docs/diplomacy-extraction.md` pour les sources et limites.
+
+
+## Comparaison de coéquipiers
+
+La page d'accueil compare automatiquement les Seigneurs légendaires encore disponibles et les trie selon des signaux explicites (guerres initiales, restrictions, hostilités directes/multiples et tensions transitives), sans probabilité de guerre.

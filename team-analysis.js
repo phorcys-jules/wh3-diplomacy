@@ -340,8 +340,78 @@
     };
   }
 
+
+  function candidateMetrics(report) {
+    const metrics = {
+      startingWars: 0,
+      restrictedNpcs: 0,
+      multiHostileNpcs: 0,
+      hostileNpcs: 0,
+      transitiveTensions: 0,
+      negativeTransitiveExposure: 0,
+      incompleteNpcs: 0,
+    };
+    report.results.forEach(row => {
+      const hostileMembers = row.members.filter(member =>
+        attitudeCategory(member.relation?.attitudeForSimulation ?? null) === 'hostile'
+      ).length;
+      if (row.members.some(member => member.relation?.atWar)) metrics.startingWars += 1;
+      if (row.members.some(member => (member.restrictions || []).length)) metrics.restrictedNpcs += 1;
+      if (hostileMembers >= 2) metrics.multiHostileNpcs += 1;
+      if (hostileMembers >= 1) metrics.hostileNpcs += 1;
+      metrics.transitiveTensions += row.transitive.filter(item => item.direction === 'tension-with-ally').length;
+      if (Number.isFinite(row.transitiveExposure) && row.transitiveExposure < 0) {
+        metrics.negativeTransitiveExposure += Math.abs(row.transitiveExposure);
+      }
+      if (row.missing.length) metrics.incompleteNpcs += 1;
+    });
+    return metrics;
+  }
+
+  function compareCandidateMetrics(left, right) {
+    const keys = [
+      'startingWars',
+      'restrictedNpcs',
+      'multiHostileNpcs',
+      'hostileNpcs',
+      'transitiveTensions',
+      'negativeTransitiveExposure',
+      'incompleteNpcs',
+    ];
+    for (const key of keys) {
+      const delta = left[key] - right[key];
+      if (Math.abs(delta) > 1e-9) return delta;
+    }
+    return 0;
+  }
+
+  function compareCandidates(input, candidateFactionKeys) {
+    const team = input.team || [];
+    if (team.length < 1 || team.length >= 4) {
+      throw new Error('Le comparateur de coéquipiers nécessite entre 1 et 3 factions déjà sélectionnées.');
+    }
+    const available = new Set((input.factions?.factions || []).map(faction => faction.factionKey));
+    const candidates = [...new Set(candidateFactionKeys || [])]
+      .filter(key => key && !team.includes(key) && available.has(key));
+
+    return candidates.map(candidateFaction => {
+      const report = analyze({ ...input, team: [...team, candidateFaction] });
+      return {
+        candidateFaction,
+        metrics: candidateMetrics(report),
+        report,
+        semantics: 'Classement lexicographique sur des signaux explicites. Ce résultat ne représente ni une probabilité de guerre ni le score natif final de WH3.',
+      };
+    }).sort((a, b) =>
+      compareCandidateMetrics(a.metrics, b.metrics) ||
+      a.candidateFaction.localeCompare(b.candidateFaction)
+    );
+  }
+
   return {
     analyze,
+    compareCandidates,
+    candidateMetrics,
     calculateRelation,
     attitudeMultiplier,
     buildThreatEnvelope,

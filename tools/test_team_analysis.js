@@ -1,6 +1,7 @@
 const assert = require('assert');
 const {
   analyze,
+  compareCandidates,
   attitudeMultiplier,
   buildThreatEnvelope,
 } = require('../team-analysis.js');
@@ -104,5 +105,36 @@ const restricted = analyze({
   }] },
 });
 assert.equal(restricted.results[0].category.id, 'diplomacy-disabled');
+
+
+const candidateFactions = { factions: [
+  { factionKey: 'a', subculture: 'one', startingRegions: ['ra'], position: { x: 0, y: 0 } },
+  { factionKey: 'b', subculture: 'two', startingRegions: ['rb'], position: { x: 10, y: 0 } },
+  { factionKey: 'c', subculture: 'four', startingRegions: ['rc'], position: { x: 20, y: 0 } },
+  { factionKey: 'p', subculture: 'three', startingRegions: ['rp'], position: { x: 3, y: 4 } },
+] };
+const candidateCulture = { relations: [
+  { sourceSubculture: 'three', targetSubculture: 'one', attitudeBase: 0, positiveAttitudeMultiplier: 1, negativeAttitudeMultiplier: 1, sourceTable: 'culture' },
+  { sourceSubculture: 'three', targetSubculture: 'two', attitudeBase: 0, positiveAttitudeMultiplier: 1, negativeAttitudeMultiplier: 1, sourceTable: 'culture' },
+  { sourceSubculture: 'three', targetSubculture: 'four', attitudeBase: 0, positiveAttitudeMultiplier: 1, negativeAttitudeMultiplier: 1, sourceTable: 'culture' },
+] };
+const compared = compareCandidates({
+  team: ['a'],
+  mode: 'ffa',
+  teamTreaty: 'military_alliance',
+  difficulty: 'normal',
+  factions: candidateFactions,
+  culture: candidateCulture,
+  relations: { relations: [] },
+  startpos: { relations: [{ sourceFaction: 'p', targetFaction: 'c', treaties: [], atWar: true }] },
+  cai: {},
+  strategic: { factionProfiles: [], strategicStanceWeights: {} },
+  teamRules: {},
+  restrictions: { restrictions: [] },
+}, ['c', 'b']);
+assert.equal(compared[0].candidateFaction, 'b');
+assert.equal(compared[0].metrics.startingWars, 0);
+assert.equal(compared.find(row => row.candidateFaction === 'c').metrics.startingWars, 1);
+assert(!('warProbability' in compared[0].metrics));
 
 console.log('team analysis fixtures passed');
