@@ -122,6 +122,15 @@ jobs:
             --campaign wh3_main_combi \
             --game-version "${GAME_VERSION}"
 
+          python tools/import_immortal_empires_factions.py \
+            --db-dir .cache/wh3/db \
+            --cai-factors data/generated/cai-diplomacy-factors.json \
+            --leaders data/generated/frontend-leaders.json \
+            --positions data/generated/campaign-start-positions.json \
+            --output data/generated/immortal-empires-factions.json \
+            --campaign wh3_main_combi \
+            --game-version "${GAME_VERSION}"
+
           python tools/resolve_initial_cultural_relations.py \
             --factions .cache/wh3/db/factions_tables/data__.tsv \
             --leaders data/generated/frontend-leaders.json \
@@ -140,6 +149,7 @@ jobs:
 
           python tools/validate_initial_diplomacy.py data/generated/initial-diplomacy.json
           python tools/validate_dataset.py data/generated/initial-diplomacy.json
+          node tools/test_team_analysis.js
           python tools/build_turn1_validation_matrix.py \
             --input data/generated/initial-diplomacy.json \
             --output data/generated/turn1-validation-matrix.json
@@ -182,6 +192,7 @@ jobs:
             turn1-validation-matrix.json \
             diplomatic-members.json \
             cai-diplomacy-factors.json \
+            immortal-empires-factions.json \
             script-effect-bundle-sources.json \
             turn1-diplomatic-modifier-candidates.json \
             verified-turn1-diplomatic-modifiers.json; do
@@ -211,6 +222,7 @@ jobs:
             data/generated/turn1-validation-matrix.json \
             data/generated/diplomatic-members.json \
             data/generated/cai-diplomacy-factors.json \
+            data/generated/immortal-empires-factions.json \
             data/generated/script-effect-bundle-sources.json \
             data/generated/turn1-diplomatic-modifier-candidates.json \
             data/generated/verified-turn1-diplomatic-modifiers.json; do
