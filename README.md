@@ -29,6 +29,8 @@ Chaque donnée utilisée par le simulateur est classée :
 
 Le modèle de menace documenté dans les données WH3 est conservé avec ses limites : le jeu expose les multiplicateurs attitude/actions/proximité/personnalité, mais pas encore la dérivation native complète de `base_score` ni le choix final de déclaration de guerre.
 
+Pour les alliances entre joueurs, le simulateur expose aussi un **signal transitif comparatif** dérivé uniquement de paramètres vanilla connus : `initial_value du traité × poids transitive × coefficient réseau ami/ennemi`. Ce signal sert à comparer des compositions d'équipe ; il n'est jamais présenté comme l'attitude finale du jeu ni comme une probabilité de guerre.
+
 ## Accord rapide
 
 `quick-deal.html` reste une vue secondaire pour examiner un Seigneur légendaire et ses partenaires possibles. Elle ne remplace pas le composeur d'équipe de l'accueil.
