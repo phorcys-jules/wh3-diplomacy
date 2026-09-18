@@ -48,7 +48,7 @@ const teamRules = {
 };
 
 assert.equal(attitudeMultiplier(-150, strategic.factionProfiles[0].difficultyVariables.normal.values), 3);
-assert.equal(attitudeMultiplier(150, strategic.factionProfiles[0].difficultyVariables.normal.values), 0.1);
+assert(Math.abs(attitudeMultiplier(150, strategic.factionProfiles[0].difficultyVariables.normal.values) - 0.1) < 1e-9);
 
 const envelope = buildThreatEnvelope(-150, {
   difficultyData: strategic.factionProfiles[0].difficultyVariables.normal,
