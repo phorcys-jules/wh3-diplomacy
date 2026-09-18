@@ -51,7 +51,7 @@
       const category = classify(members);
       return { npcFaction: npc.factionKey, category, members, teamMode: input.mode === 'same-team' ? 'same-team-unverified-effects-excluded' : 'ffa-no-team-effects', missing: members.filter(member => !member.relation).map(member => member.playerFaction) };
     }).sort((a, b) => a.category.id.localeCompare(b.category.id) || a.npcFaction.localeCompare(b.npcFaction));
-    return { mode: input.mode === 'same-team' ? 'same-team' : 'ffa', players: team, results, semantics: 'Les catégories sont descriptives. Les effets de même équipe ou de tiers sans source vérifiée sont explicitement exclus.' };
+    return { mode: input.mode === 'same-team' ? 'same-team' : 'ffa', players: team, results, restrictions: input.restrictions?.restrictions || [], semantics: 'Les catégories sont descriptives. Les effets de même équipe ou de tiers sans source vérifiée sont explicitement exclus.' };
   }
   return { analyze, calculateRelation };
 });
