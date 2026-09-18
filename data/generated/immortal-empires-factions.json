@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T12:42:04.182982+00:00",
+  "generatedAt": "2026-09-18T12:43:00.844117+00:00",
   "status": "partial",
   "semantics": "Every entry is explicitly active in the Immortal Empires start-position table. A start region is retained when a camera coordinate is unavailable; missing values remain null rather than inferred.",
   "factions": [
