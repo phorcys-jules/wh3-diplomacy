@@ -56,3 +56,8 @@ Voir `docs/data-sources.md` et `docs/diplomacy-extraction.md` pour les sources e
 ## Comparaison de coéquipiers
 
 La page d'accueil compare automatiquement les Seigneurs légendaires encore disponibles et les trie selon des signaux explicites (guerres initiales, restrictions, hostilités directes/multiples et tensions transitives), sans probabilité de guerre.
+
+
+### Impact incrémental des coéquipiers
+
+À partir de 2 joueurs déjà sélectionnés, le comparateur classe les candidats selon ce qu'ils **ajoutent ou retirent** à la situation actuelle (Δ guerres initiales, restrictions, PNJ hostiles, hostilités multiples, tensions et exposition transitive). Les totaux ne servent qu'à départager. Avec un seul joueur, il utilise les totaux faute de baseline d'équipe valide.
