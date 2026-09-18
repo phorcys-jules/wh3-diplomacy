@@ -15,6 +15,7 @@ TABLES = {
     'treaty_values': 'cai_personality_diplomatic_treaty_values_tables',
     'event_values': 'cai_personality_diplomatic_event_values_tables',
     'reliability': 'cai_personalities_reliability_policies_tables',
+    'desired_attitudes': 'cai_personality_strategic_desired_attitudes_tables',
 }
 
 
@@ -53,6 +54,7 @@ def main():
     require(rows['treaty_values'], {'component_id', 'treaty', 'initial_value'}, TABLES['treaty_values'])
     require(rows['event_values'], {'component_id', 'event_id', 'value'}, TABLES['event_values'])
     require(rows['reliability'], {'key'}, TABLES['reliability'])
+    require(rows['desired_attitudes'], {'strategic_component'}, TABLES['desired_attitudes'])
 
     personalities = {row['key']: row for row in rows['personalities'] if row.get('key')}
     personalities_for_group = defaultdict(list)
@@ -97,6 +99,7 @@ def main():
             for row in rows['event_values'] if row.get('component_id') in diplomatic_components
         ],
         'reliabilityPolicies': [row for row in reliability.values() if row['key'] in {profile['reliabilityPolicy'] for profile in profiles}],
+        'strategicDesiredAttitudes': [row for row in rows['desired_attitudes'] if row.get('strategic_component') in {profile['strategicComponent'] for profile in profiles}],
         'diagnostics': {'startingFactionCount': len(profiles), 'unresolvedPersonalityCount': sum(not item['personalityResolved'] for item in profiles), 'ambiguousPersonalityGroupCount': sum(len(item['personalityCandidates']) > 1 for item in profiles), 'resolvedPersonalityCount': sum(item['personalityResolved'] for item in profiles)},
         'sourceTables': list(TABLES.values()),
     }
