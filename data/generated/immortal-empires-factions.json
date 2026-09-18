@@ -1,12 +1,13 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T13:02:10.586975+00:00",
+  "generatedAt": "2026-09-18T13:25:56.628838+00:00",
   "status": "partial",
   "semantics": "Every entry is explicitly active in the Immortal Empires start-position table. A start region is retained when a camera coordinate is unavailable; missing values remain null rather than inferred.",
   "factions": [
     {
       "factionKey": "wh2_dlc09_rogue_black_creek_raiders",
+      "displayName": "Black Creek Raiders",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -27,6 +28,7 @@
     },
     {
       "factionKey": "wh2_dlc09_rogue_dwellers_of_zardok",
+      "displayName": "Dwellers of Zardok",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh2_main_rogue_chaos",
       "playable": false,
@@ -47,6 +49,7 @@
     },
     {
       "factionKey": "wh2_dlc09_rogue_eyes_of_the_jungle",
+      "displayName": "Eyes of the Jungle",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -67,6 +70,7 @@
     },
     {
       "factionKey": "wh2_dlc09_rogue_pilgrims_of_myrmidia",
+      "displayName": "Pilgrims of Myrmidia",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -87,6 +91,7 @@
     },
     {
       "factionKey": "wh2_dlc09_skv_clan_rictus",
+      "displayName": "Clan Rictus",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": true,
@@ -115,6 +120,7 @@
     },
     {
       "factionKey": "wh2_dlc09_skv_clan_rictus_separatists",
+      "displayName": "Clan Rictus Separatists",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -135,6 +141,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_dune_kingdoms",
+      "displayName": "Dune Kingdoms",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -159,6 +166,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_exiles_of_nehek",
+      "displayName": "Exiles of Nehek",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": true,
@@ -187,6 +195,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_followers_of_nagash",
+      "displayName": "Followers of Nagash",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": true,
@@ -216,6 +225,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_khemri",
+      "displayName": "Khemri",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": true,
@@ -244,6 +254,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_lybaras",
+      "displayName": "Court of Lybaras",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": true,
@@ -272,6 +283,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_numas",
+      "displayName": "Numas",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -295,6 +307,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_rakaph_dynasty",
+      "displayName": "Rakaph Dynasty",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -319,6 +332,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_the_sentinels",
+      "displayName": "The Sentinels",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -341,6 +355,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_tombking_qb1",
+      "displayName": "Tomb Kings",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -361,6 +376,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_tombking_qb2",
+      "displayName": "Tomb Kings",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -381,6 +397,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_tombking_qb3",
+      "displayName": "Tomb Kings",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -401,6 +418,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_tombking_qb_exiles_of_nehek",
+      "displayName": "Exiles of Nehek",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -421,6 +439,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_tombking_qb_followers_of_nagash",
+      "displayName": "Followers of Nagash",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -441,6 +460,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_tombking_qb_khemri",
+      "displayName": "Khemri",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -461,6 +481,7 @@
     },
     {
       "factionKey": "wh2_dlc09_tmb_tombking_qb_lybaras",
+      "displayName": "Court of Lybaras",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -481,6 +502,7 @@
     },
     {
       "factionKey": "wh2_dlc10_def_blood_voyage",
+      "displayName": "Blood Voyage",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -501,6 +523,7 @@
     },
     {
       "factionKey": "wh2_dlc11_brt_bretonnia_dil",
+      "displayName": "Bretonnian Merchants",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -521,6 +544,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_harpoon_the_sunken_land_corsairs",
+      "displayName": "The Sunken Land Corsairs",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -541,6 +565,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_noctilus",
+      "displayName": "The Dreadfleet",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": true,
@@ -569,6 +594,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_noctilus_separatists",
+      "displayName": "The Dreadfleet Separatists",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -589,6 +615,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_pirates_of_sartosa",
+      "displayName": "Pirates of Sartosa",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": true,
@@ -617,6 +644,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_pirates_of_sartosa_separatists",
+      "displayName": "Pirates of Sartosa Separatists",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -637,6 +665,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_rogue_bleak_coast_buccaneers",
+      "displayName": "Bleak Coast Buccaneers",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -657,6 +686,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_rogue_boyz_of_the_forbidden_coast",
+      "displayName": "The Boyz of the Forbidden Coast",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -677,6 +707,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_rogue_freebooters_of_port_royale",
+      "displayName": "Freebooters of Port Royale",
       "nameGroup": "names_emp_empire",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -697,6 +728,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_rogue_grey_point_scuttlers",
+      "displayName": "Grey Point Scuttlers",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -717,6 +749,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_rogue_terrors_of_the_dark_straights",
+      "displayName": "The Terrors of the Dark Straits",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -737,6 +770,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_rogue_the_churning_gulf_raiders",
+      "displayName": "The Churning Gulf Raiders",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh2_main_rogue_chaos",
       "playable": false,
@@ -757,6 +791,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_rogue_tyrants_of_the_black_ocean",
+      "displayName": "The Tyrants of the Black Ocean",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -777,6 +812,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_shanty_dragon_spine_privateers",
+      "displayName": "Dragon Spine Privateers",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -797,6 +833,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_shanty_middle_sea_brigands",
+      "displayName": "Middle Sea Brigands",
       "nameGroup": "names_emp_empire",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -817,6 +854,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_shanty_shark_straight_seadogs",
+      "displayName": "Shark Strait Seadogs",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -837,6 +875,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_the_drowned",
+      "displayName": "The Drowned",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": true,
@@ -865,6 +904,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_the_drowned_separatists",
+      "displayName": "The Drowned Separatists",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -885,6 +925,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_vampire_coast",
+      "displayName": "The Awakened",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": true,
@@ -913,6 +954,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_vampire_coast_encounters",
+      "displayName": "Rogue Pirates",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -933,6 +975,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_vampire_coast_qb1",
+      "displayName": "Vampire Coast",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -953,6 +996,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_vampire_coast_qb2",
+      "displayName": "Vampire Coast",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -973,6 +1017,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_vampire_coast_qb3",
+      "displayName": "Vampire Coast",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -993,6 +1038,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_vampire_coast_qb4",
+      "displayName": "Vampire Coast",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -1013,6 +1059,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_vampire_coast_rebels",
+      "displayName": "Vampire Coast Mutineers",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -1036,6 +1083,7 @@
     },
     {
       "factionKey": "wh2_dlc11_cst_vampire_coast_separatists",
+      "displayName": "Vampire Coast Separatists",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -1056,6 +1104,7 @@
     },
     {
       "factionKey": "wh2_dlc11_def_dark_elves_dil",
+      "displayName": "Dark Elf Slavers",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -1076,6 +1125,7 @@
     },
     {
       "factionKey": "wh2_dlc11_def_the_blessed_dread",
+      "displayName": "The Blessed Dread",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": true,
@@ -1104,6 +1154,7 @@
     },
     {
       "factionKey": "wh2_dlc11_def_the_blessed_dread_separatists",
+      "displayName": "The Blessed Dread Separatists",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -1124,6 +1175,7 @@
     },
     {
       "factionKey": "wh2_dlc11_emp_empire_dil",
+      "displayName": "Exotic Goods Hauler",
       "nameGroup": "names_emp_empire",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -1144,6 +1196,7 @@
     },
     {
       "factionKey": "wh2_dlc11_emp_empire_qb5",
+      "displayName": "The Empire",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -1164,6 +1217,7 @@
     },
     {
       "factionKey": "wh2_dlc11_nor_norsca_dil",
+      "displayName": "Norscan Raiders",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh2_main_rogue_chaos",
       "playable": false,
@@ -1184,6 +1238,7 @@
     },
     {
       "factionKey": "wh2_dlc11_nor_norsca_qb4",
+      "displayName": "Skjold Raiders",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -1204,6 +1259,7 @@
     },
     {
       "factionKey": "wh2_dlc11_vmp_the_barrow_legion",
+      "displayName": "The Barrow Legion",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": true,
@@ -1232,6 +1288,7 @@
     },
     {
       "factionKey": "wh2_dlc12_grn_leaf_cutterz_tribe",
+      "displayName": "Leaf-Cutterz Tribe",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -1257,6 +1314,7 @@
     },
     {
       "factionKey": "wh2_dlc12_lzd_cult_of_sotek",
+      "displayName": "Cult of Sotek",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": true,
@@ -1285,6 +1343,7 @@
     },
     {
       "factionKey": "wh2_dlc12_skv_clan_fester",
+      "displayName": "Clan Fester",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -1305,6 +1364,7 @@
     },
     {
       "factionKey": "wh2_dlc12_skv_clan_mange",
+      "displayName": "Clan Mange",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -1328,6 +1388,7 @@
     },
     {
       "factionKey": "wh2_dlc13_bst_beastmen_invasion",
+      "displayName": "Beastmen",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -1348,6 +1409,7 @@
     },
     {
       "factionKey": "wh2_dlc13_emp_golden_order",
+      "displayName": "The Golden Order",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": true,
@@ -1374,6 +1436,7 @@
     },
     {
       "factionKey": "wh2_dlc13_emp_the_huntmarshals_expedition",
+      "displayName": "The Huntsmarshal's Expedition",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": true,
@@ -1402,6 +1465,7 @@
     },
     {
       "factionKey": "wh2_dlc13_grn_greenskins_invasion",
+      "displayName": "Greenskins",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -1422,6 +1486,7 @@
     },
     {
       "factionKey": "wh2_dlc13_lzd_avengers",
+      "displayName": "Children of the Old Ones",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -1442,6 +1507,7 @@
     },
     {
       "factionKey": "wh2_dlc13_lzd_defenders_of_the_great_plan",
+      "displayName": "Defenders of the Great Plan",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -1462,6 +1528,7 @@
     },
     {
       "factionKey": "wh2_dlc13_lzd_spirits_of_the_jungle",
+      "displayName": "Spirit of the Jungle",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": true,
@@ -1488,6 +1555,7 @@
     },
     {
       "factionKey": "wh2_dlc13_nor_norsca_invasion",
+      "displayName": "Norsca",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -1508,6 +1576,7 @@
     },
     {
       "factionKey": "wh2_dlc13_skv_skaven_invasion",
+      "displayName": "Skaven",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -1528,6 +1597,7 @@
     },
     {
       "factionKey": "wh2_dlc14_brt_chevaliers_de_lyonesse",
+      "displayName": "Chevaliers de Lyonesse",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": true,
@@ -1556,6 +1626,7 @@
     },
     {
       "factionKey": "wh2_dlc14_grn_red_cloud",
+      "displayName": "Red Cloud",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -1578,6 +1649,7 @@
     },
     {
       "factionKey": "wh2_dlc15_dwf_clan_helhein",
+      "displayName": "Clan Helhein",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -1601,6 +1673,7 @@
     },
     {
       "factionKey": "wh2_dlc15_grn_bonerattlaz",
+      "displayName": "Bonerattlaz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": true,
@@ -1629,6 +1702,7 @@
     },
     {
       "factionKey": "wh2_dlc15_grn_broken_axe",
+      "displayName": "Broken Axe",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": true,
@@ -1657,6 +1731,7 @@
     },
     {
       "factionKey": "wh2_dlc15_grn_skull_crag",
+      "displayName": "Skull Crag",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -1682,6 +1757,7 @@
     },
     {
       "factionKey": "wh2_dlc15_hef_dragon_encounters",
+      "displayName": "Dragon Encounter",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -1702,6 +1778,7 @@
     },
     {
       "factionKey": "wh2_dlc15_hef_imrik",
+      "displayName": "Knights of Caledor",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": true,
@@ -1730,6 +1807,7 @@
     },
     {
       "factionKey": "wh2_dlc15_skv_clan_ferrik",
+      "displayName": "Clan Ferrik",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -1750,6 +1828,7 @@
     },
     {
       "factionKey": "wh2_dlc15_skv_clan_kreepus",
+      "displayName": "Clan Kreepus",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -1772,6 +1851,7 @@
     },
     {
       "factionKey": "wh2_dlc15_skv_clan_volkn",
+      "displayName": "Clan Volkn",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -1792,6 +1872,7 @@
     },
     {
       "factionKey": "wh2_dlc16_chs_acolytes_of_the_keeper",
+      "displayName": "Acolytes of the Keeper",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -1812,6 +1893,7 @@
     },
     {
       "factionKey": "wh2_dlc16_emp_colonist_invasion",
+      "displayName": "Treasure-Hunters",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -1832,6 +1914,7 @@
     },
     {
       "factionKey": "wh2_dlc16_emp_empire_invasion",
+      "displayName": "Imperial Reprisal Force",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -1852,6 +1935,7 @@
     },
     {
       "factionKey": "wh2_dlc16_grn_creeping_death",
+      "displayName": "Creeping Death",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -1874,6 +1958,7 @@
     },
     {
       "factionKey": "wh2_dlc16_grn_naggaroth_orcs",
+      "displayName": "Broken Chainz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -1898,6 +1983,7 @@
     },
     {
       "factionKey": "wh2_dlc16_grn_savage_invasion",
+      "displayName": "Savage Orc Invasion",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_savage_orcs",
       "playable": false,
@@ -1918,6 +2004,7 @@
     },
     {
       "factionKey": "wh2_dlc16_lzd_wardens_of_the_living_pools",
+      "displayName": "Wardens of the Living Pools",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -1940,6 +2027,7 @@
     },
     {
       "factionKey": "wh2_dlc16_skv_clan_gritus",
+      "displayName": "Clan Gritus",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -1965,6 +2053,7 @@
     },
     {
       "factionKey": "wh2_dlc16_wef_drycha",
+      "displayName": "Wargrove of Woe",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": true,
@@ -1993,6 +2082,7 @@
     },
     {
       "factionKey": "wh2_dlc16_wef_sisters_of_twilight",
+      "displayName": "Heralds of Ariel",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": true,
@@ -2021,6 +2111,7 @@
     },
     {
       "factionKey": "wh2_dlc16_wef_wood_elves_qb4",
+      "displayName": "Cythral",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -2041,6 +2132,7 @@
     },
     {
       "factionKey": "wh2_dlc16_wef_wood_elves_qb5",
+      "displayName": "Anmyr",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -2061,6 +2153,7 @@
     },
     {
       "factionKey": "wh2_dlc16_wef_wood_elves_qb6",
+      "displayName": "Modryn",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -2081,6 +2174,7 @@
     },
     {
       "factionKey": "wh2_dlc16_wef_wood_elves_qb7",
+      "displayName": "Cythral",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -2101,6 +2195,7 @@
     },
     {
       "factionKey": "wh2_dlc17_bst_beastmen_qb4",
+      "displayName": "Bloodied-Axe Tribe",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -2121,6 +2216,7 @@
     },
     {
       "factionKey": "wh2_dlc17_bst_beastmen_qb5",
+      "displayName": "Manblight Tribe",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -2141,6 +2237,7 @@
     },
     {
       "factionKey": "wh2_dlc17_bst_beastmen_qb6",
+      "displayName": "Stone-Horn Tribe",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -2161,6 +2258,7 @@
     },
     {
       "factionKey": "wh2_dlc17_bst_malagor",
+      "displayName": "Harbinger of Disaster",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": true,
@@ -2187,6 +2285,7 @@
     },
     {
       "factionKey": "wh2_dlc17_bst_taurox",
+      "displayName": "Slaughterhorn Tribe",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": true,
@@ -2213,6 +2312,7 @@
     },
     {
       "factionKey": "wh2_dlc17_dwf_thorek_ironbrow",
+      "displayName": "Ironbrow's Expedition",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": true,
@@ -2241,6 +2341,7 @@
     },
     {
       "factionKey": "wh2_dlc17_lzd_oxyotl",
+      "displayName": "Ghosts of Pahuax",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": true,
@@ -2269,6 +2370,7 @@
     },
     {
       "factionKey": "wh2_dlc17_nor_deadwood_ravagers",
+      "displayName": "Khrag",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -2289,6 +2391,7 @@
     },
     {
       "factionKey": "wh2_main_brt_knights_of_origo",
+      "displayName": "Knights of Origo",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -2311,6 +2414,7 @@
     },
     {
       "factionKey": "wh2_main_brt_knights_of_the_flame",
+      "displayName": "Knights of the Flame",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -2333,6 +2437,7 @@
     },
     {
       "factionKey": "wh2_main_brt_thegans_crusaders",
+      "displayName": "Thegan's Errantry",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -2355,6 +2460,7 @@
     },
     {
       "factionKey": "wh2_main_bst_blooded_axe",
+      "displayName": "Blooded-Axe Tribe",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -2375,6 +2481,7 @@
     },
     {
       "factionKey": "wh2_main_bst_manblight",
+      "displayName": "Manblight Tribe",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -2395,6 +2502,7 @@
     },
     {
       "factionKey": "wh2_main_bst_ripper_horn",
+      "displayName": "Ripper-Horn Tribe",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -2415,6 +2523,7 @@
     },
     {
       "factionKey": "wh2_main_bst_shadowgor",
+      "displayName": "Shadowgor Warherd",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -2435,6 +2544,7 @@
     },
     {
       "factionKey": "wh2_main_chs_chaos_incursion_def",
+      "displayName": "Servants to Chaos",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -2455,6 +2565,7 @@
     },
     {
       "factionKey": "wh2_main_chs_chaos_incursion_hef",
+      "displayName": "Puppets of Chaos",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -2475,6 +2586,7 @@
     },
     {
       "factionKey": "wh2_main_chs_chaos_incursion_lzd",
+      "displayName": "Vessels of Chaos",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -2495,6 +2607,7 @@
     },
     {
       "factionKey": "wh2_main_def_bleak_holds",
+      "displayName": "Bleak Holds",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2519,6 +2632,7 @@
     },
     {
       "factionKey": "wh2_main_def_blood_hall_coven",
+      "displayName": "Blood Hall Coven",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2542,6 +2656,7 @@
     },
     {
       "factionKey": "wh2_main_def_clar_karond",
+      "displayName": "Clar Karond",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2566,6 +2681,7 @@
     },
     {
       "factionKey": "wh2_main_def_cult_of_excess",
+      "displayName": "Cult of Excess",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2590,6 +2706,7 @@
     },
     {
       "factionKey": "wh2_main_def_cult_of_pleasure",
+      "displayName": "Cult of Pleasure",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": true,
@@ -2618,6 +2735,7 @@
     },
     {
       "factionKey": "wh2_main_def_cult_of_pleasure_separatists",
+      "displayName": "Cult of Pleasure Separatists",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2638,6 +2756,7 @@
     },
     {
       "factionKey": "wh2_main_def_dark_elves_qb1",
+      "displayName": "Dark Elves",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2658,6 +2777,7 @@
     },
     {
       "factionKey": "wh2_main_def_dark_elves_qb2",
+      "displayName": "Dark Elves",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2678,6 +2798,7 @@
     },
     {
       "factionKey": "wh2_main_def_dark_elves_qb3",
+      "displayName": "Dark Elves",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2698,6 +2819,7 @@
     },
     {
       "factionKey": "wh2_main_def_dark_elves_qb4",
+      "displayName": "Dark Elves",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2718,6 +2840,7 @@
     },
     {
       "factionKey": "wh2_main_def_deadwood_sentinels",
+      "displayName": "Deadwood Sentinels",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2742,6 +2865,7 @@
     },
     {
       "factionKey": "wh2_main_def_drackla_coven",
+      "displayName": "Drackla Coven",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2766,6 +2890,7 @@
     },
     {
       "factionKey": "wh2_main_def_ghrond",
+      "displayName": "Ghrond",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2792,6 +2917,7 @@
     },
     {
       "factionKey": "wh2_main_def_hag_graef",
+      "displayName": "Hag Graef",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": true,
@@ -2820,6 +2946,7 @@
     },
     {
       "factionKey": "wh2_main_def_hag_graef_separatists",
+      "displayName": "Hag Graef Separatists",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2840,6 +2967,7 @@
     },
     {
       "factionKey": "wh2_main_def_har_ganeth",
+      "displayName": "Har Ganeth",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": true,
@@ -2868,6 +2996,7 @@
     },
     {
       "factionKey": "wh2_main_def_har_ganeth_separatists",
+      "displayName": "Har Ganeth Separatists",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2888,6 +3017,7 @@
     },
     {
       "factionKey": "wh2_main_def_karond_kar",
+      "displayName": "Karond Kar",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2914,6 +3044,7 @@
     },
     {
       "factionKey": "wh2_main_def_naggarond",
+      "displayName": "Naggarond",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": true,
@@ -2942,6 +3073,7 @@
     },
     {
       "factionKey": "wh2_main_def_naggarond_separatists",
+      "displayName": "Naggarond Separatists",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2962,6 +3094,7 @@
     },
     {
       "factionKey": "wh2_main_def_scourge_of_khaine",
+      "displayName": "Scourge of Khaine",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -2989,6 +3122,7 @@
     },
     {
       "factionKey": "wh2_main_def_ssildra_tor",
+      "displayName": "Ss'ildra Tor",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -3014,6 +3148,7 @@
     },
     {
       "factionKey": "wh2_main_def_the_forgebound",
+      "displayName": "The Forgebound",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -3037,6 +3172,7 @@
     },
     {
       "factionKey": "wh2_main_dwf_greybeards_prospectors",
+      "displayName": "Greybeard's Prospectors",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -3060,6 +3196,7 @@
     },
     {
       "factionKey": "wh2_main_dwf_karak_zorn",
+      "displayName": "Karak Zorn",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -3080,6 +3217,7 @@
     },
     {
       "factionKey": "wh2_main_dwf_spine_of_sotek_dwarfs",
+      "displayName": "Spine of Sotek Dwarfs",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -3103,6 +3241,7 @@
     },
     {
       "factionKey": "wh2_main_emp_new_world_colonies",
+      "displayName": "New World Colonies",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_teb_teb",
       "playable": false,
@@ -3127,6 +3266,7 @@
     },
     {
       "factionKey": "wh2_main_emp_sudenburg",
+      "displayName": "Sudenburg",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_teb_teb",
       "playable": false,
@@ -3147,6 +3287,7 @@
     },
     {
       "factionKey": "wh2_main_grn_arachnos",
+      "displayName": "Arachnos",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -3171,6 +3312,7 @@
     },
     {
       "factionKey": "wh2_main_grn_blue_vipers",
+      "displayName": "Blue Vipers",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_savage_orcs",
       "playable": false,
@@ -3195,6 +3337,7 @@
     },
     {
       "factionKey": "wh2_main_hef_avelorn",
+      "displayName": "Avelorn",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": true,
@@ -3223,6 +3366,7 @@
     },
     {
       "factionKey": "wh2_main_hef_caledor",
+      "displayName": "Caledor",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3246,6 +3390,7 @@
     },
     {
       "factionKey": "wh2_main_hef_chrace",
+      "displayName": "Chrace",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3269,6 +3414,7 @@
     },
     {
       "factionKey": "wh2_main_hef_citadel_of_dusk",
+      "displayName": "Citadel of Dusk",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3292,6 +3438,7 @@
     },
     {
       "factionKey": "wh2_main_hef_cothique",
+      "displayName": "Cothique",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3315,6 +3462,7 @@
     },
     {
       "factionKey": "wh2_main_hef_eataine",
+      "displayName": "Eataine",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": true,
@@ -3343,6 +3491,7 @@
     },
     {
       "factionKey": "wh2_main_hef_ellyrion",
+      "displayName": "Ellyrion",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3368,6 +3517,7 @@
     },
     {
       "factionKey": "wh2_main_hef_fortress_of_dawn",
+      "displayName": "Fortress of Dawn",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3388,6 +3538,7 @@
     },
     {
       "factionKey": "wh2_main_hef_high_elves_qb1",
+      "displayName": "High Elves",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3408,6 +3559,7 @@
     },
     {
       "factionKey": "wh2_main_hef_high_elves_qb2",
+      "displayName": "High Elves",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3428,6 +3580,7 @@
     },
     {
       "factionKey": "wh2_main_hef_high_elves_qb3",
+      "displayName": "High Elves",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3448,6 +3601,7 @@
     },
     {
       "factionKey": "wh2_main_hef_high_elves_qb4",
+      "displayName": "High Elves",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3468,6 +3622,7 @@
     },
     {
       "factionKey": "wh2_main_hef_high_elves_qb5",
+      "displayName": "High Elves",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3488,6 +3643,7 @@
     },
     {
       "factionKey": "wh2_main_hef_high_elves_qb6",
+      "displayName": "High Elves",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3508,6 +3664,7 @@
     },
     {
       "factionKey": "wh2_main_hef_high_elves_qb7",
+      "displayName": "High Elves",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3528,6 +3685,7 @@
     },
     {
       "factionKey": "wh2_main_hef_high_elves_qb8",
+      "displayName": "High Elves",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3548,6 +3706,7 @@
     },
     {
       "factionKey": "wh2_main_hef_nagarythe",
+      "displayName": "Nagarythe",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": true,
@@ -3576,6 +3735,7 @@
     },
     {
       "factionKey": "wh2_main_hef_order_of_loremasters",
+      "displayName": "Order of Loremasters",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": true,
@@ -3604,6 +3764,7 @@
     },
     {
       "factionKey": "wh2_main_hef_saphery",
+      "displayName": "Saphery",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3628,6 +3789,7 @@
     },
     {
       "factionKey": "wh2_main_hef_tiranoc",
+      "displayName": "Tiranoc",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3653,6 +3815,7 @@
     },
     {
       "factionKey": "wh2_main_hef_tor_elasor",
+      "displayName": "Tor Elasor",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -3673,6 +3836,7 @@
     },
     {
       "factionKey": "wh2_main_hef_yvresse",
+      "displayName": "Yvresse",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": true,
@@ -3701,6 +3865,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_hexoatl",
+      "displayName": "Hexoatl",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": true,
@@ -3729,6 +3894,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_itza",
+      "displayName": "Itza",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": true,
@@ -3757,6 +3923,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_last_defenders",
+      "displayName": "Last Defenders",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": true,
@@ -3785,6 +3952,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_lizardmen_qb1",
+      "displayName": "Lizardmen",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -3805,6 +3973,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_lizardmen_qb2",
+      "displayName": "Lizardmen",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -3825,6 +3994,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_lizardmen_qb3",
+      "displayName": "Lizardmen",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -3845,6 +4015,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_sentinels_of_xeti",
+      "displayName": "Sentinels of Xeti",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -3869,6 +4040,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_southern_sentinels",
+      "displayName": "Southern Sentinels",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -3894,6 +4066,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_teotiqua",
+      "displayName": "Teotiqua",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -3914,6 +4087,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_tlaqua",
+      "displayName": "Tlaqua",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": true,
@@ -3942,6 +4116,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_tlaxtlan",
+      "displayName": "Tlaxtlan",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -3966,6 +4141,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_xlanhuapec",
+      "displayName": "Xlanhuapec",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -3989,6 +4165,7 @@
     },
     {
       "factionKey": "wh2_main_lzd_zlatan",
+      "displayName": "Zlatlan",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -4012,6 +4189,7 @@
     },
     {
       "factionKey": "wh2_main_nor_aghol",
+      "displayName": "Aghol",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -4034,6 +4212,7 @@
     },
     {
       "factionKey": "wh2_main_nor_mung",
+      "displayName": "Mung",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -4057,6 +4236,7 @@
     },
     {
       "factionKey": "wh2_main_nor_skeggi",
+      "displayName": "Skeggi",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -4080,6 +4260,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_abominations",
+      "displayName": "Abominations",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh2_main_rogue_chaos",
       "playable": false,
@@ -4100,6 +4281,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_beastcatchas",
+      "displayName": "Beastcatchas",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4120,6 +4302,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_bernhoffs_brigands",
+      "displayName": "Bernhoff's Brigands",
       "nameGroup": "names_emp_empire",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4140,6 +4323,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_black_spider_tribe",
+      "displayName": "Black Spider Tribe",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4160,6 +4344,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_boneclubbers_tribe",
+      "displayName": "Boneclubbers Tribe",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4180,6 +4365,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_celestial_storm",
+      "displayName": "Celestial Storm",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4200,6 +4386,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_college_of_pyrotechnics",
+      "displayName": "College of Pyrotechnics",
       "nameGroup": "names_teb_tilea",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4220,6 +4407,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_def_chs_vashnaar",
+      "displayName": "Vashnaar's Conquest",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_rogue_chaos",
       "playable": false,
@@ -4240,6 +4428,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_def_mengils_manflayers",
+      "displayName": "Mengil's Manflayers",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4260,6 +4449,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_doomseekers",
+      "displayName": "Doomseekers",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4280,6 +4470,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_doomseekers_qb1",
+      "displayName": "Doomseekers",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4300,6 +4491,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_gerhardts_mercenaries",
+      "displayName": "Gerhardt's Mercenaries",
       "nameGroup": "names_emp_empire",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4320,6 +4512,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_gerhardts_mercenaries_qb1",
+      "displayName": "Gerhardt's Mercenaries",
       "nameGroup": "names_emp_empire",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4340,6 +4533,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_hef_tor_elithis",
+      "displayName": "Tor Elithis Refugees",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4360,6 +4554,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_hung_warband",
+      "displayName": "Hung Warband",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh2_main_rogue_chaos",
       "playable": false,
@@ -4380,6 +4575,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_jerrods_errantry",
+      "displayName": "Jerrod's Errantry Army",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4400,6 +4596,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_morrsliebs_howlers",
+      "displayName": "Morrslieb's Howlers",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4420,6 +4617,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_pirates_of_trantio",
+      "displayName": "Pirates of Trantio",
       "nameGroup": "names_teb_tilea",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4440,6 +4638,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_scourge_of_aquitaine",
+      "displayName": "The Scourge of Aquitaine",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4460,6 +4659,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_stuff_snatchers",
+      "displayName": "Stuff-Snatchers",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4480,6 +4680,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_troll_skullz",
+      "displayName": "Troll-Skullz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4500,6 +4701,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_vmp_heirs_of_mourkain",
+      "displayName": "Heirs of Mourkain",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4520,6 +4722,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_wef_hunters_of_kurnous",
+      "displayName": "Hunters of Kurnous",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4540,6 +4743,7 @@
     },
     {
       "factionKey": "wh2_main_rogue_wrath_of_nature",
+      "displayName": "Wrath of Nature",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -4560,6 +4764,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_eshin",
+      "displayName": "Clan Eshin",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": true,
@@ -4588,6 +4793,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_eshin_separatists",
+      "displayName": "Clan Eshin Separatists",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4608,6 +4814,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_gnaw",
+      "displayName": "Clan Gnaw",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4628,6 +4835,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_mordkin",
+      "displayName": "Clan Mordkin",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4653,6 +4861,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_mors",
+      "displayName": "Clan Mors",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": true,
@@ -4681,6 +4890,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_mors_separatists",
+      "displayName": "Clan Mors Separatists",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4701,6 +4911,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_moulder",
+      "displayName": "Clan Moulder",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": true,
@@ -4729,6 +4940,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_moulder_separatists",
+      "displayName": "Clan Moulder Separatists",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4749,6 +4961,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_pestilens",
+      "displayName": "Clan Pestilens",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": true,
@@ -4778,6 +4991,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_pestilens_separatists",
+      "displayName": "Clan Pestilens Separatists",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4798,6 +5012,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_septik",
+      "displayName": "Clan Septik",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4823,6 +5038,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_skryre",
+      "displayName": "Clan Skryre",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": true,
@@ -4851,6 +5067,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_skryre_separatists",
+      "displayName": "Clan Skryre Separatists",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4871,6 +5088,7 @@
     },
     {
       "factionKey": "wh2_main_skv_clan_spittel",
+      "displayName": "Clan Spittel",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4895,6 +5113,7 @@
     },
     {
       "factionKey": "wh2_main_skv_skaven_qb1",
+      "displayName": "Skaven",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4915,6 +5134,7 @@
     },
     {
       "factionKey": "wh2_main_skv_skaven_qb2",
+      "displayName": "Skaven",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4935,6 +5155,7 @@
     },
     {
       "factionKey": "wh2_main_skv_skaven_qb3",
+      "displayName": "Skaven",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4955,6 +5176,7 @@
     },
     {
       "factionKey": "wh2_main_skv_skaven_qb4",
+      "displayName": "Skaven",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -4975,6 +5197,7 @@
     },
     {
       "factionKey": "wh2_main_vmp_necrarch_brotherhood",
+      "displayName": "Necrarch Brotherhood",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -4997,6 +5220,7 @@
     },
     {
       "factionKey": "wh2_main_vmp_strygos_empire",
+      "displayName": "Strygos Empire",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -5020,6 +5244,7 @@
     },
     {
       "factionKey": "wh2_main_vmp_the_silver_host",
+      "displayName": "The Silver Host",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -5045,6 +5270,7 @@
     },
     {
       "factionKey": "wh2_main_wef_bowmen_of_oreon",
+      "displayName": "Bowmen of Oreon",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -5067,6 +5293,7 @@
     },
     {
       "factionKey": "wh2_twa03_def_rakarth",
+      "displayName": "The Thousand Maws",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": true,
@@ -5095,6 +5322,7 @@
     },
     {
       "factionKey": "wh2_twa03_def_rakarth_separatists",
+      "displayName": "The Thousand Maws Separatists",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -5115,6 +5343,7 @@
     },
     {
       "factionKey": "wh3_cp1_cth_tiger_warriors",
+      "displayName": "Claws of the White Tiger",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": true,
@@ -5143,6 +5372,7 @@
     },
     {
       "factionKey": "wh3_dlc20_chs_azazel",
+      "displayName": "The Ecstatic Legions",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": true,
@@ -5170,6 +5400,7 @@
     },
     {
       "factionKey": "wh3_dlc20_chs_festus",
+      "displayName": "The Fecundites",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": true,
@@ -5199,6 +5430,7 @@
     },
     {
       "factionKey": "wh3_dlc20_chs_kholek",
+      "displayName": "Heralds of the Tempest",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": true,
@@ -5225,6 +5457,7 @@
     },
     {
       "factionKey": "wh3_dlc20_chs_sigvald",
+      "displayName": "The Decadent Host",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": true,
@@ -5251,6 +5484,7 @@
     },
     {
       "factionKey": "wh3_dlc20_chs_valkia",
+      "displayName": "Legion of the Gorequeen",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": true,
@@ -5278,6 +5512,7 @@
     },
     {
       "factionKey": "wh3_dlc20_chs_vilitch",
+      "displayName": "Puppets of Misrule",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": true,
@@ -5305,6 +5540,7 @@
     },
     {
       "factionKey": "wh3_dlc20_kho_blood_keepers",
+      "displayName": "Blood Keepers",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": false,
@@ -5325,6 +5561,7 @@
     },
     {
       "factionKey": "wh3_dlc20_nor_kuj",
+      "displayName": "Kuj",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -5345,6 +5582,7 @@
     },
     {
       "factionKey": "wh3_dlc20_nor_kul",
+      "displayName": "Kul",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -5367,6 +5605,7 @@
     },
     {
       "factionKey": "wh3_dlc20_nor_tong",
+      "displayName": "Tong",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -5387,6 +5626,7 @@
     },
     {
       "factionKey": "wh3_dlc20_nor_yusak",
+      "displayName": "Yusak",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -5409,6 +5649,7 @@
     },
     {
       "factionKey": "wh3_dlc20_nur_pallid_nurslings",
+      "displayName": "Pallid Nurslings",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": false,
@@ -5432,6 +5673,7 @@
     },
     {
       "factionKey": "wh3_dlc20_sla_keepers_of_bliss",
+      "displayName": "Keepers of Bliss",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -5455,6 +5697,7 @@
     },
     {
       "factionKey": "wh3_dlc20_tze_apostles_of_change",
+      "displayName": "Apostles of Change",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": false,
@@ -5478,6 +5721,7 @@
     },
     {
       "factionKey": "wh3_dlc20_tze_the_sightless",
+      "displayName": "The Sightless",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": false,
@@ -5501,6 +5745,7 @@
     },
     {
       "factionKey": "wh3_dlc21_cst_dead_flag_fleet",
+      "displayName": "Dead Flag Fleet",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -5526,6 +5771,7 @@
     },
     {
       "factionKey": "wh3_dlc21_nor_wyrmkins",
+      "displayName": "Wyrmkins",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -5549,6 +5795,7 @@
     },
     {
       "factionKey": "wh3_dlc21_vmp_jiangshi_rebels",
+      "displayName": "Jiangshi Rebels",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -5573,6 +5820,7 @@
     },
     {
       "factionKey": "wh3_dlc21_wef_spirits_of_shanlin",
+      "displayName": "Spirits of Shanlin",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -5595,6 +5843,7 @@
     },
     {
       "factionKey": "wh3_dlc23_chd_astragoth",
+      "displayName": "Disciples of Hashut",
       "nameGroup": "names_chd_chaos_dwarfs",
       "subculture": "wh3_dlc23_sc_chd_chaos_dwarfs",
       "playable": true,
@@ -5624,6 +5873,7 @@
     },
     {
       "factionKey": "wh3_dlc23_chd_chaos_dwarfs_qb1",
+      "displayName": "Chaos Dwarfs",
       "nameGroup": "names_chd_chaos_dwarfs",
       "subculture": "wh3_dlc23_sc_chd_chaos_dwarfs",
       "playable": false,
@@ -5644,6 +5894,7 @@
     },
     {
       "factionKey": "wh3_dlc23_chd_chaos_dwarfs_qb2",
+      "displayName": "Chaos Dwarfs",
       "nameGroup": "names_chd_chaos_dwarfs",
       "subculture": "wh3_dlc23_sc_chd_chaos_dwarfs",
       "playable": false,
@@ -5664,6 +5915,7 @@
     },
     {
       "factionKey": "wh3_dlc23_chd_chaos_dwarfs_qb3",
+      "displayName": "Chaos Dwarfs",
       "nameGroup": "names_chd_chaos_dwarfs",
       "subculture": "wh3_dlc23_sc_chd_chaos_dwarfs",
       "playable": false,
@@ -5684,6 +5936,7 @@
     },
     {
       "factionKey": "wh3_dlc23_chd_conclave",
+      "displayName": "Servants of the Conclave",
       "nameGroup": "names_chd_chaos_dwarfs",
       "subculture": "wh3_dlc23_sc_chd_chaos_dwarfs",
       "playable": false,
@@ -5708,6 +5961,7 @@
     },
     {
       "factionKey": "wh3_dlc23_chd_legion_of_azgorh",
+      "displayName": "The Legion of Azgorh",
       "nameGroup": "names_chd_chaos_dwarfs",
       "subculture": "wh3_dlc23_sc_chd_chaos_dwarfs",
       "playable": true,
@@ -5737,6 +5991,7 @@
     },
     {
       "factionKey": "wh3_dlc23_chd_minor_faction",
+      "displayName": "Overlords of Zharrduk",
       "nameGroup": "names_chd_chaos_dwarfs",
       "subculture": "wh3_dlc23_sc_chd_chaos_dwarfs",
       "playable": false,
@@ -5761,6 +6016,7 @@
     },
     {
       "factionKey": "wh3_dlc23_chd_zhatan",
+      "displayName": "The Warhost of Zharr",
       "nameGroup": "names_chd_chaos_dwarfs",
       "subculture": "wh3_dlc23_sc_chd_chaos_dwarfs",
       "playable": true,
@@ -5791,6 +6047,7 @@
     },
     {
       "factionKey": "wh3_dlc24_cth_the_celestial_court",
+      "displayName": "The Jade Court",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": true,
@@ -5822,6 +6079,7 @@
     },
     {
       "factionKey": "wh3_dlc24_ksl_daughters_of_the_forest",
+      "displayName": "Daughters of the Forest",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": true,
@@ -5851,6 +6109,7 @@
     },
     {
       "factionKey": "wh3_dlc24_lzd_lizardmen_invasion",
+      "displayName": "Lizardmen Raiders",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -5871,6 +6130,7 @@
     },
     {
       "factionKey": "wh3_dlc24_tze_the_deceivers",
+      "displayName": "The Deceivers",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": true,
@@ -5898,6 +6158,7 @@
     },
     {
       "factionKey": "wh3_dlc25_chd_chaos_dwarfs_invasion",
+      "displayName": "Chaos Dwarfs",
       "nameGroup": "names_chd_chaos_dwarfs",
       "subculture": "wh3_dlc23_sc_chd_chaos_dwarfs",
       "playable": false,
@@ -5918,6 +6179,7 @@
     },
     {
       "factionKey": "wh3_dlc25_dwf_malakai",
+      "displayName": "Masters of Innovation",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": true,
@@ -5947,6 +6209,7 @@
     },
     {
       "factionKey": "wh3_dlc25_kho_khorne_invasion",
+      "displayName": "{{tr:factions_screen_name_wh3_main_kho_khorne_qb1}}",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": false,
@@ -5967,6 +6230,7 @@
     },
     {
       "factionKey": "wh3_dlc25_nur_epidemius",
+      "displayName": "Tallymen of Pestilence",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": true,
@@ -5996,6 +6260,7 @@
     },
     {
       "factionKey": "wh3_dlc25_nur_nurgle_invasion",
+      "displayName": "{{tr:factions_screen_name_wh3_main_nur_nurgle_qb1}}",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": false,
@@ -6016,6 +6281,7 @@
     },
     {
       "factionKey": "wh3_dlc25_nur_tamurkhan",
+      "displayName": "The Maggot Host",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": true,
@@ -6045,6 +6311,7 @@
     },
     {
       "factionKey": "wh3_dlc25_rogue_da_mad_howlerz",
+      "displayName": "Da Mad Howlerz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -6065,6 +6332,7 @@
     },
     {
       "factionKey": "wh3_dlc25_sla_slaanesh_invasion",
+      "displayName": "{{tr:factions_screen_name_wh3_main_sla_slaanesh_qb1}}",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -6085,6 +6353,7 @@
     },
     {
       "factionKey": "wh3_dlc25_vmp_the_court_of_night",
+      "displayName": "The Court of Night",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -6109,6 +6378,7 @@
     },
     {
       "factionKey": "wh3_dlc25_vmp_vampire_counts_invasion",
+      "displayName": "{{tr:factions_screen_name_wh_main_vmp_vampire_counts_qb1}}",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -6129,6 +6399,7 @@
     },
     {
       "factionKey": "wh3_dlc25_wef_wood_elves_invasion",
+      "displayName": "{{tr:factions_screen_name_wh_dlc05_wef_wood_elves_qb1}}",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -6149,6 +6420,7 @@
     },
     {
       "factionKey": "wh3_dlc26_cst_vampire_coast_qb1",
+      "displayName": "{{tr:factions_screen_name_wh2_dlc11_cst_vampire_coast_encounters}}",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -6169,6 +6441,7 @@
     },
     {
       "factionKey": "wh3_dlc26_cst_vampire_coast_qb2",
+      "displayName": "{{tr:factions_screen_name_wh2_dlc11_cst_vampire_coast_encounters}}",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -6189,6 +6462,7 @@
     },
     {
       "factionKey": "wh3_dlc26_def_dark_elves_invasion",
+      "displayName": "Dark Elves",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -6209,6 +6483,7 @@
     },
     {
       "factionKey": "wh3_dlc26_dwf_dwarfs_invasion",
+      "displayName": "Dwarfs",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -6229,6 +6504,7 @@
     },
     {
       "factionKey": "wh3_dlc26_grn_cluster_eye_tribe",
+      "displayName": "Cluster-Eye Tribe",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -6253,6 +6529,7 @@
     },
     {
       "factionKey": "wh3_dlc26_grn_gorbad_ironclaw",
+      "displayName": "Ironclaw Orcs",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": true,
@@ -6282,6 +6559,7 @@
     },
     {
       "factionKey": "wh3_dlc26_hef_high_elves_invasion",
+      "displayName": "High Elves",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -6302,6 +6580,7 @@
     },
     {
       "factionKey": "wh3_dlc26_kho_arbaal",
+      "displayName": "Challengers of Khorne",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": true,
@@ -6330,6 +6609,7 @@
     },
     {
       "factionKey": "wh3_dlc26_kho_skulltaker",
+      "displayName": "Blooded Wanderers",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": true,
@@ -6358,6 +6638,7 @@
     },
     {
       "factionKey": "wh3_dlc26_ogr_golgfag",
+      "displayName": "The Maneaters",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": true,
@@ -6384,6 +6665,7 @@
     },
     {
       "factionKey": "wh3_dlc26_vmp_templehof_qb",
+      "displayName": "{{tr:factions_screen_name_wh_main_vmp_rival_sylvanian_vamps}}",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -6404,6 +6686,7 @@
     },
     {
       "factionKey": "wh3_dlc27_brt_bretonnia_dm",
+      "displayName": "{{tr:factions_screen_name_wh_main_brt_bretonnia_rebels}}",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -6424,6 +6707,7 @@
     },
     {
       "factionKey": "wh3_dlc27_bst_beastmen_dm",
+      "displayName": "{{tr:factions_screen_name_wh_dlc03_bst_beastmen_rebels}}",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -6444,6 +6728,7 @@
     },
     {
       "factionKey": "wh3_dlc27_chs_chaos_dm",
+      "displayName": "{{tr:factions_screen_name_wh_main_chs_chaos_rebels}}",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -6464,6 +6749,7 @@
     },
     {
       "factionKey": "wh3_dlc27_cth_cathay_dm",
+      "displayName": "{{tr:factions_screen_name_wh3_main_cth_cathay_rebels}}",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -6484,6 +6770,7 @@
     },
     {
       "factionKey": "wh3_dlc27_def_dark_elves_dm",
+      "displayName": "{{tr:factions_screen_name_wh2_main_def_dark_elves_rebels}}",
       "nameGroup": "names_def_dark_elves",
       "subculture": "wh2_main_sc_def_dark_elves",
       "playable": false,
@@ -6504,6 +6791,7 @@
     },
     {
       "factionKey": "wh3_dlc27_emp_empire_dm",
+      "displayName": "{{tr:factions_screen_name_wh_main_emp_empire_rebels}}",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -6524,6 +6812,7 @@
     },
     {
       "factionKey": "wh3_dlc27_hef_aislinn",
+      "displayName": "High Elf Sea Patrol",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": true,
@@ -6550,6 +6839,7 @@
     },
     {
       "factionKey": "wh3_dlc27_hef_aislinn_confederation_owner",
+      "displayName": "United Maritime Patrol",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -6570,6 +6860,7 @@
     },
     {
       "factionKey": "wh3_dlc27_hef_high_elves_dm",
+      "displayName": "{{tr:factions_screen_name_wh2_main_hef_high_elves_rebels}}",
       "nameGroup": "names_hef_high_elves",
       "subculture": "wh2_main_sc_hef_high_elves",
       "playable": false,
@@ -6590,6 +6881,7 @@
     },
     {
       "factionKey": "wh3_dlc27_ksl_kislev_dm",
+      "displayName": "{{tr:factions_screen_name_wh3_main_ksl_kislev_rebels}}",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": false,
@@ -6610,6 +6902,7 @@
     },
     {
       "factionKey": "wh3_dlc27_nor_avags",
+      "displayName": "Avag",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -6634,6 +6927,7 @@
     },
     {
       "factionKey": "wh3_dlc27_nor_monstrous_arcanum_sayl",
+      "displayName": "Monstrous Arcanum",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -6654,6 +6948,7 @@
     },
     {
       "factionKey": "wh3_dlc27_nor_monstrous_arcanum_throgg",
+      "displayName": "{{tr:factions_screen_name_wh3_dlc27_nor_monstrous_arcanum_sayl}}",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -6674,6 +6969,7 @@
     },
     {
       "factionKey": "wh3_dlc27_nor_monstrous_arcanum_wulfrik",
+      "displayName": "{{tr:factions_screen_name_wh3_dlc27_nor_monstrous_arcanum_sayl}}",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -6694,6 +6990,7 @@
     },
     {
       "factionKey": "wh3_dlc27_nor_norsca_dm",
+      "displayName": "{{tr:factions_screen_name_wh_main_nor_norsca_rebels}}",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -6714,6 +7011,7 @@
     },
     {
       "factionKey": "wh3_dlc27_nor_sayl",
+      "displayName": "Dolgan",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": true,
@@ -6742,6 +7040,7 @@
     },
     {
       "factionKey": "wh3_dlc27_rogue_unholy_pageant",
+      "displayName": "The Unholy Pageant",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -6762,6 +7061,7 @@
     },
     {
       "factionKey": "wh3_dlc27_sla_masque_of_slaanesh",
+      "displayName": "The Accursed Troupe",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": true,
@@ -6790,6 +7090,7 @@
     },
     {
       "factionKey": "wh3_dlc27_sla_the_tormentors",
+      "displayName": "The Tormentors",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": true,
@@ -6818,6 +7119,7 @@
     },
     {
       "factionKey": "wh3_dlc27_teb_tilea_dm",
+      "displayName": "{{tr:factions_screen_name_wh_main_teb_tilea_rebels}}",
       "nameGroup": "names_teb_tilea",
       "subculture": "wh_main_sc_teb_teb",
       "playable": false,
@@ -6838,6 +7140,7 @@
     },
     {
       "factionKey": "wh3_dlc27_the_narj",
+      "displayName": "{{tr:factions_screen_name_wh3_prologue_the_narj}}",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -6862,6 +7165,7 @@
     },
     {
       "factionKey": "wh3_dlc27_wef_wood_elves_dm",
+      "displayName": "{{tr:factions_screen_name_wh_dlc05_wef_wood_elves_rebels}}",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -6882,6 +7186,7 @@
     },
     {
       "factionKey": "wh3_main_brt_aquitaine",
+      "displayName": "Aquitaine",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -6905,6 +7210,7 @@
     },
     {
       "factionKey": "wh3_main_chs_dreaded_wo",
+      "displayName": "Dreaded Wo",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -6925,6 +7231,7 @@
     },
     {
       "factionKey": "wh3_main_chs_gharhar",
+      "displayName": "Gharhar",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -6945,6 +7252,7 @@
     },
     {
       "factionKey": "wh3_main_chs_khazag",
+      "displayName": "Khazag",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -6969,6 +7277,7 @@
     },
     {
       "factionKey": "wh3_main_chs_kvellig",
+      "displayName": "Kvellig",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -6989,6 +7298,7 @@
     },
     {
       "factionKey": "wh3_main_chs_shadow_legion",
+      "displayName": "Shadow Legion",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": true,
@@ -7015,6 +7325,7 @@
     },
     {
       "factionKey": "wh3_main_chs_tong",
+      "displayName": "Tong",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -7035,6 +7346,7 @@
     },
     {
       "factionKey": "wh3_main_cst_dread_rock_privateers",
+      "displayName": "Dread Rock Privateers",
       "nameGroup": "names_cst_vampire_coast",
       "subculture": "wh2_dlc11_sc_cst_vampire_coast",
       "playable": false,
@@ -7059,6 +7371,7 @@
     },
     {
       "factionKey": "wh3_main_cth_burning_wind_nomads",
+      "displayName": "Burning Wind Nomads",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7085,6 +7398,7 @@
     },
     {
       "factionKey": "wh3_main_cth_cathay_qb1",
+      "displayName": "Cathay",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7105,6 +7419,7 @@
     },
     {
       "factionKey": "wh3_main_cth_cathay_qb2",
+      "displayName": "Cathay",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7125,6 +7440,7 @@
     },
     {
       "factionKey": "wh3_main_cth_cathay_qb3",
+      "displayName": "Cathay",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7145,6 +7461,7 @@
     },
     {
       "factionKey": "wh3_main_cth_celestial_loyalists",
+      "displayName": "Celestial Loyalists",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7169,6 +7486,7 @@
     },
     {
       "factionKey": "wh3_main_cth_dissenter_lords_of_jinshen",
+      "displayName": "Dissenter Lords of Jinshen",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7194,6 +7512,7 @@
     },
     {
       "factionKey": "wh3_main_cth_eastern_river_lords",
+      "displayName": "Eastern River Lords",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7218,6 +7537,7 @@
     },
     {
       "factionKey": "wh3_main_cth_imperial_wardens",
+      "displayName": "Imperial Wardens",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7244,6 +7564,7 @@
     },
     {
       "factionKey": "wh3_main_cth_rebel_lords_of_nan_yang",
+      "displayName": "Rebel Lords of Nan-Yang",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7269,6 +7590,7 @@
     },
     {
       "factionKey": "wh3_main_cth_the_jade_custodians",
+      "displayName": "The Jade Custodians",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": false,
@@ -7294,6 +7616,7 @@
     },
     {
       "factionKey": "wh3_main_cth_the_northern_provinces",
+      "displayName": "The Northern Provinces",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": true,
@@ -7323,6 +7646,7 @@
     },
     {
       "factionKey": "wh3_main_cth_the_western_provinces",
+      "displayName": "The Western Provinces",
       "nameGroup": "names_cth_cathay",
       "subculture": "wh3_main_sc_cth_cathay",
       "playable": true,
@@ -7352,6 +7676,7 @@
     },
     {
       "factionKey": "wh3_main_dae_daemon_prince",
+      "displayName": "Legion of Chaos",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh3_main_sc_dae_daemons",
       "playable": true,
@@ -7380,6 +7705,7 @@
     },
     {
       "factionKey": "wh3_main_dae_daemons_qb1",
+      "displayName": "Shadow Legion",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh3_main_sc_dae_daemons",
       "playable": false,
@@ -7400,6 +7726,7 @@
     },
     {
       "factionKey": "wh3_main_dwf_karak_azorn",
+      "displayName": "Karak Azorn",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -7422,6 +7749,7 @@
     },
     {
       "factionKey": "wh3_main_dwf_the_ancestral_throng",
+      "displayName": "The Ancestral Throng",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": true,
@@ -7450,6 +7778,7 @@
     },
     {
       "factionKey": "wh3_main_emp_cult_of_sigmar",
+      "displayName": "Cult of Sigmar",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": true,
@@ -7478,6 +7807,7 @@
     },
     {
       "factionKey": "wh3_main_grn_da_cage_breakaz",
+      "displayName": "Da Cage Breakaz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -7504,6 +7834,7 @@
     },
     {
       "factionKey": "wh3_main_grn_dark_land_orcs",
+      "displayName": "Dark Land Orcs",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -7527,6 +7858,7 @@
     },
     {
       "factionKey": "wh3_main_grn_dimned_sun",
+      "displayName": "Dimmed Sunz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_savage_orcs",
       "playable": false,
@@ -7551,6 +7883,7 @@
     },
     {
       "factionKey": "wh3_main_grn_drippin_fangs",
+      "displayName": "Drippin Fangs",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -7575,6 +7908,7 @@
     },
     {
       "factionKey": "wh3_main_grn_moon_howlerz",
+      "displayName": "Moon Howlerz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -7598,6 +7932,7 @@
     },
     {
       "factionKey": "wh3_main_grn_slaves_of_zharr",
+      "displayName": "Slaves of Zharr",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -7621,6 +7956,7 @@
     },
     {
       "factionKey": "wh3_main_grn_tusked_sunz",
+      "displayName": "Tusked Sunz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -7644,6 +7980,7 @@
     },
     {
       "factionKey": "wh3_main_ie_vmp_sires_of_mourkain",
+      "displayName": "Sires of Mourkain",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -7668,6 +8005,7 @@
     },
     {
       "factionKey": "wh3_main_kho_bloody_sword",
+      "displayName": "Bloody Sword",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": false,
@@ -7693,6 +8031,7 @@
     },
     {
       "factionKey": "wh3_main_kho_brazen_throne",
+      "displayName": "Brazen Throne",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": false,
@@ -7716,6 +8055,7 @@
     },
     {
       "factionKey": "wh3_main_kho_crimson_skull",
+      "displayName": "Crimson Skull",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": false,
@@ -7740,6 +8080,7 @@
     },
     {
       "factionKey": "wh3_main_kho_exiles_of_khorne",
+      "displayName": "Exiles of Khorne",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": true,
@@ -7769,6 +8110,7 @@
     },
     {
       "factionKey": "wh3_main_kho_khorne_qb1",
+      "displayName": "Khorne",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": false,
@@ -7789,6 +8131,7 @@
     },
     {
       "factionKey": "wh3_main_kho_khorne_qb2",
+      "displayName": "Khorne",
       "nameGroup": "names_kho_khorne",
       "subculture": "wh3_main_sc_kho_khorne",
       "playable": false,
@@ -7809,6 +8152,7 @@
     },
     {
       "factionKey": "wh3_main_ksl_brotherhood_of_the_bear",
+      "displayName": "Brotherhood of the Bear",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": false,
@@ -7832,6 +8176,7 @@
     },
     {
       "factionKey": "wh3_main_ksl_druzhina_enclave",
+      "displayName": "Druzhina Enclave",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": false,
@@ -7855,6 +8200,7 @@
     },
     {
       "factionKey": "wh3_main_ksl_kislev_qb1",
+      "displayName": "Kislev",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": false,
@@ -7875,6 +8221,7 @@
     },
     {
       "factionKey": "wh3_main_ksl_kislev_qb2",
+      "displayName": "Kislev",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": false,
@@ -7895,6 +8242,7 @@
     },
     {
       "factionKey": "wh3_main_ksl_ropsmenn_clan",
+      "displayName": "Ropsmenn Clan",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": false,
@@ -7920,6 +8268,7 @@
     },
     {
       "factionKey": "wh3_main_ksl_the_great_orthodoxy",
+      "displayName": "The Great Orthodoxy",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": true,
@@ -7950,6 +8299,7 @@
     },
     {
       "factionKey": "wh3_main_ksl_the_ice_court",
+      "displayName": "The Ice Court",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": true,
@@ -7980,6 +8330,7 @@
     },
     {
       "factionKey": "wh3_main_ksl_ungol_kindred",
+      "displayName": "Ungol Kindred",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": false,
@@ -8002,6 +8353,7 @@
     },
     {
       "factionKey": "wh3_main_ksl_ursun_revivalists",
+      "displayName": "Ursun Revivalists",
       "nameGroup": "names_ksl_kislev",
       "subculture": "wh3_main_sc_ksl_kislev",
       "playable": true,
@@ -8029,6 +8381,7 @@
     },
     {
       "factionKey": "wh3_main_lzd_tepoks_spawn",
+      "displayName": "Tepok's Spawn",
       "nameGroup": "names_lzd_lizardmen",
       "subculture": "wh2_main_sc_lzd_lizardmen",
       "playable": false,
@@ -8053,6 +8406,7 @@
     },
     {
       "factionKey": "wh3_main_nur_bubonic_swarm",
+      "displayName": "Bubonic Swarm",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": false,
@@ -8077,6 +8431,7 @@
     },
     {
       "factionKey": "wh3_main_nur_maggoth_kin",
+      "displayName": "Maggoth Kin",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": false,
@@ -8100,6 +8455,7 @@
     },
     {
       "factionKey": "wh3_main_nur_nurgle_qb1",
+      "displayName": "Nurgle",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": false,
@@ -8120,6 +8476,7 @@
     },
     {
       "factionKey": "wh3_main_nur_nurgle_qb2",
+      "displayName": "{{tr:factions_screen_name_wh3_main_nur_nurgle_qb1}}",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": false,
@@ -8140,6 +8497,7 @@
     },
     {
       "factionKey": "wh3_main_nur_poxmakers_of_nurgle",
+      "displayName": "Poxmakers of Nurgle",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": true,
@@ -8169,6 +8527,7 @@
     },
     {
       "factionKey": "wh3_main_nur_septic_claw",
+      "displayName": "Septic Claw",
       "nameGroup": "names_nur_nurgle",
       "subculture": "wh3_main_sc_nur_nurgle",
       "playable": false,
@@ -8189,6 +8548,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_blood_guzzlers",
+      "displayName": "Blood Guzzlers",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8212,6 +8572,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_bloodmaw",
+      "displayName": "Bloodmaw",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8232,6 +8593,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_crossed_clubs",
+      "displayName": "Crossed Clubs",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8255,6 +8617,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_disciples_of_the_maw",
+      "displayName": "Disciples of the Maw",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": true,
@@ -8284,6 +8647,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_eyebiter",
+      "displayName": "Eyebiter",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8304,6 +8668,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_feastmaster",
+      "displayName": "Feastmaster",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8324,6 +8689,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_fleshgreeders",
+      "displayName": "Fleshgreeders",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8346,6 +8712,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_fulg",
+      "displayName": "Fulg",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8370,6 +8737,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_goldtooth",
+      "displayName": "Goldtooth",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": true,
@@ -8400,6 +8768,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_lazarghs",
+      "displayName": "Lazarghs",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8424,6 +8793,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_loose_tooth",
+      "displayName": "Loose Tooth",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8444,6 +8814,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_mountaineaters",
+      "displayName": "Mountaineaters",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8467,6 +8838,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_ogre_kingdoms_invasion",
+      "displayName": "Ogre Kingdoms",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8487,6 +8859,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_ogre_kingdoms_qb1",
+      "displayName": "Ogre Kingdoms",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8507,6 +8880,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_ogre_kingdoms_qb2",
+      "displayName": "Ogre Kingdoms",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8527,6 +8901,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_ogre_kingdoms_qb3",
+      "displayName": "Ogre Kingdoms",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8547,6 +8922,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_rock_skulls",
+      "displayName": "Rock Skulls",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8570,6 +8946,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_sabreskin",
+      "displayName": "Sabreskin",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8592,6 +8969,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_sons_of_the_mountain",
+      "displayName": "Sons of the Mountain",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8615,6 +8993,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_thunderguts",
+      "displayName": "Thunderguts",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8638,6 +9017,7 @@
     },
     {
       "factionKey": "wh3_main_ogr_treehammers",
+      "displayName": "Treehammers",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8658,6 +9038,7 @@
     },
     {
       "factionKey": "wh3_main_ogre_flamegullets",
+      "displayName": "Flamegullets",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8678,6 +9059,7 @@
     },
     {
       "factionKey": "wh3_main_ogre_sharktooth",
+      "displayName": "Sharktooth",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8698,6 +9080,7 @@
     },
     {
       "factionKey": "wh3_main_ogre_stoneshatter",
+      "displayName": "Stoneshatter",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8718,6 +9101,7 @@
     },
     {
       "factionKey": "wh3_main_ogre_the_famished",
+      "displayName": "The Famished",
       "nameGroup": "names_ogr_ogre_kingdom",
       "subculture": "wh3_main_sc_ogr_ogre_kingdoms",
       "playable": false,
@@ -8740,6 +9124,7 @@
     },
     {
       "factionKey": "wh3_main_rogue_kurgan_warband",
+      "displayName": "Kurgan Warband",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh2_main_rogue_chaos",
       "playable": false,
@@ -8760,6 +9145,7 @@
     },
     {
       "factionKey": "wh3_main_rogue_minor_cults",
+      "displayName": "Unusual Location",
       "nameGroup": "names_emp_empire",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -8780,6 +9166,7 @@
     },
     {
       "factionKey": "wh3_main_rogue_shrouded_wanderers_of_undead",
+      "displayName": "Shrouded Undead Wanderers",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh2_main_rogue",
       "playable": false,
@@ -8800,6 +9187,7 @@
     },
     {
       "factionKey": "wh3_main_skv_clan_carrion",
+      "displayName": "Clan Carrion",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -8822,6 +9210,7 @@
     },
     {
       "factionKey": "wh3_main_skv_clan_krizzor",
+      "displayName": "Clan Krizzor",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -8844,6 +9233,7 @@
     },
     {
       "factionKey": "wh3_main_skv_clan_morbidus",
+      "displayName": "Clan Morbidus",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -8868,6 +9258,7 @@
     },
     {
       "factionKey": "wh3_main_skv_clan_skrat",
+      "displayName": "Clan Skrat",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -8890,6 +9281,7 @@
     },
     {
       "factionKey": "wh3_main_skv_clan_treecherik",
+      "displayName": "Clan Treecherik",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -8915,6 +9307,7 @@
     },
     {
       "factionKey": "wh3_main_skv_clan_verms",
+      "displayName": "Clan Verms",
       "nameGroup": "names_skv_skaven",
       "subculture": "wh2_main_sc_skv_skaven",
       "playable": false,
@@ -8938,6 +9331,7 @@
     },
     {
       "factionKey": "wh3_main_sla_exquisite_pain",
+      "displayName": "Exquisite Pain",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -8961,6 +9355,7 @@
     },
     {
       "factionKey": "wh3_main_sla_rapturous_excess",
+      "displayName": "Rapturous Excess",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -8986,6 +9381,7 @@
     },
     {
       "factionKey": "wh3_main_sla_seducers_of_slaanesh",
+      "displayName": "Seducers of Slaanesh",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": true,
@@ -9015,6 +9411,7 @@
     },
     {
       "factionKey": "wh3_main_sla_slaanesh_qb1",
+      "displayName": "Slaanesh",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -9035,6 +9432,7 @@
     },
     {
       "factionKey": "wh3_main_sla_slaanesh_qb2",
+      "displayName": "Slaanesh",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -9055,6 +9453,7 @@
     },
     {
       "factionKey": "wh3_main_sla_slaanesh_qb3",
+      "displayName": "Slaanesh",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -9075,6 +9474,7 @@
     },
     {
       "factionKey": "wh3_main_sla_slaanesh_qb4",
+      "displayName": "Slaanesh",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -9095,6 +9495,7 @@
     },
     {
       "factionKey": "wh3_main_sla_slaanesh_qb5",
+      "displayName": "Slaanesh",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -9115,6 +9516,7 @@
     },
     {
       "factionKey": "wh3_main_sla_subtle_torture",
+      "displayName": "Subtle Torture",
       "nameGroup": "names_sla_slaanesh",
       "subculture": "wh3_main_sc_sla_slaanesh",
       "playable": false,
@@ -9140,6 +9542,7 @@
     },
     {
       "factionKey": "wh3_main_tmb_deserters_of_khatep",
+      "displayName": "Deserters of Khatep",
       "nameGroup": "names_tmb_tomb_kings",
       "subculture": "wh2_dlc09_sc_tmb_tomb_kings",
       "playable": false,
@@ -9164,6 +9567,7 @@
     },
     {
       "factionKey": "wh3_main_tze_all_seeing_eye",
+      "displayName": "All-Seeing Eye",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": false,
@@ -9189,6 +9593,7 @@
     },
     {
       "factionKey": "wh3_main_tze_broken_wheel",
+      "displayName": "Broken Wheel",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": false,
@@ -9213,6 +9618,7 @@
     },
     {
       "factionKey": "wh3_main_tze_flaming_scribes",
+      "displayName": "Flaming Scribes",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": false,
@@ -9237,6 +9643,7 @@
     },
     {
       "factionKey": "wh3_main_tze_oracles_of_tzeentch",
+      "displayName": "Oracles of Tzeentch",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": true,
@@ -9266,6 +9673,7 @@
     },
     {
       "factionKey": "wh3_main_tze_sarthoraels_watchers",
+      "displayName": "Sarthorael's Watchers",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": false,
@@ -9289,6 +9697,7 @@
     },
     {
       "factionKey": "wh3_main_tze_tzeentch_invasion",
+      "displayName": "Tzeentchian Cult",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": false,
@@ -9309,6 +9718,7 @@
     },
     {
       "factionKey": "wh3_main_tze_tzeentch_qb1",
+      "displayName": "Tzeentch",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": false,
@@ -9329,6 +9739,7 @@
     },
     {
       "factionKey": "wh3_main_tze_tzeentch_qb2",
+      "displayName": "Tzeentch",
       "nameGroup": "names_tze_tzeentch",
       "subculture": "wh3_main_sc_tze_tzeentch",
       "playable": false,
@@ -9349,6 +9760,7 @@
     },
     {
       "factionKey": "wh3_main_vmp_caravan_of_blue_roses",
+      "displayName": "Caravan of Blue Roses",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": true,
@@ -9377,6 +9789,7 @@
     },
     {
       "factionKey": "wh3_main_vmp_lahmian_sisterhood",
+      "displayName": "Lahmian Sisterhood",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -9399,6 +9812,7 @@
     },
     {
       "factionKey": "wh3_main_wef_laurelorn",
+      "displayName": "Laurelorn",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -9421,6 +9835,7 @@
     },
     {
       "factionKey": "wh_dlc03_bst_beastmen",
+      "displayName": "Warherd of the One-Eye",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": true,
@@ -9447,6 +9862,7 @@
     },
     {
       "factionKey": "wh_dlc03_bst_beastmen_ally",
+      "displayName": "Beastmen",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -9467,6 +9883,7 @@
     },
     {
       "factionKey": "wh_dlc03_bst_beastmen_chaos",
+      "displayName": "Warherd of Chaos",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -9487,6 +9904,7 @@
     },
     {
       "factionKey": "wh_dlc03_bst_beastmen_qb1",
+      "displayName": "Beastmen",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -9507,6 +9925,7 @@
     },
     {
       "factionKey": "wh_dlc03_bst_beastmen_qb2",
+      "displayName": "Beastmen",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -9527,6 +9946,7 @@
     },
     {
       "factionKey": "wh_dlc03_bst_beastmen_qb3",
+      "displayName": "Beastmen",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -9547,6 +9967,7 @@
     },
     {
       "factionKey": "wh_dlc03_bst_jagged_horn",
+      "displayName": "Jagged-Horn Tribe",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -9567,6 +9988,7 @@
     },
     {
       "factionKey": "wh_dlc03_bst_redhorn",
+      "displayName": "Redhorn Tribe",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": false,
@@ -9587,6 +10009,7 @@
     },
     {
       "factionKey": "wh_dlc03_grn_black_pit",
+      "displayName": "The Black Pit Tribe",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -9610,6 +10033,7 @@
     },
     {
       "factionKey": "wh_dlc05_bst_morghur_herd",
+      "displayName": "Warherd of the Shadowgave",
       "nameGroup": "names_bst_beastmen",
       "subculture": "wh_dlc03_sc_bst_beastmen",
       "playable": true,
@@ -9636,6 +10060,7 @@
     },
     {
       "factionKey": "wh_dlc05_wef_argwylon",
+      "displayName": "Argwylon",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": true,
@@ -9664,6 +10089,7 @@
     },
     {
       "factionKey": "wh_dlc05_wef_torgovann",
+      "displayName": "Torgovann",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -9686,6 +10112,7 @@
     },
     {
       "factionKey": "wh_dlc05_wef_wood_elves",
+      "displayName": "Talsyn",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": true,
@@ -9716,6 +10143,7 @@
     },
     {
       "factionKey": "wh_dlc05_wef_wood_elves_qb1",
+      "displayName": "Wood Elves",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -9736,6 +10164,7 @@
     },
     {
       "factionKey": "wh_dlc05_wef_wood_elves_qb2",
+      "displayName": "Wood Elves",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -9756,6 +10185,7 @@
     },
     {
       "factionKey": "wh_dlc05_wef_wood_elves_qb3",
+      "displayName": "Torgovann",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -9776,6 +10206,7 @@
     },
     {
       "factionKey": "wh_dlc05_wef_wydrioth",
+      "displayName": "Wydrioth",
       "nameGroup": "names_wef_wood_elves",
       "subculture": "wh_dlc05_sc_wef_wood_elves",
       "playable": false,
@@ -9798,6 +10229,7 @@
     },
     {
       "factionKey": "wh_dlc08_chs_chaos_challenger_khorne",
+      "displayName": "Challenger of the Hound",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -9818,6 +10250,7 @@
     },
     {
       "factionKey": "wh_dlc08_chs_chaos_challenger_khorne_qb",
+      "displayName": "Challenger of the Hound",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -9838,6 +10271,7 @@
     },
     {
       "factionKey": "wh_dlc08_chs_chaos_challenger_nurgle",
+      "displayName": "Challenger of the Crow",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -9858,6 +10292,7 @@
     },
     {
       "factionKey": "wh_dlc08_chs_chaos_challenger_nurgle_qb",
+      "displayName": "Challenger of the Crow",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -9878,6 +10313,7 @@
     },
     {
       "factionKey": "wh_dlc08_chs_chaos_challenger_slaanesh",
+      "displayName": "Challenger of the Serpent",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -9898,6 +10334,7 @@
     },
     {
       "factionKey": "wh_dlc08_chs_chaos_challenger_slaanesh_qb",
+      "displayName": "Challenger of the Serpent",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -9918,6 +10355,7 @@
     },
     {
       "factionKey": "wh_dlc08_chs_chaos_challenger_tzeentch",
+      "displayName": "Challenger of the Eagle",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -9938,6 +10376,7 @@
     },
     {
       "factionKey": "wh_dlc08_chs_chaos_challenger_tzeentch_qb",
+      "displayName": "Challenger of the Eagle",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -9958,6 +10397,7 @@
     },
     {
       "factionKey": "wh_dlc08_nor_goromadny_tribe",
+      "displayName": "Goromadny Tribe",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -9982,6 +10422,7 @@
     },
     {
       "factionKey": "wh_dlc08_nor_helspire_tribe",
+      "displayName": "Helspire Tribe",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -10002,6 +10443,7 @@
     },
     {
       "factionKey": "wh_dlc08_nor_naglfarlings",
+      "displayName": "Naglfarlings",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -10026,6 +10468,7 @@
     },
     {
       "factionKey": "wh_dlc08_nor_norsca",
+      "displayName": "World Walkers",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": true,
@@ -10054,6 +10497,7 @@
     },
     {
       "factionKey": "wh_dlc08_nor_vanaheimlings",
+      "displayName": "Vanaheimlings",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -10076,6 +10520,7 @@
     },
     {
       "factionKey": "wh_dlc08_nor_wintertooth",
+      "displayName": "Wintertooth",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": true,
@@ -10104,6 +10549,7 @@
     },
     {
       "factionKey": "wh_main_brt_artois",
+      "displayName": "Artois",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -10127,6 +10573,7 @@
     },
     {
       "factionKey": "wh_main_brt_bastonne",
+      "displayName": "Bastonne",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -10150,6 +10597,7 @@
     },
     {
       "factionKey": "wh_main_brt_bordeleaux",
+      "displayName": "Bordeleaux Errant",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": true,
@@ -10178,6 +10626,7 @@
     },
     {
       "factionKey": "wh_main_brt_bretonnia",
+      "displayName": "Couronne",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": true,
@@ -10206,6 +10655,7 @@
     },
     {
       "factionKey": "wh_main_brt_bretonnia_qb1",
+      "displayName": "Bretonnia",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -10226,6 +10676,7 @@
     },
     {
       "factionKey": "wh_main_brt_bretonnia_qb2",
+      "displayName": "Bretonnia",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -10246,6 +10697,7 @@
     },
     {
       "factionKey": "wh_main_brt_bretonnia_qb3",
+      "displayName": "Bretonnia",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -10266,6 +10718,7 @@
     },
     {
       "factionKey": "wh_main_brt_bretonnia_qb4",
+      "displayName": "Bretonnia",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -10286,6 +10739,7 @@
     },
     {
       "factionKey": "wh_main_brt_carcassonne",
+      "displayName": "Carcassonne",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": true,
@@ -10314,6 +10768,7 @@
     },
     {
       "factionKey": "wh_main_brt_lyonesse",
+      "displayName": "Lyonesse",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -10336,6 +10791,7 @@
     },
     {
       "factionKey": "wh_main_brt_parravon",
+      "displayName": "Parravon",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_brt_bretonnia",
       "playable": false,
@@ -10359,6 +10815,7 @@
     },
     {
       "factionKey": "wh_main_chs_chaos",
+      "displayName": "Warhost of the Apocalypse",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": true,
@@ -10385,6 +10842,7 @@
     },
     {
       "factionKey": "wh_main_chs_chaos_qb1",
+      "displayName": "Chaos",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -10405,6 +10863,7 @@
     },
     {
       "factionKey": "wh_main_chs_chaos_qb2",
+      "displayName": "Chaos",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -10425,6 +10884,7 @@
     },
     {
       "factionKey": "wh_main_chs_chaos_qb3",
+      "displayName": "Chaos",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -10445,6 +10905,7 @@
     },
     {
       "factionKey": "wh_main_chs_chaos_separatists",
+      "displayName": "Chaos Gathering",
       "nameGroup": "names_chs_chaos",
       "subculture": "wh_main_sc_chs_chaos",
       "playable": false,
@@ -10465,6 +10926,7 @@
     },
     {
       "factionKey": "wh_main_dwf_barak_varr",
+      "displayName": "Barak Varr",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10488,6 +10950,7 @@
     },
     {
       "factionKey": "wh_main_dwf_dwarfs",
+      "displayName": "Karaz-a-Karak",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": true,
@@ -10516,6 +10979,7 @@
     },
     {
       "factionKey": "wh_main_dwf_dwarfs_qb1",
+      "displayName": "Dwarfs",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10536,6 +11000,7 @@
     },
     {
       "factionKey": "wh_main_dwf_dwarfs_qb2",
+      "displayName": "Dwarfs",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10556,6 +11021,7 @@
     },
     {
       "factionKey": "wh_main_dwf_dwarfs_qb3",
+      "displayName": "Dwarfs",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10576,6 +11042,7 @@
     },
     {
       "factionKey": "wh_main_dwf_dwarfs_seperatists_qb1",
+      "displayName": "Dwarfs",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10596,6 +11063,7 @@
     },
     {
       "factionKey": "wh_main_dwf_dwarfs_seperatists_qb2",
+      "displayName": "Dwarfs",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10616,6 +11084,7 @@
     },
     {
       "factionKey": "wh_main_dwf_dwarfs_seperatists_qb3",
+      "displayName": "Dwarfs",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10636,6 +11105,7 @@
     },
     {
       "factionKey": "wh_main_dwf_dwarfs_seperatists_qb4",
+      "displayName": "Dwarfs",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10656,6 +11126,7 @@
     },
     {
       "factionKey": "wh_main_dwf_karak_azul",
+      "displayName": "Karak Azul",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10682,6 +11153,7 @@
     },
     {
       "factionKey": "wh_main_dwf_karak_hirn",
+      "displayName": "Karak Hirn",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10705,6 +11177,7 @@
     },
     {
       "factionKey": "wh_main_dwf_karak_izor",
+      "displayName": "Clan Angrund",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": true,
@@ -10733,6 +11206,7 @@
     },
     {
       "factionKey": "wh_main_dwf_karak_kadrin",
+      "displayName": "Karak Kadrin",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": true,
@@ -10761,6 +11235,7 @@
     },
     {
       "factionKey": "wh_main_dwf_karak_norn",
+      "displayName": "Karak Norn",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10784,6 +11259,7 @@
     },
     {
       "factionKey": "wh_main_dwf_karak_ziflin",
+      "displayName": "Karak Ziflin",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10806,6 +11282,7 @@
     },
     {
       "factionKey": "wh_main_dwf_kraka_drak",
+      "displayName": "Kraka Drak",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10826,6 +11303,7 @@
     },
     {
       "factionKey": "wh_main_dwf_zhufbar",
+      "displayName": "Zhufbar",
       "nameGroup": "names_dwf_dwarfs",
       "subculture": "wh_main_sc_dwf_dwarfs",
       "playable": false,
@@ -10850,6 +11328,7 @@
     },
     {
       "factionKey": "wh_main_emp_averland",
+      "displayName": "Averland",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -10873,6 +11352,7 @@
     },
     {
       "factionKey": "wh_main_emp_empire",
+      "displayName": "Reikland",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": true,
@@ -10902,6 +11382,7 @@
     },
     {
       "factionKey": "wh_main_emp_empire_qb1",
+      "displayName": "The Empire",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -10922,6 +11403,7 @@
     },
     {
       "factionKey": "wh_main_emp_empire_qb2",
+      "displayName": "The Empire",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -10942,6 +11424,7 @@
     },
     {
       "factionKey": "wh_main_emp_empire_qb3",
+      "displayName": "The Empire",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -10962,6 +11445,7 @@
     },
     {
       "factionKey": "wh_main_emp_empire_qb4",
+      "displayName": "The Empire",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -10982,6 +11466,7 @@
     },
     {
       "factionKey": "wh_main_emp_empire_qb5",
+      "displayName": "The Empire",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11002,6 +11487,7 @@
     },
     {
       "factionKey": "wh_main_emp_empire_separatists",
+      "displayName": "Empire Secessionists",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11026,6 +11512,7 @@
     },
     {
       "factionKey": "wh_main_emp_hochland",
+      "displayName": "Hochland",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11049,6 +11536,7 @@
     },
     {
       "factionKey": "wh_main_emp_marienburg",
+      "displayName": "Marienburg",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11074,6 +11562,7 @@
     },
     {
       "factionKey": "wh_main_emp_middenland",
+      "displayName": "Middenland",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11099,6 +11588,7 @@
     },
     {
       "factionKey": "wh_main_emp_nordland",
+      "displayName": "Nordland",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11123,6 +11613,7 @@
     },
     {
       "factionKey": "wh_main_emp_ostermark",
+      "displayName": "Ostermark",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11147,6 +11638,7 @@
     },
     {
       "factionKey": "wh_main_emp_ostland",
+      "displayName": "Ostland",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11170,6 +11662,7 @@
     },
     {
       "factionKey": "wh_main_emp_stirland",
+      "displayName": "Stirland",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11195,6 +11688,7 @@
     },
     {
       "factionKey": "wh_main_emp_talabecland",
+      "displayName": "Talabecland",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": false,
@@ -11220,6 +11714,7 @@
     },
     {
       "factionKey": "wh_main_emp_wissenland",
+      "displayName": "Wissenland & Nuln",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_emp_empire",
       "playable": true,
@@ -11249,6 +11744,7 @@
     },
     {
       "factionKey": "wh_main_grn_black_venom",
+      "displayName": "Black Venom",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11272,6 +11768,7 @@
     },
     {
       "factionKey": "wh_main_grn_bloody_spearz",
+      "displayName": "Bloody Spearz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11297,6 +11794,7 @@
     },
     {
       "factionKey": "wh_main_grn_broken_nose",
+      "displayName": "Broken Nose",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11320,6 +11818,7 @@
     },
     {
       "factionKey": "wh_main_grn_crooked_moon",
+      "displayName": "Crooked Moon",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": true,
@@ -11348,6 +11847,7 @@
     },
     {
       "factionKey": "wh_main_grn_greenskins",
+      "displayName": "Grimgor's 'Ardboyz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": true,
@@ -11376,6 +11876,7 @@
     },
     {
       "factionKey": "wh_main_grn_greenskins_qb1",
+      "displayName": "Greenskins",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11396,6 +11897,7 @@
     },
     {
       "factionKey": "wh_main_grn_greenskins_qb2",
+      "displayName": "Greenskins",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11416,6 +11918,7 @@
     },
     {
       "factionKey": "wh_main_grn_greenskins_qb3",
+      "displayName": "Greenskins",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11436,6 +11939,7 @@
     },
     {
       "factionKey": "wh_main_grn_greenskins_qb4",
+      "displayName": "Greenskins",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11456,6 +11960,7 @@
     },
     {
       "factionKey": "wh_main_grn_necksnappers",
+      "displayName": "Crooked Moon Mutinous Gits",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11479,6 +11984,7 @@
     },
     {
       "factionKey": "wh_main_grn_orcs_of_the_bloody_hand",
+      "displayName": "The Bloody Handz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": true,
@@ -11507,6 +12013,7 @@
     },
     {
       "factionKey": "wh_main_grn_red_eye",
+      "displayName": "Red Eye",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11531,6 +12038,7 @@
     },
     {
       "factionKey": "wh_main_grn_red_fangs",
+      "displayName": "Red Fangs",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11555,6 +12063,7 @@
     },
     {
       "factionKey": "wh_main_grn_scabby_eye",
+      "displayName": "Scabby Eye",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11579,6 +12088,7 @@
     },
     {
       "factionKey": "wh_main_grn_skull-takerz",
+      "displayName": "Skull-takerz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_savage_orcs",
       "playable": false,
@@ -11599,6 +12109,7 @@
     },
     {
       "factionKey": "wh_main_grn_skullsmasherz",
+      "displayName": "Skullsmasherz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11621,6 +12132,7 @@
     },
     {
       "factionKey": "wh_main_grn_teef_snatchaz",
+      "displayName": "Teef Snatchaz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_greenskins",
       "playable": false,
@@ -11644,6 +12156,7 @@
     },
     {
       "factionKey": "wh_main_grn_top_knotz",
+      "displayName": "Top Knotz",
       "nameGroup": "names_grn_greenskins",
       "subculture": "wh_main_sc_grn_savage_orcs",
       "playable": false,
@@ -11670,6 +12183,7 @@
     },
     {
       "factionKey": "wh_main_nor_aesling",
+      "displayName": "Aesling",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11694,6 +12208,7 @@
     },
     {
       "factionKey": "wh_main_nor_baersonling",
+      "displayName": "Baersonling",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11718,6 +12233,7 @@
     },
     {
       "factionKey": "wh_main_nor_bjornling",
+      "displayName": "Bjornling",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11740,6 +12256,7 @@
     },
     {
       "factionKey": "wh_main_nor_graeling",
+      "displayName": "Graeling",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11760,6 +12277,7 @@
     },
     {
       "factionKey": "wh_main_nor_norsca_qb1",
+      "displayName": "Norsca",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11780,6 +12298,7 @@
     },
     {
       "factionKey": "wh_main_nor_norsca_qb2",
+      "displayName": "Norsca",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11800,6 +12319,7 @@
     },
     {
       "factionKey": "wh_main_nor_norsca_qb3",
+      "displayName": "Norsca",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11820,6 +12340,7 @@
     },
     {
       "factionKey": "wh_main_nor_sarl",
+      "displayName": "Sarl",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11842,6 +12363,7 @@
     },
     {
       "factionKey": "wh_main_nor_skaeling",
+      "displayName": "Skaeling",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11866,6 +12388,7 @@
     },
     {
       "factionKey": "wh_main_nor_varg",
+      "displayName": "Varg",
       "nameGroup": "names_nor_norsca",
       "subculture": "wh_dlc08_sc_nor_norsca",
       "playable": false,
@@ -11890,6 +12413,7 @@
     },
     {
       "factionKey": "wh_main_teb_border_princes",
+      "displayName": "Border Princes",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_teb_teb",
       "playable": false,
@@ -11917,6 +12441,7 @@
     },
     {
       "factionKey": "wh_main_teb_estalia",
+      "displayName": "Estalia",
       "nameGroup": "names_emp_empire",
       "subculture": "wh_main_sc_teb_teb",
       "playable": false,
@@ -11943,6 +12468,7 @@
     },
     {
       "factionKey": "wh_main_teb_tilea",
+      "displayName": "Tilea",
       "nameGroup": "names_teb_tilea",
       "subculture": "wh_main_sc_teb_teb",
       "playable": false,
@@ -11967,6 +12493,7 @@
     },
     {
       "factionKey": "wh_main_vmp_mousillon",
+      "displayName": "Mousillon",
       "nameGroup": "names_brt_bretonnia",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -11990,6 +12517,7 @@
     },
     {
       "factionKey": "wh_main_vmp_rival_sylvanian_vamps",
+      "displayName": "Templehof",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -12015,6 +12543,7 @@
     },
     {
       "factionKey": "wh_main_vmp_schwartzhafen",
+      "displayName": "Sylvania",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": true,
@@ -12041,6 +12570,7 @@
     },
     {
       "factionKey": "wh_main_vmp_vampire_counts",
+      "displayName": "The Drakenhof Conclave",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": true,
@@ -12069,6 +12599,7 @@
     },
     {
       "factionKey": "wh_main_vmp_vampire_counts_qb1",
+      "displayName": "Vampire Counts",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -12089,6 +12620,7 @@
     },
     {
       "factionKey": "wh_main_vmp_vampire_counts_qb2",
+      "displayName": "Vampire Counts",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -12109,6 +12641,7 @@
     },
     {
       "factionKey": "wh_main_vmp_vampire_counts_qb3",
+      "displayName": "Vampire Counts",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -12129,6 +12662,7 @@
     },
     {
       "factionKey": "wh_main_vmp_waldenhof",
+      "displayName": "Waldenhof",
       "nameGroup": "names_vmp_vampire_counts",
       "subculture": "wh_main_sc_vmp_vampire_counts",
       "playable": false,
@@ -12153,6 +12687,7 @@
     "playableFactionCount": 104,
     "positionedFactionCount": 103,
     "regionedFactionCount": 261,
-    "unresolvedSubcultureCount": 0
+    "unresolvedSubcultureCount": 0,
+    "localizedFactionCount": 534
   }
 }
