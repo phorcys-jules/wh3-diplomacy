@@ -81,6 +81,24 @@ assert(incrementalCandidates[0].deltaMetrics, 'incremental candidate deltas miss
 assert(incrementalCandidates[0].npcImpacts?.mode === 'incremental', 'incremental NPC impact analysis missing');
 assert(Array.isArray(incrementalCandidates[0].npcImpacts.worsened), 'candidate worsened NPC list missing');
 assert(Array.isArray(incrementalCandidates[0].npcImpacts.improved), 'candidate improved NPC list missing');
+const suggestedTeam = analysis.suggestTeam({
+  team: ['wh2_dlc15_hef_imrik'],
+  mode: 'ffa',
+  teamTreaty: 'military_alliance',
+  difficulty: 'normal',
+  factions,
+  culture,
+  cai,
+  strategic,
+  relations,
+  startpos,
+  restrictions,
+  teamRules,
+}, ['wh_main_emp_empire', 'wh2_main_def_hag_graef', 'wh3_main_nur_poxmakers_of_nurgle'], 4);
+assert(suggestedTeam.complete, 'full-team suggestion did not reach target size');
+assert(suggestedTeam.steps.length === 3, 'unexpected full-team suggestion step count');
+assert(suggestedTeam.steps.every(step => !Object.prototype.hasOwnProperty.call(step.metrics, 'warProbability')), 'full-team suggestion must not fabricate war probability');
+
 
 
 
