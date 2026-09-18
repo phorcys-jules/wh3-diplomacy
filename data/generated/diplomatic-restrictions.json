@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T18:42:49.250783+00:00",
+  "generatedAt": "2026-09-18T18:46:34.431057+00:00",
   "status": "resolved-subset",
   "semantics": "diplomacy_disabled_between_factions_tables disables diplomacy between a campaign-group originator and a faction-set target. Source membership is conservatively expanded from ORIGINATOR/ACTOR criteria; unresolved scopes remain explicit.",
   "restrictions": [

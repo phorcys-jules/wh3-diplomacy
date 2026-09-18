@@ -1,7 +1,7 @@
 {
   "gameVersion": "WH3 data dump 61d4e117f669ea93d6da1077d1524c332d5e74c9",
   "campaign": "wh3_main_combi",
-  "generatedAt": "2026-09-18T18:42:48.409201+00:00",
+  "generatedAt": "2026-09-18T18:46:33.189679+00:00",
   "status": "partial",
   "semantics": "numeric bundle effects plus verified targets; source-faction ownership/application is not resolved here",
   "sourceTables": [
