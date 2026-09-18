@@ -18,6 +18,7 @@ def main():
     parser.add_argument('--factions', type=Path, required=True)
     parser.add_argument('--leaders', type=Path, required=True)
     parser.add_argument('--cultural-relations', type=Path, required=True)
+    parser.add_argument('--cai-factors', type=Path)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--game-version', required=True)
     parser.add_argument('--campaign', default='wh3_main_combi')
@@ -35,6 +36,9 @@ def main():
         raise SystemExit('initial cultural resolver failed: no leader faction matched factions table')
     cultural = load_json(args.cultural_relations).get('relations', [])
     by_pair = {(row['sourceSubculture'], row['targetSubculture']): row for row in cultural}
+    cai = load_json(args.cai_factors) if args.cai_factors else {}
+    component_for_faction = {row.get('factionKey'): row.get('culturalComponent') for row in cai.get('factionProfiles', [])}
+    overrides = {(row.get('componentId'), row.get('sourceSubculture'), row.get('targetSubculture')): row for row in cai.get('culturalOverrides', [])}
     relations = []
     for source in factions:
         for target in factions:
@@ -44,14 +48,19 @@ def main():
             base = by_pair.get((source_subculture, target_subculture))
             if not base:
                 continue
+            override = overrides.get((component_for_faction.get(source), source_subculture, target_subculture))
+            selected = override or base
+            component = {'type': 'cai-personality-cultural-override' if override else 'cultural-baseline', 'sourceTable': selected['sourceTable'], 'sourceSubculture': source_subculture, 'targetSubculture': target_subculture}
+            if override:
+                component['personalityComponent'] = component_for_faction[source]
             relations.append({
                 'sourceFaction': source, 'targetFaction': target,
-                'baseAttitude': base['attitudeBase'],
-                'positiveAttitudeMultiplier': base['positiveAttitudeMultiplier'],
-                'negativeAttitudeMultiplier': base['negativeAttitudeMultiplier'],
-                'components': [{'type': 'cultural-baseline', 'sourceTable': base['sourceTable'], 'sourceSubculture': source_subculture, 'targetSubculture': target_subculture}],
+                'baseAttitude': selected['attitudeBase'],
+                'positiveAttitudeMultiplier': selected['positiveAttitudeMultiplier'],
+                'negativeAttitudeMultiplier': selected['negativeAttitudeMultiplier'],
+                'components': [component],
             })
-    output = {'gameVersion': args.game_version, 'campaign': args.campaign, 'generatedAt': datetime.now(timezone.utc).isoformat(), 'status': 'partial', 'semantics': 'directional cultural baseline resolved to playable factions; explicit treaties, wars and unproven script modifiers are separate components', 'relations': relations}
+    output = {'gameVersion': args.game_version, 'campaign': args.campaign, 'generatedAt': datetime.now(timezone.utc).isoformat(), 'status': 'partial', 'semantics': 'directional cultural baseline resolved to playable factions, with explicit CAI starting-personality cultural overrides where present; explicit treaties, wars and unproven script modifiers are separate components', 'relations': relations}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print(f'resolved {len(relations)} faction directional cultural baselines')

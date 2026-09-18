@@ -32,12 +32,18 @@ python tools\import_start_pos.py --db-dir data\raw\wh3\db --output data\generate
 python tools\resolve_diplomatic_members.py --db-dir data\raw\wh3\db --output data\generated\diplomatic-members.json --game-version $version --campaign wh3_main_combi
 python tools\validate_dataset.py data\generated\immortal-empires-startpos.json
 python tools\validate_pilot_factions.py --leaders data\generated\frontend-leaders.json --positions data\generated\campaign-start-positions.json --campaign wh3_main_combi
+python tools\build_turn1_validation_matrix.py --input data\generated\initial-diplomacy.json --output data\generated\turn1-validation-matrix.json
 ```
 
 Le validateur contrôle le schéma normalisé (métadonnées, relations, guerres,
 traités et modificateurs). La fixture couvre Imrik, Karl Franz, Malus Darkblade
 et Ku'gath : identité, clé de faction et position Immortal Empires doivent
 rester celles revues. Le workflow exécute ces validations avant le déploiement.
+
+`turn1-validation-matrix.json` contient les 12 directions entre les quatre
+factions pilotes et le protocole de relevé dans le jeu. Chaque observation doit
+être faite dans une nouvelle campagne Immortal Empires vanilla, au tour 1, avec
+la capture du détail d'attitude affiché par le jeu.
 
 Le site affiche la base culturelle directionnelle prouvée et les guerres/traités
 explicites de départ. Les modificateurs dont la valeur ou l'ordre d'application
